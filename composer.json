@@ -1,0 +1,11 @@
+{
+  "name": "inlearno/navi-react",
+  "description": "Navi React Library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Inlearno team",
+      "email": "chirkin.ivan@gmail.com"
+    }
+  ]
+}
