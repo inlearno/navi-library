@@ -7778,14 +7778,16 @@ img, video {
   children: e
 }) => /* @__PURE__ */ Ep(Sp, { children: [
   /* @__PURE__ */ Yt(B0, {}),
-  /* @__PURE__ */ Yt(Ji, { position: "bottom-left", autoClose: 5e3, hideProgressBar: !1, newestOnTop: !1, closeOnClick: !0, rtl: !1, pauseOnFocusLoss: !0, draggable: !0, pauseOnHover: !0, theme: "light" }),
+  /* @__PURE__ */ Yt(Ji, { position: "bottom-left", autoClose: 5e3, hideProgressBar: !1, newestOnTop: !1, closeOnClick: !0, rtl: !1, pauseOnFocusLoss: !0, draggable: !0, pauseOnHover: !0, style: {
+    zIndex: 1e5
+  }, theme: "light" }),
   e
 ] });
 window.__REACT_STATE__ || (window.__REACT_STATE__ = ed, customElements.get("react-component") || customElements.define("react-component", L0), bf.render(/* @__PURE__ */ Yt(V0, {}), document.getElementById("react-root")));
 z0({
   name: "program-constructor",
   route: "/program-constructor",
-  component: A.lazy(() => import("./ProgramConstructor-9d672eff.js"))
+  component: A.lazy(() => import("./ProgramConstructor-c455fbee.js"))
 });
 export {
   W as Q,
