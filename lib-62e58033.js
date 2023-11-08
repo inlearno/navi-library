@@ -7451,7 +7451,7 @@ img, video {
 }` });
 customElements.get("react-component") || customElements.define("react-component", r0);
 Lf.render(/* @__PURE__ */ ln(Xd, { children: /* @__PURE__ */ ln(l0, {}) }), document.getElementById("react-root"));
-n0("program-constructor", $i.lazy(() => import("./ProgramConstructor-6e050f44.js")));
+n0("program-constructor", $i.lazy(() => import("./ProgramConstructor-ee2de111.js")));
 export {
   $i as R,
   xa as T,
