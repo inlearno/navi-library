@@ -8004,6 +8004,12 @@ class b0 {
     if (n)
       return new q0(n, t);
   }
+  getShortcuts() {
+    return this.routes.filter((t) => t.desktopShortcut).map((t) => ({
+      ...t.desktopShortcut,
+      route: t.path
+    }));
+  }
 }
 const e1 = (e) => {
   const t = new b0(e);
@@ -8011,11 +8017,18 @@ const e1 = (e) => {
 };
 e1([{
   path: "/program-constructor",
-  component: () => import("./index-1f32d599.js"),
+  component: () => import("./index-fdf02bbe.js"),
   windowOptions: {
     title: "Конструктор программы",
     width: 1200,
     height: 800
+  },
+  desktopShortcut: {
+    title: "Конструктор программы",
+    icon: "fa fa-code",
+    color: "#000000",
+    group: "general",
+    order: 1e3
   }
 }]);
 export {
