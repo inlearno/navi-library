@@ -1,4 +1,4 @@
-import { g as ds, R as Ae, j as q, a as Yt, m as ps, w as ms, r as P, T as Bi, b as vs, s as hs, c as gs, u as bs, i as ys, d as xs, e as wn, f as ae, h as ws, Q as ks, k as Os } from "./library-1f6b0251.js";
+import { g as ds, R as Ae, j as q, a as Yt, m as ps, w as ms, r as P, T as Bi, b as vs, s as hs, c as gs, u as bs, i as ys, d as xs, e as wn, f as ae, h as ws, Q as ks, k as Os } from "./library-5dad065c.js";
 function x() {
   return x = Object.assign ? Object.assign.bind() : function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -7165,7 +7165,9 @@ const Dp = /* @__PURE__ */ P.forwardRef(function(t, n) {
       /* @__PURE__ */ q("div", { children: /* @__PURE__ */ q(zi, { color: "green", tooltip: i ? "Сохранить программу" : "Следующий шаг", onClick: () => r(!0), isLoading: n, iconAfter: i ? void 0 : Wi.faArrowRight, children: i ? "Сохранить" : (e == null ? void 0 : e.status) == Y.DONE ? "Обновить" : "Далее" }) })
     ] })
   ] });
-}, Wp = zp;
+};
+console.log(123);
+const Wp = zp;
 export {
   Wp as Component
 };
