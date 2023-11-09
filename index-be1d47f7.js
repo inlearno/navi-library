@@ -1,4 +1,4 @@
-import { g as ds, R as Ae, j as q, a as Yt, m as ps, w as ms, r as P, T as Bi, b as vs, s as hs, c as gs, u as bs, i as ys, d as xs, e as wn, f as ae, h as ws, Q as ks, k as Os } from "./library-c1e9d6c3.js";
+import { g as ds, R as Ae, j as q, a as Yt, m as ps, w as ms, r as P, T as Bi, b as vs, s as hs, c as gs, u as bs, i as ys, d as xs, e as wn, f as ae, h as ws, Q as ks, k as Os } from "./library-1f6b0251.js";
 function x() {
   return x = Object.assign ? Object.assign.bind() : function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -7116,7 +7116,7 @@ const Dp = /* @__PURE__ */ P.forwardRef(function(t, n) {
     l && /* @__PURE__ */ q(Te, { icon: l })
   ] });
   return i && (u = /* @__PURE__ */ q(Mp, { title: i, arrow: !0, children: u })), u;
-}, Bp = () => {
+}, zp = () => {
   const [e, t] = Ae.useState(dt[0]), [n, r] = Ae.useState(!1), a = P.useMemo(() => dt.findIndex((l) => l.id === (e == null ? void 0 : e.id)) || 0, [e]), i = a === dt.length - 1, o = P.useCallback(() => {
     i || t(dt[a + 1]);
   }, [a, i]), s = P.useCallback(() => {
@@ -7165,7 +7165,7 @@ const Dp = /* @__PURE__ */ P.forwardRef(function(t, n) {
       /* @__PURE__ */ q("div", { children: /* @__PURE__ */ q(zi, { color: "green", tooltip: i ? "Сохранить программу" : "Следующий шаг", onClick: () => r(!0), isLoading: n, iconAfter: i ? void 0 : Wi.faArrowRight, children: i ? "Сохранить" : (e == null ? void 0 : e.status) == Y.DONE ? "Обновить" : "Далее" }) })
     ] })
   ] });
-};
+}, Wp = zp;
 export {
-  Bp as default
+  Wp as Component
 };
