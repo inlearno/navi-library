@@ -8028,7 +8028,7 @@ const e1 = (e) => {
 };
 e1([{
   path: "/program-constructor",
-  component: () => import("./index-906e19b5.js"),
+  component: () => import("./index-4bb6a492.js"),
   windowOptions: {
     title: "Конструктор программы",
     width: 1200,
