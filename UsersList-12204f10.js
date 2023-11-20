@@ -8,46 +8,46 @@ var i = (s, t, e) => (G(s, t, "read from private field"), e ? e.call(s) : t.get(
   t instanceof WeakSet ? t.add(s) : t.set(s, e);
 }, n = (s, t, e, r) => (G(s, t, "write to private field"), r ? r.call(s, e) : t.set(s, e), e);
 var d = (s, t, e) => (G(s, t, "access private method"), e);
-import { S as Ot, s as Y, n as wt, i as lt, a as dt, t as Et, f as St, c as xt, r as ft, b as mt, u as Qt, d as Ut, j as X } from "./library-b9b20290.js";
-import { C as It, P as Ft } from "./Panel-faf0fa7d.js";
-import { r as C, R as Rt } from "./react-72acea58.js";
+import { S as vt, s as Y, n as Ot, i as lt, a as dt, t as Et, f as St, c as wt, r as ft, b as mt, u as Qt, d as Ut, e as It, j as X } from "./library-156f684b.js";
+import { C as xt, P as Ft } from "./Panel-1b4767cd.js";
+import { r as C } from "./react-72acea58.js";
 import "./mui-36ebfa29.js";
 import "./icons-a8a50daa.js";
-var y, a, I, f, E, F, g, A, P, T, S, x, w, Q, U, M, L, Z, k, $, B, tt, H, et, W, st, j, it, K, rt, q, gt, bt, Pt = (bt = class extends Ot {
+var y, a, x, f, S, F, g, A, T, P, w, Q, E, U, I, M, L, Z, k, $, B, tt, H, et, j, st, K, it, W, rt, q, Rt, bt, Tt = (bt = class extends vt {
   constructor(t, e) {
     super();
-    c(this, U);
+    c(this, I);
     c(this, L);
     c(this, k);
     c(this, B);
     c(this, H);
-    c(this, W);
     c(this, j);
     c(this, K);
+    c(this, W);
     c(this, q);
     c(this, y, void 0);
     c(this, a, void 0);
-    c(this, I, void 0);
+    c(this, x, void 0);
     c(this, f, void 0);
-    c(this, E, void 0);
+    c(this, S, void 0);
     c(this, F, void 0);
     c(this, g, void 0);
     c(this, A, void 0);
-    c(this, P, void 0);
+    c(this, T, void 0);
     // This property keeps track of the last query with defined data.
     // It will be used to pass the previous data and query to the placeholder function between renders.
-    c(this, T, void 0);
-    c(this, S, void 0);
-    c(this, x, void 0);
+    c(this, P, void 0);
     c(this, w, void 0);
     c(this, Q, void 0);
-    n(this, a, void 0), n(this, I, void 0), n(this, f, void 0), n(this, Q, /* @__PURE__ */ new Set()), n(this, y, t), this.options = e, n(this, g, null), this.bindMethods(), this.setOptions(e);
+    c(this, E, void 0);
+    c(this, U, void 0);
+    n(this, a, void 0), n(this, x, void 0), n(this, f, void 0), n(this, U, /* @__PURE__ */ new Set()), n(this, y, t), this.options = e, n(this, g, null), this.bindMethods(), this.setOptions(e);
   }
   bindMethods() {
     this.refetch = this.refetch.bind(this);
   }
   onSubscribe() {
-    this.listeners.size === 1 && (i(this, a).addObserver(this), pt(i(this, a), this.options) ? d(this, U, M).call(this) : this.updateResult(), d(this, H, et).call(this));
+    this.listeners.size === 1 && (i(this, a).addObserver(this), pt(i(this, a), this.options) ? d(this, I, M).call(this) : this.updateResult(), d(this, H, et).call(this));
   }
   onUnsubscribe() {
     this.hasListeners() || this.destroy();
@@ -67,7 +67,7 @@ var y, a, I, f, E, F, g, A, P, T, S, x, w, Q, U, M, L, Z, k, $, B, tt, H, et, W,
     );
   }
   destroy() {
-    this.listeners = /* @__PURE__ */ new Set(), d(this, W, st).call(this), d(this, j, it).call(this), i(this, a).removeObserver(this);
+    this.listeners = /* @__PURE__ */ new Set(), d(this, j, st).call(this), d(this, K, it).call(this), i(this, a).removeObserver(this);
   }
   setOptions(t, e) {
     const r = this.options, p = i(this, a);
@@ -77,20 +77,20 @@ var y, a, I, f, E, F, g, A, P, T, S, x, w, Q, U, M, L, Z, k, $, B, tt, H, et, W,
       observer: this
     }), typeof this.options.enabled < "u" && typeof this.options.enabled != "boolean")
       throw new Error("Expected enabled to be a boolean");
-    this.options.queryKey || (this.options.queryKey = r.queryKey), d(this, K, rt).call(this);
+    this.options.queryKey || (this.options.queryKey = r.queryKey), d(this, W, rt).call(this);
     const o = this.hasListeners();
     o && yt(
       i(this, a),
       p,
       this.options,
       r
-    ) && d(this, U, M).call(this), this.updateResult(e), o && (i(this, a) !== p || this.options.enabled !== r.enabled || this.options.staleTime !== r.staleTime) && d(this, L, Z).call(this);
+    ) && d(this, I, M).call(this), this.updateResult(e), o && (i(this, a) !== p || this.options.enabled !== r.enabled || this.options.staleTime !== r.staleTime) && d(this, L, Z).call(this);
     const h = d(this, k, $).call(this);
-    o && (i(this, a) !== p || this.options.enabled !== r.enabled || h !== i(this, w)) && d(this, B, tt).call(this, h);
+    o && (i(this, a) !== p || this.options.enabled !== r.enabled || h !== i(this, E)) && d(this, B, tt).call(this, h);
   }
   getOptimisticResult(t) {
     const e = i(this, y).getQueryCache().build(i(this, y), t), r = this.createResult(e, t);
-    return Dt(this, r) && (n(this, f, r), n(this, F, this.options), n(this, E, i(this, a).state)), r;
+    return Dt(this, r) && (n(this, f, r), n(this, F, this.options), n(this, S, i(this, a).state)), r;
   }
   getCurrentResult() {
     return i(this, f);
@@ -101,7 +101,7 @@ var y, a, I, f, E, F, g, A, P, T, S, x, w, Q, U, M, L, Z, k, $, B, tt, H, et, W,
       Object.defineProperty(e, r, {
         configurable: !1,
         enumerable: !0,
-        get: () => (i(this, Q).add(r), t[r])
+        get: () => (i(this, U).add(r), t[r])
       });
     }), e;
   }
@@ -118,25 +118,25 @@ var y, a, I, f, E, F, g, A, P, T, S, x, w, Q, U, M, L, Z, k, $, B, tt, H, et, W,
     return r.isFetchingOptimistic = !0, r.fetch().then(() => this.createResult(r, e));
   }
   fetch(t) {
-    return d(this, U, M).call(this, {
+    return d(this, I, M).call(this, {
       ...t,
       cancelRefetch: t.cancelRefetch ?? !0
     }).then(() => (this.updateResult(), i(this, f)));
   }
   createResult(t, e) {
     var ct;
-    const r = i(this, a), p = this.options, o = i(this, f), h = i(this, E), l = i(this, F), v = t !== r ? t.state : i(this, I), { state: u } = t;
+    const r = i(this, a), p = this.options, o = i(this, f), h = i(this, S), l = i(this, F), v = t !== r ? t.state : i(this, x), { state: u } = t;
     let { error: z, errorUpdatedAt: ot, fetchStatus: D, status: O } = u, ht = !1, R;
     if (e._optimisticResults) {
-      const b = this.hasListeners(), J = !b && pt(t, e), vt = b && yt(t, r, e, p);
-      (J || vt) && (D = xt(t.options.networkMode) ? "fetching" : "paused", u.dataUpdatedAt || (O = "pending")), e._optimisticResults === "isRestoring" && (D = "idle");
+      const b = this.hasListeners(), J = !b && pt(t, e), Ct = b && yt(t, r, e, p);
+      (J || Ct) && (D = wt(t.options.networkMode) ? "fetching" : "paused", u.dataUpdatedAt || (O = "pending")), e._optimisticResults === "isRestoring" && (D = "idle");
     }
     if (e.select && typeof u.data < "u")
       if (o && u.data === (h == null ? void 0 : h.data) && e.select === i(this, A))
-        R = i(this, P);
+        R = i(this, T);
       else
         try {
-          n(this, A, e.select), R = e.select(u.data), R = ft(o == null ? void 0 : o.data, R, e), n(this, P, R), n(this, g, null);
+          n(this, A, e.select), R = e.select(u.data), R = ft(o == null ? void 0 : o.data, R, e), n(this, T, R), n(this, g, null);
         } catch (b) {
           n(this, g, b);
         }
@@ -147,8 +147,8 @@ var y, a, I, f, E, F, g, A, P, T, S, x, w, Q, U, M, L, Z, k, $, B, tt, H, et, W,
       if (o != null && o.isPlaceholderData && e.placeholderData === (l == null ? void 0 : l.placeholderData))
         b = o.data;
       else if (b = typeof e.placeholderData == "function" ? e.placeholderData(
-        (ct = i(this, T)) == null ? void 0 : ct.state.data,
-        i(this, T)
+        (ct = i(this, P)) == null ? void 0 : ct.state.data,
+        i(this, P)
       ) : e.placeholderData, e.select && typeof b < "u")
         try {
           b = e.select(b), n(this, g, null);
@@ -161,7 +161,7 @@ var y, a, I, f, E, F, g, A, P, T, S, x, w, Q, U, M, L, Z, k, $, B, tt, H, et, W,
         e
       ), ht = !0);
     }
-    i(this, g) && (z = i(this, g), R = i(this, P), ot = Date.now(), O = "error");
+    i(this, g) && (z = i(this, g), R = i(this, T), ot = Date.now(), O = "error");
     const N = D === "fetching", V = O === "pending", _ = O === "error", ut = V && N;
     return {
       status: O,
@@ -192,64 +192,64 @@ var y, a, I, f, E, F, g, A, P, T, S, x, w, Q, U, M, L, Z, k, $, B, tt, H, et, W,
   }
   updateResult(t) {
     const e = i(this, f), r = this.createResult(i(this, a), this.options);
-    if (n(this, E, i(this, a).state), n(this, F, this.options), i(this, E).data !== void 0 && n(this, T, i(this, a)), Y(r, e))
+    if (n(this, S, i(this, a).state), n(this, F, this.options), i(this, S).data !== void 0 && n(this, P, i(this, a)), Y(r, e))
       return;
     n(this, f, r);
     const p = {}, o = () => {
       if (!e)
         return !0;
       const { notifyOnChangeProps: h } = this.options, l = typeof h == "function" ? h() : h;
-      if (l === "all" || !l && !i(this, Q).size)
+      if (l === "all" || !l && !i(this, U).size)
         return !0;
       const m = new Set(
-        l ?? i(this, Q)
+        l ?? i(this, U)
       );
       return this.options.throwOnError && m.add("error"), Object.keys(i(this, f)).some((v) => {
         const u = v;
         return i(this, f)[u] !== e[u] && m.has(u);
       });
     };
-    (t == null ? void 0 : t.listeners) !== !1 && o() && (p.listeners = !0), d(this, q, gt).call(this, { ...p, ...t });
+    (t == null ? void 0 : t.listeners) !== !1 && o() && (p.listeners = !0), d(this, q, Rt).call(this, { ...p, ...t });
   }
   onQueryUpdate() {
     this.updateResult(), this.hasListeners() && d(this, H, et).call(this);
   }
-}, y = new WeakMap(), a = new WeakMap(), I = new WeakMap(), f = new WeakMap(), E = new WeakMap(), F = new WeakMap(), g = new WeakMap(), A = new WeakMap(), P = new WeakMap(), T = new WeakMap(), S = new WeakMap(), x = new WeakMap(), w = new WeakMap(), Q = new WeakMap(), U = new WeakSet(), M = function(t) {
-  d(this, K, rt).call(this);
+}, y = new WeakMap(), a = new WeakMap(), x = new WeakMap(), f = new WeakMap(), S = new WeakMap(), F = new WeakMap(), g = new WeakMap(), A = new WeakMap(), T = new WeakMap(), P = new WeakMap(), w = new WeakMap(), Q = new WeakMap(), E = new WeakMap(), U = new WeakMap(), I = new WeakSet(), M = function(t) {
+  d(this, W, rt).call(this);
   let e = i(this, a).fetch(
     this.options,
     t
   );
-  return t != null && t.throwOnError || (e = e.catch(wt)), e;
+  return t != null && t.throwOnError || (e = e.catch(Ot)), e;
 }, L = new WeakSet(), Z = function() {
-  if (d(this, W, st).call(this), lt || i(this, f).isStale || !dt(this.options.staleTime))
+  if (d(this, j, st).call(this), lt || i(this, f).isStale || !dt(this.options.staleTime))
     return;
   const e = Et(
     i(this, f).dataUpdatedAt,
     this.options.staleTime
   ) + 1;
-  n(this, S, setTimeout(() => {
+  n(this, w, setTimeout(() => {
     i(this, f).isStale || this.updateResult();
   }, e));
 }, k = new WeakSet(), $ = function() {
   return (typeof this.options.refetchInterval == "function" ? this.options.refetchInterval(i(this, a)) : this.options.refetchInterval) ?? !1;
 }, B = new WeakSet(), tt = function(t) {
-  d(this, j, it).call(this), n(this, w, t), !(lt || this.options.enabled === !1 || !dt(i(this, w)) || i(this, w) === 0) && n(this, x, setInterval(() => {
-    (this.options.refetchIntervalInBackground || St.isFocused()) && d(this, U, M).call(this);
-  }, i(this, w)));
+  d(this, K, it).call(this), n(this, E, t), !(lt || this.options.enabled === !1 || !dt(i(this, E)) || i(this, E) === 0) && n(this, Q, setInterval(() => {
+    (this.options.refetchIntervalInBackground || St.isFocused()) && d(this, I, M).call(this);
+  }, i(this, E)));
 }, H = new WeakSet(), et = function() {
   d(this, L, Z).call(this), d(this, B, tt).call(this, d(this, k, $).call(this));
-}, W = new WeakSet(), st = function() {
-  i(this, S) && (clearTimeout(i(this, S)), n(this, S, void 0));
-}, j = new WeakSet(), it = function() {
-  i(this, x) && (clearInterval(i(this, x)), n(this, x, void 0));
-}, K = new WeakSet(), rt = function() {
+}, j = new WeakSet(), st = function() {
+  i(this, w) && (clearTimeout(i(this, w)), n(this, w, void 0));
+}, K = new WeakSet(), it = function() {
+  i(this, Q) && (clearInterval(i(this, Q)), n(this, Q, void 0));
+}, W = new WeakSet(), rt = function() {
   const t = i(this, y).getQueryCache().build(i(this, y), this.options);
   if (t === i(this, a))
     return;
   const e = i(this, a);
-  n(this, a, t), n(this, I, t.state), this.hasListeners() && (e == null || e.removeObserver(this), t.addObserver(this));
-}, q = new WeakSet(), gt = function(t) {
+  n(this, a, t), n(this, x, t.state), this.hasListeners() && (e == null || e.removeObserver(this), t.addObserver(this));
+}, q = new WeakSet(), Rt = function(t) {
   mt.batch(() => {
     t.listeners && this.listeners.forEach((e) => {
       e(i(this, f));
@@ -259,11 +259,11 @@ var y, a, I, f, E, F, g, A, P, T, S, x, w, Q, U, M, L, Z, k, $, B, tt, H, et, W,
     });
   });
 }, bt);
-function Tt(s, t) {
+function Pt(s, t) {
   return t.enabled !== !1 && !s.state.dataUpdatedAt && !(s.state.status === "error" && t.retryOnMount === !1);
 }
 function pt(s, t) {
-  return Tt(s, t) || s.state.dataUpdatedAt > 0 && nt(s, t, t.refetchOnMount);
+  return Pt(s, t) || s.state.dataUpdatedAt > 0 && nt(s, t, t.refetchOnMount);
 }
 function nt(s, t, e) {
   if (t.enabled !== !1) {
@@ -281,8 +281,8 @@ function at(s, t) {
 function Dt(s, t) {
   return !Y(s.getCurrentResult(), t);
 }
-var Ct = C.createContext(!1), Mt = () => C.useContext(Ct);
-Ct.Provider;
+var gt = C.createContext(!1), Mt = () => C.useContext(gt);
+gt.Provider;
 function At() {
   let s = !1;
   return {
@@ -301,23 +301,23 @@ function Bt(s, t) {
 }
 var Ht = (s, t) => {
   (s.suspense || s.throwOnError) && (t.isReset() || (s.retryOnMount = !1));
-}, Wt = (s) => {
+}, jt = (s) => {
   C.useEffect(() => {
     s.clearReset();
   }, [s]);
-}, jt = ({
+}, Kt = ({
   result: s,
   errorResetBoundary: t,
   throwOnError: e,
   query: r
-}) => s.isError && !t.isReset() && !s.isFetching && Bt(e, [s.error, r]), Kt = (s) => {
+}) => s.isError && !t.isReset() && !s.isFetching && Bt(e, [s.error, r]), Wt = (s) => {
   s.suspense && typeof s.staleTime != "number" && (s.staleTime = 1e3);
 }, qt = (s, t) => (s == null ? void 0 : s.suspense) && t.isPending, zt = (s, t, e) => t.fetchOptimistic(s).catch(() => {
   e.clearReset();
 });
 function Nt(s, t, e) {
   const r = Qt(e), p = Mt(), o = kt(), h = r.defaultQueryOptions(s);
-  h._optimisticResults = p ? "isRestoring" : "optimistic", Kt(h), Ht(h, o), Wt(o);
+  h._optimisticResults = p ? "isRestoring" : "optimistic", Wt(h), Ht(h, o), jt(o);
   const [l] = C.useState(
     () => new t(
       r,
@@ -339,7 +339,7 @@ function Nt(s, t, e) {
     l.setOptions(h, { listeners: !1 });
   }, [h, l]), qt(h, m))
     throw zt(h, l, o);
-  if (jt({
+  if (Kt({
     result: m,
     errorResetBoundary: o,
     throwOnError: h.throwOnError,
@@ -349,20 +349,24 @@ function Nt(s, t, e) {
   return h.notifyOnChangeProps ? m : l.trackResult(m);
 }
 function Vt(s, t) {
-  return Nt(s, Pt, t);
+  return Nt(s, Tt, t);
 }
-const _t = Rt.createContext(null), Jt = () => {
-  const s = Rt.useContext(_t);
-  if (!s)
-    throw new Error("useWindowContext must be used within a WindowContextProvider");
-  return s;
-}, Gt = () => {
-  const s = Ut();
+const _t = () => {
+  const {
+    close: s,
+    setTitle: t
+  } = Ut();
+  return {
+    close: s,
+    setTitle: t
+  };
+}, Jt = () => {
+  const s = It();
   if (!s)
     throw new Error("useHttpClient must be used within a HttpContextProvider");
   return s.client;
 };
-function Xt(s, t) {
+function Gt(s, t) {
   let e;
   typeof s == "string" ? e = {
     url: s,
@@ -372,7 +376,7 @@ function Xt(s, t) {
     url: r,
     params: p,
     ...o
-  } = e, h = Gt();
+  } = e, h = Jt();
   return Vt({
     queryKey: p ? [r, p] : [r],
     queryFn: async ({
@@ -390,12 +394,12 @@ function Xt(s, t) {
     ...o
   });
 }
-const re = () => {
+const ie = () => {
   const {
     close: s
-  } = Jt(), {
+  } = _t(), {
     data: t
-  } = Xt("/api/rest/user", {
+  } = Gt("/api/rest/user", {
     params: {
       page: 1,
       size: 3
@@ -408,9 +412,9 @@ const re = () => {
     fontSize: "0.75rem",
     lineHeight: "1rem"
   }, bottomToolbarProps: {
-    right: [/* @__PURE__ */ X(It, { onClick: s, children: "Закрыть" }, "close")]
+    right: [/* @__PURE__ */ X(xt, { onClick: s, children: "Закрыть" }, "close")]
   }, children: /* @__PURE__ */ X("pre", { children: JSON.stringify(t, void 0, 2) }) });
 };
 export {
-  re as default
+  ie as default
 };

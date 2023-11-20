@@ -1,10 +1,10 @@
-import { j as t, e as n } from "./library-b9b20290.js";
-import { n as h, M as x, t as l, B as g } from "./mui-36ebfa29.js";
+import { j as t, g as n } from "./library-156f684b.js";
+import { n as h, M as g, t as l, B as x } from "./mui-36ebfa29.js";
 import { F as w } from "./icons-a8a50daa.js";
 const m = h(({
   className: o,
   ...r
-}) => /* @__PURE__ */ t(x, { ...r, classes: {
+}) => /* @__PURE__ */ t(g, { ...r, classes: {
   popper: o
 } }))`
   .${l.tooltip} {
@@ -27,7 +27,7 @@ const m = h(({
   iconAfter: s,
   ...i
 }) => {
-  let d = /* @__PURE__ */ n(g, { className: r, css: {
+  let d = /* @__PURE__ */ n(x, { className: r, css: {
     display: "flex",
     justifyContent: "center",
     gap: "0.5rem",
