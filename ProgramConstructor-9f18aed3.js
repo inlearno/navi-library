@@ -1,7 +1,7 @@
-import { j as R, e as ot, Q as he } from "./library-12fbf959.js";
+import { j as R, e as ot, Q as he } from "./library-b9b20290.js";
 import { a as pe } from "./mui-36ebfa29.js";
 import { F as pt } from "./icons-a8a50daa.js";
-import { C as zt, P as fe } from "./Panel-a6c773e1.js";
+import { C as zt, P as fe } from "./Panel-faf0fa7d.js";
 import { r as G, R as Ot } from "./react-72acea58.js";
 var Dt = {};
 (function(t) {
@@ -1152,7 +1152,7 @@ const ge = ({
       }), a || E();
     }, 500);
   }, [y, a, v, E]), /* @__PURE__ */ R(fe, { bottomToolbarProps: {
-    right: [/* @__PURE__ */ R(zt, { onClick: () => i(), icon: St.faArrowLeft, disabled: v === 0, children: "Назад" }), /* @__PURE__ */ R(zt, { tooltip: a ? "Сохранить программу" : "Следующий шаг", onClick: () => b(!0), disabled: y, variant: "contained", color: "success", iconAfter: a ? void 0 : Dt.faArrowRight, children: a ? "Сохранить" : (t == null ? void 0 : t.status) == B.DONE ? "Обновить" : "Далее" })]
+    right: [/* @__PURE__ */ R(zt, { onClick: () => i(), icon: St.faArrowLeft, disabled: v === 0, children: "Назад" }, "previous"), /* @__PURE__ */ R(zt, { tooltip: a ? "Сохранить программу" : "Следующий шаг", onClick: () => b(!0), disabled: y, variant: "contained", color: "success", iconAfter: a ? void 0 : Dt.faArrowRight, children: a ? "Сохранить" : (t == null ? void 0 : t.status) == B.DONE ? "Обновить" : "Далее" }, "next")]
   }, children: /* @__PURE__ */ ot(ge, { initialPrimarySize: "30%", minPrimarySize: "200px", css: {
     display: "flex"
   }, children: [
