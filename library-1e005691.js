@@ -3572,7 +3572,7 @@ var kn = {};
 const oo = [{
   id: "users",
   path: "/users",
-  component: () => import("./UsersList-12204f10.js"),
+  component: () => import("./UsersList-1818ecec.js"),
   windowOptions: {
     title: "Пользователи"
   },
@@ -3603,7 +3603,7 @@ var jn = {};
 const ao = [{
   id: "program-constructor",
   path: "/program-constructor",
-  component: () => import("./ProgramConstructor-39365617.js"),
+  component: () => import("./ProgramConstructor-b9c60ee9.js"),
   windowOptions: {
     title: "Конструктор программы",
     width: 600,
@@ -3734,17 +3734,10 @@ const mo = ({
 }) => en.createPortal(/* @__PURE__ */ V(vo, { width: 0, height: 0, title: "", position: {
   x: 0,
   y: 0
-}, maximized: !0, folded: !0, focused: !0, focus: () => {
-}, blur: () => {
-}, maximize: () => {
-}, minimize: () => {
-}, fold: () => {
-}, close: () => {
-}, updatePosition: () => {
-}, setTitle: (n) => {
-}, setWidth: () => {
-}, setHeight: () => {
-}, children: /* @__PURE__ */ V(yo, { id: t.route.id }) }), e), go = ({
+}, maximized: !0, folded: !0, focused: !0, focus: () => r.focus(), blur: () => r.blur(), maximize: () => r.maximize(), minimize: () => r.restore(), fold: () => r.minimize(), close: () => r.close(), updatePosition: ({
+  x: n,
+  y: s
+}) => r.showAt(n, s), setTitle: (n) => r.setTitle(n), setWidth: (n) => r.setWidth(n), setHeight: (n) => r.setHeight(n), children: /* @__PURE__ */ V(yo, { id: t.route.id }) }), e), go = ({
   eventEmitter: e
 }) => {
   const [t, r] = H.useState([]);
@@ -4490,7 +4483,7 @@ class _o {
     if (r)
       return {
         windowOptions: r.route.windowOptions,
-        renderComponent: (n) => p(this, He).emit("add", n, r),
+        renderComponent: (n, s) => p(this, He).emit("add", n, r, s),
         destroyComponent: (n) => p(this, He).emit("destroy", n)
       };
   }
@@ -4520,7 +4513,8 @@ export {
   Lo as d,
   Po as e,
   nr as f,
-  ur as g,
+  mo as g,
+  ur as h,
   kt as i,
   V as j,
   ve as n,
