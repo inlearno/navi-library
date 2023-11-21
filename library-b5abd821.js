@@ -3572,7 +3572,7 @@ var kn = {};
 const oo = [{
   id: "users",
   path: "/users",
-  component: () => import("./UsersList-1818ecec.js"),
+  component: () => import("./UsersList-818367b2.js"),
   windowOptions: {
     title: "Пользователи"
   },
@@ -3603,7 +3603,7 @@ var jn = {};
 const ao = [{
   id: "program-constructor",
   path: "/program-constructor",
-  component: () => import("./ProgramConstructor-b9c60ee9.js"),
+  component: () => import("./ProgramConstructor-2f70480f.js"),
   windowOptions: {
     title: "Конструктор программы",
     width: 600,
