@@ -3595,7 +3595,7 @@ var jn = {};
 const ao = [{
   id: "users",
   path: "/users",
-  component: () => import("./UsersList-4b705bf9.js"),
+  component: () => import("./UsersList-bf8fbce9.js"),
   windowOptions: {
     title: "Пользователи"
   },
@@ -3626,7 +3626,7 @@ var In = {};
 const co = [{
   id: "program-constructor",
   path: "/program-constructor",
-  component: () => import("./ProgramConstructor-cba77b22.js"),
+  component: () => import("./ProgramConstructor-8270285e.js"),
   windowOptions: {
     title: "Конструктор программы",
     width: 600,
