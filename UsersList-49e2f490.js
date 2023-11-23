@@ -8,8 +8,8 @@ var h = (e, t, n) => (wt(e, t, "read from private field"), n ? n.call(e) : t.get
   t instanceof WeakSet ? t.add(e) : t.set(e, n);
 }, M = (e, t, n, i) => (wt(e, t, "write to private field"), i ? i.call(e, n) : t.set(e, n), n);
 var L = (e, t, n) => (wt(e, t, "access private method"), n);
-import { S as Yn, s as St, n as Jn, i as Jt, a as en, t as es, f as ts, c as ns, r as tn, b as fn, u as ss, j as y, d as W, F as is, e as rs, g as os, k as as } from "./library-0703c684.js";
-import { P as cs } from "./Panel-849f1aaf.js";
+import { S as Yn, s as St, n as Jn, i as Jt, a as en, t as es, f as ts, c as ns, r as tn, b as fn, u as ss, j as y, d as W, F as is, e as rs, g as os, k as as } from "./library-9f9a6741.js";
+import { P as cs } from "./Panel-07b0dafc.js";
 import { j as D, n as ls, a as Et, I as Ae } from "./mui-a200cd22.js";
 import { f as jt, u as us, g as ds } from "./table-46c094fe.js";
 import { r as c, R as hn, c as xe } from "./react-72acea58.js";
@@ -2016,7 +2016,7 @@ const vi = ({
         padding: "0.25rem"
       }, value: n.getState().pagination.pageSize, onChange: (a) => {
         n.setPageSize(Number(a.target.value));
-      }, children: [10, 20, 30, 40, 50].map((a) => /* @__PURE__ */ y("option", { value: a, children: a }, a)) })
+      }, children: [25, 50, 100].map((a) => /* @__PURE__ */ y("option", { value: a, children: a }, a)) })
     ] })
   ] });
 }, bi = hn.memo(vi), wi = ({
