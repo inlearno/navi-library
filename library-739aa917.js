@@ -15,7 +15,7 @@ var bt = (e, t, r, n) => ({
     return p(e, t, n);
   }
 }), G = (e, t, r) => ($t(e, t, "access private method"), r);
-import { h as Xr, j as ft, E as Yr, c as Zr, a as en, G as Kn, b as Wn, T as Jn } from "./mui-36ebfa29.js";
+import { h as Xr, j as ft, E as Yr, c as Zr, a as en, G as Kn, b as Wn, T as Jn } from "./mui-a200cd22.js";
 import { c as tn, r as I, R as H, g as Gn } from "./react-72acea58.js";
 import { F as Vn } from "./icons-a8a50daa.js";
 var Xn = ft.Fragment;
@@ -3599,7 +3599,7 @@ var ur = {};
 const ao = [{
   id: "users",
   path: "/users",
-  component: () => import("./UsersList-a8edb7dd.js"),
+  component: () => import("./UsersList-7452bf9c.js"),
   windowOptions: {
     icon: ur.faUsers,
     title: "Пользователи",
@@ -3632,7 +3632,7 @@ var In = {};
 const co = [{
   id: "program-constructor",
   path: "/program-constructor",
-  component: () => import("./ProgramConstructor-1a58e1ed.js"),
+  component: () => import("./ProgramConstructor-e0781c7f.js"),
   windowOptions: {
     title: "Конструктор программы",
     width: 600,

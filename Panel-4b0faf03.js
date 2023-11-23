@@ -1,5 +1,5 @@
-import { d as o, j as l } from "./library-3afbff30.js";
-import { n as h, M as x, t as n, B as g } from "./mui-36ebfa29.js";
+import { d as o, j as l } from "./library-739aa917.js";
+import { n as h, M as x, t as n, B as g } from "./mui-a200cd22.js";
 import { F as w } from "./icons-a8a50daa.js";
 const m = h(({
   className: t,
@@ -19,12 +19,12 @@ const m = h(({
   color: "rgb(55 65 81 / var(--tw-text-opacity))"
 }}
   }
-`, y = ({
+`, b = ({
   children: t,
   className: r,
-  tooltip: e,
-  icon: a,
-  iconAfter: s,
+  tooltip: a,
+  icon: s,
+  iconAfter: e,
   ...i
 }) => {
   let d = /* @__PURE__ */ l(g, { className: r, css: {
@@ -33,17 +33,17 @@ const m = h(({
     gap: "0.5rem",
     textTransform: "none"
   }, ...i, children: [
-    a && /* @__PURE__ */ o(w, { icon: a }),
+    s && /* @__PURE__ */ o(w, { icon: s }),
     t,
-    s && /* @__PURE__ */ o(w, { icon: s })
+    e && /* @__PURE__ */ o(w, { icon: e })
   ] });
-  return e && (d = /* @__PURE__ */ o(m, { title: e, arrow: !0, children: d })), d;
+  return a && (d = /* @__PURE__ */ o(m, { title: a, arrow: !0, children: d })), d;
 }, c = ({
   left: t,
   center: r,
-  right: e,
-  top: a,
-  ...s
+  right: a,
+  top: s,
+  ...e
 }) => /* @__PURE__ */ l("div", { role: "toolbar", css: [{
   zIndex: "10",
   display: "flex",
@@ -51,7 +51,7 @@ const m = h(({
   alignItems: "center",
   paddingLeft: "0.5rem",
   paddingRight: "0.5rem"
-}, a ? {
+}, s ? {
   borderBottomWidth: "1px",
   paddingTop: "0.25rem",
   paddingBottom: "0.25rem",
@@ -67,31 +67,27 @@ const m = h(({
   "--tw-shadow-colored": "0 -10px 30px -15px var(--tw-shadow-color)",
   boxShadow: "var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)",
   "--tw-shadow-color": "rgb(0 0 0 / 0.1)"
-}], ...s, children: [
+}], ...e, children: [
   /* @__PURE__ */ o("div", { css: {
     display: "flex",
     gap: "0.5rem"
   }, children: t }),
   /* @__PURE__ */ o("div", { css: {
-    display: "flex",
-    flex: "1 1 0%",
-    alignItems: "center",
-    justifyContent: "center",
-    gap: "0.5rem"
+    flex: "1 1 0%"
   }, children: r }),
   /* @__PURE__ */ o("div", { css: {
     display: "flex",
     gap: "0.5rem"
-  }, children: e })
-] }), b = ({
+  }, children: a })
+] }), y = ({
   bottomToolbarRenderer: t,
   children: r,
-  topToolbarProps: e,
-  topToolbarRenderer: a,
-  bottomToolbarProps: s,
+  topToolbarProps: a,
+  topToolbarRenderer: s,
+  bottomToolbarProps: e,
   ...i
 }) => {
-  const d = a ? a() : e ? /* @__PURE__ */ o(c, { ...e, top: !0 }) : null, p = t ? t() : s ? /* @__PURE__ */ o(c, { ...s }) : null;
+  const d = s ? s() : a ? /* @__PURE__ */ o(c, { ...a, top: !0 }) : null, p = t ? t() : e ? /* @__PURE__ */ o(c, { ...e }) : null;
   return /* @__PURE__ */ l("div", { css: [{
     display: "flex",
     height: "100%",
@@ -107,6 +103,6 @@ const m = h(({
   ] });
 };
 export {
-  y as C,
-  b as P
+  b as C,
+  y as P
 };
