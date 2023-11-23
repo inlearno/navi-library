@@ -3582,7 +3582,7 @@ var ur = {};
 const oo = [{
   id: "users",
   path: "/users",
-  component: () => import("./UsersList-49e2f490.js"),
+  component: () => import("./UsersList-c72b585e.js"),
   windowOptions: {
     icon: ur.faUsers,
     title: "Пользователи",
@@ -3615,7 +3615,7 @@ var In = {};
 const ao = [{
   id: "program-constructor",
   path: "/program-constructor",
-  component: () => import("./ProgramConstructor-e370d24b.js"),
+  component: () => import("./ProgramConstructor-4b411c08.js"),
   windowOptions: {
     title: "Конструктор программы",
     width: 600,

@@ -8,13 +8,13 @@ var h = (e, t, n) => (wt(e, t, "read from private field"), n ? n.call(e) : t.get
   t instanceof WeakSet ? t.add(e) : t.set(e, n);
 }, M = (e, t, n, i) => (wt(e, t, "write to private field"), i ? i.call(e, n) : t.set(e, n), n);
 var L = (e, t, n) => (wt(e, t, "access private method"), n);
-import { S as Yn, s as St, n as Jn, i as Jt, a as en, t as es, f as ts, c as ns, r as tn, b as fn, u as ss, j as y, d as W, F as is, e as rs, g as os, k as as } from "./library-9f9a6741.js";
-import { P as cs } from "./Panel-07b0dafc.js";
+import { S as Yn, s as St, n as Jn, i as Jt, a as en, t as es, f as ts, c as ns, r as tn, b as fn, u as ss, j as y, d as W, F as is, e as rs, g as os, k as as } from "./library-834fe54c.js";
+import { P as cs } from "./Panel-4fc1e0b9.js";
 import { j as D, n as ls, a as Et, I as Ae } from "./mui-a200cd22.js";
 import { f as jt, u as us, g as ds } from "./table-46c094fe.js";
 import { r as c, R as hn, c as xe } from "./react-72acea58.js";
 import { F as Y } from "./icons-a8a50daa.js";
-var $, P, Re, _, de, Me, se, _e, Pe, Ne, fe, he, oe, ge, me, ze, Fe, Rt, Ue, Mt, Ve, Pt, Be, Nt, Qe, Tt, Ke, It, $e, Ot, lt, gn, dn, fs = (dn = class extends Yn {
+var K, P, Re, _, de, Me, se, _e, Pe, Ne, fe, he, oe, ge, me, ze, Fe, Rt, Ue, Mt, Ve, Pt, Be, Nt, Qe, Tt, $e, It, Ke, Ot, lt, gn, dn, fs = (dn = class extends Yn {
   constructor(t, n) {
     super();
     T(this, me);
@@ -23,10 +23,10 @@ var $, P, Re, _, de, Me, se, _e, Pe, Ne, fe, he, oe, ge, me, ze, Fe, Rt, Ue, Mt,
     T(this, Ve);
     T(this, Be);
     T(this, Qe);
-    T(this, Ke);
     T(this, $e);
+    T(this, Ke);
     T(this, lt);
-    T(this, $, void 0);
+    T(this, K, void 0);
     T(this, P, void 0);
     T(this, Re, void 0);
     T(this, _, void 0);
@@ -42,7 +42,7 @@ var $, P, Re, _, de, Me, se, _e, Pe, Ne, fe, he, oe, ge, me, ze, Fe, Rt, Ue, Mt,
     T(this, he, void 0);
     T(this, oe, void 0);
     T(this, ge, void 0);
-    M(this, P, void 0), M(this, Re, void 0), M(this, _, void 0), M(this, ge, /* @__PURE__ */ new Set()), M(this, $, t), this.options = n, M(this, se, null), this.bindMethods(), this.setOptions(n);
+    M(this, P, void 0), M(this, Re, void 0), M(this, _, void 0), M(this, ge, /* @__PURE__ */ new Set()), M(this, K, t), this.options = n, M(this, se, null), this.bindMethods(), this.setOptions(n);
   }
   bindMethods() {
     this.refetch = this.refetch.bind(this);
@@ -68,17 +68,17 @@ var $, P, Re, _, de, Me, se, _e, Pe, Ne, fe, he, oe, ge, me, ze, Fe, Rt, Ue, Mt,
     );
   }
   destroy() {
-    this.listeners = /* @__PURE__ */ new Set(), L(this, Qe, Tt).call(this), L(this, Ke, It).call(this), h(this, P).removeObserver(this);
+    this.listeners = /* @__PURE__ */ new Set(), L(this, Qe, Tt).call(this), L(this, $e, It).call(this), h(this, P).removeObserver(this);
   }
   setOptions(t, n) {
     const i = this.options, o = h(this, P);
-    if (this.options = h(this, $).defaultQueryOptions(t), St(i, this.options) || h(this, $).getQueryCache().notify({
+    if (this.options = h(this, K).defaultQueryOptions(t), St(i, this.options) || h(this, K).getQueryCache().notify({
       type: "observerOptionsUpdated",
       query: h(this, P),
       observer: this
     }), typeof this.options.enabled < "u" && typeof this.options.enabled != "boolean")
       throw new Error("Expected enabled to be a boolean");
-    this.options.queryKey || (this.options.queryKey = i.queryKey), L(this, $e, Ot).call(this);
+    this.options.queryKey || (this.options.queryKey = i.queryKey), L(this, Ke, Ot).call(this);
     const s = this.hasListeners();
     s && sn(
       h(this, P),
@@ -90,7 +90,7 @@ var $, P, Re, _, de, Me, se, _e, Pe, Ne, fe, he, oe, ge, me, ze, Fe, Rt, Ue, Mt,
     s && (h(this, P) !== o || this.options.enabled !== i.enabled || r !== h(this, oe)) && L(this, Ve, Pt).call(this, r);
   }
   getOptimisticResult(t) {
-    const n = h(this, $).getQueryCache().build(h(this, $), t), i = this.createResult(n, t);
+    const n = h(this, K).getQueryCache().build(h(this, K), t), i = this.createResult(n, t);
     return gs(this, i) && (M(this, _, i), M(this, Me, this.options), M(this, de, h(this, P).state)), i;
   }
   getCurrentResult() {
@@ -115,7 +115,7 @@ var $, P, Re, _, de, Me, se, _e, Pe, Ne, fe, he, oe, ge, me, ze, Fe, Rt, Ue, Mt,
     });
   }
   fetchOptimistic(t) {
-    const n = h(this, $).defaultQueryOptions(t), i = h(this, $).getQueryCache().build(h(this, $), n);
+    const n = h(this, K).defaultQueryOptions(t), i = h(this, K).getQueryCache().build(h(this, K), n);
     return i.isFetchingOptimistic = !0, i.fetch().then(() => this.createResult(i, n));
   }
   fetch(t) {
@@ -215,8 +215,8 @@ var $, P, Re, _, de, Me, se, _e, Pe, Ne, fe, he, oe, ge, me, ze, Fe, Rt, Ue, Mt,
   onQueryUpdate() {
     this.updateResult(), this.hasListeners() && L(this, Be, Nt).call(this);
   }
-}, $ = new WeakMap(), P = new WeakMap(), Re = new WeakMap(), _ = new WeakMap(), de = new WeakMap(), Me = new WeakMap(), se = new WeakMap(), _e = new WeakMap(), Pe = new WeakMap(), Ne = new WeakMap(), fe = new WeakMap(), he = new WeakMap(), oe = new WeakMap(), ge = new WeakMap(), me = new WeakSet(), ze = function(t) {
-  L(this, $e, Ot).call(this);
+}, K = new WeakMap(), P = new WeakMap(), Re = new WeakMap(), _ = new WeakMap(), de = new WeakMap(), Me = new WeakMap(), se = new WeakMap(), _e = new WeakMap(), Pe = new WeakMap(), Ne = new WeakMap(), fe = new WeakMap(), he = new WeakMap(), oe = new WeakMap(), ge = new WeakMap(), me = new WeakSet(), ze = function(t) {
+  L(this, Ke, Ot).call(this);
   let n = h(this, P).fetch(
     this.options,
     t
@@ -235,17 +235,17 @@ var $, P, Re, _, de, Me, se, _e, Pe, Ne, fe, he, oe, ge, me, ze, Fe, Rt, Ue, Mt,
 }, Ue = new WeakSet(), Mt = function() {
   return (typeof this.options.refetchInterval == "function" ? this.options.refetchInterval(h(this, P)) : this.options.refetchInterval) ?? !1;
 }, Ve = new WeakSet(), Pt = function(t) {
-  L(this, Ke, It).call(this), M(this, oe, t), !(Jt || this.options.enabled === !1 || !en(h(this, oe)) || h(this, oe) === 0) && M(this, he, setInterval(() => {
+  L(this, $e, It).call(this), M(this, oe, t), !(Jt || this.options.enabled === !1 || !en(h(this, oe)) || h(this, oe) === 0) && M(this, he, setInterval(() => {
     (this.options.refetchIntervalInBackground || ts.isFocused()) && L(this, me, ze).call(this);
   }, h(this, oe)));
 }, Be = new WeakSet(), Nt = function() {
   L(this, Fe, Rt).call(this), L(this, Ve, Pt).call(this, L(this, Ue, Mt).call(this));
 }, Qe = new WeakSet(), Tt = function() {
   h(this, fe) && (clearTimeout(h(this, fe)), M(this, fe, void 0));
-}, Ke = new WeakSet(), It = function() {
+}, $e = new WeakSet(), It = function() {
   h(this, he) && (clearInterval(h(this, he)), M(this, he, void 0));
-}, $e = new WeakSet(), Ot = function() {
-  const t = h(this, $).getQueryCache().build(h(this, $), this.options);
+}, Ke = new WeakSet(), Ot = function() {
+  const t = h(this, K).getQueryCache().build(h(this, K), this.options);
   if (t === h(this, P))
     return;
   const n = h(this, P);
@@ -254,7 +254,7 @@ var $, P, Re, _, de, Me, se, _e, Pe, Ne, fe, he, oe, ge, me, ze, Fe, Rt, Ue, Mt,
   fn.batch(() => {
     t.listeners && this.listeners.forEach((n) => {
       n(h(this, _));
-    }), h(this, $).getQueryCache().notify({
+    }), h(this, K).getQueryCache().notify({
       query: h(this, P),
       type: "observerResultsUpdated"
     });
@@ -747,7 +747,7 @@ const ve = ({
   let s = n.top - i.top - t + n.height / 2;
   const r = e.current.offsetHeight * 1.25;
   return s = Math.max(r, s), s = Math.min(s, o.height - r), s;
-}, Ks = ({
+}, $s = ({
   anchorRect: e,
   containerRect: t,
   menuRect: n,
@@ -778,7 +778,7 @@ const ve = ({
     y: d,
     computedDirection: l
   };
-}, $s = ({
+}, Ks = ({
   arrowRef: e,
   menuX: t,
   anchorRect: n,
@@ -808,7 +808,7 @@ const ve = ({
   v !== "initial" && (d = f(d), v === "anchor" && (d = Math.min(d, e.right - t.left), d = Math.max(d, e.left - t.left - n.width)));
   let g, w, p;
   return l === "top" ? (g = o, v !== "initial" && (w = r(g), w < 0 && (p = a(s), (p <= 0 || -w > p) && (g = s, l = "bottom")))) : (g = s, v !== "initial" && (p = a(g), p > 0 && (w = r(o), (w >= 0 || -w < p) && (g = o, l = "top")))), v === "auto" && (g = b(g)), {
-    arrowX: m ? $s({
+    arrowX: m ? Ks({
       menuX: d,
       arrowRef: u,
       anchorRect: e,
@@ -859,7 +859,7 @@ const ve = ({
   switch (n) {
     case "left":
     case "right":
-      return Ks(N);
+      return $s(N);
     case "top":
     case "bottom":
     default:
@@ -917,15 +917,15 @@ const dt = (e, t) => c.useMemo(() => e ? t ? (n) => {
   } = c.useContext(ut), {
     submenuCtx: Je,
     reposSubmenu: z = w
-  } = c.useContext(Lt), K = c.useRef(null), et = c.useRef(), Bt = c.useRef(), Qt = c.useRef(!1), tt = c.useRef({
+  } = c.useContext(Lt), $ = c.useRef(null), et = c.useRef(), Bt = c.useRef(), Qt = c.useRef(!1), tt = c.useRef({
     width: 0,
     height: 0
-  }), Kt = c.useRef(() => {
+  }), $t = c.useRef(() => {
   }), {
     hoverItem: gt,
     dispatch: q,
     updateItems: nt
-  } = Vs(K, et), G = _t(C), $t = je(qe, "open"), Wt = je(qe, "close"), ee = ft.current, Un = (E) => {
+  } = Vs($, et), G = _t(C), Kt = je(qe, "open"), Wt = je(qe, "close"), ee = ft.current, Un = (E) => {
     switch (E.key) {
       case F.HOME:
         q(k.FIRST);
@@ -967,7 +967,7 @@ const dt = (e, t) => c.useMemo(() => e ? t ? (n) => {
     if (!ne)
       return;
     ee.menu || (ee.menu = (ke ? ke.current : yt(Ze.current)) || window);
-    const Z = Bs(a, K, ee.menu, Ge);
+    const Z = Bs(a, $, ee.menu, Ge);
     let {
       arrowX: H,
       arrowY: be,
@@ -1019,9 +1019,9 @@ const dt = (e, t) => c.useMemo(() => e ? t ? (n) => {
     };
   }, [i, S, Ge, v, R, U, l, d, s, r, a, ke, Ze, ee]);
   rt(() => {
-    G && (ue(), Qt.current && Oe()), Qt.current = G, Kt.current = ue;
+    G && (ue(), Qt.current && Oe()), Qt.current = G, $t.current = ue;
   }, [G, ue, z]), rt(() => {
-    A && !g && (K.current.scrollTop = 0);
+    A && !g && ($.current.scrollTop = 0);
   }, [A, g]), rt(() => nt, [nt]), c.useEffect(() => {
     let {
       menu: E
@@ -1070,9 +1070,9 @@ const dt = (e, t) => c.useMemo(() => e ? t ? (n) => {
         be = re.width, we = re.height;
       }
       be === 0 || we === 0 || Se(be, tt.current.width, 1) && Se(we, tt.current.height, 1) || xe.flushSync(() => {
-        Kt.current(), Oe();
+        $t.current(), Oe();
       });
-    }), V = K.current;
+    }), V = $.current;
     return E.observe(V, {
       box: "border-box"
     }), () => E.unobserve(V);
@@ -1091,13 +1091,13 @@ const dt = (e, t) => c.useMemo(() => e ? t ? (n) => {
       ne();
     else if (p) {
       const Z = setTimeout(() => {
-        const H = K.current;
+        const H = $.current;
         H && !H.contains(document.activeElement) && (et.current.focus(), ne());
-      }, $t ? 170 : 100);
+      }, Kt ? 170 : 100);
       return () => clearTimeout(Z);
     }
-  }, [G, $t, Wt, p, x, q]);
-  const Kn = c.useMemo(() => ({
+  }, [G, Kt, Wt, p, x, q]);
+  const $n = c.useMemo(() => ({
     isParentOpen: G,
     submenuCtx: J,
     dispatch: q,
@@ -1105,12 +1105,12 @@ const dt = (e, t) => c.useMemo(() => e ? t ? (n) => {
   }), [G, J, q, nt]);
   let mt, pt;
   A && (g ? pt = A.overflowAmt : mt = A.height);
-  const $n = c.useMemo(() => ({
+  const Kn = c.useMemo(() => ({
     reposSubmenu: Ie,
     submenuCtx: J,
     overflow: d,
     overflowAmt: pt,
-    parentMenuRef: K,
+    parentMenuRef: $,
     parentDir: Q
   }), [Ie, J, d, pt, Q]), Wn = mt >= 0 ? {
     maxHeight: mt,
@@ -1136,7 +1136,7 @@ const dt = (e, t) => c.useMemo(() => e ? t ? (n) => {
       onKeyDown: Un,
       onAnimationEnd: Vn
     }, I),
-    ref: dt(u, K),
+    ref: dt(u, $),
     className: ve({
       block: pe,
       modifiers: qt,
@@ -1176,9 +1176,9 @@ const dt = (e, t) => c.useMemo(() => e ? t ? (n) => {
       },
       ref: Bt
     }), /* @__PURE__ */ D.jsx(Lt.Provider, {
-      value: $n,
+      value: Kn,
       children: /* @__PURE__ */ D.jsx(Ut.Provider, {
-        value: Kn,
+        value: $n,
         children: /* @__PURE__ */ D.jsx(Rn.Provider, {
           value: gt,
           children: X(ie, qt)
@@ -1495,16 +1495,16 @@ const dt = (e, t) => c.useMemo(() => e ? t ? (n) => {
           r !== "none" && J(Ee.FIRST);
       }
   }, Ze = (z) => {
-    let K = !1;
+    let $ = !1;
     switch (z.key) {
       case F.LEFT:
-        A && (u.current.focus(), j(!1), K = !0);
+        A && (u.current.focus(), j(!1), $ = !0);
         break;
       case F.RIGHT:
-        A || (K = !0);
+        A || ($ = !0);
         break;
     }
-    K && (z.preventDefault(), z.stopPropagation());
+    $ && (z.preventDefault(), z.stopPropagation());
   };
   Ln(te, u, ie), kn(a, A), c.useEffect(() => R.toggle(A), [R, A]), c.useEffect(() => () => clearTimeout(Q.v), [Q]), c.useEffect(() => {
     f && x ? u.current.focus() : j(!1);
@@ -1541,8 +1541,8 @@ const dt = (e, t) => c.useMemo(() => e ? t ? (n) => {
       direction: o || (N === "right" || N === "left" ? N : "right"),
       parentScrollingRef: B && C,
       isDisabled: te
-    }), K = g.current;
-    return B && K ? /* @__PURE__ */ xe.createPortal(z, K) : z;
+    }), $ = g.current;
+    return B && $ ? /* @__PURE__ */ xe.createPortal(z, $) : z;
   };
   return /* @__PURE__ */ D.jsxs("li", {
     className: ve({
@@ -1711,6 +1711,12 @@ const un = /* @__PURE__ */ An(/* @__PURE__ */ zn(li), ["hover", "disabled", "anc
     &${un.typeCheckbox} {
       ${{
   paddingLeft: "2rem"
+}}
+    }
+    .svg-inline--fa {
+      ${{
+  "--tw-text-opacity": "1",
+  color: "rgb(75 85 99 / var(--tw-text-opacity))"
 }}
     }
   }
