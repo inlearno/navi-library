@@ -1,15 +1,17 @@
-import { d as w, j as o } from "./library-834fe54c.js";
-const e = ({
+import { d as i, j as o } from "./library-cb95a8d0.js";
+const s = ({
   left: d,
-  center: s,
+  center: e,
   right: r,
   top: a,
   ...t
-}) => /* @__PURE__ */ w("div", { role: "toolbar", css: [{
+}) => /* @__PURE__ */ i("div", { role: "toolbar", css: [{
   zIndex: "10",
   display: "flex",
   height: "3rem",
+  width: "100%",
   alignItems: "center",
+  overflow: "hidden",
   paddingLeft: "0.5rem",
   paddingRight: "0.5rem"
 }, a ? {
@@ -34,35 +36,36 @@ const e = ({
     gap: "0.5rem"
   }, children: d }),
   /* @__PURE__ */ o("div", { css: {
+    maxWidth: "100%",
     flex: "1 1 0%"
-  }, children: s }),
+  }, children: e }),
   /* @__PURE__ */ o("div", { css: {
     display: "flex",
     gap: "0.5rem"
   }, children: r })
-] }), n = ({
+] }), c = ({
   bottomToolbarRenderer: d,
-  children: s,
+  children: e,
   topToolbarProps: r,
   topToolbarRenderer: a,
   bottomToolbarProps: t,
-  ...i
+  ...w
 }) => {
-  const l = a ? a() : r ? /* @__PURE__ */ o(e, { ...r, top: !0 }) : null, h = d ? d() : t ? /* @__PURE__ */ o(e, { ...t }) : null;
-  return /* @__PURE__ */ w("div", { css: [{
+  const l = a ? a() : r ? /* @__PURE__ */ o(s, { ...r, top: !0 }) : null, h = d ? d() : t ? /* @__PURE__ */ o(s, { ...t }) : null;
+  return /* @__PURE__ */ i("div", { css: [{
     display: "flex",
     height: "100%",
     userSelect: "text",
     flexDirection: "column"
-  }], ...i, children: [
+  }], ...w, children: [
     l,
     /* @__PURE__ */ o("div", { css: [{
       flex: "1 1 0%",
       overflow: "auto"
-    }], children: s }),
+    }], children: e }),
     h
   ] });
 };
 export {
-  n as P
+  c as P
 };
