@@ -1,8 +1,8 @@
-import { j as D, d as J, Q as pe } from "./library-c7653894.js";
+import { j as D, d as J, Q as pe } from "./library-a2194131.js";
 import { a as fe, n as Ae, M as ve, t as zt, B as me } from "./mui-a200cd22.js";
 import { F as G } from "./icons-a8a50daa.js";
 import { r as $, R as Ot } from "./react-72acea58.js";
-import { P as ge } from "./Panel-fbbeb872.js";
+import { P as ge } from "./Panel-ae1fcac0.js";
 var xt = {};
 (function(t) {
   Object.defineProperty(t, "__esModule", { value: !0 });
@@ -192,79 +192,7 @@ const be = ({
     ] }) }),
     /* @__PURE__ */ D(be, { status: f.status })
   ] }) }, f.id);
-}) }) }), V = [{
-  id: "general",
-  title: "Основное",
-  status: B.DONE
-}, {
-  id: "description",
-  title: "Описание",
-  status: B.DONE
-}, {
-  id: "parameters",
-  title: "Параметры",
-  status: B.DONE
-}, {
-  id: "plan-results",
-  title: "Планируемые результаты (знать, уметь, способности, качества)",
-  status: B.DONE
-}, {
-  id: "goals-tasks",
-  title: "Цели и задачи",
-  status: B.ACTIVE
-}, {
-  id: "study-plan",
-  title: "Учебный план",
-  status: B.DISABLED
-}, {
-  id: "evaluation",
-  title: "Формы аттестации и оценочные материалы",
-  status: B.DISABLED
-}, {
-  id: "criteria",
-  title: "Критерии оценки учебных результатов",
-  status: B.DISABLED
-}, {
-  id: "assessment",
-  title: "Способ фиксации учебных результатов",
-  status: B.DISABLED
-}, {
-  id: "materials",
-  title: "Методические материалы",
-  status: B.DISABLED
-}, {
-  title: "Особенности организации образовательной деятельности",
-  id: "organizational-features",
-  status: B.DISABLED
-}, {
-  title: "Воспитательная деятельность",
-  id: "teaching-experience",
-  status: B.DISABLED
-}, {
-  title: "Развивающая деятельность",
-  id: "academic-experience",
-  status: B.DISABLED
-}, {
-  title: "Кадровое обеспечение",
-  id: "learning-style",
-  status: B.DISABLED
-}, {
-  title: "Материально-техническое обеспечение",
-  id: "technology-support",
-  status: B.DISABLED
-}, {
-  title: "Информационное обеспечение",
-  id: "information-support",
-  status: B.DISABLED
-}, {
-  title: "Список литературы",
-  id: "list-of-references",
-  status: B.DISABLED
-}, {
-  title: "Календарный учебный график",
-  id: "calendar-study-plan",
-  status: B.DISABLED
-}], we = Ae(({
+}) }) }), we = Ae(({
   className: t,
   ...h
 }) => /* @__PURE__ */ D(ve, { ...h, classes: {
@@ -1171,7 +1099,79 @@ const Ce = ({
 }, g && {
   "--tw-bg-opacity": "1",
   backgroundColor: "rgb(114 117 191 / var(--tw-bg-opacity))"
-}] }), ...h, children: t }), xe = () => {
+}] }), ...h, children: t }), V = [{
+  id: "general",
+  title: "Основное",
+  status: B.DONE
+}, {
+  id: "description",
+  title: "Описание",
+  status: B.DONE
+}, {
+  id: "parameters",
+  title: "Параметры",
+  status: B.DONE
+}, {
+  id: "plan-results",
+  title: "Планируемые результаты (знать, уметь, способности, качества)",
+  status: B.DONE
+}, {
+  id: "goals-tasks",
+  title: "Цели и задачи",
+  status: B.ACTIVE
+}, {
+  id: "study-plan",
+  title: "Учебный план",
+  status: B.DISABLED
+}, {
+  id: "evaluation",
+  title: "Формы аттестации и оценочные материалы",
+  status: B.DISABLED
+}, {
+  id: "criteria",
+  title: "Критерии оценки учебных результатов",
+  status: B.DISABLED
+}, {
+  id: "assessment",
+  title: "Способ фиксации учебных результатов",
+  status: B.DISABLED
+}, {
+  id: "materials",
+  title: "Методические материалы",
+  status: B.DISABLED
+}, {
+  title: "Особенности организации образовательной деятельности",
+  id: "organizational-features",
+  status: B.DISABLED
+}, {
+  title: "Воспитательная деятельность",
+  id: "teaching-experience",
+  status: B.DISABLED
+}, {
+  title: "Развивающая деятельность",
+  id: "academic-experience",
+  status: B.DISABLED
+}, {
+  title: "Кадровое обеспечение",
+  id: "learning-style",
+  status: B.DISABLED
+}, {
+  title: "Материально-техническое обеспечение",
+  id: "technology-support",
+  status: B.DISABLED
+}, {
+  title: "Информационное обеспечение",
+  id: "information-support",
+  status: B.DISABLED
+}, {
+  title: "Список литературы",
+  id: "list-of-references",
+  status: B.DISABLED
+}, {
+  title: "Календарный учебный график",
+  id: "calendar-study-plan",
+  status: B.DISABLED
+}], xe = () => {
   const [t, h] = Ot.useState(V[0]), [b, g] = Ot.useState(!1), f = $.useMemo(() => V.findIndex((d) => d.id === (t == null ? void 0 : t.id)) || 0, [t]), a = f === V.length - 1, y = $.useCallback(() => {
     a || h(V[f + 1]);
   }, [f, a]), i = $.useCallback(() => {
