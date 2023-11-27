@@ -15,9 +15,9 @@ var bt = (e, t, r, n) => ({
     return p(e, t, n);
   }
 }), G = (e, t, r) => ($t(e, t, "access private method"), r);
-import { h as Xr, j as ft, E as Yr, c as Zr, a as en, G as Kn, b as Wn, T as Jn } from "./mui-a200cd22.js";
-import { c as tn, r as B, R as H, g as Gn } from "./react-72acea58.js";
-import { F as Vn } from "./icons-a8a50daa.js";
+import { h as Xr, j as ft, E as Yr, c as Zr, a as en, G as Kn, b as Wn, T as Jn } from "./mui-b24eacef.js";
+import { b as tn, r as B, R as H, g as Gn } from "./react-97c263ed.js";
+import { F as Vn } from "./icons-fa70a1ec.js";
 var Xn = ft.Fragment;
 function V(e, t, r) {
   return Xr.call(t, "css") ? ft.jsx(Yr, Zr(e, t), r) : ft.jsx(e, t, r);
@@ -3582,7 +3582,7 @@ var ur = {};
 const ao = [{
   id: "users",
   path: "/users",
-  component: () => import("./UsersList-6e41e668.js"),
+  component: () => import("./UsersList-206fe28f.js"),
   windowOptions: {
     icon: ur.faUsers,
     title: "Пользователи",
@@ -3613,17 +3613,17 @@ var In = {};
   }, e.faCode = e.definition, e.prefix = t, e.iconName = r, e.width = n, e.height = s, e.ligatures = i, e.unicode = o, e.svgPathData = u, e.aliases = i;
 })(In);
 const co = [{
-  id: "program-constructor",
-  path: "/program-constructor",
-  component: () => import("./ProgramConstructor-bfb47061.js"),
+  id: "program-docs",
+  path: "/program-docs",
+  component: () => import("./ProgramDocsList-52204777.js"),
   windowOptions: {
-    title: "Конструктор программы",
+    title: "Конструктор документов программ",
     width: 600,
     height: 500,
     maximized: !0
   },
   shortcut: {
-    title: "Конструктор программы",
+    title: "Конструктор документов программ",
     icon: In.faCode,
     color: "#ef4444",
     group: "general",
@@ -4522,16 +4522,15 @@ const Oo = (e) => {
 Oo(Un);
 export {
   Xn as F,
-  W as Q,
   kt as S,
   gs as a,
   ie as b,
   hr as c,
-  lr as d,
-  yo as e,
+  Lo as d,
+  lr as e,
   nr as f,
-  No as g,
-  Fo as h,
+  yo as g,
+  No as h,
   Dt as i,
   V as j,
   Po as k,
@@ -4539,5 +4538,5 @@ export {
   Es as r,
   Ao as s,
   bs as t,
-  Lo as u
+  Fo as u
 };
