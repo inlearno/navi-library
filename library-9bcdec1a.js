@@ -15,9 +15,9 @@ var Et = (e, t, r, n) => ({
     return p(e, t, n);
   }
 }), G = (e, t, r) => ($t(e, t, "access private method"), r);
-import { h as Xr, j as ht, E as Yr, c as Zr, a as en, G as Kn, b as Wn, T as Jn } from "./mui-78d21057.js";
-import { b as tn, r as B, R as H, g as Gn } from "./react-c74cb93d.js";
-import { F as Vn } from "./icons-0549b5e1.js";
+import { h as Xr, j as ht, E as Yr, c as Zr, a as en, G as Kn, b as Wn, T as Jn } from "./mui-6924e210.js";
+import { c as tn, r as B, R as H, g as Gn } from "./react-f9a8d9d6.js";
+import { F as Vn } from "./icons-796e9178.js";
 var Xn = ht.Fragment;
 function V(e, t, r) {
   return Xr.call(t, "css") ? ht.jsx(Yr, Zr(e, t), r) : ht.jsx(e, t, r);
@@ -3586,7 +3586,7 @@ var ur = {};
 const ao = [{
   id: "users",
   path: "/users",
-  component: () => import("./UsersList-14eca700.js"),
+  component: () => import("./UsersList-7fdac4a8.js"),
   windowOptions: {
     icon: ur.faUsers,
     title: "Пользователи",
@@ -3619,7 +3619,7 @@ var In = {};
 const co = [{
   id: "program-docs",
   path: "/program-docs",
-  component: () => import("./ProgramDocsList-37621c60.js"),
+  component: () => import("./ProgramDocsList-8b173bec.js"),
   windowOptions: {
     title: "Конструктор документов программ",
     width: 700,
@@ -3632,6 +3632,16 @@ const co = [{
     color: "#ef4444",
     group: "general",
     order: 1e3
+  }
+}, {
+  id: "program-docs-constructor",
+  path: "/program-docs/:id",
+  component: () => import("./ProgramConstructor-391f335e.js"),
+  windowOptions: {
+    title: "Конструктор программы",
+    width: 700,
+    height: 500,
+    maximized: !0
   }
 }], Un = [...co, ...ao], Bn = H.createContext(null), uo = () => {
   const e = H.useContext(Bn);
@@ -4526,6 +4536,7 @@ const Oo = (e) => {
 Oo(Un);
 export {
   Xn as F,
+  W as Q,
   kt as S,
   gs as a,
   ie as b,
