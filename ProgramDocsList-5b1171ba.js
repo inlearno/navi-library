@@ -1,13 +1,18 @@
-import { j as a } from "./library-9bcdec1a.js";
-import { f as r, P as n } from "./constants-f6a5084f.js";
-import { u as l, P as m, T as d, c } from "./index-c9ff6c0a.js";
-import { P as p } from "./faCheckCircle-865ace2b.js";
-import { u, r as f } from "./react-f9a8d9d6.js";
-import "./mui-6924e210.js";
-import "./icons-796e9178.js";
-import "./table-0c8b68f2.js";
-const e = c(), C = () => {
-  const s = u(), t = f.useMemo(() => [e.id(), e.display("name", "Наименование программы", {
+import { j as t } from "./library-22552ae6.js";
+import { f as r, P as l } from "./constants-f6a5084f.js";
+import { u as c, P as d, T as m, c as p } from "./index-855c5445.js";
+import { P as u } from "./faCheckCircle-2f98e90d.js";
+import { R as s, r as f } from "./react-181b9648.js";
+import "./mui-e0e0d1d4.js";
+import "./icons-cd19d6df.js";
+import "./table-90839a50.js";
+const g = s.createContext(null), b = () => {
+  const a = s.useContext(g);
+  if (a === null)
+    throw new Error("Required navigate context");
+  return a.navigate;
+}, e = p(), R = () => {
+  const a = b(), o = f.useMemo(() => [e.id(), e.display("name", "Наименование программы", {
     size: 150
   }), e.display("partner_name", "Организация", {
     size: 150,
@@ -32,10 +37,10 @@ const e = c(), C = () => {
   }), e.actions([{
     key: "edit",
     icon: r.faPen,
-    onClick: (o) => {
-      s(`/program-docs/${o.id}`);
+    onClick: (n) => {
+      a(`/program-docs/${n.id}`);
     }
-  }])], []), i = l(n, t, {
+  }])], []), i = c(l, o, {
     defaultSorting: [{
       id: "id",
       desc: !0
@@ -44,8 +49,8 @@ const e = c(), C = () => {
       is_deleted: !1
     }
   });
-  return /* @__PURE__ */ a(p, { bbar: /* @__PURE__ */ a(m, { table: i }), children: /* @__PURE__ */ a(d, { table: i }) });
+  return /* @__PURE__ */ t(u, { bbar: /* @__PURE__ */ t(d, { table: i }), children: /* @__PURE__ */ t(m, { table: i }) });
 };
 export {
-  C as default
+  R as default
 };

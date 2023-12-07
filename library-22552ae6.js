@@ -15,9 +15,9 @@ var Et = (e, t, r, n) => ({
     return p(e, t, n);
   }
 }), G = (e, t, r) => ($t(e, t, "access private method"), r);
-import { h as Xr, j as ht, E as Yr, c as Zr, a as en, G as Kn, b as Wn, T as Jn } from "./mui-6924e210.js";
-import { c as tn, r as B, R as H, g as Gn } from "./react-f9a8d9d6.js";
-import { F as Vn } from "./icons-796e9178.js";
+import { h as Xr, j as ht, E as Yr, c as Zr, a as en, G as Kn, b as Wn, T as Jn } from "./mui-e0e0d1d4.js";
+import { c as tn, r as B, R as H, g as Gn } from "./react-181b9648.js";
+import { F as Vn } from "./icons-cd19d6df.js";
 var Xn = ht.Fragment;
 function V(e, t, r) {
   return Xr.call(t, "css") ? ht.jsx(Yr, Zr(e, t), r) : ht.jsx(e, t, r);
@@ -3557,7 +3557,7 @@ const zr = X, jn = H.createContext(null), No = () => H.useContext(jn), oo = ({
             toastId: "session-stale"
           }), s();
         } finally {
-          st.setOnline(void 0);
+          st.setOnline(!0);
         }
       }
       throw u;
@@ -3586,7 +3586,7 @@ var ur = {};
 const ao = [{
   id: "users",
   path: "/users",
-  component: () => import("./UsersList-7fdac4a8.js"),
+  component: () => import("./UsersList-397716b2.js"),
   windowOptions: {
     icon: ur.faUsers,
     title: "Пользователи",
@@ -3619,7 +3619,7 @@ var In = {};
 const co = [{
   id: "program-docs",
   path: "/program-docs",
-  component: () => import("./ProgramDocsList-8b173bec.js"),
+  component: () => import("./ProgramDocsList-5b1171ba.js"),
   windowOptions: {
     title: "Конструктор документов программ",
     width: 700,
@@ -3636,7 +3636,7 @@ const co = [{
 }, {
   id: "program-docs-constructor",
   path: "/program-docs/:id",
-  component: () => import("./ProgramConstructor-391f335e.js"),
+  component: () => import("./ProgramConstructor-02e43b05.js"),
   windowOptions: {
     title: "Конструктор программы",
     width: 700,
