@@ -1,18 +1,18 @@
-import { j as t } from "./library-22552ae6.js";
-import { f as r, P as l } from "./constants-f6a5084f.js";
-import { u as c, P as d, T as m, c as p } from "./index-855c5445.js";
-import { P as u } from "./faCheckCircle-2f98e90d.js";
-import { R as s, r as f } from "./react-181b9648.js";
-import "./mui-e0e0d1d4.js";
+import { j as t } from "./library-e71f0112.js";
+import { f as n } from "./faPen-6d05924c.js";
+import { u as l, P as c, T as d, c as m } from "./index-f8615c73.js";
+import { P as p } from "./lodash-cd26206b.js";
+import { R as s, r as u } from "./react-181b9648.js";
+import "./mui-fb8b9569.js";
 import "./icons-cd19d6df.js";
 import "./table-90839a50.js";
-const g = s.createContext(null), b = () => {
-  const a = s.useContext(g);
+const f = s.createContext(null), g = () => {
+  const a = s.useContext(f);
   if (a === null)
     throw new Error("Required navigate context");
   return a.navigate;
-}, e = p(), R = () => {
-  const a = b(), o = f.useMemo(() => [e.id(), e.display("name", "Наименование программы", {
+}, e = m(), S = () => {
+  const a = g(), o = u.useMemo(() => [e.id(), e.display("name", "Наименование программы", {
     size: 150
   }), e.display("partner_name", "Организация", {
     size: 150,
@@ -36,11 +36,11 @@ const g = s.createContext(null), b = () => {
     enableSorting: !1
   }), e.actions([{
     key: "edit",
-    icon: r.faPen,
-    onClick: (n) => {
-      a(`/program-docs/${n.id}`);
+    icon: n.faPen,
+    onClick: (r) => {
+      a(`/program-docs/${r.id}`);
     }
-  }])], []), i = c(l, o, {
+  }])], []), i = l("/api/rest/program-docs", o, {
     defaultSorting: [{
       id: "id",
       desc: !0
@@ -49,8 +49,8 @@ const g = s.createContext(null), b = () => {
       is_deleted: !1
     }
   });
-  return /* @__PURE__ */ t(u, { bbar: /* @__PURE__ */ t(d, { table: i }), children: /* @__PURE__ */ t(m, { table: i }) });
+  return /* @__PURE__ */ t(p, { bbar: /* @__PURE__ */ t(c, { table: i }), children: /* @__PURE__ */ t(d, { table: i }) });
 };
 export {
-  R as default
+  S as default
 };
