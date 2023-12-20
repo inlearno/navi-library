@@ -15,7 +15,7 @@ var Et = (e, t, r, n) => ({
     return m(e, t, n);
   }
 }), G = (e, t, r) => ($t(e, t, "access private method"), r);
-import { h as Yr, j as ht, E as Zr, c as en, a as tn, G as Wn, b as Jn, T as Gn } from "./mui-fb8b9569.js";
+import { h as Yr, j as ht, E as Zr, c as en, a as tn, G as Wn, b as Jn, T as Gn } from "./mui-a33a672b.js";
 import { c as rn, r as B, R as H, g as Vn } from "./react-181b9648.js";
 import { F as Xn } from "./icons-cd19d6df.js";
 var Yn = ht.Fragment;
@@ -3636,7 +3636,7 @@ var ur = {};
 const co = [{
   id: "users",
   path: "/users",
-  component: () => import("./UsersList-b7899851.js"),
+  component: () => import("./UsersList-e4a528d7.js"),
   windowOptions: {
     icon: ur.faUsers,
     title: "Пользователи",
@@ -3669,7 +3669,7 @@ var Un = {};
 const uo = [{
   id: "program-docs",
   path: "/program-docs",
-  component: () => import("./ProgramDocsList-99a3c86a.js"),
+  component: () => import("./ProgramDocsList-02bc1e25.js"),
   windowOptions: {
     title: "Конструктор документов программ",
     width: 700,
@@ -3685,10 +3685,20 @@ const uo = [{
   }
 }, {
   id: "program-docs-constructor",
-  path: "/program-docs/:id",
-  component: () => import("./ProgramConstructor-a0cbee0b.js"),
+  path: "/program-docs/constructor/:id",
+  component: () => import("./ProgramConstructor-cf1e5115.js"),
   windowOptions: {
     title: "Конструктор программы",
+    width: 700,
+    height: 500,
+    maximized: !0
+  }
+}, {
+  id: "program-docs-draft",
+  path: "/program-docs/draft",
+  component: () => import("./Draft-5f63a337.js"),
+  windowOptions: {
+    title: "Черновик программы",
     width: 700,
     height: 500,
     maximized: !0
@@ -4586,25 +4596,25 @@ const Ro = (e) => {
 Ro(Bn);
 export {
   Yn as F,
-  Dt as S,
-  bs as a,
-  ie as b,
-  dr as c,
-  Fo as d,
-  lr as e,
-  nr as f,
-  vo as g,
-  zn as h,
+  vo as S,
+  lr as a,
+  Do as b,
+  Dt as c,
+  Po as d,
+  ve as e,
+  zn as f,
+  Fs as g,
+  bs as h,
   jt as i,
   V as j,
   No as k,
-  Fs as l,
-  Po as m,
-  ve as n,
+  nr as l,
+  dr as m,
+  ie as n,
   Mo as o,
   nn as p,
   _s as r,
   Lo as s,
   Es as t,
-  Do as u
+  Fo as u
 };
