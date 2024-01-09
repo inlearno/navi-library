@@ -1,11 +1,11 @@
-import { j as i, F as m } from "./library-047369e1.js";
+import { j as i, F as m } from "./library-f93f7de3.js";
 import { f } from "./faPen-6d05924c.js";
-import { u, P as p, T as g, c as v } from "./index-643f6b98.js";
-import { P as b } from "./useDictionary-60a2240b.js";
+import { u, P as p, T as g, c as v } from "./index-090ab901.js";
+import { P as b } from "./useDictionary-43b83091.js";
 import { r as P } from "./react-181b9648.js";
 import { u as h } from "./useNavigate-2d87d7c7.js";
 import { F as y } from "./icons-cd19d6df.js";
-import { I as z } from "./mui-a33a672b.js";
+import { I as z } from "./mui-3466ac1e.js";
 import "./table-90839a50.js";
 import "./faCheckCircle-ad748d9a.js";
 var d = {};
@@ -33,7 +33,7 @@ const e = v(), w = () => {
   }), e.display("municipality_name", "Муниципалитет организации", {
     size: 150,
     enableSorting: !1
-  }), e.dictionary("state_id", "programDocsStates", "Статус", {
+  }), e.dictionary("state_id", "programDocStates", "Статус", {
     size: 80
   }), e.display("section_name", "Направленность", {
     size: 150,
