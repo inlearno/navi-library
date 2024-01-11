@@ -2829,5 +2829,6 @@ Tt.defaultProps = {
 };
 var br = be.bind(null, zn.createElement);
 export {
-  Tt as F
+  Tt as F,
+  p as P
 };
