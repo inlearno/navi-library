@@ -1,8 +1,8 @@
-import { u as m, j as e, a as _ } from "./library-8f6b8813.js";
-import { z as o, d as g, u as y, C as h, F as a, T as s, P as b, D as c, R as f, a as q } from "./RootSection-cc4f27ac.js";
+import { u as m, j as e, a as _ } from "./library-7c6e2fe8.js";
+import { z as o, d as g, u as y, C as h, F as a, T as s, P as f, D as c, R as b, a as q } from "./RootSection-79b5f19f.js";
 import { u as v } from "./useNavigate-2d87d7c7.js";
-import { P as C } from "./useDictionary-9d47a5b3.js";
-import { u as x } from "./useWindowController-17983267.js";
+import { P as C } from "./useDictionary-319bc060.js";
+import { u as x } from "./useWindowController-94b14e88.js";
 import "./react-181b9648.js";
 import "./mui-d2313b11.js";
 import "./icons-42066a3f.js";
@@ -12,6 +12,7 @@ const P = () => {
     queryKey: [i]
   });
 }, T = o.object({
+  steps_info: o.any(),
   partner_id: o.string({
     required_error: "Выберите организацию"
   }),
@@ -49,7 +50,12 @@ const P = () => {
     }
   }), t = y({
     mutation: l,
-    schema: T
+    schema: T,
+    defaultValues: {
+      steps_info: {
+        general: "done"
+      }
+    }
   });
   return /* @__PURE__ */ e(C, { bbar: /* @__PURE__ */ e("div", { css: {
     display: "flex",
@@ -67,7 +73,7 @@ const P = () => {
     }, ...r, placeholder: "Введите наименование", label: "Наименование" }) }),
     /* @__PURE__ */ e(a, { control: t.control, name: "partner_id", render: ({
       field: r
-    }) => /* @__PURE__ */ e(b, { ...r, placeholder: "Выберите организацию", label: "Организация" }) }),
+    }) => /* @__PURE__ */ e(f, { ...r, placeholder: "Выберите организацию", label: "Организация" }) }),
     /* @__PURE__ */ e(a, { control: t.control, name: "program_type_id", render: ({
       field: r
     }) => /* @__PURE__ */ e(c, { label: "Тип программы", ...r, dictionary: "navProgramType", filterOptions: (u) => u.filter(({
@@ -75,7 +81,7 @@ const P = () => {
     }) => p === 1), placeholder: "Выберите тип программы" }) }),
     /* @__PURE__ */ e(a, { control: t.control, name: "section_id", render: ({
       field: r
-    }) => /* @__PURE__ */ e(f, { label: "Направленность", placeholder: "Выберите направленность", ...r }) }),
+    }) => /* @__PURE__ */ e(b, { label: "Направленность", placeholder: "Выберите направленность", ...r }) }),
     /* @__PURE__ */ e(a, { control: t.control, name: "program_level_id", render: ({
       field: r
     }) => /* @__PURE__ */ e(c, { label: "Уровень", css: {
