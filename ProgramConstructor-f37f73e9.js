@@ -1,12 +1,12 @@
-import { j as e, a as B, S as wt } from "./library-ff1fc96d.js";
+import { j as e, a as B, S as Ct } from "./library-ea68d1cc.js";
 import { r as K, R as Et } from "./react-181b9648.js";
-import { u as F, C as We, z as a, T as k, F as c, P as xt, D as X, S as zt, Y as ze, a as q, b as ve, c as L, N as W, L as Bt, B as Fe, d as N, e as Tt } from "./Section-d14860d2.js";
-import { P as Dt, u as Ot } from "./useDictionary-1b7f8f4c.js";
+import { u as F, C as We, z as a, T as k, F as c, P as xt, D as X, R as zt, Y as ze, a as q, b as ve, c as L, N as W, L as Bt, B as Fe, d as N, e as Tt } from "./RootSection-70eb6e7e.js";
+import { P as Dt, u as Ot } from "./useDictionary-cd08dfb2.js";
 import { a as kt, B as Y } from "./mui-d2313b11.js";
 import { f as St } from "./faPen-6d05924c.js";
 import { f as qt } from "./faCheckCircle-ad748d9a.js";
 import { F as ge } from "./icons-42066a3f.js";
-import { u as Be } from "./useWindowController-6b985df7.js";
+import { u as Be } from "./useWindowController-393e37c7.js";
 var T = /* @__PURE__ */ ((n) => (n.DONE = "done", n.ACTIVE = "active", n.WAIT = "wait", n.DISABLED = "disabled", n))(T || {});
 const It = ({
   steps: n
@@ -69,7 +69,7 @@ var Ye = { exports: {} };
   })(self, (t) => (() => {
     var h = { 58: (l, u, m) => {
       m.d(u, { Z: () => v });
-      var A = m(864), C = m.n(A), y = m(352), p = m.n(y)()(C());
+      var A = m(864), w = m.n(A), y = m(352), p = m.n(y)()(w());
       p.push([l.id, `
 /* The default splitter within a react-split */
 .react-split > .split-container > .splitter .default-splitter {
@@ -162,7 +162,7 @@ var Ye = { exports: {} };
       const v = p;
     }, 672: (l, u, m) => {
       m.d(u, { Z: () => v });
-      var A = m(864), C = m.n(A), y = m(352), p = m.n(y)()(C());
+      var A = m(864), w = m.n(A), y = m(352), p = m.n(y)()(w());
       p.push([l.id, `/* The top-level element of the splitter*/
 .react-split {
   width: 100%;
@@ -376,10 +376,10 @@ var Ye = { exports: {} };
         var m = [];
         return m.toString = function() {
           return this.map(function(A) {
-            var C = "", y = A[5] !== void 0;
-            return A[4] && (C += "@supports (".concat(A[4], ") {")), A[2] && (C += "@media ".concat(A[2], " {")), y && (C += "@layer".concat(A[5].length > 0 ? " ".concat(A[5]) : "", " {")), C += u(A), y && (C += "}"), A[2] && (C += "}"), A[4] && (C += "}"), C;
+            var w = "", y = A[5] !== void 0;
+            return A[4] && (w += "@supports (".concat(A[4], ") {")), A[2] && (w += "@media ".concat(A[2], " {")), y && (w += "@layer".concat(A[5].length > 0 ? " ".concat(A[5]) : "", " {")), w += u(A), y && (w += "}"), A[2] && (w += "}"), A[4] && (w += "}"), w;
           }).join("");
-        }, m.i = function(A, C, y, p, v) {
+        }, m.i = function(A, w, y, p, v) {
           typeof A == "string" && (A = [[null, A, void 0]]);
           var E = {};
           if (y)
@@ -388,8 +388,8 @@ var Ye = { exports: {} };
               j != null && (E[j] = !0);
             }
           for (var H = 0; H < A.length; H++) {
-            var w = [].concat(A[H]);
-            y && E[w[0]] || (v !== void 0 && (w[5] === void 0 || (w[1] = "@layer".concat(w[5].length > 0 ? " ".concat(w[5]) : "", " {").concat(w[1], "}")), w[5] = v), C && (w[2] && (w[1] = "@media ".concat(w[2], " {").concat(w[1], "}")), w[2] = C), p && (w[4] ? (w[1] = "@supports (".concat(w[4], ") {").concat(w[1], "}"), w[4] = p) : w[4] = "".concat(p)), m.push(w));
+            var C = [].concat(A[H]);
+            y && E[C[0]] || (v !== void 0 && (C[5] === void 0 || (C[1] = "@layer".concat(C[5].length > 0 ? " ".concat(C[5]) : "", " {").concat(C[1], "}")), C[5] = v), w && (C[2] && (C[1] = "@media ".concat(C[2], " {").concat(C[1], "}")), C[2] = w), p && (C[4] ? (C[1] = "@supports (".concat(C[4], ") {").concat(C[1], "}"), C[4] = p) : C[4] = "".concat(p)), m.push(C));
           }
         }, m;
       };
@@ -399,7 +399,7 @@ var Ye = { exports: {} };
         if (!A)
           return m;
         if (typeof btoa == "function") {
-          var C = btoa(unescape(encodeURIComponent(JSON.stringify(A)))), y = "sourceMappingURL=data:application/json;charset=utf-8;base64,".concat(C), p = "/*# ".concat(y, " */");
+          var w = btoa(unescape(encodeURIComponent(JSON.stringify(A)))), y = "sourceMappingURL=data:application/json;charset=utf-8;base64,".concat(w), p = "/*# ".concat(y, " */");
           return [m].concat([p]).join(`
 `);
         }
@@ -408,12 +408,12 @@ var Ye = { exports: {} };
       };
     }, 372: (l, u, m) => {
       var A = m(567);
-      function C() {
+      function w() {
       }
       function y() {
       }
-      y.resetWarningCache = C, l.exports = function() {
-        function p(I, j, H, w, $, V) {
+      y.resetWarningCache = w, l.exports = function() {
+        function p(I, j, H, C, $, V) {
           if (V !== A) {
             var ee = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
             throw ee.name = "Invariant Violation", ee;
@@ -423,7 +423,7 @@ var Ye = { exports: {} };
           return p;
         }
         p.isRequired = p;
-        var E = { array: p, bigint: p, bool: p, func: p, number: p, object: p, string: p, symbol: p, any: p, arrayOf: v, element: p, elementType: p, instanceOf: v, node: p, objectOf: v, oneOf: v, oneOfType: v, shape: v, exact: v, checkPropTypes: y, resetWarningCache: C };
+        var E = { array: p, bigint: p, bool: p, func: p, number: p, object: p, string: p, symbol: p, any: p, arrayOf: v, element: p, elementType: p, instanceOf: v, node: p, objectOf: v, oneOf: v, oneOfType: v, shape: v, exact: v, checkPropTypes: y, resetWarningCache: w };
         return E.PropTypes = E, E;
       };
     }, 652: (l, u, m) => {
@@ -442,20 +442,20 @@ var Ye = { exports: {} };
       }
       function A(y, p) {
         for (var v = {}, E = [], I = 0; I < y.length; I++) {
-          var j = y[I], H = p.base ? j[0] + p.base : j[0], w = v[H] || 0, $ = "".concat(H, " ").concat(w);
-          v[H] = w + 1;
+          var j = y[I], H = p.base ? j[0] + p.base : j[0], C = v[H] || 0, $ = "".concat(H, " ").concat(C);
+          v[H] = C + 1;
           var V = m($), ee = { css: j[1], media: j[2], sourceMap: j[3], supports: j[4], layer: j[5] };
           if (V !== -1)
             u[V].references++, u[V].updater(ee);
           else {
-            var le = C(ee, p);
+            var le = w(ee, p);
             p.byIndex = I, u.splice(I, 0, { identifier: $, updater: le, references: 1 });
           }
           E.push($);
         }
         return E;
       }
-      function C(y, p) {
+      function w(y, p) {
         var v = p.domAPI(p);
         return v.update(y), function(E) {
           if (E) {
@@ -474,8 +474,8 @@ var Ye = { exports: {} };
             var j = m(v[I]);
             u[j].references--;
           }
-          for (var H = A(E, p), w = 0; w < v.length; w++) {
-            var $ = m(v[w]);
+          for (var H = A(E, p), C = 0; C < v.length; C++) {
+            var $ = m(v[C]);
             u[$].references === 0 && (u[$].updater(), u.splice($, 1));
           }
           v = H;
@@ -484,7 +484,7 @@ var Ye = { exports: {} };
     }, 80: (l) => {
       var u = {};
       l.exports = function(m, A) {
-        var C = function(y) {
+        var w = function(y) {
           if (u[y] === void 0) {
             var p = document.querySelector(y);
             if (window.HTMLIFrameElement && p instanceof window.HTMLIFrameElement)
@@ -497,9 +497,9 @@ var Ye = { exports: {} };
           }
           return u[y];
         }(m);
-        if (!C)
+        if (!w)
           throw new Error("Couldn't find a style target. This probably means that the value for the 'insert' parameter is invalid.");
-        C.appendChild(A);
+        w.appendChild(A);
       };
     }, 182: (l) => {
       l.exports = function(u) {
@@ -508,21 +508,21 @@ var Ye = { exports: {} };
       };
     }, 850: (l, u, m) => {
       l.exports = function(A) {
-        var C = m.nc;
-        C && A.setAttribute("nonce", C);
+        var w = m.nc;
+        w && A.setAttribute("nonce", w);
       };
     }, 236: (l) => {
       l.exports = function(u) {
         var m = u.insertStyleElement(u);
         return { update: function(A) {
-          (function(C, y, p) {
+          (function(w, y, p) {
             var v = "";
             p.supports && (v += "@supports (".concat(p.supports, ") {")), p.media && (v += "@media ".concat(p.media, " {"));
             var E = p.layer !== void 0;
             E && (v += "@layer".concat(p.layer.length > 0 ? " ".concat(p.layer) : "", " {")), v += p.css, E && (v += "}"), p.media && (v += "}"), p.supports && (v += "}");
             var I = p.sourceMap;
             I && typeof btoa < "u" && (v += `
-/*# sourceMappingURL=data:application/json;base64,`.concat(btoa(unescape(encodeURIComponent(JSON.stringify(I)))), " */")), y.styleTagTransform(v, C, y.options);
+/*# sourceMappingURL=data:application/json;base64,`.concat(btoa(unescape(encodeURIComponent(JSON.stringify(I)))), " */")), y.styleTagTransform(v, w, y.options);
           })(m, u, A);
         }, remove: function() {
           (function(A) {
@@ -573,8 +573,8 @@ var Ye = { exports: {} };
     var D = {};
     return (() => {
       f.r(D), f.d(D, { DefaultSplitter: () => le, Split: () => it });
-      var l = f(359), u = f(701), m = f.n(u), A = f(236), C = f.n(A), y = f(80), p = f.n(y), v = f(850), E = f.n(v), I = f(182), j = f.n(I), H = f(213), w = f.n(H), $ = f(58), V = {};
-      V.styleTagTransform = w(), V.setAttributes = E(), V.insert = p().bind(null, "head"), V.domAPI = C(), V.insertStyleElement = j(), m()($.Z, V), $.Z && $.Z.locals && $.Z.locals;
+      var l = f(359), u = f(701), m = f.n(u), A = f(236), w = f.n(A), y = f(80), p = f.n(y), v = f(850), E = f.n(v), I = f(182), j = f.n(I), H = f(213), C = f.n(H), $ = f(58), V = {};
+      V.styleTagTransform = C(), V.setAttributes = E(), V.insert = p().bind(null, "head"), V.domAPI = w(), V.insertStyleElement = j(), m()($.Z, V), $.Z && $.Z.locals && $.Z.locals;
       const ee = (i) => (i % 2 == 0 ? 2 : 3) + "px", le = (i) => {
         const { dragging: o, pixelSize: s, color: d = "silver", hoverColor: g = "gray", dragColor: x = "black" } = i, O = { "--default-splitter-line-margin": (M = s, `${Math.max(0, Math.floor(M / 2) - 1)}px`), "--default-splitter-line-size": ee(s), "--default-splitter-line-color": o ? x : d, "--default-splitter-line-hover-color": o ? x : g };
         var M;
@@ -829,7 +829,7 @@ var Ye = { exports: {} };
       function ot(i) {
         return i && i.ownerDocument && i.ownerDocument.defaultView || window;
       }
-      var Ce = function(i) {
+      var we = function(i) {
         var o, s;
         return s = o = function(d) {
           var g, x;
@@ -869,10 +869,10 @@ var Ye = { exports: {} };
         var o = i.measure, s = i.measureRef, d = i.contentRect;
         return (0, i.children)({ measure: o, measureRef: s, contentRect: d });
       });
-      Ce.displayName = "Measure", Ce.propTypes.children = G().func;
-      const we = Ce;
+      we.displayName = "Measure", we.propTypes.children = G().func;
+      const Ce = we;
       var pe = f(672), re = {};
-      re.styleTagTransform = w(), re.setAttributes = E(), re.insert = p().bind(null, "head"), re.domAPI = C(), re.insertStyleElement = j(), m()(pe.Z, re), pe.Z && pe.Z.locals && pe.Z.locals;
+      re.styleTagTransform = C(), re.setAttributes = E(), re.insert = p().bind(null, "head"), re.domAPI = w(), re.insertStyleElement = j(), m()(pe.Z, re), pe.Z && pe.Z.locals && pe.Z.locals;
       const it = (i) => {
         const { horizontal: o = !1, initialPrimarySize: s = "50%", minPrimarySize: d = "0px", minSecondarySize: g = "0px", splitterSize: x = "7px", renderSplitter: O, resetOnDoubleClick: M = !1, defaultSplitterColors: b = { color: "silver", hover: "gray", drag: "black" }, onSplitChanged: R, onMeasuredSizesChanged: U } = i, [Z, P] = l.useState({ height: 0, width: 0 }), [S, Q] = l.useState({ height: 0, width: 0 }), [J, ue] = l.useState({ height: 0, width: 0 }), ne = l.useMemo(() => o ? Z.height : Z.width, [o, Z]), me = l.useMemo(() => o ? S.height : S.width, [o, S]), he = l.useMemo(() => o ? J.height : J.width, [o, J]), [ie, Me] = l.useState(void 0), [at, lt] = l.useState(0), [st, ct] = l.useState(0), [Ee, je] = l.useState(!1);
         l.useEffect(() => {
@@ -888,17 +888,17 @@ var Ye = { exports: {} };
           z.currentTarget.setPointerCapture(z.pointerId), lt(o ? z.clientY : z.clientX), ct(me), je(!0);
         }, mt = (z) => {
           if (z.currentTarget.hasPointerCapture(z.pointerId)) {
-            const ae = o ? z.clientY : z.clientX, _t = st + (ae - at), Ct = Math.max(0, Math.min(_t, ne));
-            Me(Ct / ne * 100);
+            const ae = o ? z.clientY : z.clientX, _t = st + (ae - at), wt = Math.max(0, Math.min(_t, ne));
+            Me(wt / ne * 100);
           }
         }, ht = (z) => {
           z.currentTarget.releasePointerCapture(z.pointerId), je(!1);
         }, ft = () => {
           M && Me(void 0);
         }, fe = l.Children.toArray(i.children), gt = fe.length > 0 ? fe[0] : l.createElement("div", null), bt = fe.length > 1 ? fe[1] : l.createElement("div", null), xe = { primary: ie !== void 0 ? `${ie}%` : s, minPrimary: d ?? "0px", minSecondary: g ?? "0px" }, Pe = { pixelSize: he, horizontal: o, dragging: Ee }, vt = O ?? (() => l.createElement(le, Object.assign({}, Pe, { color: Ee ? b.drag : b.color, hoverColor: Ee ? b.drag : b.hover }))), At = o ? "split-container horizontal" : "split-container vertical", yt = { "--react-split-min-primary": xe.minPrimary, "--react-split-min-secondary": xe.minSecondary, "--react-split-primary": xe.primary, "--react-split-splitter": x };
-        return l.createElement(we, { bounds: !0, onResize: (z) => {
+        return l.createElement(Ce, { bounds: !0, onResize: (z) => {
           z.bounds && P({ height: z.bounds.height, width: z.bounds.width });
-        } }, ({ measureRef: z }) => l.createElement("div", { className: "react-split", ref: z }, l.createElement("div", { className: At, style: yt }, l.createElement("div", { className: "primary" }, l.createElement(we, { bounds: !0, onResize: dt }, ({ measureRef: ae }) => l.createElement("div", { className: "full-content", ref: ae }, gt))), l.createElement("div", { className: "splitter", tabIndex: -1, onPointerDown: ut, onPointerUp: ht, onPointerMove: mt, onDoubleClick: ft }, l.createElement(we, { bounds: !0, onResize: pt }, ({ measureRef: ae }) => l.createElement("div", { className: "full-content", ref: ae }, vt(Pe)))), l.createElement("div", { className: "secondary" }, l.createElement("div", { className: "full-content" }, bt)))));
+        } }, ({ measureRef: z }) => l.createElement("div", { className: "react-split", ref: z }, l.createElement("div", { className: At, style: yt }, l.createElement("div", { className: "primary" }, l.createElement(Ce, { bounds: !0, onResize: dt }, ({ measureRef: ae }) => l.createElement("div", { className: "full-content", ref: ae }, gt))), l.createElement("div", { className: "splitter", tabIndex: -1, onPointerDown: ut, onPointerUp: ht, onPointerMove: mt, onDoubleClick: ft }, l.createElement(Ce, { bounds: !0, onResize: pt }, ({ measureRef: ae }) => l.createElement("div", { className: "full-content", ref: ae }, vt(Pe)))), l.createElement("div", { className: "secondary" }, l.createElement("div", { className: "full-content" }, bt)))));
       };
     })(), D;
   })());
@@ -1122,7 +1122,7 @@ const jt = ({
 }, Ft = a.object({
   partner_id: a.string({
     required_error: "Выберите организацию",
-    invalid_type_error: "Выберите организацию"
+    coerce: !0
   }),
   name: a.string({
     required_error: "Заполните наименование"
@@ -1169,7 +1169,9 @@ const jt = ({
     }) => /* @__PURE__ */ e(xt, { ...t, placeholder: "Выберите организацию", label: "Организация" }) }),
     /* @__PURE__ */ e(c, { control: r.control, name: "program_type_id", render: ({
       field: t
-    }) => /* @__PURE__ */ e(X, { label: "Тип программы", ...t, dictionary: "navProgramType", placeholder: "Выберите тип программы" }) }),
+    }) => /* @__PURE__ */ e(X, { label: "Тип программы", ...t, dictionary: "navProgramType", filterOptions: (h) => h.filter(({
+      id: _
+    }) => _ === 1), placeholder: "Выберите тип программы" }) }),
     /* @__PURE__ */ e(c, { control: r.control, name: "section_id", render: ({
       field: t
     }) => /* @__PURE__ */ e(zt, { label: "Направленность", placeholder: "Выберите направленность", ...t }) }),
@@ -1263,14 +1265,21 @@ const jt = ({
   }, form: r, children: [
     /* @__PURE__ */ e(Bt, { label: "Возраст", helperText: "Введите минимальный и максимальный возраст", children: /* @__PURE__ */ B("div", { css: {
       display: "flex",
+      width: "20rem",
+      alignItems: "center",
       gap: "1rem"
     }, children: [
-      /* @__PURE__ */ e(c, { control: r.control, name: "min_age", render: ({
+      /* @__PURE__ */ e(c, { control: r.control, name: "min_age", css: {
+        width: "10rem"
+      }, render: ({
         field: t
       }) => /* @__PURE__ */ e(W, { ...t, css: {
         flex: "1 1 0%"
       }, placeholder: "от", unit: "лет" }) }),
-      /* @__PURE__ */ e(c, { control: r.control, name: "max_age", render: ({
+      /* @__PURE__ */ e("div", { children: "-" }),
+      /* @__PURE__ */ e(c, { control: r.control, name: "max_age", css: {
+        width: "10rem"
+      }, render: ({
         field: t
       }) => /* @__PURE__ */ e(W, { ...t, css: {
         flex: "1 1 0%"
@@ -1281,31 +1290,47 @@ const jt = ({
     }) => /* @__PURE__ */ e(X, { dictionary: "programDocCompetences", ...t, label: "Требования к уровню подготовки", placeholder: "Выберите требования к уровню подготовки" }) }),
     /* @__PURE__ */ e(c, { control: r.control, name: "program_volume", render: ({
       field: t
-    }) => /* @__PURE__ */ e(W, { ...t, label: "Объем программы", placeholder: "Введите объем программы", unit: "часов" }) }),
+    }) => /* @__PURE__ */ e(W, { ...t, css: {
+      width: "20rem"
+    }, label: "Объем программы", placeholder: "Введите объем программы", unit: "часов" }) }),
     /* @__PURE__ */ e(c, { control: r.control, name: "program_duration", render: ({
       field: t
-    }) => /* @__PURE__ */ e(W, { ...t, label: "Общая продолжительность", placeholder: "Введите общую продолжительность", helperText: "Общая продолжительность образовательного процесса", unit: "месяцев" }) }),
+    }) => /* @__PURE__ */ e(W, { ...t, css: {
+      width: "20rem"
+    }, label: "Общая продолжительность", placeholder: "Введите общую продолжительность", helperText: "Общая продолжительность образовательного процесса", unit: "месяцев" }) }),
     /* @__PURE__ */ e(c, { control: r.control, name: "edu_sessions_per_week", render: ({
       field: t
-    }) => /* @__PURE__ */ e(W, { ...t, label: "Количество занятий в неделю", placeholder: "Введите количество занятий в неделю" }) }),
+    }) => /* @__PURE__ */ e(W, { ...t, css: {
+      width: "20rem"
+    }, label: "Количество занятий в неделю", placeholder: "Введите количество занятий в неделю" }) }),
     /* @__PURE__ */ e(c, { control: r.control, name: "edu_sessions_per_day", render: ({
       field: t
-    }) => /* @__PURE__ */ e(W, { ...t, label: "Продолжительность занятия", placeholder: "Введите продолжительность занятия", unit: "ак. часов" }) }),
+    }) => /* @__PURE__ */ e(W, { ...t, css: {
+      width: "20rem"
+    }, label: "Продолжительность занятия", placeholder: "Введите продолжительность занятия", unit: "ак. часов" }) }),
     /* @__PURE__ */ e(c, { control: r.control, name: "edu_session_hour_limit", render: ({
       field: t
-    }) => /* @__PURE__ */ e(W, { ...t, label: "Продолжительность ак. часа", placeholder: "Введите продолжительность ак. часа", unit: "мин" }) }),
+    }) => /* @__PURE__ */ e(W, { ...t, css: {
+      width: "20rem"
+    }, label: "Продолжительность ак. часа", placeholder: "Введите продолжительность ак. часа", unit: "мин" }) }),
     /* @__PURE__ */ e(c, { control: r.control, name: "break_duration", render: ({
       field: t
-    }) => /* @__PURE__ */ e(W, { ...t, label: "Продолжительность перерыва", placeholder: "Введите продолжительность перерыва", unit: "мин" }) }),
+    }) => /* @__PURE__ */ e(W, { ...t, css: {
+      width: "20rem"
+    }, label: "Продолжительность перерыва", placeholder: "Введите продолжительность перерыва", unit: "мин" }) }),
     /* @__PURE__ */ e(c, { control: r.control, name: "education_form_id", render: ({
       field: t
     }) => /* @__PURE__ */ e(X, { dictionary: "educationForm", ...t, label: "Форма обучения", placeholder: "Выберите форму обучения" }) }),
     /* @__PURE__ */ e(c, { control: r.control, name: "min_group_size", render: ({
       field: t
-    }) => /* @__PURE__ */ e(W, { ...t, label: "Минимальное кол-во обучающихся в группе", placeholder: "Введите минимальное кол-во обучающихся в группе" }) }),
+    }) => /* @__PURE__ */ e(W, { ...t, css: {
+      width: "20rem"
+    }, label: "Минимальное кол-во обучающихся в группе", placeholder: "Введите минимальное кол-во обучающихся в группе" }) }),
     /* @__PURE__ */ e(c, { control: r.control, name: "max_group_size", render: ({
       field: t
-    }) => /* @__PURE__ */ e(W, { ...t, label: "Максимальное кол-во обучающихся в группе", placeholder: "Введите максимальное кол-во обучающихся в группе" }) }),
+    }) => /* @__PURE__ */ e(W, { ...t, css: {
+      width: "20rem"
+    }, label: "Максимальное кол-во обучающихся в группе", placeholder: "Введите максимальное кол-во обучающихся в группе" }) }),
     /* @__PURE__ */ e(c, { control: r.control, name: "is_one_age_group", render: ({
       field: t
     }) => /* @__PURE__ */ e(Fe, { ...t, label: "Группа одного возраста?" }) })
@@ -1668,7 +1693,7 @@ const Ut = () => {
     }) => /* @__PURE__ */ e(L, { label: "Наименование воспитательной деятельности", placeholder: "Введите наименование воспитательной деятельности", ...t }) }),
     /* @__PURE__ */ e(Y, { type: "submit", size: "medium", variant: "outlined", color: "primary", children: "Добавить" })
   ] });
-}, _r = () => /* @__PURE__ */ e("div", { children: /* @__PURE__ */ e(yr, {}) }), Cr = a.object({
+}, _r = () => /* @__PURE__ */ e("div", { children: /* @__PURE__ */ e(yr, {}) }), wr = a.object({
   development_type_id: a.number({
     required_error: "Выберите тип развивающей деятельности"
   }),
@@ -1677,9 +1702,9 @@ const Ut = () => {
   })
 }).required({
   development_type_id: !0
-}), wr = () => {
+}), Cr = () => {
   const n = N("/api/rest/program-doc-developments"), r = F({
-    schema: Cr,
+    schema: wr,
     mutation: n
   });
   return /* @__PURE__ */ B(q, { css: {
@@ -1695,7 +1720,7 @@ const Ut = () => {
     }) => /* @__PURE__ */ e(L, { label: "Наименование развивающей деятельности", placeholder: "Введите наименование развивающей деятельности", ...t }) }),
     /* @__PURE__ */ e(Y, { type: "submit", size: "medium", variant: "outlined", color: "primary", children: "Добавить" })
   ] });
-}, Er = () => /* @__PURE__ */ e("div", { children: /* @__PURE__ */ e(wr, {}) }), xr = () => {
+}, Er = () => /* @__PURE__ */ e("div", { children: /* @__PURE__ */ e(Cr, {}) }), xr = () => {
   const n = oe({
     schema: a.object({
       staff_description: a.string()
@@ -1881,11 +1906,6 @@ const Ut = () => {
   status: T.DONE,
   Component: Nt
 }, {
-  id: "description",
-  title: "Описание",
-  status: T.DONE,
-  Component: Yt
-}, {
   id: "params",
   title: "Параметры",
   status: T.DONE,
@@ -1970,6 +1990,11 @@ const Ut = () => {
   id: "schedules",
   status: T.WAIT,
   Component: jr
+}, {
+  id: "description",
+  title: "Утверждение",
+  status: T.DONE,
+  Component: Yt
 }], Ur = () => {
   var _;
   const {
@@ -1980,7 +2005,7 @@ const Ut = () => {
   } = Be(), t = Ot(`/api/rest/program-docs/${n}`), h = N("PUT", `/api/rest/program-docs/${n}`);
   return K.useEffect(() => {
     r(`Конструктор программы #${n}`);
-  }, [n, r]), t.isLoading ? /* @__PURE__ */ e(wt, { spinning: !0 }) : /* @__PURE__ */ e(Wt, { steps: Pr, mutation: h, defaultValues: (_ = t.data) == null ? void 0 : _.data[0] });
+  }, [n, r]), t.isLoading ? /* @__PURE__ */ e(Ct, { spinning: !0 }) : /* @__PURE__ */ e(Wt, { steps: Pr, mutation: h, defaultValues: (_ = t.data) == null ? void 0 : _.data[0] });
 };
 export {
   Ur as default

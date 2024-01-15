@@ -3636,7 +3636,7 @@ var ur = {};
 const co = [{
   id: "users",
   path: "/users",
-  component: () => import("./UsersList-c8f5217c.js"),
+  component: () => import("./UsersList-819b92c7.js"),
   windowOptions: {
     icon: ur.faUsers,
     title: "Пользователи",
@@ -3669,7 +3669,7 @@ var Un = {};
 const uo = [{
   id: "program-docs",
   path: "/program-docs",
-  component: () => import("./ProgramDocsList-0779e6ed.js"),
+  component: () => import("./ProgramDocsList-1230ad30.js"),
   windowOptions: {
     title: "Конструктор документов программ",
     width: 700,
@@ -3686,7 +3686,7 @@ const uo = [{
 }, {
   id: "program-docs-constructor",
   path: "/program-docs/constructor/:id",
-  component: () => import("./ProgramConstructor-dce322de.js"),
+  component: () => import("./ProgramConstructor-f37f73e9.js"),
   windowOptions: {
     title: "Конструктор программы",
     width: 700,
@@ -3696,7 +3696,7 @@ const uo = [{
 }, {
   id: "program-docs-draft",
   path: "/program-docs/draft",
-  component: () => import("./Draft-46921cdc.js"),
+  component: () => import("./Draft-e5a14d5d.js"),
   windowOptions: {
     title: "Черновик программы",
     width: 700,
