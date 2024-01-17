@@ -1,8 +1,8 @@
-import { j as v, a as A, F as dt, S as kn, k as Dn, f as Tn } from "./library-7c6e2fe8.js";
-import { j as T, n as In, a as Xe, I as Ce } from "./mui-d2313b11.js";
-import { f as wt, u as Rn, g as An } from "./table-90839a50.js";
-import { R as Qe, c as Te, r as c } from "./react-181b9648.js";
-import { f as zn, a as On, u as xn, h as Ln, b as jn } from "./useDictionary-319bc060.js";
+import { j as v, a as R, F as dt, S as kn, k as Tn, f as Dn } from "./library-364e75ac.js";
+import { j as D, n as In, a as Xe, I as Ce } from "./mui-d2313b11.js";
+import { f as wt, u as An, g as Rn } from "./table-90839a50.js";
+import { R as Qe, c as De, r as c } from "./react-181b9648.js";
+import { f as zn, a as On, u as xn, h as Ln, b as jn } from "./useDictionary-403c6ca6.js";
 import { F as _ } from "./icons-42066a3f.js";
 import { f as Hn } from "./faCheckCircle-ad748d9a.js";
 const _n = ({
@@ -19,12 +19,15 @@ const _n = ({
 }, e.column.getIsResizing() && {
   "--tw-border-opacity": "1",
   borderRightColor: "rgb(0 0 0 / var(--tw-border-opacity))"
-}], children: wt(e.column.columnDef.cell, e.getContext()) }, e.id), Vn = Qe.memo(_n), Fn = (e) => /* @__PURE__ */ v("tr", { css: [{
+}], children: wt(e.column.columnDef.cell, e.getContext()) }, e.id), Vn = Qe.memo(_n), Fn = ({
+  onRowDoubleClick: e,
+  ...t
+}) => /* @__PURE__ */ v("tr", { css: [{
   ":hover": {
     "--tw-bg-opacity": "1",
     backgroundColor: "rgb(244 245 250 / var(--tw-bg-opacity))"
   }
-}], children: e.getVisibleCells().map((t) => /* @__PURE__ */ v(Vn, { ...t }, t.id)) }, e.id);
+}], onDoubleClick: (n) => e == null ? void 0 : e(t.original, n), children: t.getVisibleCells().map((n) => /* @__PURE__ */ v(Vn, { ...n }, n.id)) }, t.id);
 var $t = {};
 (function(e) {
   Object.defineProperty(e, "__esModule", { value: !0 });
@@ -105,7 +108,7 @@ var Wt = {};
     ]
   }, e.faArrowUpAZ = e.definition, e.prefix = t, e.iconName = n, e.width = i, e.height = r, e.ligatures = o, e.unicode = a, e.svgPathData = s, e.aliases = o;
 })(Wt);
-const yt = (e) => !!e && e[0] === "o", ft = Te.unstable_batchedUpdates || ((e) => e()), ye = (e, t, n = 1e-4) => Math.abs(e - t) < n, Ie = (e, t) => e === !0 || !!(e && e[t]), B = (e, t) => typeof e == "function" ? e(t) : e, $n = "_szhsinMenu", Bn = (e) => e[$n], ze = (e, t) => (t && Object.keys(t).forEach((n) => {
+const yt = (e) => !!e && e[0] === "o", ft = De.unstable_batchedUpdates || ((e) => e()), ye = (e, t, n = 1e-4) => Math.abs(e - t) < n, Ie = (e, t) => e === !0 || !!(e && e[t]), B = (e, t) => typeof e == "function" ? e(t) : e, $n = "_szhsinMenu", Bn = (e) => e[$n], ze = (e, t) => (t && Object.keys(t).forEach((n) => {
   const i = e[n], r = t[n];
   typeof r == "function" && i ? e[n] = (...o) => {
     r(...o), i(...o);
@@ -174,7 +177,7 @@ const me = ({
   RIGHT: "ArrowRight",
   UP: "ArrowUp",
   DOWN: "ArrowDown"
-}), D = /* @__PURE__ */ Object.freeze({
+}), T = /* @__PURE__ */ Object.freeze({
   RESET: 0,
   SET: 1,
   UNSET: 2,
@@ -183,7 +186,7 @@ const me = ({
   FIRST: 5,
   LAST: 6,
   SET_INDEX: 7
-}), Re = /* @__PURE__ */ Object.freeze({
+}), Ae = /* @__PURE__ */ Object.freeze({
   CLICK: "click",
   CANCEL: "cancel",
   BLUR: "blur",
@@ -216,16 +219,16 @@ const me = ({
       case L.ESC:
         B(s, {
           key: m,
-          reason: Re.CANCEL
+          reason: Ae.CANCEL
         });
         break;
     }
   }, d = (m) => {
     r && !m.currentTarget.contains(m.relatedTarget) && B(s, {
-      reason: Re.BLUR
+      reason: Ae.BLUR
     });
   };
-  return /* @__PURE__ */ T.jsx("div", {
+  return /* @__PURE__ */ D.jsx("div", {
     ...ze({
       onKeyDown: g,
       onBlur: d
@@ -290,27 +293,27 @@ const me = ({
     };
     let l = -1, u;
     switch (f) {
-      case D.RESET:
+      case T.RESET:
         break;
-      case D.SET:
+      case T.SET:
         u = g;
         break;
-      case D.UNSET:
+      case T.UNSET:
         u = (b) => b === g ? void 0 : b;
         break;
-      case D.FIRST:
+      case T.FIRST:
         h(), l = 0, u = m[l];
         break;
-      case D.LAST:
+      case T.LAST:
         h(), l = m.length - 1, u = m[l];
         break;
-      case D.SET_INDEX:
+      case T.SET_INDEX:
         h(), l = d, u = m[l];
         break;
-      case D.INCREASE:
+      case T.INCREASE:
         h(), l = C, l < 0 && (l = m.indexOf(g)), l++, l >= m.length && (l = 0), u = m[l];
         break;
-      case D.DECREASE:
+      case T.DECREASE:
         h(), l = C, l < 0 && (l = m.indexOf(g)), l--, l < 0 && (l = m.length - 1), u = m[l];
         break;
     }
@@ -535,7 +538,7 @@ const tt = (e, t) => c.useMemo(() => e ? t ? (n) => {
     submenuCloseDelay: it
   } = c.useContext(et), {
     submenuCtx: _e,
-    reposSubmenu: R = w
+    reposSubmenu: A = w
   } = c.useContext(ht), $ = c.useRef(null), Ve = c.useRef(), Et = c.useRef(), Pt = c.useRef(!1), Fe = c.useRef({
     width: 0,
     height: 0
@@ -544,19 +547,19 @@ const tt = (e, t) => c.useMemo(() => e ? t ? (n) => {
     hoverItem: ot,
     dispatch: U,
     updateItems: $e
-  } = Qn($, Ve), K = yt(y), kt = Ie(xe, "open"), Dt = Ie(xe, "close"), G = nt.current, vn = (S) => {
+  } = Qn($, Ve), K = yt(y), kt = Ie(xe, "open"), Tt = Ie(xe, "close"), G = nt.current, vn = (S) => {
     switch (S.key) {
       case L.HOME:
-        U(D.FIRST);
+        U(T.FIRST);
         break;
       case L.END:
-        U(D.LAST);
+        U(T.LAST);
         break;
       case L.UP:
-        U(D.DECREASE, ot);
+        U(T.DECREASE, ot);
         break;
       case L.DOWN:
-        U(D.INCREASE, ot);
+        U(T.INCREASE, ot);
         break;
       case L.SPACE:
         S.target && S.target.className.indexOf(ge) !== -1 && S.preventDefault();
@@ -569,7 +572,7 @@ const tt = (e, t) => c.useMemo(() => e ? t ? (n) => {
     y === "closing" && le(), B(E);
   }, bn = (S) => {
     S.stopPropagation(), Y.on(it, () => {
-      U(D.RESET), Ve.current.focus();
+      U(T.RESET), Ve.current.focus();
     });
   }, wn = (S) => {
     S.target === S.currentTarget && Y.off();
@@ -605,9 +608,9 @@ const tt = (e, t) => c.useMemo(() => e ? t ? (n) => {
       positionHelpers: W
     });
     const {
-      menuRect: At
+      menuRect: Rt
     } = W;
-    let be = At.height;
+    let be = Rt.height;
     if (!S && u !== "visible") {
       const {
         getTopOverflow: Pn,
@@ -618,8 +621,8 @@ const tt = (e, t) => c.useMemo(() => e ? t ? (n) => {
       if (Be > 0 || ye(Be, 0) && ye(be, zt))
         we = be - Be, ct = Be;
       else {
-        const De = Pn(ne);
-        (De < 0 || ye(De, 0) && ye(be, zt)) && (we = be + De, ct = 0 - De, we >= 0 && (ne -= De));
+        const Te = Pn(ne);
+        (Te < 0 || ye(Te, 0) && ye(be, zt)) && (we = be + Te, ct = 0 - Te, we >= 0 && (ne -= Te));
       }
       we >= 0 ? (be = we, le({
         height: we,
@@ -633,13 +636,13 @@ const tt = (e, t) => c.useMemo(() => e ? t ? (n) => {
       x: pe,
       y: ne
     }), Oe(st), Fe.current = {
-      width: At.width,
+      width: Rt.width,
       height: be
     };
   }, [i, C, Le, h, j, X, l, u, o, a, s, Ne, je, G]);
   Ke(() => {
     K && (de(), Pt.current && Pe()), Pt.current = K, Nt.current = de;
-  }, [K, de, R]), Ke(() => {
+  }, [K, de, A]), Ke(() => {
     I && !b && ($.current.scrollTop = 0);
   }, [I, b]), Ke(() => $e, [$e]), c.useEffect(() => {
     let {
@@ -658,18 +661,18 @@ const tt = (e, t) => c.useMemo(() => e ? t ? (n) => {
       return;
     const J = () => {
       H === "auto" ? ft(() => de(!0)) : B(V, {
-        reason: Re.SCROLL
+        reason: Ae.SCROLL
       });
     }, W = G.anchors.concat(ke !== "initial" ? S : []);
     return W.forEach((x) => x.addEventListener("scroll", J)), () => W.forEach((x) => x.removeEventListener("scroll", J));
   }, [ue, G, K, V, ke, de]);
-  const Tt = !!I && I.overflowAmt > 0;
+  const Dt = !!I && I.overflowAmt > 0;
   c.useEffect(() => {
-    if (Tt || !K || !m)
+    if (Dt || !K || !m)
       return;
     const S = () => ft(de), H = m.current;
     return H.addEventListener("scroll", S), () => H.removeEventListener("scroll", S);
-  }, [K, Tt, m, de]), c.useEffect(() => {
+  }, [K, Dt, m, de]), c.useEffect(() => {
     if (typeof ResizeObserver != "function" || He === "initial")
       return;
     const S = new ResizeObserver(([J]) => {
@@ -688,7 +691,7 @@ const tt = (e, t) => c.useMemo(() => e ? t ? (n) => {
         const ne = x.getBoundingClientRect();
         ve = ne.width, pe = ne.height;
       }
-      ve === 0 || pe === 0 || ye(ve, Fe.current.width, 1) && ye(pe, Fe.current.height, 1) || Te.flushSync(() => {
+      ve === 0 || pe === 0 || ye(ve, Fe.current.width, 1) && ye(pe, Fe.current.height, 1) || De.flushSync(() => {
         Nt.current(), Pe();
       });
     }), H = $.current;
@@ -697,14 +700,14 @@ const tt = (e, t) => c.useMemo(() => e ? t ? (n) => {
     }), () => S.unobserve(H);
   }, [He]), c.useEffect(() => {
     if (!K) {
-      U(D.RESET), Dt || le();
+      U(T.RESET), Tt || le();
       return;
     }
     const {
       position: S,
       alwaysUpdate: H
     } = z || {}, J = () => {
-      S === Se.FIRST ? U(D.FIRST) : S === Se.LAST ? U(D.LAST) : S >= -1 && U(D.SET_INDEX, void 0, S);
+      S === Se.FIRST ? U(T.FIRST) : S === Se.LAST ? U(T.LAST) : S >= -1 && U(T.SET_INDEX, void 0, S);
     };
     if (H)
       J();
@@ -715,7 +718,7 @@ const tt = (e, t) => c.useMemo(() => e ? t ? (n) => {
       }, kt ? 170 : 100);
       return () => clearTimeout(W);
     }
-  }, [K, kt, Dt, p, z, U]);
+  }, [K, kt, Tt, p, z, U]);
   const yn = c.useMemo(() => ({
     isParentOpen: K,
     submenuCtx: Y,
@@ -744,7 +747,7 @@ const tt = (e, t) => c.useMemo(() => e ? t ? (n) => {
     element: Wn,
     modifiers: Mn,
     className: r.className
-  }), Rt = /* @__PURE__ */ T.jsxs("ul", {
+  }), At = /* @__PURE__ */ D.jsxs("ul", {
     role: "menu",
     "aria-label": e,
     ...Ct(P),
@@ -770,7 +773,7 @@ const tt = (e, t) => c.useMemo(() => e ? t ? (n) => {
       left: O.x,
       top: O.y
     },
-    children: [/* @__PURE__ */ T.jsx("li", {
+    children: [/* @__PURE__ */ D.jsx("li", {
       tabIndex: -1,
       style: {
         position: ut,
@@ -782,7 +785,7 @@ const tt = (e, t) => c.useMemo(() => e ? t ? (n) => {
       ref: Ve,
       ...xt,
       ...g
-    }), i && /* @__PURE__ */ T.jsx("li", {
+    }), i && /* @__PURE__ */ D.jsx("li", {
       ...xt,
       ...r,
       className: En,
@@ -794,22 +797,22 @@ const tt = (e, t) => c.useMemo(() => e ? t ? (n) => {
         ...r.style
       },
       ref: Et
-    }), /* @__PURE__ */ T.jsx(ht.Provider, {
+    }), /* @__PURE__ */ D.jsx(ht.Provider, {
       value: Cn,
-      children: /* @__PURE__ */ T.jsx(St.Provider, {
+      children: /* @__PURE__ */ D.jsx(St.Provider, {
         value: yn,
-        children: /* @__PURE__ */ T.jsx(Yt.Provider, {
+        children: /* @__PURE__ */ D.jsx(Yt.Provider, {
           value: ot,
           children: B(se, It)
         })
       })
     })]
   });
-  return f ? /* @__PURE__ */ T.jsx(qn, {
+  return f ? /* @__PURE__ */ D.jsx(qn, {
     ...f,
     isOpen: K,
-    children: Rt
-  }) : Rt;
+    children: At
+  }) : At;
 }, ai = /* @__PURE__ */ c.forwardRef(function({
   "aria-label": t,
   className: n,
@@ -854,23 +857,23 @@ const tt = (e, t) => c.useMemo(() => e ? t ? (n) => {
       ce === void 0 && (ce = O && N.key === L.SPACE), ce || B(j, {
         value: N.value,
         key: N.key,
-        reason: Re.CLICK
+        reason: Ae.CLICK
       });
     },
     handleClose(N) {
       B(j, {
         key: N,
-        reason: Re.CLICK
+        reason: Ae.CLICK
       });
     }
   }), [b, j]);
   if (!z)
     return null;
-  const V = /* @__PURE__ */ T.jsx(et.Provider, {
+  const V = /* @__PURE__ */ D.jsx(et.Provider, {
     value: X,
-    children: /* @__PURE__ */ T.jsx(Gt.Provider, {
+    children: /* @__PURE__ */ D.jsx(Gt.Provider, {
       value: se,
-      children: /* @__PURE__ */ T.jsx(qt, {
+      children: /* @__PURE__ */ D.jsx(qt, {
         ...w,
         ariaLabel: t || "Menu",
         externalRef: p,
@@ -886,7 +889,7 @@ const tt = (e, t) => c.useMemo(() => e ? t ? (n) => {
       })
     })
   });
-  return l === !0 && typeof document < "u" ? /* @__PURE__ */ Te.createPortal(V, document.body) : l ? l.target ? /* @__PURE__ */ Te.createPortal(V, l.target) : l.stablePosition ? null : V : V;
+  return l === !0 && typeof document < "u" ? /* @__PURE__ */ De.createPortal(V, document.body) : l ? l.target ? /* @__PURE__ */ De.createPortal(V, l.target) : l.stablePosition ? null : V : V;
 }), gt = 0, mt = 1, Ye = 2, Ge = 3, Ze = 4, si = 5, Jt = 6, ci = ["preEnter", "entering", "entered", "preExit", "exiting", "exited", "unmounted"], Qt = (e) => ({
   _s: e,
   status: ci[e],
@@ -1031,8 +1034,8 @@ const tt = (e, t) => c.useMemo(() => e ? t ? (n) => {
   return tn(a, h), c.useImperativeHandle(o, () => ({
     openMenu: m,
     closeMenu: () => d(!1)
-  })), /* @__PURE__ */ T.jsxs(c.Fragment, {
-    children: [E, /* @__PURE__ */ T.jsx(ai, {
+  })), /* @__PURE__ */ D.jsxs(c.Fragment, {
+    children: [E, /* @__PURE__ */ D.jsx(ai, {
       ...s,
       ...g,
       "aria-label": t || (typeof p.props.children == "string" ? p.props.children : "Menu"),
@@ -1044,7 +1047,7 @@ const tt = (e, t) => c.useMemo(() => e ? t ? (n) => {
 }), nn = (e, t) => {
   const n = /* @__PURE__ */ c.memo(t), i = /* @__PURE__ */ c.forwardRef((r, o) => {
     const a = c.useRef(null);
-    return /* @__PURE__ */ T.jsx(n, {
+    return /* @__PURE__ */ D.jsx(n, {
       ...r,
       itemRef: a,
       externalRef: o,
@@ -1096,26 +1099,26 @@ const tt = (e, t) => c.useMemo(() => e ? t ? (n) => {
     v: 0
   }), Oe = () => {
     j.off(), F.v && (clearTimeout(F.v), F.v = 0);
-  }, Y = (...R) => {
-    Oe(), Ee(), !q && ce(...R);
-  }, Ee = () => !f && !q && X(D.SET, d.current), Pe = (R) => {
-    Ee(), a || (F.v = setTimeout(() => ft(Y), Math.max(R, 0)));
-  }, xe = (R) => {
-    q || (R.stopPropagation(), !(F.v || I) && j.on(p, () => Pe(w - p), () => Pe(w)));
+  }, Y = (...A) => {
+    Oe(), Ee(), !q && ce(...A);
+  }, Ee = () => !f && !q && X(T.SET, d.current), Pe = (A) => {
+    Ee(), a || (F.v = setTimeout(() => ft(Y), Math.max(A, 0)));
+  }, xe = (A) => {
+    q || (A.stopPropagation(), !(F.v || I) && j.on(p, () => Pe(w - p), () => Pe(w)));
   }, Ne = () => {
-    Oe(), I || X(D.UNSET, d.current);
-  }, Le = (R) => {
+    Oe(), I || X(T.UNSET, d.current);
+  }, Le = (A) => {
     if (f)
-      switch (R.key) {
+      switch (A.key) {
         case L.ENTER:
-          R.preventDefault();
+          A.preventDefault();
         case L.SPACE:
         case L.RIGHT:
           a !== "none" && Y(Se.FIRST);
       }
-  }, je = (R) => {
+  }, je = (A) => {
     let $ = !1;
-    switch (R.key) {
+    switch (A.key) {
       case L.LEFT:
         I && (d.current.focus(), O(!1), $ = !0);
         break;
@@ -1123,13 +1126,13 @@ const tt = (e, t) => c.useMemo(() => e ? t ? (n) => {
         I || ($ = !0);
         break;
     }
-    $ && (R.preventDefault(), R.stopPropagation());
+    $ && (A.preventDefault(), A.stopPropagation());
   };
   on(q, d, se), tn(s, I), c.useEffect(() => j.toggle(I), [j, I]), c.useEffect(() => () => clearTimeout(F.v), [F]), c.useEffect(() => {
     f && z ? d.current.focus() : O(!1);
   }, [f, z, O, d]), c.useImperativeHandle(g, () => ({
-    openMenu: (...R) => {
-      z && Y(...R);
+    openMenu: (...A) => {
+      z && Y(...A);
     },
     closeMenu: () => {
       I && (d.current.focus(), O(!1));
@@ -1151,7 +1154,7 @@ const tt = (e, t) => c.useMemo(() => e ? t ? (n) => {
     onKeyDown: Le,
     onClick: () => a !== "none" && Y()
   }, ke), _e = () => {
-    const R = /* @__PURE__ */ T.jsx(qt, {
+    const A = /* @__PURE__ */ D.jsx(qt, {
       ...l,
       ...N,
       ariaLabel: t || (typeof o == "string" ? o : "Submenu"),
@@ -1161,9 +1164,9 @@ const tt = (e, t) => c.useMemo(() => e ? t ? (n) => {
       parentScrollingRef: V && y,
       isDisabled: q
     }), $ = b.current;
-    return V && $ ? /* @__PURE__ */ Te.createPortal(R, $) : R;
+    return V && $ ? /* @__PURE__ */ De.createPortal(A, $) : A;
   };
-  return /* @__PURE__ */ T.jsxs("li", {
+  return /* @__PURE__ */ D.jsxs("li", {
     className: me({
       block: ge,
       element: Yn,
@@ -1175,7 +1178,7 @@ const tt = (e, t) => c.useMemo(() => e ? t ? (n) => {
     role: Zt,
     ref: le,
     onKeyDown: je,
-    children: [/* @__PURE__ */ T.jsx("div", {
+    children: [/* @__PURE__ */ D.jsx("div", {
       role: Mt,
       "aria-haspopup": !0,
       "aria-expanded": I,
@@ -1200,9 +1203,9 @@ const tt = (e, t) => c.useMemo(() => e ? t ? (n) => {
     dispatch: s,
     updateItems: f
   } = c.useContext(St), g = () => {
-    !n && !i && s(D.SET, e.current);
+    !n && !i && s(T.SET, e.current);
   }, d = () => {
-    !i && s(D.UNSET, e.current);
+    !i && s(T.UNSET, e.current);
   }, m = (l) => {
     n && !l.currentTarget.contains(l.relatedTarget) && d();
   }, C = (l) => {
@@ -1278,20 +1281,20 @@ const tt = (e, t) => c.useMemo(() => e ? t ? (n) => {
     }),
     children: c.useMemo(() => B(s, X), [s, X])
   };
-  return E ? /* @__PURE__ */ T.jsx("li", {
+  return E ? /* @__PURE__ */ D.jsx("li", {
     role: Zt,
-    children: /* @__PURE__ */ T.jsx("a", {
+    children: /* @__PURE__ */ D.jsx("a", {
       href: i,
       ...V
     })
-  }) : /* @__PURE__ */ T.jsx("li", {
+  }) : /* @__PURE__ */ D.jsx("li", {
     ...V
   });
 }), bi = /* @__PURE__ */ c.memo(/* @__PURE__ */ c.forwardRef(function({
   className: t,
   ...n
 }, i) {
-  return /* @__PURE__ */ T.jsx("li", {
+  return /* @__PURE__ */ D.jsx("li", {
     role: "separator",
     ...n,
     ref: i,
@@ -1348,24 +1351,24 @@ const _t = /* @__PURE__ */ rn(/* @__PURE__ */ an(yi), ["hover", "disabled", "anc
   } = n, {
     column: r
   } = t, o = i.getVisibleLeafColumns().length, a = [];
-  return r.getCanSort() && a.push(/* @__PURE__ */ A(Ue, { onClick: () => r.toggleSorting(!1), children: [
+  return r.getCanSort() && a.push(/* @__PURE__ */ R(Ue, { onClick: () => r.toggleSorting(!1), children: [
     /* @__PURE__ */ v(_, { icon: Wt.faArrowUpAZ }),
     " Сортировать по возрастанию"
-  ] }, "asc"), /* @__PURE__ */ A(Ue, { onClick: () => r.toggleSorting(!0), children: [
+  ] }, "asc"), /* @__PURE__ */ R(Ue, { onClick: () => r.toggleSorting(!0), children: [
     /* @__PURE__ */ v(_, { icon: Kt.faArrowDownZA }),
     "Сортировать по убыванию"
-  ] }, "desc")), r.getCanHide() && a.push(/* @__PURE__ */ A(Ue, { disabled: o === 1, onClick: () => t.column.toggleVisibility(), children: [
+  ] }, "desc")), r.getCanHide() && a.push(/* @__PURE__ */ R(Ue, { disabled: o === 1, onClick: () => t.column.toggleVisibility(), children: [
     /* @__PURE__ */ v(_, { icon: zn.faEyeSlash }),
     "Скрыть колонку"
-  ] }, "hide")), /* @__PURE__ */ A(Mi, { menuButton: e, css: {
+  ] }, "hide")), /* @__PURE__ */ R(Mi, { menuButton: e, css: {
     fontSize: "0.75rem",
     lineHeight: "1rem"
   }, direction: "bottom", portal: !0, children: [
-    a.length > 0 && /* @__PURE__ */ A(dt, { children: [
+    a.length > 0 && /* @__PURE__ */ R(dt, { children: [
       a,
       /* @__PURE__ */ v(bi, {})
     ] }),
-    /* @__PURE__ */ v(vi, { label: /* @__PURE__ */ A(dt, { children: [
+    /* @__PURE__ */ v(vi, { label: /* @__PURE__ */ R(dt, { children: [
       /* @__PURE__ */ v(_, { icon: Ut.faTableColumns }),
       "Колонки"
     ] }), children: i.getAllLeafColumns().filter((s) => s.getCanHide()).map((s) => /* @__PURE__ */ v(Ue, { type: "checkbox", checked: s.getIsVisible(), disabled: o === 1 && s.getIsVisible(), onClick: (f) => {
@@ -1380,7 +1383,7 @@ const _t = /* @__PURE__ */ rn(/* @__PURE__ */ an(yi), ["hover", "disabled", "anc
     getContext: r,
     getResizeHandler: o
   } = e;
-  return /* @__PURE__ */ A("th", { css: [{
+  return /* @__PURE__ */ R("th", { css: [{
     position: "relative",
     userSelect: "none",
     whiteSpace: "nowrap",
@@ -1395,7 +1398,7 @@ const _t = /* @__PURE__ */ rn(/* @__PURE__ */ an(yi), ["hover", "disabled", "anc
             }
           }
         `], colSpan: t, children: [
-    /* @__PURE__ */ A("div", { css: [{
+    /* @__PURE__ */ R("div", { css: [{
       position: "relative",
       display: "flex",
       width: "100%",
@@ -1410,7 +1413,7 @@ const _t = /* @__PURE__ */ rn(/* @__PURE__ */ an(yi), ["hover", "disabled", "anc
               }
             }
           `], children: [
-      /* @__PURE__ */ A("div", { onClick: () => {
+      /* @__PURE__ */ R("div", { onClick: () => {
         if (n.getCanSort())
           return n.toggleSorting();
       }, css: [n.getCanSort() ? {
@@ -1576,12 +1579,12 @@ const ie = Symbol.for("@ts-pattern/matcher"), ki = Symbol.for("@ts-pattern/isVar
   return Object.is(t, e);
 }, ae = (e) => {
   var t, n, i;
-  return pt(e) ? We(e) ? (t = (n = (i = e[ie]()).getSelectionKeys) == null ? void 0 : n.call(i)) != null ? t : [] : Array.isArray(e) ? Ae(e, ae) : Ae(Object.values(e), ae) : [];
-}, Ae = (e, t) => e.reduce((n, i) => n.concat(t(i)), []);
+  return pt(e) ? We(e) ? (t = (n = (i = e[ie]()).getSelectionKeys) == null ? void 0 : n.call(i)) != null ? t : [] : Array.isArray(e) ? Re(e, ae) : Re(Object.values(e), ae) : [];
+}, Re = (e, t) => e.reduce((n, i) => n.concat(t(i)), []);
 function Z(e) {
-  return Object.assign(e, { optional: () => Di(e), and: (t) => k(e, t), or: (t) => Ti(e, t), select: (t) => t === void 0 ? Vt(e) : Vt(t, e) });
+  return Object.assign(e, { optional: () => Ti(e), and: (t) => k(e, t), or: (t) => Di(e, t), select: (t) => t === void 0 ? Vt(e) : Vt(t, e) });
 }
-function Di(e) {
+function Ti(e) {
   return Z({ [ie]: () => ({ match: (t) => {
     let n = {};
     const i = (r, o) => {
@@ -1597,16 +1600,16 @@ function k(...e) {
       n[r] = o;
     };
     return { matched: e.every((r) => te(r, t, i)), selections: n };
-  }, getSelectionKeys: () => Ae(e, ae), matcherType: "and" }) });
+  }, getSelectionKeys: () => Re(e, ae), matcherType: "and" }) });
 }
-function Ti(...e) {
+function Di(...e) {
   return Z({ [ie]: () => ({ match: (t) => {
     let n = {};
     const i = (r, o) => {
       n[r] = o;
     };
-    return Ae(e, ae).forEach((r) => i(r, void 0)), { matched: e.some((r) => te(r, t, i)), selections: n };
-  }, getSelectionKeys: () => Ae(e, ae), matcherType: "or" }) });
+    return Re(e, ae).forEach((r) => i(r, void 0)), { matched: e.some((r) => te(r, t, i)), selections: n };
+  }, getSelectionKeys: () => Re(e, ae), matcherType: "or" }) });
 }
 function M(e) {
   return { [ie]: () => ({ match: (t) => ({ matched: !!e(t) }) }) };
@@ -1719,7 +1722,7 @@ const Ii = ({
     height: "100%",
     alignItems: "center",
     justifyContent: "center"
-  }, className: i, children: /* @__PURE__ */ v("div", { children: /* @__PURE__ */ A("div", { css: {
+  }, className: i, children: /* @__PURE__ */ v("div", { children: /* @__PURE__ */ R("div", { css: {
     display: "flex",
     flexDirection: "column",
     gap: "1rem"
@@ -1735,8 +1738,9 @@ const Ii = ({
     /* @__PURE__ */ v("div", { children: n })
   ] }) }) });
 }, Zi = ({
-  table: e
-}) => e.error ? /* @__PURE__ */ v(Ii, { type: "error", title: e.error.message }) : /* @__PURE__ */ v(kn, { spinning: e.isLoading ?? !1, children: /* @__PURE__ */ A("table", { css: [{
+  table: e,
+  onRowDoubleClick: t
+}) => e.error ? /* @__PURE__ */ v(Ii, { type: "error", title: e.error.message }) : /* @__PURE__ */ v(kn, { spinning: e.isLoading ?? !1, children: /* @__PURE__ */ R("table", { css: [{
   position: "relative",
   minWidth: "100%",
   borderCollapse: "separate",
@@ -1750,11 +1754,11 @@ const Ii = ({
           `], style: {
   width: e.getTotalSize()
 }, children: [
-  e.getHeaderGroups().map((t) => /* @__PURE__ */ v("colgroup", { children: t.headers.map((n) => /* @__PURE__ */ v("col", { span: n.colSpan, style: {
-    width: n.column.getSize()
-  } }, n.id)) }, t.id)),
+  e.getHeaderGroups().map((n) => /* @__PURE__ */ v("colgroup", { children: n.headers.map((i) => /* @__PURE__ */ v("col", { span: i.colSpan, style: {
+    width: i.column.getSize()
+  } }, i.id)) }, n.id)),
   e.isLoading === !0 ? null : /* @__PURE__ */ v(Ni, { ...e }),
-  /* @__PURE__ */ v("tbody", { children: e.getRowModel().rows.map((t) => /* @__PURE__ */ v(Fn, { ...t }, t.id)) })
+  /* @__PURE__ */ v("tbody", { children: e.getRowModel().rows.map((n) => /* @__PURE__ */ v(Fn, { onRowDoubleClick: t, ...n }, n.id)) })
 ] }) });
 var dn = {};
 (function(e) {
@@ -1836,7 +1840,7 @@ var mn = {};
     ]
   }, e.faAnglesLeft = e.definition, e.prefix = t, e.iconName = n, e.width = i, e.height = r, e.ligatures = o, e.unicode = a, e.svgPathData = s, e.aliases = o;
 })(mn);
-const Ri = ({
+const Ai = ({
   table: {
     refetch: e,
     recordsTotal: t = 0,
@@ -1846,7 +1850,7 @@ const Ri = ({
   const i = n.getState(), {
     pagination: r
   } = i, o = c.useMemo(() => r.pageIndex * r.pageSize + (t > 0 ? 1 : 0), [r, t]), a = c.useMemo(() => Math.min(t, (r.pageIndex + 1) * r.pageSize), [r, t]);
-  return /* @__PURE__ */ A("div", { css: {
+  return /* @__PURE__ */ R("div", { css: {
     display: "flex",
     width: "100%",
     alignItems: "center",
@@ -1860,7 +1864,7 @@ const Ri = ({
     lineHeight: "1rem",
     containerType: "inline-size"
   }, children: [
-    /* @__PURE__ */ A("div", { css: {
+    /* @__PURE__ */ R("div", { css: {
       display: "flex",
       flex: "1 1 0%",
       justifyContent: "center",
@@ -1876,7 +1880,7 @@ const Ri = ({
       /* @__PURE__ */ v(Ce, { size: "small", onClick: () => n.previousPage(), disabled: !n.getCanPreviousPage(), children: /* @__PURE__ */ v(_, { css: {
         width: "18px"
       }, icon: gn.faAngleLeft }) }),
-      /* @__PURE__ */ A("span", { css: {
+      /* @__PURE__ */ R("span", { css: {
         display: "none",
         alignItems: "center",
         gap: "0.5rem",
@@ -1908,12 +1912,12 @@ const Ri = ({
       /* @__PURE__ */ v(Ce, { size: "small", onClick: () => n.setPageIndex(n.getPageCount() - 1), disabled: !n.getCanNextPage(), children: /* @__PURE__ */ v(_, { icon: fn.faAnglesRight }) }),
       e && /* @__PURE__ */ v(Ce, { size: "small", disabled: n.isFetching, onClick: e, children: /* @__PURE__ */ v(_, { spin: n.isFetching, icon: dn.faArrowsRotate }) })
     ] }),
-    /* @__PURE__ */ A("div", { css: {
+    /* @__PURE__ */ R("div", { css: {
       display: "flex",
       alignItems: "center",
       gap: "0.5rem"
     }, children: [
-      /* @__PURE__ */ A("div", { css: {
+      /* @__PURE__ */ R("div", { css: {
         display: "flex",
         gap: "0.125rem"
       }, children: [
@@ -1923,7 +1927,7 @@ const Ri = ({
             display: "block"
           }
         }, children: "Отражаются записи" }),
-        /* @__PURE__ */ A("span", { css: {
+        /* @__PURE__ */ R("span", { css: {
           display: "none",
           "@container (min-width: 410px)": {
             display: "block"
@@ -1935,7 +1939,7 @@ const Ri = ({
           a,
           ","
         ] }),
-        /* @__PURE__ */ A("span", { css: {
+        /* @__PURE__ */ R("span", { css: {
           display: "none",
           paddingLeft: "0.25rem",
           "@container (min-width: 360px)": {
@@ -1958,15 +1962,15 @@ const Ri = ({
       }, children: [25, 50, 100].map((s) => /* @__PURE__ */ v("option", { value: s, children: s }, s)) })
     ] })
   ] });
-}, qi = Qe.memo(Ri), Ai = ({
+}, qi = Qe.memo(Ai), Ri = ({
   columns: e,
   data: t = [],
   isLoading: n,
   isFetching: i,
   ...r
 }) => {
-  const o = Rn({
-    getCoreRowModel: An(),
+  const o = An({
+    getCoreRowModel: Rn(),
     columnResizeMode: "onChange",
     ...r,
     columns: e,
@@ -2002,11 +2006,11 @@ const Ri = ({
     };
   }, [a, f]), h = xn(e, {
     params: C,
-    placeholderData: Dn
+    placeholderData: Tn
   }), l = c.useMemo(() => {
     var E, P;
     return isNaN(Number((E = h.data) == null ? void 0 : E.recordsFiltered)) ? 0 : Number((P = h.data) == null ? void 0 : P.recordsFiltered);
-  }, [(p = h.data) == null ? void 0 : p.recordsFiltered]), u = c.useMemo(() => l > 0 ? Math.ceil(l / a.pageSize) : 1, [a.pageSize, l]), b = Ai({
+  }, [(p = h.data) == null ? void 0 : p.recordsFiltered]), u = c.useMemo(() => l > 0 ? Math.ceil(l / a.pageSize) : 1, [a.pageSize, l]), b = Ri({
     ...o,
     columns: t,
     data: (y = h.data) == null ? void 0 : y.data,
@@ -2084,7 +2088,7 @@ const Ri = ({
   return i ? /* @__PURE__ */ v(_, { css: {
     "--tw-text-opacity": "1",
     color: "rgb(156 163 175 / var(--tw-text-opacity))"
-  }, icon: Tn.faCircleNotch, spin: !0 }) : n(e.getValue());
+  }, icon: Dn.faCircleNotch, spin: !0 }) : n(e.getValue());
 }, _i = Qe.memo(Hi), Vi = () => (e, t, n, i) => ({
   header: n,
   accessorKey: e,
