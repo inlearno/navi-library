@@ -3690,7 +3690,7 @@ var fr = {};
 const ho = [{
   id: "users",
   path: "/users",
-  component: () => import("./UsersList-6cba19b5.js"),
+  component: () => import("./UsersList-9a055a91.js"),
   windowOptions: {
     icon: fr.faUsers,
     title: "Пользователи",
@@ -3723,7 +3723,7 @@ var Bn = {};
 const po = [{
   id: "program-docs",
   path: "/program-docs",
-  component: () => import("./ProgramDocsList-dd37af06.js"),
+  component: () => import("./ProgramDocsList-79175f64.js"),
   windowOptions: {
     title: "Конструктор документов программ",
     width: 700,
@@ -3740,7 +3740,7 @@ const po = [{
 }, {
   id: "program-docs-constructor",
   path: "/program-docs/constructor/:id",
-  component: () => import("./ProgramConstructor-bae42b71.js"),
+  component: () => import("./ProgramConstructor-4552bcb2.js"),
   windowOptions: {
     title: "Конструктор программы",
     width: 700,
@@ -3750,7 +3750,7 @@ const po = [{
 }, {
   id: "program-docs-draft",
   path: "/program-docs/draft",
-  component: () => import("./Draft-b4baf643.js"),
+  component: () => import("./Draft-f49781b6.js"),
   windowOptions: {
     title: "Черновик программы",
     width: 700,
@@ -4657,6 +4657,7 @@ const Ao = (e) => {
 Ao(qn);
 export {
   ts as F,
+  K as Q,
   Eo as S,
   Mt as a,
   It as b,
