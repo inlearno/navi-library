@@ -3690,7 +3690,7 @@ var fr = {};
 const ho = [{
   id: "users",
   path: "/users",
-  component: () => import("./UsersList-9a055a91.js"),
+  component: () => import("./UsersList-a984bd35.js"),
   windowOptions: {
     icon: fr.faUsers,
     title: "Пользователи",
@@ -3723,7 +3723,7 @@ var Bn = {};
 const po = [{
   id: "program-docs",
   path: "/program-docs",
-  component: () => import("./ProgramDocsList-79175f64.js"),
+  component: () => import("./ProgramDocsList-0f37a52a.js"),
   windowOptions: {
     title: "Конструктор документов программ",
     width: 700,
@@ -3740,7 +3740,7 @@ const po = [{
 }, {
   id: "program-docs-constructor",
   path: "/program-docs/constructor/:id",
-  component: () => import("./ProgramConstructor-4552bcb2.js"),
+  component: () => import("./ProgramConstructor-9ed1cebb.js"),
   windowOptions: {
     title: "Конструктор программы",
     width: 700,
@@ -3750,12 +3750,21 @@ const po = [{
 }, {
   id: "program-docs-draft",
   path: "/program-docs/draft",
-  component: () => import("./Draft-f49781b6.js"),
+  component: () => import("./Draft-46db6cb6.js"),
   windowOptions: {
     title: "Черновик программы",
     width: 700,
     height: 500,
     maximized: !0
+  }
+}, {
+  id: "program-constructor-copy",
+  path: "/program-docs/copy/:id",
+  component: () => import("./CopyProgramForm-0808e281.js"),
+  windowOptions: {
+    title: "Копирование программы",
+    width: 700,
+    height: 500
   }
 }], qn = [...po, ...ho], zn = z.createContext(null), mo = () => {
   const e = z.useContext(zn);

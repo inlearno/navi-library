@@ -1,12 +1,12 @@
-import { j as e, a as u } from "./library-8664d5a6.js";
-import { z as o, g as _, d as g, u as h, C as y, F as a, T as n, P as f, D as s, R as b, a as v } from "./RootSection-48795fae.js";
-import { u as q } from "./useNavigate-2d87d7c7.js";
-import { P as x } from "./useDictionary-700de8dc.js";
-import { u as C } from "./useWindowController-f09a49c5.js";
+import { j as e, a as m } from "./library-7fb6c15a.js";
+import { z as o, h as _, e as g, u as h, B as f, F as a, T as s, P as y, D as c, R as b, a as v } from "./RootSection-407f953c.js";
+import { u as x } from "./useNavigate-2d87d7c7.js";
+import { P as q } from "./useDictionary-a91051fc.js";
+import { u as P } from "./useWindowController-67a241b3.js";
 import "./react-181b9648.js";
 import "./mui-d2313b11.js";
 import "./icons-42066a3f.js";
-const P = o.object({
+const w = o.object({
   steps_info: o.any(),
   partner_id: o.string({
     required_error: "Выберите организацию"
@@ -25,7 +25,10 @@ const P = o.object({
   }),
   year_created: o.string({
     required_error: "Выберите год создания"
-  }),
+  }).min(4, "Минимум 4 цифры").max(4, "Максимум 4 цифры").refine((i) => {
+    const n = Number(i);
+    return isNaN(n) ? !1 : n >= 1900 && n <= (/* @__PURE__ */ new Date()).getFullYear();
+  }, "Введите валидный год"),
   city_created: o.string({
     required_error: "Выберите город создания"
   })
@@ -36,60 +39,60 @@ const P = o.object({
   section_id: !0,
   year_created: !0,
   city_created: !0
-}), S = () => {
+}), R = () => {
   const {
-    close: l
-  } = C(), c = q(), d = _(), i = g("POST", "/api/rest/program-docs", {
+    close: i
+  } = P(), n = x(), d = _(), l = g("POST", "/api/rest/program-docs", {
     onSuccess: (r) => {
-      c(`/program-docs/constructor/${r.data.id}`), d("/api/rest/program-docs"), l();
+      n(`/program-docs/constructor/${r.data.id}`), d("/api/rest/program-docs"), i();
     }
   }), t = h({
-    mutation: i,
-    schema: P,
+    mutation: l,
+    schema: w,
     defaultValues: {
       steps_info: {
         general: "done"
       }
     }
   });
-  return /* @__PURE__ */ e(x, { bbar: /* @__PURE__ */ e("div", { css: {
+  return /* @__PURE__ */ e(q, { bbar: /* @__PURE__ */ e("div", { css: {
     display: "flex",
     width: "100%",
     justifyContent: "flex-end"
-  }, children: /* @__PURE__ */ e(y, { variant: "contained", color: "success", disabled: i.isPending, onClick: () => t.submit(), children: "Создать черновик" }) }), children: /* @__PURE__ */ u(v, { css: {
+  }, children: /* @__PURE__ */ e(f, { variant: "contained", color: "success", disabled: l.isPending, onClick: () => t.submit(), children: "Создать черновик" }) }), children: /* @__PURE__ */ m(v, { css: {
     display: "grid",
     gap: "1rem",
     padding: "1rem"
   }, form: t, children: [
     /* @__PURE__ */ e(a, { control: t.control, name: "name", render: ({
       field: r
-    }) => /* @__PURE__ */ e(n, { css: {
+    }) => /* @__PURE__ */ e(s, { css: {
       width: "100%"
     }, ...r, placeholder: "Введите наименование", label: "Наименование" }) }),
     /* @__PURE__ */ e(a, { control: t.control, name: "partner_id", render: ({
       field: r
-    }) => /* @__PURE__ */ e(f, { ...r, placeholder: "Выберите организацию", label: "Организация" }) }),
+    }) => /* @__PURE__ */ e(y, { ...r, placeholder: "Выберите организацию", label: "Организация" }) }),
     /* @__PURE__ */ e(a, { control: t.control, name: "program_type_id", render: ({
       field: r
-    }) => /* @__PURE__ */ e(s, { label: "Тип программы", ...r, dictionary: "navProgramType", filterOptions: (p) => p.filter(({
-      id: m
-    }) => m === 1), placeholder: "Выберите тип программы" }) }),
+    }) => /* @__PURE__ */ e(c, { label: "Тип программы", ...r, dictionary: "navProgramType", filterOptions: (p) => p.filter(({
+      id: u
+    }) => u === 1), placeholder: "Выберите тип программы" }) }),
     /* @__PURE__ */ e(a, { control: t.control, name: "section_id", render: ({
       field: r
     }) => /* @__PURE__ */ e(b, { label: "Направленность", placeholder: "Выберите направленность", ...r }) }),
     /* @__PURE__ */ e(a, { control: t.control, name: "program_level_id", render: ({
       field: r
-    }) => /* @__PURE__ */ e(s, { label: "Уровень", css: {
+    }) => /* @__PURE__ */ e(c, { label: "Уровень", css: {
       width: "100%"
     }, ...r, dictionary: "EventLevelsDict", placeholder: "Выберите уровень программы" }) }),
     /* @__PURE__ */ e(a, { control: t.control, name: "year_created", render: ({
       field: r
-    }) => /* @__PURE__ */ e(n, { label: "Год создания", placeholder: "Введите год", helperText: `Год создания программы, к примеру ${(/* @__PURE__ */ new Date()).getFullYear()}`, ...r }) }),
+    }) => /* @__PURE__ */ e(s, { label: "Год создания", placeholder: "Введите год", helperText: `Год создания программы, к примеру ${(/* @__PURE__ */ new Date()).getFullYear()}`, ...r }) }),
     /* @__PURE__ */ e(a, { control: t.control, name: "city_created", render: ({
       field: r
-    }) => /* @__PURE__ */ e(n, { label: "Город", placeholder: "Введите город", helperText: "Город, где программа создана", ...r }) })
+    }) => /* @__PURE__ */ e(s, { label: "Город", placeholder: "Введите город", helperText: "Город, где программа создана", ...r }) })
   ] }) });
 };
 export {
-  S as default
+  R as default
 };
