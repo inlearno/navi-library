@@ -1,9 +1,9 @@
-import { j as e, a as m } from "./library-7fb6c15a.js";
-import { z as o, h as _, e as g, u as h, B as f, F as a, T as s, P as y, D as c, R as b, a as v } from "./RootSection-407f953c.js";
-import { u as x } from "./useNavigate-2d87d7c7.js";
-import { P as q } from "./useDictionary-a91051fc.js";
-import { u as P } from "./useWindowController-67a241b3.js";
+import { j as e, a as m } from "./library-72beada2.js";
+import { z as o, h as _, e as g, u as h, B as f, F as a, T as s, P as y, D as c, R as b, a as v } from "./RootSection-610debea.js";
 import "./react-181b9648.js";
+import { u as x } from "./useWindowController-1af7876d.js";
+import { u as q } from "./useNavigate-2d87d7c7.js";
+import { P } from "./useDictionary-464da608.js";
 import "./mui-d2313b11.js";
 import "./icons-42066a3f.js";
 const w = o.object({
@@ -42,7 +42,7 @@ const w = o.object({
 }), R = () => {
   const {
     close: i
-  } = P(), n = x(), d = _(), l = g("POST", "/api/rest/program-docs", {
+  } = x(), n = q(), d = _(), l = g("POST", "/api/rest/program-docs", {
     onSuccess: (r) => {
       n(`/program-docs/constructor/${r.data.id}`), d("/api/rest/program-docs"), i();
     }
@@ -55,7 +55,7 @@ const w = o.object({
       }
     }
   });
-  return /* @__PURE__ */ e(q, { bbar: /* @__PURE__ */ e("div", { css: {
+  return /* @__PURE__ */ e(P, { bbar: /* @__PURE__ */ e("div", { css: {
     display: "flex",
     width: "100%",
     justifyContent: "flex-end"

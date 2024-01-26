@@ -1,8 +1,8 @@
-import { j as m, a as I, F as Ge, S as cn, k as ln, f as un } from "./library-7fb6c15a.js";
+import { j as m, a as I, F as Ge, S as cn, k as ln, f as un } from "./library-72beada2.js";
 import { j as k, n as dn, a as Ae, I as le, M as fn } from "./mui-d2313b11.js";
 import { f as tt, u as hn, g as gn } from "./table-90839a50.js";
 import { R as He, c as pe, r as c } from "./react-181b9648.js";
-import { f as mn, a as vn, b as pn, h as bn, c as wn } from "./useDictionary-a91051fc.js";
+import { f as mn, a as vn, b as pn, h as bn, c as wn } from "./useDictionary-464da608.js";
 import { F as H } from "./icons-42066a3f.js";
 import { N as vt, f as Cn } from "./index-38b3fe08.js";
 const yn = ({
@@ -162,8 +162,8 @@ const ie = ({
   const r = t ? `${e}__${t}` : e;
   let i = r;
   n && Object.keys(n).forEach((s) => {
-    const h = n[s];
-    h && (i += ` ${r}--${h === !0 ? s : `${s}-${h}`}`);
+    const d = n[s];
+    d && (i += ` ${r}--${d === !0 ? s : `${s}-${d}`}`);
   });
   let a = typeof o == "function" ? o(n) : o;
   return typeof a == "string" && (a = a.trim(), a && (i += ` ${a}`)), i;
@@ -212,7 +212,7 @@ const ie = ({
   transition: a,
   onClose: s
 }) => {
-  const h = be(a, "item"), b = ({
+  const d = be(a, "item"), b = ({
     key: g
   }) => {
     switch (g) {
@@ -223,7 +223,7 @@ const ie = ({
         });
         break;
     }
-  }, f = (g) => {
+  }, h = (g) => {
     r && !g.currentTarget.contains(g.relatedTarget) && F(s, {
       reason: we.BLUR
     });
@@ -231,14 +231,14 @@ const ie = ({
   return /* @__PURE__ */ k.jsx("div", {
     ...Ce({
       onKeyDown: b,
-      onBlur: f
+      onBlur: h
     }, n),
     className: ie({
       block: kn,
       modifiers: c.useMemo(() => ({
         theme: i,
-        itemTransition: h
-      }), [i, h]),
+        itemTransition: d
+      }), [i, d]),
       className: e
     }),
     style: {
@@ -268,31 +268,31 @@ const ie = ({
     items: [],
     hoverIndex: -1,
     sorted: !1
-  }).current, a = c.useCallback((h, b) => {
+  }).current, a = c.useCallback((d, b) => {
     const {
-      items: f
+      items: h
     } = i;
-    if (!h)
+    if (!d)
       i.items = [];
     else if (b)
-      f.push(h);
+      h.push(d);
     else {
-      const g = f.indexOf(h);
-      g > -1 && (f.splice(g, 1), h.contains(document.activeElement) && (t.current.focus(), o()));
+      const g = h.indexOf(d);
+      g > -1 && (h.splice(g, 1), d.contains(document.activeElement) && (t.current.focus(), o()));
     }
     i.hoverIndex = -1, i.sorted = !1;
-  }, [i, t]), s = c.useCallback((h, b, f) => {
+  }, [i, t]), s = c.useCallback((d, b, h) => {
     const {
       items: g,
       hoverIndex: y
-    } = i, d = () => {
+    } = i, f = () => {
       if (i.sorted)
         return;
       const p = e.current.querySelectorAll(".szh-menu__item");
       g.sort((w, v) => pt(p, w) - pt(p, v)), i.sorted = !0;
     };
     let l = -1, u;
-    switch (h) {
+    switch (d) {
       case N.RESET:
         break;
       case N.SET:
@@ -302,19 +302,19 @@ const ie = ({
         u = (p) => p === b ? void 0 : p;
         break;
       case N.FIRST:
-        d(), l = 0, u = g[l];
+        f(), l = 0, u = g[l];
         break;
       case N.LAST:
-        d(), l = g.length - 1, u = g[l];
+        f(), l = g.length - 1, u = g[l];
         break;
       case N.SET_INDEX:
-        d(), l = f, u = g[l];
+        f(), l = h, u = g[l];
         break;
       case N.INCREASE:
-        d(), l = y, l < 0 && (l = g.indexOf(b)), l++, l >= g.length && (l = 0), u = g[l];
+        f(), l = y, l < 0 && (l = g.indexOf(b)), l++, l >= g.length && (l = 0), u = g[l];
         break;
       case N.DECREASE:
-        d(), l = y, l < 0 && (l = g.indexOf(b)), l--, l < 0 && (l = g.length - 1), u = g[l];
+        f(), l = y, l < 0 && (l = g.indexOf(b)), l--, l < 0 && (l = g.length - 1), u = g[l];
         break;
     }
     u || (l = -1), o(u), i.hoverIndex = l;
@@ -330,31 +330,31 @@ const ie = ({
     top: 0,
     right: document.documentElement.clientWidth,
     bottom: window.innerHeight
-  } : n.getBoundingClientRect(), s = Nn(o), h = (l) => l + i.left - a.left - s.left, b = (l) => l + i.left + r.width - a.right + s.right, f = (l) => l + i.top - a.top - s.top, g = (l) => l + i.top + r.height - a.bottom + s.bottom;
+  } : n.getBoundingClientRect(), s = Nn(o), d = (l) => l + i.left - a.left - s.left, b = (l) => l + i.left + r.width - a.right + s.right, h = (l) => l + i.top - a.top - s.top, g = (l) => l + i.top + r.height - a.bottom + s.bottom;
   return {
     menuRect: r,
     containerRect: i,
-    getLeftOverflow: h,
+    getLeftOverflow: d,
     getRightOverflow: b,
-    getTopOverflow: f,
+    getTopOverflow: h,
     getBottomOverflow: g,
     confineHorizontally: (l) => {
-      let u = h(l);
+      let u = d(l);
       if (u < 0)
         l -= u;
       else {
         const p = b(l);
-        p > 0 && (l -= p, u = h(l), u < 0 && (l -= u));
+        p > 0 && (l -= p, u = d(l), u < 0 && (l -= u));
       }
       return l;
     },
     confineVertically: (l) => {
-      let u = f(l);
+      let u = h(l);
       if (u < 0)
         l -= u;
       else {
         const p = g(l);
-        p > 0 && (l -= p, u = f(l), u < 0 && (l -= u));
+        p > 0 && (l -= p, u = h(l), u < 0 && (l -= u));
       }
       return l;
     }
@@ -378,20 +378,20 @@ const ie = ({
   placeRightX: i,
   getLeftOverflow: a,
   getRightOverflow: s,
-  confineHorizontally: h,
+  confineHorizontally: d,
   confineVertically: b,
-  arrowRef: f,
+  arrowRef: h,
   arrow: g,
   direction: y,
-  position: d
+  position: f
 }) => {
   let l = y, u = o;
-  d !== "initial" && (u = b(u), d === "anchor" && (u = Math.min(u, e.bottom - t.top), u = Math.max(u, e.top - t.top - n.height)));
+  f !== "initial" && (u = b(u), f === "anchor" && (u = Math.min(u, e.bottom - t.top), u = Math.max(u, e.top - t.top - n.height)));
   let p, w, v;
-  return l === "left" ? (p = r, d !== "initial" && (w = a(p), w < 0 && (v = s(i), (v <= 0 || -w > v) && (p = i, l = "right")))) : (p = i, d !== "initial" && (v = s(p), v > 0 && (w = a(r), (w >= 0 || -w < v) && (p = r, l = "left")))), d === "auto" && (p = h(p)), {
+  return l === "left" ? (p = r, f !== "initial" && (w = a(p), w < 0 && (v = s(i), (v <= 0 || -w > v) && (p = i, l = "right")))) : (p = i, f !== "initial" && (v = s(p), v > 0 && (w = a(r), (w >= 0 || -w < v) && (p = r, l = "left")))), f === "auto" && (p = d(p)), {
     arrowY: g ? Hn({
       menuY: u,
-      arrowRef: f,
+      arrowRef: h,
       anchorRect: e,
       containerRect: t,
       menuRect: n
@@ -419,20 +419,20 @@ const ie = ({
   placeBottomY: i,
   getTopOverflow: a,
   getBottomOverflow: s,
-  confineHorizontally: h,
+  confineHorizontally: d,
   confineVertically: b,
-  arrowRef: f,
+  arrowRef: h,
   arrow: g,
   direction: y,
-  position: d
+  position: f
 }) => {
   let l = y === "top" ? "top" : "bottom", u = o;
-  d !== "initial" && (u = h(u), d === "anchor" && (u = Math.min(u, e.right - t.left), u = Math.max(u, e.left - t.left - n.width)));
+  f !== "initial" && (u = d(u), f === "anchor" && (u = Math.min(u, e.right - t.left), u = Math.max(u, e.left - t.left - n.width)));
   let p, w, v;
-  return l === "top" ? (p = r, d !== "initial" && (w = a(p), w < 0 && (v = s(i), (v <= 0 || -w > v) && (p = i, l = "bottom")))) : (p = i, d !== "initial" && (v = s(p), v > 0 && (w = a(r), (w >= 0 || -w < v) && (p = r, l = "top")))), d === "auto" && (p = b(p)), {
+  return l === "top" ? (p = r, f !== "initial" && (w = a(p), w < 0 && (v = s(i), (v <= 0 || -w > v) && (p = i, l = "bottom")))) : (p = i, f !== "initial" && (v = s(p), v > 0 && (w = a(r), (w >= 0 || -w < v) && (p = r, l = "top")))), f === "auto" && (p = b(p)), {
     arrowX: g ? _n({
       menuX: u,
-      arrowRef: f,
+      arrowRef: h,
       anchorRect: e,
       containerRect: t,
       menuRect: n
@@ -450,22 +450,22 @@ const ie = ({
   position: i,
   anchorRect: a,
   arrowRef: s,
-  positionHelpers: h
+  positionHelpers: d
 }) => {
   const {
     menuRect: b,
-    containerRect: f
-  } = h, g = n === "left" || n === "right";
-  let y = g ? o : r, d = g ? r : o;
+    containerRect: h
+  } = d, g = n === "left" || n === "right";
+  let y = g ? o : r, f = g ? r : o;
   if (e) {
     const E = s.current;
-    g ? y += E.offsetWidth : d += E.offsetHeight;
+    g ? y += E.offsetWidth : f += E.offsetHeight;
   }
-  const l = a.left - f.left - b.width - y, u = a.right - f.left + y, p = a.top - f.top - b.height - d, w = a.bottom - f.top + d;
+  const l = a.left - h.left - b.width - y, u = a.right - h.left + y, p = a.top - h.top - b.height - f, w = a.bottom - h.top + f;
   let v, C;
-  t === "end" ? (v = a.right - f.left - b.width, C = a.bottom - f.top - b.height) : t === "center" ? (v = a.left - f.left - (b.width - a.width) / 2, C = a.top - f.top - (b.height - a.height) / 2) : (v = a.left - f.left, C = a.top - f.top), v += y, C += d;
+  t === "end" ? (v = a.right - h.left - b.width, C = a.bottom - h.top - b.height) : t === "center" ? (v = a.left - h.left - (b.width - a.width) / 2, C = a.top - h.top - (b.height - a.height) / 2) : (v = a.left - h.left, C = a.top - h.top), v += y, C += f;
   const M = {
-    ...h,
+    ...d,
     anchorRect: a,
     placeLeftX: l,
     placeRightX: u,
@@ -502,12 +502,12 @@ const _e = (e, t) => c.useMemo(() => e ? t ? (n) => {
   anchorPoint: i,
   anchorRef: a,
   containerRef: s,
-  containerProps: h,
+  containerProps: d,
   focusProps: b,
-  externalRef: f,
+  externalRef: h,
   parentScrollingRef: g,
   align: y = "start",
-  direction: d = "bottom",
+  direction: f = "bottom",
   position: l = "auto",
   overflow: u = "visible",
   setDownOverflow: p,
@@ -526,7 +526,7 @@ const _e = (e, t) => c.useMemo(() => e ? t ? (n) => {
   const [z, Q] = c.useState({
     x: Ct,
     y: Ct
-  }), [de, Y] = c.useState({}), [D, J] = c.useState(), [_, ye] = c.useState(d), [K] = c.useState(Ln), [fe, he] = c.useReducer((S) => S + 1, 1), {
+  }), [de, Y] = c.useState({}), [D, J] = c.useState(), [_, ye] = c.useState(f), [K] = c.useState(Ln), [fe, he] = c.useReducer((S) => S + 1, 1), {
     transition: Se,
     boundingBoxRef: ge,
     boundingBoxPadding: Me,
@@ -599,7 +599,7 @@ const _e = (e, t) => c.useMemo(() => e ? t ? (n) => {
     } = Fn({
       arrow: o,
       align: y,
-      direction: d,
+      direction: f,
       gap: x,
       shift: W,
       position: l,
@@ -639,7 +639,7 @@ const _e = (e, t) => c.useMemo(() => e ? t ? (n) => {
       width: gt.width,
       height: re
     };
-  }, [o, y, Me, d, x, W, l, u, i, a, s, ge, Ee, X]);
+  }, [o, y, Me, f, x, W, l, u, i, a, s, ge, Ee, X]);
   ze(() => {
     U && (te(), st.current && he()), st.current = U, ct.current = te;
   }, [U, te, T]), ze(() => {
@@ -758,7 +758,7 @@ const _e = (e, t) => c.useMemo(() => e ? t ? (n) => {
       onKeyDown: Zt,
       onAnimationEnd: qt
     }, P),
-    ref: _e(f, V),
+    ref: _e(h, V),
     className: ie({
       block: ne,
       modifiers: ft,
@@ -808,8 +808,8 @@ const _e = (e, t) => c.useMemo(() => e ? t ? (n) => {
       })
     })]
   });
-  return h ? /* @__PURE__ */ k.jsx(An, {
-    ...h,
+  return d ? /* @__PURE__ */ k.jsx(An, {
+    ...d,
     isOpen: U,
     children: ht
   }) : ht;
@@ -821,12 +821,12 @@ const _e = (e, t) => c.useMemo(() => e ? t ? (n) => {
   unmountOnClose: i,
   transition: a,
   transitionTimeout: s,
-  boundingBoxRef: h,
+  boundingBoxRef: d,
   boundingBoxPadding: b,
-  reposition: f = "auto",
+  reposition: h = "auto",
   submenuOpenDelay: g = 300,
   submenuCloseDelay: y = 150,
-  viewScroll: d = "initial",
+  viewScroll: f = "initial",
   portal: l,
   theming: u,
   onItemClick: p,
@@ -841,16 +841,16 @@ const _e = (e, t) => c.useMemo(() => e ? t ? (n) => {
     unmountOnClose: i,
     transition: a,
     transitionTimeout: s,
-    boundingBoxRef: h,
+    boundingBoxRef: d,
     boundingBoxPadding: b,
     rootMenuRef: C,
     rootAnchorRef: E,
     scrollNodesRef: M,
-    reposition: f,
-    viewScroll: d,
+    reposition: h,
+    viewScroll: f,
     submenuOpenDelay: g,
     submenuCloseDelay: y
-  }), [r, i, a, s, E, h, b, f, d, g, y]), q = c.useMemo(() => ({
+  }), [r, i, a, s, E, d, b, h, f, g, y]), q = c.useMemo(() => ({
     handleClick(P, z) {
       P.stopPropagation || F(p, P);
       let Q = P.keepOpen;
@@ -922,16 +922,16 @@ const _e = (e, t) => c.useMemo(() => e ? t ? (n) => {
   initialEntered: i,
   mountOnEnter: a,
   unmountOnExit: s,
-  onStateChange: h
+  onStateChange: d
 } = {}) => {
-  const [b, f] = c.useState(() => Lt(i ? Le : et(a))), g = c.useRef(b), y = c.useRef(), [d, l] = Kn(r), u = c.useCallback(() => {
+  const [b, h] = c.useState(() => Lt(i ? Le : et(a))), g = c.useRef(b), y = c.useRef(), [f, l] = Kn(r), u = c.useCallback(() => {
     const w = Wn(g.current._s, s);
-    w && yt(w, f, g, y, h);
-  }, [h, s]), p = c.useCallback((w) => {
+    w && yt(w, h, g, y, d);
+  }, [d, s]), p = c.useCallback((w) => {
     const v = (M) => {
-      switch (yt(M, f, g, y, h), M) {
+      switch (yt(M, h, g, y, d), M) {
         case Je:
-          d >= 0 && (y.current = setTimeout(u, d));
+          f >= 0 && (y.current = setTimeout(u, f));
           break;
         case Oe:
           l >= 0 && (y.current = setTimeout(u, l));
@@ -943,7 +943,7 @@ const _e = (e, t) => c.useMemo(() => e ? t ? (n) => {
       }
     }, C = g.current.isEnter;
     typeof w != "boolean" && (w = !C), w ? !C && v(e ? n ? Qe : Je : Le) : C && v(t ? o ? xe : Oe : et(s));
-  }, [u, h, e, t, n, o, d, l, s]);
+  }, [u, d, e, t, n, o, f, l, s]);
   return c.useEffect(() => () => clearTimeout(y.current), []), [b, p, u];
 }, Gn = ({
   initialOpen: e,
@@ -1000,12 +1000,12 @@ const _e = (e, t) => c.useMemo(() => e ? t ? (n) => {
   instanceRef: i,
   onMenuChange: a,
   ...s
-}, h) {
-  const [b, f, g] = xt(s), {
+}, d) {
+  const [b, h, g] = xt(s), {
     state: y
-  } = b, d = nt(y), l = c.useRef(null), u = Zn(y, (E, R) => g(R.detail ? void 0 : ue.FIRST)), p = c.useCallback((E) => {
-    f(!1), E.key && l.current.focus();
-  }, [f]), w = (E) => {
+  } = b, f = nt(y), l = c.useRef(null), u = Zn(y, (E, R) => g(R.detail ? void 0 : ue.FIRST)), p = c.useCallback((E) => {
+    h(!1), E.key && l.current.focus();
+  }, [h]), w = (E) => {
     switch (E.key) {
       case L.UP:
         g(ue.LAST);
@@ -1018,7 +1018,7 @@ const _e = (e, t) => c.useMemo(() => e ? t ? (n) => {
     }
     E.preventDefault();
   }, v = F(r, {
-    open: d
+    open: f
   });
   if (!v || !v.type)
     throw new Error("Menu requires a menuButton prop.");
@@ -1029,18 +1029,18 @@ const _e = (e, t) => c.useMemo(() => e ? t ? (n) => {
       ...u
     }, v.props)
   };
-  Pn(v.type) === "MenuButton" && (C.isOpen = d);
+  Pn(v.type) === "MenuButton" && (C.isOpen = f);
   const M = /* @__PURE__ */ c.cloneElement(v, C);
-  return Ot(a, d), c.useImperativeHandle(i, () => ({
+  return Ot(a, f), c.useImperativeHandle(i, () => ({
     openMenu: g,
-    closeMenu: () => f(!1)
+    closeMenu: () => h(!1)
   })), /* @__PURE__ */ k.jsxs(c.Fragment, {
     children: [M, /* @__PURE__ */ k.jsx($n, {
       ...s,
       ...b,
       "aria-label": t || (typeof v.props.children == "string" ? v.props.children : "Menu"),
       anchorRef: l,
-      ref: h,
+      ref: d,
       onClose: p
     })]
   });
@@ -1072,12 +1072,12 @@ const _e = (e, t) => c.useMemo(() => e ? t ? (n) => {
   label: i,
   openTrigger: a,
   onMenuChange: s,
-  isHovering: h,
+  isHovering: d,
   instanceRef: b,
-  itemRef: f,
+  itemRef: h,
   captureFocus: g,
   repositionFlag: y,
-  itemProps: d = {},
+  itemProps: f = {},
   ...l
 }) {
   const u = c.useContext(je), {
@@ -1101,14 +1101,14 @@ const _e = (e, t) => c.useMemo(() => e ? t ? (n) => {
     x.off(), _.v && (clearTimeout(_.v), _.v = 0);
   }, K = (...T) => {
     ye(), fe(), !Y && Q(...T);
-  }, fe = () => !h && !Y && W(N.SET, f.current), he = (T) => {
+  }, fe = () => !d && !Y && W(N.SET, h.current), he = (T) => {
     fe(), a || (_.v = setTimeout(() => Ze(K), Math.max(T, 0)));
   }, Se = (T) => {
     Y || (T.stopPropagation(), !(_.v || D) && x.on(v, () => he(w - v), () => he(w)));
   }, ge = () => {
-    ye(), D || W(N.UNSET, f.current);
+    ye(), D || W(N.UNSET, h.current);
   }, Me = (T) => {
-    if (h)
+    if (d)
       switch (T.key) {
         case L.ENTER:
           T.preventDefault();
@@ -1120,7 +1120,7 @@ const _e = (e, t) => c.useMemo(() => e ? t ? (n) => {
     let V = !1;
     switch (T.key) {
       case L.LEFT:
-        D && (f.current.focus(), z(!1), V = !0);
+        D && (h.current.focus(), z(!1), V = !0);
         break;
       case L.RIGHT:
         D || (V = !0);
@@ -1128,26 +1128,26 @@ const _e = (e, t) => c.useMemo(() => e ? t ? (n) => {
     }
     V && (T.preventDefault(), T.stopPropagation());
   };
-  jt(Y, f, q), Ot(s, D), c.useEffect(() => x.toggle(D), [x, D]), c.useEffect(() => () => clearTimeout(_.v), [_]), c.useEffect(() => {
-    h && R ? f.current.focus() : z(!1);
-  }, [h, R, z, f]), c.useImperativeHandle(b, () => ({
+  jt(Y, h, q), Ot(s, D), c.useEffect(() => x.toggle(D), [x, D]), c.useEffect(() => () => clearTimeout(_.v), [_]), c.useEffect(() => {
+    d && R ? h.current.focus() : z(!1);
+  }, [d, R, z, h]), c.useImperativeHandle(b, () => ({
     openMenu: (...T) => {
       R && K(...T);
     },
     closeMenu: () => {
-      D && (f.current.focus(), z(!1));
+      D && (h.current.focus(), z(!1));
     }
   }));
   const ee = c.useMemo(() => ({
     open: D,
-    hover: h,
+    hover: d,
     disabled: Y,
     submenu: !0
-  }), [D, h, Y]), {
+  }), [D, d, Y]), {
     ref: Ve,
     className: Pe,
     ...me
-  } = d, Fe = Ce({
+  } = f, Fe = Ce({
     onPointerEnter: x.off,
     onPointerMove: Se,
     onPointerLeave: ge,
@@ -1158,7 +1158,7 @@ const _e = (e, t) => c.useMemo(() => e ? t ? (n) => {
       ...l,
       ...P,
       ariaLabel: t || (typeof i == "string" ? i : "Submenu"),
-      anchorRef: f,
+      anchorRef: h,
       containerRef: j ? p : J,
       direction: r || (M === "right" || M === "left" ? M : "right"),
       parentScrollingRef: j && C,
@@ -1182,9 +1182,9 @@ const _e = (e, t) => c.useMemo(() => e ? t ? (n) => {
       role: at,
       "aria-haspopup": !0,
       "aria-expanded": D,
-      ...it(Y, h),
+      ...it(Y, d),
       ...Fe,
-      ref: _e(Ve, f),
+      ref: _e(Ve, h),
       className: ie({
         block: ne,
         element: Dt,
@@ -1201,25 +1201,25 @@ const _e = (e, t) => c.useMemo(() => e ? t ? (n) => {
     isParentOpen: i,
     submenuCtx: a,
     dispatch: s,
-    updateItems: h
+    updateItems: d
   } = c.useContext(ot), b = () => {
     !n && !o && s(N.SET, e.current);
-  }, f = () => {
+  }, h = () => {
     !o && s(N.UNSET, e.current);
   }, g = (l) => {
-    n && !l.currentTarget.contains(l.relatedTarget) && f();
+    n && !l.currentTarget.contains(l.relatedTarget) && h();
   }, y = (l) => {
     o || (l.stopPropagation(), a.on(r, b, b));
-  }, d = (l, u) => {
-    a.off(), !u && f();
+  }, f = (l, u) => {
+    a.off(), !u && h();
   };
-  return jt(o, e, h), c.useEffect(() => {
+  return jt(o, e, d), c.useEffect(() => {
     n && i && t.current && t.current.focus();
   }, [t, n, i]), {
     setHover: b,
     onBlur: g,
     onPointerMove: y,
-    onPointerLeave: d
+    onPointerLeave: f
   };
 }, Re = /* @__PURE__ */ Ht("MenuItem", function({
   className: t,
@@ -1229,17 +1229,17 @@ const _e = (e, t) => c.useMemo(() => e ? t ? (n) => {
   checked: i,
   disabled: a,
   children: s,
-  onClick: h,
+  onClick: d,
   isHovering: b,
-  itemRef: f,
+  itemRef: h,
   externalRef: g,
   ...y
 }) {
-  const d = !!a, {
+  const f = !!a, {
     setHover: l,
     ...u
-  } = Jn(f, f, b, d), p = c.useContext(It), w = c.useContext(Rn), v = r === "radio", C = r === "checkbox", M = !!o && !d && !v && !C, E = v ? w.value === n : C ? !!i : !1, R = (P) => {
-    if (d) {
+  } = Jn(h, h, b, f), p = c.useContext(It), w = c.useContext(Rn), v = r === "radio", C = r === "checkbox", M = !!o && !f && !v && !C, E = v ? w.value === n : C ? !!i : !1, R = (P) => {
+    if (f) {
       P.stopPropagation(), P.preventDefault();
       return;
     }
@@ -1247,22 +1247,22 @@ const _e = (e, t) => c.useMemo(() => e ? t ? (n) => {
       value: n,
       syntheticEvent: P
     };
-    P.key !== void 0 && (z.key = P.key), C && (z.checked = !E), v && (z.name = w.name), F(h, z), v && F(w.onRadioChange, z), p.handleClick(z, C || v);
+    P.key !== void 0 && (z.key = P.key), C && (z.checked = !E), v && (z.name = w.name), F(d, z), v && F(w.onRadioChange, z), p.handleClick(z, C || v);
   }, x = (P) => {
     if (b)
       switch (P.key) {
         case L.ENTER:
           P.preventDefault();
         case L.SPACE:
-          M ? f.current.click() : R(P);
+          M ? h.current.click() : R(P);
       }
   }, W = c.useMemo(() => ({
     type: r,
-    disabled: d,
+    disabled: f,
     hover: b,
     checked: E,
     anchor: M
-  }), [r, d, b, E, M]), q = Ce({
+  }), [r, f, b, E, M]), q = Ce({
     ...u,
     onPointerDown: l,
     onKeyDown: x,
@@ -1270,9 +1270,9 @@ const _e = (e, t) => c.useMemo(() => e ? t ? (n) => {
   }, y), j = {
     role: v ? "menuitemradio" : C ? "menuitemcheckbox" : at,
     "aria-checked": v || C ? E : void 0,
-    ...it(d, b),
+    ...it(f, b),
     ...q,
-    ref: _e(g, f),
+    ref: _e(g, h),
     className: ie({
       block: ne,
       element: Dt,
@@ -1371,8 +1371,8 @@ const St = /* @__PURE__ */ _t(/* @__PURE__ */ Vt(ni), ["hover", "disabled", "anc
     /* @__PURE__ */ m(Qn, { label: /* @__PURE__ */ I(Ge, { children: [
       /* @__PURE__ */ m(H, { icon: Pt.faTableColumns }),
       "Колонки"
-    ] }), children: o.getAllLeafColumns().filter((s) => s.getCanHide()).map((s) => /* @__PURE__ */ m(Re, { type: "checkbox", checked: s.getIsVisible(), disabled: i === 1 && s.getIsVisible(), onClick: (h) => {
-      h.keepOpen = !0, s.toggleVisibility();
+    ] }), children: o.getAllLeafColumns().filter((s) => s.getCanHide()).map((s) => /* @__PURE__ */ m(Re, { type: "checkbox", checked: s.getIsVisible(), disabled: i === 1 && s.getIsVisible(), onClick: (d) => {
+      d.keepOpen = !0, s.toggleVisibility();
     }, children: tt(s.columnDef.header, n) }, s.id)) })
   ] });
 }, si = (e) => {
@@ -1731,8 +1731,8 @@ const ui = ({
           }
         }, children: "Страница" }),
         /* @__PURE__ */ m("input", { type: "number", value: n.getState().pagination.pageIndex + 1, onChange: (s) => {
-          const h = s.target.value ? Number(s.target.value) - 1 : 0;
-          n.setPageIndex(h);
+          const d = s.target.value ? Number(s.target.value) - 1 : 0;
+          n.setPageIndex(d);
         }, css: {
           width: "3rem",
           borderWidth: "1px",
@@ -1826,7 +1826,7 @@ const ui = ({
   const [a, s] = c.useState({
     pageIndex: 0,
     pageSize: o
-  }), [h, b] = c.useState(n), [f, g] = c.useState(r), y = c.useMemo(() => {
+  }), [d, b] = c.useState(n), [h, g] = c.useState(r), y = c.useMemo(() => {
     const {
       pageIndex: M,
       pageSize: E
@@ -1834,23 +1834,23 @@ const ui = ({
     return {
       start: M * E,
       length: E,
-      sort: JSON.stringify(h.map((R) => ({
+      sort: JSON.stringify(d.map((R) => ({
         property: R.id,
         direction: R.desc ? "DESC" : "ASC"
       })))
     };
-  }, [a, h]), d = pn(e, {
+  }, [a, d]), f = pn(e, {
     params: y,
     placeholderData: ln
   }), l = c.useMemo(() => {
     var M, E;
-    return isNaN(Number((M = d.data) == null ? void 0 : M.recordsFiltered)) ? 0 : Number((E = d.data) == null ? void 0 : E.recordsFiltered);
-  }, [(v = d.data) == null ? void 0 : v.recordsFiltered]), u = c.useMemo(() => l > 0 ? Math.ceil(l / a.pageSize) : 1, [a.pageSize, l]), p = di({
+    return isNaN(Number((M = f.data) == null ? void 0 : M.recordsFiltered)) ? 0 : Number((E = f.data) == null ? void 0 : E.recordsFiltered);
+  }, [(v = f.data) == null ? void 0 : v.recordsFiltered]), u = c.useMemo(() => l > 0 ? Math.ceil(l / a.pageSize) : 1, [a.pageSize, l]), p = di({
     ...i,
     columns: t,
-    data: (C = d.data) == null ? void 0 : C.data,
-    isLoading: d.isLoading,
-    isFetching: d.isFetching,
+    data: (C = f.data) == null ? void 0 : C.data,
+    isLoading: f.isLoading,
+    isFetching: f.isFetching,
     manualPagination: !0,
     onPaginationChange: s,
     onSortingChange: b,
@@ -1859,17 +1859,17 @@ const ui = ({
     state: {
       ...i == null ? void 0 : i.state,
       pagination: a,
-      sorting: h,
-      columnVisibility: f
+      sorting: d,
+      columnVisibility: h
     }
   }), w = c.useCallback(() => {
-    d.refetch();
-  }, [d]);
+    f.refetch();
+  }, [f]);
   return {
     ...p,
     recordsTotal: l,
     refetch: w,
-    error: d.error
+    error: f.error
   };
 }, fi = ({
   info: e,
@@ -1884,7 +1884,9 @@ const ui = ({
   css: i,
   onClick: a
 }) => {
-  const s = /* @__PURE__ */ m(le, { onClick: () => a == null ? void 0 : a(e.row.original), css: [{
+  const s = /* @__PURE__ */ m(le, { onClick: (d) => {
+    a == null || a(e.row.original), d.stopPropagation();
+  }, css: [{
     padding: "4px",
     fontSize: "0.75rem",
     lineHeight: "1rem",

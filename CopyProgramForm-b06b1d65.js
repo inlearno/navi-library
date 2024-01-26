@@ -1,10 +1,10 @@
-import { j as r, a as u } from "./library-7fb6c15a.js";
-import { h as p, e as h, u as g, B as f, F as s, T as i, P as y, a as b, z as n } from "./RootSection-407f953c.js";
-import { u as x } from "./useNavigate-2d87d7c7.js";
-import { P as _ } from "./useDictionary-a91051fc.js";
-import { u as l } from "./useWindowController-67a241b3.js";
-import { u as F } from "./useWithTitle-18477666.js";
+import { j as r, a as u } from "./library-72beada2.js";
+import { h as p, e as h, u as g, B as f, F as s, T as i, P as y, a as b, z as n } from "./RootSection-610debea.js";
 import "./react-181b9648.js";
+import { u as l } from "./useWindowController-1af7876d.js";
+import { u as x } from "./useWithTitle-a25e3a07.js";
+import { u as _ } from "./useNavigate-2d87d7c7.js";
+import { P as F } from "./useDictionary-464da608.js";
 import "./mui-d2313b11.js";
 import "./icons-42066a3f.js";
 const P = () => {
@@ -33,7 +33,7 @@ const P = () => {
     id: t
   } = P(), {
     close: a
-  } = l(), d = x(), m = p(), c = h(`/api/program-docs/${t}/copy`, {
+  } = l(), d = _(), m = p(), c = h(`/api/program-docs/${t}/copy`, {
     onSuccess: ({
       data: {
         newDocId: e
@@ -42,12 +42,12 @@ const P = () => {
       m("/api/rest/program-docs"), d(`/program-docs/constructor/${e}`), a();
     }
   });
-  F(`Копирование программы #${t}`);
+  x(`Копирование программы #${t}`);
   const o = g({
     mutation: c,
     schema: w
   });
-  return /* @__PURE__ */ r(_, { bbar: /* @__PURE__ */ r("div", { css: {
+  return /* @__PURE__ */ r(F, { bbar: /* @__PURE__ */ r("div", { css: {
     display: "flex",
     width: "100%",
     justifyContent: "flex-end"
