@@ -1,11 +1,11 @@
-import { j as e, a as m } from "./library-72beada2.js";
-import { z as o, h as _, e as g, u as h, B as f, F as a, T as s, P as y, D as c, R as b, a as v } from "./RootSection-610debea.js";
-import "./react-181b9648.js";
-import { u as x } from "./useWindowController-1af7876d.js";
-import { u as q } from "./useNavigate-2d87d7c7.js";
-import { P } from "./useDictionary-464da608.js";
-import "./mui-d2313b11.js";
-import "./icons-42066a3f.js";
+import { j as e, a as m } from "./library-b88a8cfa.js";
+import { z as o, k as _, i as g, u as f, B as h, F as a, T as s, P as y, b as c, c as b, d as v } from "./RootSection-c76851fc.js";
+import "./react-54946355.js";
+import { u as x } from "./useWindowController-8e79bd7b.js";
+import "./icons-6b7f2986.js";
+import { u as q } from "./useNavigate-185d6614.js";
+import { P } from "./useDictionary-79366cbc.js";
+import "./mui-02912ce2.js";
 const w = o.object({
   steps_info: o.any(),
   partner_id: o.string({
@@ -39,14 +39,14 @@ const w = o.object({
   section_id: !0,
   year_created: !0,
   city_created: !0
-}), R = () => {
+}), S = () => {
   const {
     close: i
   } = x(), n = q(), d = _(), l = g("POST", "/api/rest/program-docs", {
     onSuccess: (r) => {
       n(`/program-docs/constructor/${r.data.id}`), d("/api/rest/program-docs"), i();
     }
-  }), t = h({
+  }), t = f({
     mutation: l,
     schema: w,
     defaultValues: {
@@ -59,7 +59,7 @@ const w = o.object({
     display: "flex",
     width: "100%",
     justifyContent: "flex-end"
-  }, children: /* @__PURE__ */ e(f, { variant: "contained", color: "success", disabled: l.isPending, onClick: () => t.submit(), children: "Создать черновик" }) }), children: /* @__PURE__ */ m(v, { css: {
+  }, children: /* @__PURE__ */ e(h, { variant: "contained", color: "success", disabled: l.isPending, onClick: () => t.submit(), children: "Создать черновик" }) }), children: /* @__PURE__ */ m(v, { css: {
     display: "grid",
     gap: "1rem",
     padding: "1rem"
@@ -94,5 +94,5 @@ const w = o.object({
   ] }) });
 };
 export {
-  R as default
+  S as default
 };

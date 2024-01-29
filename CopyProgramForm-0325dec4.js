@@ -1,12 +1,12 @@
-import { j as r, a as u } from "./library-72beada2.js";
-import { h as p, e as h, u as g, B as f, F as s, T as i, P as y, a as b, z as n } from "./RootSection-610debea.js";
-import "./react-181b9648.js";
-import { u as l } from "./useWindowController-1af7876d.js";
-import { u as x } from "./useWithTitle-a25e3a07.js";
-import { u as _ } from "./useNavigate-2d87d7c7.js";
-import { P as F } from "./useDictionary-464da608.js";
-import "./mui-d2313b11.js";
-import "./icons-42066a3f.js";
+import { j as r, a as u } from "./library-b88a8cfa.js";
+import { k as p, i as g, u as h, B as f, F as s, T as i, P as y, d as b, z as n } from "./RootSection-c76851fc.js";
+import "./react-54946355.js";
+import { u as l } from "./useWindowController-8e79bd7b.js";
+import { u as x } from "./useWithTitle-b9eefc13.js";
+import "./icons-6b7f2986.js";
+import { u as _ } from "./useNavigate-185d6614.js";
+import { P as F } from "./useDictionary-79366cbc.js";
+import "./mui-02912ce2.js";
 const P = () => {
   const {
     params: t
@@ -28,12 +28,12 @@ const P = () => {
   city_created: n.string({
     required_error: "Выберите город создания"
   })
-}), B = () => {
+}), k = () => {
   const {
     id: t
   } = P(), {
     close: a
-  } = l(), d = _(), m = p(), c = h(`/api/program-docs/${t}/copy`, {
+  } = l(), d = _(), m = p(), c = g(`/api/program-docs/${t}/copy`, {
     onSuccess: ({
       data: {
         newDocId: e
@@ -43,7 +43,7 @@ const P = () => {
     }
   });
   x(`Копирование программы #${t}`);
-  const o = g({
+  const o = h({
     mutation: c,
     schema: w
   });
@@ -73,5 +73,5 @@ const P = () => {
   ] }) });
 };
 export {
-  B as default
+  k as default
 };
