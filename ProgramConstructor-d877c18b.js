@@ -1,12 +1,12 @@
-import { u as Rt, j as e, a as B, F as Pt, f as He, S as Ft } from "./library-77edbc59.js";
+import { u as Rt, j as e, a as B, F as Pt, f as He, S as Ft } from "./library-a0da3822.js";
 import { r as D, c as It, R as Ze } from "./react-54946355.js";
-import { f as Mt, R as qt, D as Wt, u as U, a as Nt, B as Ye, z as i, T as L, F as p, P as Lt, b as ie, c as Vt, Y as ze, d as k, e as Ee, g as Y, N as Z, L as $t, h as Ue, i as X, j as J, k as Yt } from "./RootSection-2df29752.js";
+import { f as Mt, R as qt, D as Wt, u as U, a as Nt, B as Ye, z as i, T as L, F as p, P as Lt, b as ie, c as Vt, Y as ze, d as k, e as Ee, g as Y, N as Z, L as $t, h as Ue, i as X, j as J, k as Yt } from "./RootSection-631e1f56.js";
 import { F as ae } from "./icons-6b7f2986.js";
-import { l as Ht, P as G, b as Zt } from "./useDictionary-78cc1306.js";
+import { l as Ht, P as G, b as Zt } from "./useDictionary-5d77717e.js";
 import { u as Ut, a as Xt, B as K } from "./mui-02912ce2.js";
 import { f as Gt } from "./faPen-6d05924c.js";
 import { N as Jt, f as Kt } from "./index-38b3fe08.js";
-import { u as je } from "./useWindowController-4eed51d4.js";
+import { u as je } from "./useWindowController-c3143275.js";
 var N = /* @__PURE__ */ ((t) => (t.DONE = "done", t.ACTIVE = "active", t.WAIT = "wait", t.DISABLED = "disabled", t.LOADING = "loading", t.ERROR = "error", t.EDIT = "edit", t))(N || {});
 const Qt = ({
   stepsDefinition: t,
@@ -2000,10 +2000,10 @@ const _r = ({
 }), kr = i.object({
   mission: i.string({
     required_error: "Заполните цель/миссию"
-  }),
+  }).nullable(),
   goal: i.string({
     required_error: "Заполните цель"
-  }),
+  }).nullable(),
   program_objectives: i.array(i.string())
 }).required({
   goal: !0
