@@ -1,12 +1,12 @@
-import { u as Rt, j as e, a as B, F as Pt, f as He, S as Ft } from "./library-077160f7.js";
+import { u as Rt, j as e, a as B, F as Pt, f as He, S as Ft } from "./library-1779ac6f.js";
 import { r as D, c as It, R as Ze } from "./react-54946355.js";
-import { f as Mt, R as qt, D as Nt, u as U, a as Wt, B as Ye, z as i, T as L, F as p, P as Lt, b as ie, c as Vt, Y as ze, d as k, e as Ee, g as Y, N as Z, L as $t, h as Ue, i as X, j as J, k as Yt } from "./RootSection-271b63a4.js";
+import { f as Mt, R as qt, D as Nt, u as U, a as Wt, B as Ye, z as i, T as L, F as p, P as Lt, b as ie, c as Vt, Y as ze, d as k, e as Ee, g as Y, N as Z, L as $t, h as Ue, i as X, j as J, k as Yt } from "./RootSection-fa1a0083.js";
 import { F as ae } from "./icons-6b7f2986.js";
-import { l as Ht, P as G, b as Zt } from "./useDictionary-47086f98.js";
+import { l as Ht, P as G, b as Zt } from "./useDictionary-5333fef9.js";
 import { u as Ut, a as Xt, B as K } from "./mui-02912ce2.js";
 import { f as Gt } from "./faPen-6d05924c.js";
 import { N as Jt, f as Kt } from "./index-38b3fe08.js";
-import { u as je } from "./useWindowController-e9e2565e.js";
+import { u as je } from "./useWindowController-9a29b0dd.js";
 var W = /* @__PURE__ */ ((t) => (t.DONE = "done", t.ACTIVE = "active", t.WAIT = "wait", t.DISABLED = "disabled", t.LOADING = "loading", t.ERROR = "error", t.EDIT = "edit", t))(W || {});
 const Qt = ({
   stepsDefinition: t,
@@ -1688,12 +1688,12 @@ const dr = ({
     }) => /* @__PURE__ */ e(L, { label: "Город", placeholder: "Введите город", helperText: "Город, где программа создана", ...r }) })
   ] });
 }, fr = i.object({
-  protocol_number: i.string().optional(),
-  protocol_date: i.string().optional(),
-  decree_number: i.string().optional(),
-  decree_date: i.string().optional(),
-  authors: i.string().optional(),
-  comment: i.string().optional()
+  protocol_number: i.string().nullish(),
+  protocol_date: i.string().nullish(),
+  decree_number: i.string().nullish(),
+  decree_date: i.string().nullish(),
+  authors: i.string().nullish(),
+  comment: i.string().nullish()
 }), gr = () => {
   const t = M({
     schema: fr
