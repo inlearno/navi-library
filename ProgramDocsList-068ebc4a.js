@@ -1,7 +1,7 @@
-import { Q as f, j as l, F as y } from "./library-b88a8cfa.js";
+import { Q as f, j as l, F as y } from "./library-77edbc59.js";
 import { f as b } from "./faPen-6d05924c.js";
-import { u as P, P as C, T as D, c as z } from "./index-4b417ad4.js";
-import { u as H, P as _ } from "./useDictionary-79366cbc.js";
+import { u as P, P as C, T as D, c as z } from "./index-fdd2f7ff.js";
+import { u as H, P as _ } from "./useDictionary-78cc1306.js";
 import { g as m, r as u } from "./react-54946355.js";
 import { u as S } from "./useNavigate-185d6614.js";
 import { F as V } from "./icons-6b7f2986.js";
