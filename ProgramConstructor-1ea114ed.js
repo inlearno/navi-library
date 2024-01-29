@@ -1,13 +1,13 @@
-import { u as Rt, j as e, a as B, F as Pt, f as He, S as Ft } from "./library-a0da3822.js";
+import { u as Rt, j as e, a as B, F as Pt, f as He, S as Ft } from "./library-077160f7.js";
 import { r as D, c as It, R as Ze } from "./react-54946355.js";
-import { f as Mt, R as qt, D as Wt, u as U, a as Nt, B as Ye, z as i, T as L, F as p, P as Lt, b as ie, c as Vt, Y as ze, d as k, e as Ee, g as Y, N as Z, L as $t, h as Ue, i as X, j as J, k as Yt } from "./RootSection-631e1f56.js";
+import { f as Mt, R as qt, D as Nt, u as U, a as Wt, B as Ye, z as i, T as L, F as p, P as Lt, b as ie, c as Vt, Y as ze, d as k, e as Ee, g as Y, N as Z, L as $t, h as Ue, i as X, j as J, k as Yt } from "./RootSection-271b63a4.js";
 import { F as ae } from "./icons-6b7f2986.js";
-import { l as Ht, P as G, b as Zt } from "./useDictionary-5d77717e.js";
+import { l as Ht, P as G, b as Zt } from "./useDictionary-47086f98.js";
 import { u as Ut, a as Xt, B as K } from "./mui-02912ce2.js";
 import { f as Gt } from "./faPen-6d05924c.js";
 import { N as Jt, f as Kt } from "./index-38b3fe08.js";
-import { u as je } from "./useWindowController-c3143275.js";
-var N = /* @__PURE__ */ ((t) => (t.DONE = "done", t.ACTIVE = "active", t.WAIT = "wait", t.DISABLED = "disabled", t.LOADING = "loading", t.ERROR = "error", t.EDIT = "edit", t))(N || {});
+import { u as je } from "./useWindowController-e9e2565e.js";
+var W = /* @__PURE__ */ ((t) => (t.DONE = "done", t.ACTIVE = "active", t.WAIT = "wait", t.DISABLED = "disabled", t.LOADING = "loading", t.ERROR = "error", t.EDIT = "edit", t))(W || {});
 const Qt = ({
   stepsDefinition: t,
   values: r,
@@ -19,17 +19,17 @@ const Qt = ({
   }, [r]);
   const a = D.useMemo(() => t.map((S) => ({
     ...S,
-    status: l[S.id] ?? N.WAIT
+    status: l[S.id] ?? W.WAIT
   })), [t, l]), [h, m] = D.useState(a[0]), y = D.useRef(null), w = D.useMemo(() => a.findIndex((S) => S.id === (h == null ? void 0 : h.id)) || 0, [h]), g = D.useCallback((S) => {
     v((j) => ({
       ...j,
-      [h.id]: j[h.id] === N.ERROR && S === N.EDIT ? N.ERROR : S
+      [h.id]: j[h.id] === W.ERROR && S === W.EDIT ? W.ERROR : S
     }));
   }, [h, v]), f = w === a.length - 1, A = async () => {
     try {
-      n(!0), g(N.LOADING), y.current && await y.current.save();
+      n(!0), g(W.LOADING), y.current && await y.current.save();
     } catch {
-      g(N.ERROR);
+      g(W.ERROR);
     } finally {
       n(!1);
     }
@@ -399,7 +399,7 @@ const xe = ({
   multiple: o = !1,
   onChange: n,
   value: l,
-  idField: v = Wt,
+  idField: v = Nt,
   ...a
 }, h) => {
   const [m, y] = D.useState(), [w, g] = D.useState(!1), [f, A] = D.useState(""), x = () => {
@@ -488,7 +488,7 @@ const M = ({
       ...f,
       [o]: {
         ...v ? v[o] : {},
-        [s.id]: N.DONE
+        [s.id]: W.DONE
       }
     }),
     ...t
@@ -498,7 +498,7 @@ const M = ({
       errors: g.formState.errors
     });
   }, [g.formState.errors]), D.useEffect(() => {
-    Ht.isEqual(g.getValues(), v) || (h(N.EDIT), l({
+    Ht.isEqual(g.getValues(), v) || (h(W.EDIT), l({
       fields: g.getValues()
     }));
   }, [s, JSON.stringify(g.formState.dirtyFields)]), D.useImperativeHandle(r, () => ({
@@ -1109,14 +1109,14 @@ var et = { exports: {} };
               it(P);
             }
             function C() {
-              var W = Date.now();
+              var N = Date.now();
               if (b) {
-                if (W - O < 2)
+                if (N - O < 2)
                   return;
                 _ = !0;
               } else
                 b = !0, _ = !1, setTimeout($, 20);
-              O = W;
+              O = N;
             }
             return C;
           }(this.refresh.bind(this));
@@ -1185,14 +1185,14 @@ var et = { exports: {} };
               I[Ae] = be(ue);
             }
             return I;
-          }(_), P = O.left + O.right, $ = O.top + O.bottom, C = be(_.width), W = be(_.height);
-          if (_.boxSizing === "border-box" && (Math.round(C + P) !== u && (C -= Ie(_, "left", "right") + P), Math.round(W + $) !== b && (W -= Ie(_, "top", "bottom") + $)), !function(H) {
+          }(_), P = O.left + O.right, $ = O.top + O.bottom, C = be(_.width), N = be(_.height);
+          if (_.boxSizing === "border-box" && (Math.round(C + P) !== u && (C -= Ie(_, "left", "right") + P), Math.round(N + $) !== b && (N -= Ie(_, "top", "bottom") + $)), !function(H) {
             return H === ce(H).document.documentElement;
           }(c)) {
-            var ne = Math.round(C + P) - u, re = Math.round(W + $) - b;
-            Math.abs(ne) !== 1 && (C -= ne), Math.abs(re) !== 1 && (W -= re);
+            var ne = Math.round(C + P) - u, re = Math.round(N + $) - b;
+            Math.abs(ne) !== 1 && (C -= ne), Math.abs(re) !== 1 && (N -= re);
           }
-          return ve(O.left, O.top, C, W);
+          return ve(O.left, O.top, C, N);
         }(d) : Fe;
       }
       function ve(d, c, u, b) {
@@ -1210,8 +1210,8 @@ var et = { exports: {} };
           return this.broadcastWidth = c.width, this.broadcastHeight = c.height, c;
         }, d;
       }(), ut = function(d, c) {
-        var u, b, _, O, P, $, C, W = (b = (u = c).x, _ = u.y, O = u.width, P = u.height, $ = typeof DOMRectReadOnly < "u" ? DOMRectReadOnly : Object, C = Object.create($.prototype), Pe(C, { x: b, y: _, width: O, height: P, top: _, right: b + O, bottom: P + _, left: b }), C);
-        Pe(this, { target: d, contentRect: W });
+        var u, b, _, O, P, $, C, N = (b = (u = c).x, _ = u.y, O = u.width, P = u.height, $ = typeof DOMRectReadOnly < "u" ? DOMRectReadOnly : Object, C = Object.create($.prototype), Pe(C, { x: b, y: _, width: O, height: P, top: _, right: b + O, bottom: P + _, left: b }), C);
+        Pe(this, { target: d, contentRect: N });
       }, pt = function() {
         function d(c, u, b) {
           if (this.activeObservations_ = [], this.observations_ = new Re(), typeof c != "function")
@@ -1271,13 +1271,13 @@ var et = { exports: {} };
       });
       const ht = ge.ResizeObserver !== void 0 ? ge.ResizeObserver : qe;
       var mt = ["client", "offset", "scroll", "bounds", "margin"];
-      function We(d) {
+      function Ne(d) {
         var c = [];
         return mt.forEach(function(u) {
           d[u] && c.push(u);
         }), c;
       }
-      function Ne(d, c) {
+      function We(d, c) {
         var u = {};
         if (c.indexOf("client") > -1 && (u.client = { top: d.clientTop, left: d.clientLeft, width: d.clientWidth, height: d.clientHeight }), c.indexOf("offset") > -1 && (u.offset = { top: d.offsetTop, left: d.offsetLeft, width: d.offsetWidth, height: d.offsetHeight }), c.indexOf("scroll") > -1 && (u.scroll = { top: d.scrollTop, left: d.scrollLeft, width: d.scrollWidth, height: d.scrollHeight }), c.indexOf("bounds") > -1) {
           var b = d.getBoundingClientRect();
@@ -1297,10 +1297,10 @@ var et = { exports: {} };
         return u = c = function(b) {
           var _, O;
           function P() {
-            for (var C, W = arguments.length, ne = new Array(W), re = 0; re < W; re++)
+            for (var C, N = arguments.length, ne = new Array(N), re = 0; re < N; re++)
               ne[re] = arguments[re];
             return (C = b.call.apply(b, [this].concat(ne)) || this).state = { contentRect: { entry: {}, client: {}, offset: {}, scroll: {}, bounds: {}, margin: {} } }, C._animationFrameID = null, C._resizeObserver = null, C._node = null, C._window = null, C.measure = function(H) {
-              var I = Ne(C._node, We(C.props));
+              var I = We(C._node, Ne(C.props));
               H && (I.entry = H[0].contentRect), C._animationFrameID = C._window.requestAnimationFrame(function() {
                 C._resizeObserver !== null && (C.setState({ contentRect: I }), typeof C.props.onResize == "function" && C.props.onResize(I));
               });
@@ -1313,11 +1313,11 @@ var et = { exports: {} };
           O = b, (_ = P).prototype = Object.create(O.prototype), _.prototype.constructor = _, se(_, O);
           var $ = P.prototype;
           return $.componentDidMount = function() {
-            this._resizeObserver = this._window !== null && this._window.ResizeObserver ? new this._window.ResizeObserver(this.measure) : new ht(this.measure), this._node !== null && (this._resizeObserver.observe(this._node), typeof this.props.onResize == "function" && this.props.onResize(Ne(this._node, We(this.props))));
+            this._resizeObserver = this._window !== null && this._window.ResizeObserver ? new this._window.ResizeObserver(this.measure) : new ht(this.measure), this._node !== null && (this._resizeObserver.observe(this._node), typeof this.props.onResize == "function" && this.props.onResize(We(this._node, Ne(this.props))));
           }, $.componentWillUnmount = function() {
             this._window !== null && this._window.cancelAnimationFrame(this._animationFrameID), this._resizeObserver !== null && (this._resizeObserver.disconnect(), this._resizeObserver = null);
           }, $.render = function() {
-            var C = this.props, W = (C.innerRef, C.onResize, function(ne, re) {
+            var C = this.props, N = (C.innerRef, C.onResize, function(ne, re) {
               if (ne == null)
                 return {};
               var H, I, le = {}, oe = Object.keys(ne);
@@ -1325,7 +1325,7 @@ var et = { exports: {} };
                 H = oe[I], re.indexOf(H) >= 0 || (le[H] = ne[H]);
               return le;
             }(C, ["innerRef", "onResize"]));
-            return (0, a.createElement)(d, ee({}, W, { measureRef: this._handleRef, measure: this.measure, contentRect: this.state.contentRect }));
+            return (0, a.createElement)(d, ee({}, N, { measureRef: this._handleRef, measure: this.measure, contentRect: this.state.contentRect }));
           }, P;
         }(a.Component), c.propTypes = { client: te().bool, offset: te().bool, scroll: te().bool, bounds: te().bool, margin: te().bool, innerRef: te().oneOfType([te().object, te().func]), onResize: te().func }, u;
       }(function(d) {
@@ -1337,9 +1337,9 @@ var et = { exports: {} };
       var ye = l(672), de = {};
       de.styleTagTransform = E(), de.setAttributes = x(), de.insert = f().bind(null, "head"), de.domAPI = w(), de.insertStyleElement = S(), m()(ye.Z, de), ye.Z && ye.Z.locals && ye.Z.locals;
       const gt = (d) => {
-        const { horizontal: c = !1, initialPrimarySize: u = "50%", minPrimarySize: b = "0px", minSecondarySize: _ = "0px", splitterSize: O = "7px", renderSplitter: P, resetOnDoubleClick: $ = !1, defaultSplitterColors: C = { color: "silver", hover: "gray", drag: "black" }, onSplitChanged: W, onMeasuredSizesChanged: ne } = d, [re, H] = a.useState({ height: 0, width: 0 }), [I, le] = a.useState({ height: 0, width: 0 }), [oe, Ae] = a.useState({ height: 0, width: 0 }), ue = a.useMemo(() => c ? re.height : re.width, [c, re]), _e = a.useMemo(() => c ? I.height : I.width, [c, I]), we = a.useMemo(() => c ? oe.height : oe.width, [c, oe]), [he, Le] = a.useState(void 0), [bt, vt] = a.useState(0), [yt, At] = a.useState(0), [Be, Ve] = a.useState(!1);
+        const { horizontal: c = !1, initialPrimarySize: u = "50%", minPrimarySize: b = "0px", minSecondarySize: _ = "0px", splitterSize: O = "7px", renderSplitter: P, resetOnDoubleClick: $ = !1, defaultSplitterColors: C = { color: "silver", hover: "gray", drag: "black" }, onSplitChanged: N, onMeasuredSizesChanged: ne } = d, [re, H] = a.useState({ height: 0, width: 0 }), [I, le] = a.useState({ height: 0, width: 0 }), [oe, Ae] = a.useState({ height: 0, width: 0 }), ue = a.useMemo(() => c ? re.height : re.width, [c, re]), _e = a.useMemo(() => c ? I.height : I.width, [c, I]), we = a.useMemo(() => c ? oe.height : oe.width, [c, oe]), [he, Le] = a.useState(void 0), [bt, vt] = a.useState(0), [yt, At] = a.useState(0), [Be, Ve] = a.useState(!1);
         a.useEffect(() => {
-          W && W(he !== void 0 ? `${he}%` : u);
+          N && N(he !== void 0 ? `${he}%` : u);
         }, [he, u]), a.useEffect(() => {
           ne && ne({ primary: _e, splitter: we, secondary: ue - (_e + we) });
         }, [c, ue, _e, we]);
@@ -1461,25 +1461,25 @@ var nt = {};
 })(nt);
 const dr = ({
   status: t
-}) => Jt(t).with(N.DONE, () => /* @__PURE__ */ e(ae, { icon: Kt.faCheckCircle, css: {
+}) => Jt(t).with(W.DONE, () => /* @__PURE__ */ e(ae, { icon: Kt.faCheckCircle, css: {
   "--tw-text-opacity": "1",
   color: "rgb(22 163 74 / var(--tw-text-opacity))"
-}, size: "lg" })).with(N.ACTIVE, () => /* @__PURE__ */ e(ae, { mask: fe.faCircle, icon: Gt.faPen, css: {
+}, size: "lg" })).with(W.ACTIVE, () => /* @__PURE__ */ e(ae, { mask: fe.faCircle, icon: Gt.faPen, css: {
   "--tw-text-opacity": "1",
   color: "rgb(114 117 191 / var(--tw-text-opacity))"
-}, transform: "shrink-8", size: "lg" })).with(N.WAIT, () => /* @__PURE__ */ e(ae, { mask: fe.faCircle, icon: nt.faClock, css: {
+}, transform: "shrink-8", size: "lg" })).with(W.WAIT, () => /* @__PURE__ */ e(ae, { mask: fe.faCircle, icon: nt.faClock, css: {
   "--tw-text-opacity": "1",
   color: "rgb(234 179 8 / var(--tw-text-opacity))"
-}, transform: "shrink-8", size: "lg" })).with(N.LOADING, () => /* @__PURE__ */ e(ae, { icon: He.faCircleNotch, css: {
+}, transform: "shrink-8", size: "lg" })).with(W.LOADING, () => /* @__PURE__ */ e(ae, { icon: He.faCircleNotch, css: {
   "--tw-text-opacity": "1",
   color: "rgb(156 163 175 / var(--tw-text-opacity))"
-}, spin: !0, size: "lg" })).with(N.DISABLED, () => /* @__PURE__ */ e(ae, { mask: fe.faCircle, transform: "shrink-8", icon: rt.faLock, size: "lg", css: {
+}, spin: !0, size: "lg" })).with(W.DISABLED, () => /* @__PURE__ */ e(ae, { mask: fe.faCircle, transform: "shrink-8", icon: rt.faLock, size: "lg", css: {
   "--tw-text-opacity": "1",
   color: "rgb(209 213 219 / var(--tw-text-opacity))"
-} })).with(N.ERROR, () => /* @__PURE__ */ e(ae, { icon: Nt.faTriangleExclamation, size: "lg", css: {
+} })).with(W.ERROR, () => /* @__PURE__ */ e(ae, { icon: Wt.faTriangleExclamation, size: "lg", css: {
   "--tw-text-opacity": "1",
   color: "rgb(239 68 68 / var(--tw-text-opacity))"
-} })).with(N.EDIT, () => /* @__PURE__ */ e(ae, { mask: fe.faCircle, transform: "shrink-8", icon: tt.faPencil, size: "lg", css: {
+} })).with(W.EDIT, () => /* @__PURE__ */ e(ae, { mask: fe.faCircle, transform: "shrink-8", icon: tt.faPencil, size: "lg", css: {
   "--tw-text-opacity": "1",
   color: "rgb(90 88 173 / var(--tw-text-opacity))"
 } })).exhaustive(), ur = ({
@@ -1495,7 +1495,7 @@ const dr = ({
   paddingLeft: "0.25rem"
 }, children: t.map((n, l) => {
   const v = (r == null ? void 0 : r.id) === n.id;
-  return /* @__PURE__ */ e("li", { onClick: () => n.status !== N.DISABLED ? o == null ? void 0 : o(n) : void 0, css: [{
+  return /* @__PURE__ */ e("li", { onClick: () => n.status !== W.DISABLED ? o == null ? void 0 : o(n) : void 0, css: [{
     position: "relative",
     borderRadius: "0.25rem",
     transitionProperty: "all",
@@ -1505,7 +1505,7 @@ const dr = ({
     backgroundColor: "rgb(229 230 244 / 0.5)",
     "--tw-text-opacity": "1",
     color: "rgb(0 0 0 / var(--tw-text-opacity))"
-  } : n.status === N.DISABLED ? {
+  } : n.status === W.DISABLED ? {
     cursor: "not-allowed"
   } : {
     cursor: "pointer",
@@ -2158,7 +2158,7 @@ const _r = ({
   return /* @__PURE__ */ e("div", { tw: "flex flex-col gap-6", children: /* @__PURE__ */ e(k, { form: t, children: /* @__PURE__ */ e(p, { name: "program_att_forms", control: t.control, render: ({
     field: r
   }) => /* @__PURE__ */ e(Ir, { ...r, multiple: !0, label: "Формы аттестации и оценочные материалы" }) }) }) });
-}, Wr = i.object({
+}, Nr = i.object({
   criterion_type_id: i.number({
     required_error: "Заполните тип критерия"
   }),
@@ -2167,7 +2167,7 @@ const _r = ({
   })
 }).required({
   criterion_type_id: !0
-}), Nr = ({
+}), Wr = ({
   onCreate: t,
   search: r
 }) => {
@@ -2178,7 +2178,7 @@ const _r = ({
       t(n);
     }
   }), o = U({
-    schema: Wr,
+    schema: Nr,
     mutation: s
   });
   return /* @__PURE__ */ e(G, { bbar: /* @__PURE__ */ e("div", { css: {
@@ -2201,7 +2201,7 @@ const _r = ({
 }, Lr = Q(J({
   url: "/api/rest/program-doc-criteria",
   displayField: "description"
-}), Nr, {
+}), Wr, {
   title: "Новый критерий оценки учебных результатов"
 }), Vr = i.object({
   program_criteria: i.array(i.string())
@@ -2675,7 +2675,7 @@ const _r = ({
     field: r
   }) => /* @__PURE__ */ e(Tn, { ...r, multiple: !0, label: "Список литературы" }) }) }) });
 }, jn = i.object({
-  number_year: i.string({
+  number_year: i.coerce.number({
     required_error: "Заполните год"
   }),
   date_start: i.string({
@@ -2728,7 +2728,7 @@ const _r = ({
     gap: "1rem",
     padding: "1rem"
   }, form: n, children: [
-    /* @__PURE__ */ e(p, { name: "number_year", defaultValue: s, control: n.control, render: ({
+    /* @__PURE__ */ e(p, { name: "number_year", defaultValue: Number(s), control: n.control, render: ({
       field: l
     }) => /* @__PURE__ */ e(Z, { label: "Год обучения", helperText: "Год обучения (по счету)", placeholder: "Введите год обучения", ...l }) }),
     /* @__PURE__ */ e(p, { name: "date_start", control: n.control, render: ({
@@ -2860,7 +2860,7 @@ const _r = ({
   min_group_size: i.coerce.number().nullable(),
   max_group_size: i.coerce.number().nullable(),
   competence_level_id: i.coerce.number().nullable()
-}).passthrough(), Wn = i.object({
+}).passthrough(), Nn = i.object({
   data: i.array(qn).transform((t) => t[0])
 }).transform((t) => t.data), Gn = () => {
   const {
@@ -2869,7 +2869,7 @@ const _r = ({
     },
     setTitle: r
   } = je(), s = Yt(), o = Zt(`/api/rest/program-docs/${t}`, {
-    schema: Wn,
+    schema: Nn,
     refetchOnWindowFocus: !1
   }), n = X("PUT", `/api/rest/program-docs/${t}`, {
     syncQueryCache: !0,
