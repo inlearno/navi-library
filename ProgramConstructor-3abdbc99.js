@@ -1,12 +1,12 @@
-import { u as Rt, j as e, a as B, F as Pt, f as He, S as Ft } from "./library-1779ac6f.js";
-import { r as D, c as It, R as Ze } from "./react-54946355.js";
-import { f as Mt, R as qt, D as Nt, u as U, a as Wt, B as Ye, z as i, T as L, F as p, P as Lt, b as ie, c as Vt, Y as ze, d as k, e as Ee, g as Y, N as Z, L as $t, h as Ue, i as X, j as J, k as Yt } from "./RootSection-fa1a0083.js";
+import { u as Rt, j as e, a as B, F as Pt, f as He, S as It } from "./library-b497cab0.js";
+import { r as D, c as Ft, R as Ze } from "./react-54946355.js";
+import { f as Mt, R as qt, D as Nt, u as U, a as Wt, B as Ye, z as i, T as L, F as p, P as Lt, b as ie, c as Vt, Y as ze, d as k, e as Ee, g as Y, N as Z, L as $t, h as Ue, i as X, j as J, k as Yt } from "./RootSection-39f92ba4.js";
 import { F as ae } from "./icons-6b7f2986.js";
-import { l as Ht, P as G, b as Zt } from "./useDictionary-5333fef9.js";
+import { l as Ht, P as G, b as Zt } from "./useDictionary-b8dcd22c.js";
 import { u as Ut, a as Xt, B as K } from "./mui-02912ce2.js";
 import { f as Gt } from "./faPen-6d05924c.js";
 import { N as Jt, f as Kt } from "./index-38b3fe08.js";
-import { u as je } from "./useWindowController-9a29b0dd.js";
+import { u as je } from "./useWindowController-08138669.js";
 var W = /* @__PURE__ */ ((t) => (t.DONE = "done", t.ACTIVE = "active", t.WAIT = "wait", t.DISABLED = "disabled", t.LOADING = "loading", t.ERROR = "error", t.EDIT = "edit", t))(W || {});
 const Qt = ({
   stepsDefinition: t,
@@ -227,26 +227,26 @@ const xe = ({
   setHeight: E
 }) => {
   const q = D.useMemo(() => "header-" + Math.random().toString(16).slice(2), []), {
-    width: F,
+    width: I,
     height: V
   } = Rt(), R = D.useMemo(() => t && t.clientWidth > 0 && t.clientHeight > 0 ? {
     topOffset: t.offsetTop || 0,
     leftOffset: t.offsetLeft || 0,
     width: t.clientWidth,
     height: t.clientHeight
-  } : null, [t, F, V]), ee = D.useRef(null);
+  } : null, [t, I, V]), ee = D.useRef(null);
   return D.useEffect(() => {
     ee.current && !ee.current.state.resizing && (x ? ee.current.updateSize(R ? {
       width: R.width,
       height: R.height
     } : {
-      width: F || 0,
+      width: I || 0,
       height: V || 0
     }) : ee.current.updateSize({
       width: s,
       height: r
     }));
-  }, [x, F, V, R, s, r, y]), D.useEffect(() => {
+  }, [x, I, V, R, s, r, y]), D.useEffect(() => {
     ee.current && (x ? ee.current.updatePosition({
       x: (R == null ? void 0 : R.leftOffset) || 0,
       y: (R == null ? void 0 : R.topOffset) || 0
@@ -255,11 +255,11 @@ const xe = ({
       y: g.y
     }));
   }, [x, ee.current, R, g, y]), D.useEffect(() => {
-    t && !R || V && F && V + F > 0 && !g && !x && (S == null || S({
-      x: R ? R.leftOffset + R.width / 2 - s / 2 : (F ?? 0) / 2 - s / 2,
+    t && !R || V && I && V + I > 0 && !g && !x && (S == null || S({
+      x: R ? R.leftOffset + R.width / 2 - s / 2 : (I ?? 0) / 2 - s / 2,
       y: R ? R.topOffset + R.height / 2 - r / 2 : (V ?? 0) / 2 - s / 2
     }));
-  }, [g, S, R, x, V, F]), t && !R || !V || !V ? null : /* @__PURE__ */ e(
+  }, [g, S, R, x, V, I]), t && !R || !V || !V ? null : /* @__PURE__ */ e(
     qt,
     {
       ref: ee,
@@ -383,7 +383,7 @@ const xe = ({
   const [h, m] = D.useState(void 0), [y, w] = D.useState(r);
   return D.useEffect(() => {
     w(r);
-  }, [r]), y ? It.createPortal(/* @__PURE__ */ e("div", { css: {
+  }, [r]), y ? Ft.createPortal(/* @__PURE__ */ e("div", { css: {
     position: "fixed",
     left: "0px",
     top: "0px",
@@ -876,8 +876,8 @@ var et = { exports: {} };
       function g() {
       }
       g.resetWarningCache = w, a.exports = function() {
-        function f(T, S, j, E, q, F) {
-          if (F !== y) {
+        function f(T, S, j, E, q, I) {
+          if (I !== y) {
             var V = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
             throw V.name = "Invariant Violation", V;
           }
@@ -907,9 +907,9 @@ var et = { exports: {} };
         for (var A = {}, x = [], T = 0; T < g.length; T++) {
           var S = g[T], j = f.base ? S[0] + f.base : S[0], E = A[j] || 0, q = "".concat(j, " ").concat(E);
           A[j] = E + 1;
-          var F = m(q), V = { css: S[1], media: S[2], sourceMap: S[3], supports: S[4], layer: S[5] };
-          if (F !== -1)
-            h[F].references++, h[F].updater(V);
+          var I = m(q), V = { css: S[1], media: S[2], sourceMap: S[3], supports: S[4], layer: S[5] };
+          if (I !== -1)
+            h[I].references++, h[I].updater(V);
           else {
             var R = w(V, f);
             f.byIndex = T, h.splice(T, 0, { identifier: q, updater: R, references: 1 });
@@ -1036,8 +1036,8 @@ var et = { exports: {} };
     var v = {};
     return (() => {
       l.r(v), l.d(v, { DefaultSplitter: () => R, Split: () => gt });
-      var a = l(359), h = l(701), m = l.n(h), y = l(236), w = l.n(y), g = l(80), f = l.n(g), A = l(850), x = l.n(A), T = l(182), S = l.n(T), j = l(213), E = l.n(j), q = l(58), F = {};
-      F.styleTagTransform = E(), F.setAttributes = x(), F.insert = f().bind(null, "head"), F.domAPI = w(), F.insertStyleElement = S(), m()(q.Z, F), q.Z && q.Z.locals && q.Z.locals;
+      var a = l(359), h = l(701), m = l.n(h), y = l(236), w = l.n(y), g = l(80), f = l.n(g), A = l(850), x = l.n(A), T = l(182), S = l.n(T), j = l(213), E = l.n(j), q = l(58), I = {};
+      I.styleTagTransform = E(), I.setAttributes = x(), I.insert = f().bind(null, "head"), I.domAPI = w(), I.insertStyleElement = S(), m()(q.Z, I), q.Z && q.Z.locals && q.Z.locals;
       const V = (d) => (d % 2 == 0 ? 2 : 3) + "px", R = (d) => {
         const { dragging: c, pixelSize: u, color: b = "silver", hoverColor: _ = "gray", dragColor: O = "black" } = d, P = { "--default-splitter-line-margin": ($ = u, `${Math.max(0, Math.floor($ / 2) - 1)}px`), "--default-splitter-line-size": V(u), "--default-splitter-line-color": c ? O : b, "--default-splitter-line-hover-color": c ? O : _ };
         var $;
@@ -1155,11 +1155,11 @@ var et = { exports: {} };
         return d;
       }, ce = function(d) {
         return d && d.ownerDocument && d.ownerDocument.defaultView || ge;
-      }, Fe = ve(0, 0, 0, 0);
+      }, Ie = ve(0, 0, 0, 0);
       function be(d) {
         return parseFloat(d) || 0;
       }
-      function Ie(d) {
+      function Fe(d) {
         for (var c = [], u = 1; u < arguments.length; u++)
           c[u - 1] = arguments[u];
         return c.reduce(function(b, _) {
@@ -1178,22 +1178,22 @@ var et = { exports: {} };
         }(d) : function(c) {
           var u = c.clientWidth, b = c.clientHeight;
           if (!u && !b)
-            return Fe;
+            return Ie;
           var _ = ce(c).getComputedStyle(c), O = function(H) {
-            for (var I = {}, le = 0, oe = ["top", "right", "bottom", "left"]; le < oe.length; le++) {
+            for (var F = {}, le = 0, oe = ["top", "right", "bottom", "left"]; le < oe.length; le++) {
               var Ae = oe[le], ue = H["padding-" + Ae];
-              I[Ae] = be(ue);
+              F[Ae] = be(ue);
             }
-            return I;
+            return F;
           }(_), P = O.left + O.right, $ = O.top + O.bottom, C = be(_.width), N = be(_.height);
-          if (_.boxSizing === "border-box" && (Math.round(C + P) !== u && (C -= Ie(_, "left", "right") + P), Math.round(N + $) !== b && (N -= Ie(_, "top", "bottom") + $)), !function(H) {
+          if (_.boxSizing === "border-box" && (Math.round(C + P) !== u && (C -= Fe(_, "left", "right") + P), Math.round(N + $) !== b && (N -= Fe(_, "top", "bottom") + $)), !function(H) {
             return H === ce(H).document.documentElement;
           }(c)) {
             var ne = Math.round(C + P) - u, re = Math.round(N + $) - b;
             Math.abs(ne) !== 1 && (C -= ne), Math.abs(re) !== 1 && (N -= re);
           }
           return ve(O.left, O.top, C, N);
-        }(d) : Fe;
+        }(d) : Ie;
       }
       function ve(d, c, u, b) {
         return { x: d, y: c, width: u, height: b };
@@ -1300,14 +1300,14 @@ var et = { exports: {} };
             for (var C, N = arguments.length, ne = new Array(N), re = 0; re < N; re++)
               ne[re] = arguments[re];
             return (C = b.call.apply(b, [this].concat(ne)) || this).state = { contentRect: { entry: {}, client: {}, offset: {}, scroll: {}, bounds: {}, margin: {} } }, C._animationFrameID = null, C._resizeObserver = null, C._node = null, C._window = null, C.measure = function(H) {
-              var I = We(C._node, Ne(C.props));
-              H && (I.entry = H[0].contentRect), C._animationFrameID = C._window.requestAnimationFrame(function() {
-                C._resizeObserver !== null && (C.setState({ contentRect: I }), typeof C.props.onResize == "function" && C.props.onResize(I));
+              var F = We(C._node, Ne(C.props));
+              H && (F.entry = H[0].contentRect), C._animationFrameID = C._window.requestAnimationFrame(function() {
+                C._resizeObserver !== null && (C.setState({ contentRect: F }), typeof C.props.onResize == "function" && C.props.onResize(F));
               });
             }, C._handleRef = function(H) {
               C._resizeObserver !== null && C._node !== null && C._resizeObserver.unobserve(C._node), C._node = H, C._window = ft(C._node);
-              var I = C.props.innerRef;
-              I && (typeof I == "function" ? I(C._node) : I.current = C._node), C._resizeObserver !== null && C._node !== null && C._resizeObserver.observe(C._node);
+              var F = C.props.innerRef;
+              F && (typeof F == "function" ? F(C._node) : F.current = C._node), C._resizeObserver !== null && C._node !== null && C._resizeObserver.observe(C._node);
             }, C;
           }
           O = b, (_ = P).prototype = Object.create(O.prototype), _.prototype.constructor = _, se(_, O);
@@ -1320,9 +1320,9 @@ var et = { exports: {} };
             var C = this.props, N = (C.innerRef, C.onResize, function(ne, re) {
               if (ne == null)
                 return {};
-              var H, I, le = {}, oe = Object.keys(ne);
-              for (I = 0; I < oe.length; I++)
-                H = oe[I], re.indexOf(H) >= 0 || (le[H] = ne[H]);
+              var H, F, le = {}, oe = Object.keys(ne);
+              for (F = 0; F < oe.length; F++)
+                H = oe[F], re.indexOf(H) >= 0 || (le[H] = ne[H]);
               return le;
             }(C, ["innerRef", "onResize"]));
             return (0, a.createElement)(d, ee({}, N, { measureRef: this._handleRef, measure: this.measure, contentRect: this.state.contentRect }));
@@ -1337,7 +1337,7 @@ var et = { exports: {} };
       var ye = l(672), de = {};
       de.styleTagTransform = E(), de.setAttributes = x(), de.insert = f().bind(null, "head"), de.domAPI = w(), de.insertStyleElement = S(), m()(ye.Z, de), ye.Z && ye.Z.locals && ye.Z.locals;
       const gt = (d) => {
-        const { horizontal: c = !1, initialPrimarySize: u = "50%", minPrimarySize: b = "0px", minSecondarySize: _ = "0px", splitterSize: O = "7px", renderSplitter: P, resetOnDoubleClick: $ = !1, defaultSplitterColors: C = { color: "silver", hover: "gray", drag: "black" }, onSplitChanged: N, onMeasuredSizesChanged: ne } = d, [re, H] = a.useState({ height: 0, width: 0 }), [I, le] = a.useState({ height: 0, width: 0 }), [oe, Ae] = a.useState({ height: 0, width: 0 }), ue = a.useMemo(() => c ? re.height : re.width, [c, re]), _e = a.useMemo(() => c ? I.height : I.width, [c, I]), we = a.useMemo(() => c ? oe.height : oe.width, [c, oe]), [he, Le] = a.useState(void 0), [bt, vt] = a.useState(0), [yt, At] = a.useState(0), [Be, Ve] = a.useState(!1);
+        const { horizontal: c = !1, initialPrimarySize: u = "50%", minPrimarySize: b = "0px", minSecondarySize: _ = "0px", splitterSize: O = "7px", renderSplitter: P, resetOnDoubleClick: $ = !1, defaultSplitterColors: C = { color: "silver", hover: "gray", drag: "black" }, onSplitChanged: N, onMeasuredSizesChanged: ne } = d, [re, H] = a.useState({ height: 0, width: 0 }), [F, le] = a.useState({ height: 0, width: 0 }), [oe, Ae] = a.useState({ height: 0, width: 0 }), ue = a.useMemo(() => c ? re.height : re.width, [c, re]), _e = a.useMemo(() => c ? F.height : F.width, [c, F]), we = a.useMemo(() => c ? oe.height : oe.width, [c, oe]), [he, Le] = a.useState(void 0), [bt, vt] = a.useState(0), [yt, At] = a.useState(0), [Be, Ve] = a.useState(!1);
         a.useEffect(() => {
           N && N(he !== void 0 ? `${he}%` : u);
         }, [he, u]), a.useEffect(() => {
@@ -2113,7 +2113,7 @@ const _r = ({
 }).required({
   control_type_id: !0,
   description: !0
-}), Fr = ({
+}), Ir = ({
   onCreate: t,
   search: r
 }) => {
@@ -2144,10 +2144,10 @@ const _r = ({
       field: n
     }) => /* @__PURE__ */ e(Y, { label: "Описание", placeholder: "Введите описание", ...n }) })
   ] }) });
-}, Ir = Q(J({
+}, Fr = Q(J({
   url: "/api/rest/program-doc-forms",
   displayField: "description"
-}), Fr, {
+}), Ir, {
   title: "Новая аттестационная форма"
 }), Mr = i.object({
   program_att_forms: i.array(i.string())
@@ -2157,7 +2157,7 @@ const _r = ({
   });
   return /* @__PURE__ */ e("div", { tw: "flex flex-col gap-6", children: /* @__PURE__ */ e(k, { form: t, children: /* @__PURE__ */ e(p, { name: "program_att_forms", control: t.control, render: ({
     field: r
-  }) => /* @__PURE__ */ e(Ir, { ...r, multiple: !0, label: "Формы аттестации и оценочные материалы" }) }) }) });
+  }) => /* @__PURE__ */ e(Fr, { ...r, multiple: !0, label: "Формы аттестации и оценочные материалы" }) }) }) });
 }, Nr = i.object({
   criterion_type_id: i.number({
     required_error: "Заполните тип критерия"
@@ -2411,7 +2411,7 @@ const _r = ({
   }, form: o, children: [
     /* @__PURE__ */ e(p, { name: "indoctrination_type_id", control: o.control, render: ({
       field: n
-    }) => /* @__PURE__ */ e(ie, { label: "Тип воспитательной деятельности", placeholder: "Выберите тип воспитательной деятельности", dictionary: "programDocCriteriaTypes", ...n }) }),
+    }) => /* @__PURE__ */ e(ie, { label: "Тип воспитательной деятельности", placeholder: "Выберите тип воспитательной деятельности", dictionary: "programDocIndoctrinationTypes", ...n }) }),
     /* @__PURE__ */ e(p, { name: "description", defaultValue: r, control: o.control, render: ({
       field: n
     }) => /* @__PURE__ */ e(Y, { label: "Наименование воспитательной деятельности", placeholder: "Введите наименование воспитательной деятельности", ...n }) })
@@ -2465,7 +2465,7 @@ const _r = ({
   }, form: o, children: [
     /* @__PURE__ */ e(p, { name: "development_type_id", control: o.control, render: ({
       field: n
-    }) => /* @__PURE__ */ e(ie, { label: "Тип развивающей деятельности", placeholder: "Выберите тип развивающей деятельности", dictionary: "programDocCriteriaTypes", ...n }) }),
+    }) => /* @__PURE__ */ e(ie, { label: "Тип развивающей деятельности", placeholder: "Выберите тип развивающей деятельности", dictionary: "programDocDevelopmentTypes", ...n }) }),
     /* @__PURE__ */ e(p, { name: "description", defaultValue: r, control: o.control, render: ({
       field: n
     }) => /* @__PURE__ */ e(Y, { label: "Наименование развивающей деятельности", placeholder: "Введите наименование развивающей деятельности", ...n }) })
@@ -2755,15 +2755,15 @@ const _r = ({
   displayField: "number_year"
 }), Rn, {
   title: "Новый учебный график"
-}), Fn = i.object({
+}), In = i.object({
   program_schedules: i.array(i.string())
-}), In = () => {
+}), Fn = () => {
   const {
     params: {
       id: t
     }
   } = je(), r = M({
-    schema: Fn
+    schema: In
   });
   return /* @__PURE__ */ e("div", { css: {
     display: "flex",
@@ -2843,7 +2843,7 @@ const _r = ({
 }, {
   title: "Календарный учебный график",
   id: "schedules",
-  Component: In
+  Component: Fn
 }, {
   id: "description",
   title: "Утверждение",
@@ -2879,7 +2879,7 @@ const _r = ({
   });
   return D.useEffect(() => {
     r(`Конструктор программы #${t}`);
-  }, [t, r]), o.isLoading ? /* @__PURE__ */ e(Ft, { spinning: !0 }) : o.isError ? /* @__PURE__ */ e("div", { children: o.error.message }) : /* @__PURE__ */ e(pr, { steps: Mn, stateKey: "steps_info", mutation: n, values: o.data });
+  }, [t, r]), o.isLoading ? /* @__PURE__ */ e(It, { spinning: !0 }) : o.isError ? /* @__PURE__ */ e("div", { children: o.error.message }) : /* @__PURE__ */ e(pr, { steps: Mn, stateKey: "steps_info", mutation: n, values: o.data });
 };
 export {
   Gn as default
