@@ -46,7 +46,7 @@ var Xt = {};
 const Jn = [{
   id: "users",
   path: "/users",
-  component: () => import("./UsersList-7f5263f3.js"),
+  component: () => import("./UsersList-560b5b95.js"),
   windowOptions: {
     icon: Xt.faUsers,
     title: "Пользователи",
@@ -63,7 +63,7 @@ const Jn = [{
 var en = {};
 (function(e) {
   Object.defineProperty(e, "__esModule", { value: !0 });
-  var t = "fas", r = "code", n = 640, s = 512, i = [], o = "f121", u = "M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z";
+  var t = "fas", r = "pen-ruler", n = 512, s = 512, i = ["pencil-ruler"], o = "f5ae", u = "M469.3 19.3l23.4 23.4c25 25 25 65.5 0 90.5l-56.4 56.4L322.3 75.7l56.4-56.4c25-25 65.5-25 90.5 0zM44.9 353.2L299.7 98.3 413.7 212.3 158.8 467.1c-6.7 6.7-15.1 11.6-24.2 14.2l-104 29.7c-8.4 2.4-17.4 .1-23.6-6.1s-8.5-15.2-6.1-23.6l29.7-104c2.6-9.2 7.5-17.5 14.2-24.2zM249.4 103.4L103.4 249.4 16 161.9c-18.7-18.7-18.7-49.1 0-67.9L94.1 16c18.7-18.7 49.1-18.7 67.9 0l19.8 19.8c-.3 .3-.7 .6-1 .9l-64 64c-6.2 6.2-6.2 16.4 0 22.6s16.4 6.2 22.6 0l64-64c.3-.3 .6-.7 .9-1l45.1 45.1zM408.6 262.6l45.1 45.1c-.3 .3-.7 .6-1 .9l-64 64c-6.2 6.2-6.2 16.4 0 22.6s16.4 6.2 22.6 0l64-64c.3-.3 .6-.7 .9-1L496 350.1c18.7 18.7 18.7 49.1 0 67.9L417.9 496c-18.7 18.7-49.1 18.7-67.9 0l-87.4-87.4L408.6 262.6z";
   e.definition = {
     prefix: t,
     iconName: r,
@@ -74,12 +74,12 @@ var en = {};
       o,
       u
     ]
-  }, e.faCode = e.definition, e.prefix = t, e.iconName = r, e.width = n, e.height = s, e.ligatures = i, e.unicode = o, e.svgPathData = u, e.aliases = i;
+  }, e.faPenRuler = e.definition, e.prefix = t, e.iconName = r, e.width = n, e.height = s, e.ligatures = i, e.unicode = o, e.svgPathData = u, e.aliases = i;
 })(en);
 const Vn = [{
   id: "program-docs",
   path: "/program-docs",
-  component: () => import("./ProgramDocsList-8d871918.js"),
+  component: () => import("./ProgramDocsList-a7133710.js"),
   windowOptions: {
     title: "Конструктор документов программ",
     width: 700,
@@ -88,15 +88,15 @@ const Vn = [{
   },
   shortcut: {
     title: "Конструктор документов программ",
-    icon: en.faCode,
+    icon: en.faPenRuler,
     color: "#ef4444",
     group: "general",
-    order: 1e3
+    order: 1300
   }
 }, {
   id: "program-docs-constructor",
   path: "/program-docs/constructor/:id",
-  component: () => import("./ProgramConstructor-dc504126.js"),
+  component: () => import("./ProgramConstructor-dad91969.js"),
   windowOptions: {
     title: "Конструктор программы",
     width: 700,
@@ -106,7 +106,7 @@ const Vn = [{
 }, {
   id: "program-docs-draft",
   path: "/program-docs/draft",
-  component: () => import("./Draft-578d777d.js"),
+  component: () => import("./Draft-a07a4c26.js"),
   windowOptions: {
     title: "Черновик программы",
     width: 700,
@@ -116,7 +116,7 @@ const Vn = [{
 }, {
   id: "program-constructor-copy",
   path: "/program-docs/copy/:id",
-  component: () => import("./CopyProgramForm-d10efb61.js"),
+  component: () => import("./CopyProgramForm-75cd93b0.js"),
   windowOptions: {
     title: "Копирование программы",
     width: 700,
@@ -190,15 +190,15 @@ var rn = { exports: {} };
     }
     Object.assign(O.prototype, {
       subscribe: function(a, c, f) {
-        var h = this, d = this._target, g = this._emitter, R = this._listeners, x = function() {
-          var S = T.apply(null, arguments), C = {
+        var h = this, d = this._target, g = this._emitter, R = this._listeners, C = function() {
+          var S = T.apply(null, arguments), x = {
             data: S,
             name: c,
             original: a
           };
           if (f) {
-            var N = f.call(d, C);
-            N !== !1 && g.emit.apply(g, [C.name].concat(S));
+            var N = f.call(d, x);
+            N !== !1 && g.emit.apply(g, [x.name].concat(S));
             return;
           }
           g.emit.apply(g, [c].concat(S));
@@ -206,16 +206,16 @@ var rn = { exports: {} };
         if (R[a])
           throw Error("Event '" + a + "' is already listening");
         this._listenersCount++, g._newListener && g._removeListener && !h._onNewListener ? (this._onNewListener = function(S) {
-          S === c && R[a] === null && (R[a] = x, h._on.call(d, a, x));
+          S === c && R[a] === null && (R[a] = C, h._on.call(d, a, C));
         }, g.on("newListener", this._onNewListener), this._onRemoveListener = function(S) {
-          S === c && !g.hasListeners(S) && R[a] && (R[a] = null, h._off.call(d, a, x));
-        }, R[a] = null, g.on("removeListener", this._onRemoveListener)) : (R[a] = x, h._on.call(d, a, x));
+          S === c && !g.hasListeners(S) && R[a] && (R[a] = null, h._off.call(d, a, C));
+        }, R[a] = null, g.on("removeListener", this._onRemoveListener)) : (R[a] = C, h._on.call(d, a, C));
       },
       unsubscribe: function(a) {
-        var c = this, f = this._listeners, h = this._emitter, d, g, R = this._off, x = this._target, S;
+        var c = this, f = this._listeners, h = this._emitter, d, g, R = this._off, C = this._target, S;
         if (a && typeof a != "string")
           throw TypeError("event must be a string");
-        function C() {
+        function x() {
           c._onNewListener && (h.off("newListener", c._onNewListener), h.off("removeListener", c._onRemoveListener), c._onNewListener = null, c._onRemoveListener = null);
           var N = I.call(h, c);
           h._observers.splice(N, 1);
@@ -223,11 +223,11 @@ var rn = { exports: {} };
         if (a) {
           if (d = f[a], !d)
             return;
-          R.call(x, a, d), delete f[a], --this._listenersCount || C();
+          R.call(C, a, d), delete f[a], --this._listenersCount || x();
         } else {
           for (g = p(f), S = g.length; S-- > 0; )
-            a = g[S], R.call(x, a, f[a]);
-          this._listeners = {}, this._listenersCount = 0, C();
+            a = g[S], R.call(C, a, f[a]);
+          this._listeners = {}, this._listenersCount = 0, x();
         }
       }
     });
@@ -237,14 +237,14 @@ var rn = { exports: {} };
         return d;
       if (typeof a != "object")
         throw TypeError("options must be an object");
-      var g = Object.keys(a), R = g.length, x, S, C;
+      var g = Object.keys(a), R = g.length, C, S, x;
       function N(Q) {
-        throw Error('Invalid "' + x + '" option value' + (Q ? ". Reason: " + Q : ""));
+        throw Error('Invalid "' + C + '" option value' + (Q ? ". Reason: " + Q : ""));
       }
       for (var ee = 0; ee < R; ee++) {
-        if (x = g[ee], !h && !n.call(c, x))
-          throw Error('Unknown "' + x + '" option');
-        S = a[x], S !== r && (C = f[x], d[x] = C ? C(S, N) : S);
+        if (C = g[ee], !h && !n.call(c, C))
+          throw Error('Unknown "' + C + '" option');
+        S = a[C], S !== r && (x = f[C], d[C] = x ? x(S, N) : S);
       }
       return d;
     }
@@ -258,20 +258,20 @@ var rn = { exports: {} };
           return g;
         R(c);
       } : f === 2 ? function(g, R) {
-        var x = typeof g;
-        if (x === h || x === d)
+        var C = typeof g;
+        if (C === h || C === d)
           return g;
         R(c);
       } : function(g, R) {
-        for (var x = typeof g, S = f; S-- > 0; )
-          if (x === a[S])
+        for (var C = typeof g, S = f; S-- > 0; )
+          if (C === a[S])
             return g;
         R(c);
       };
     }
     var M = P(["function"]), B = P(["object", "function"]);
     function G(a, c, f) {
-      var h, d, g = 0, R, x = new a(function(S, C, N) {
+      var h, d, g = 0, R, C = new a(function(S, x, N) {
         f = L(f, {
           timeout: 0,
           overload: !1
@@ -286,7 +286,7 @@ var rn = { exports: {} };
         var Q = function(J) {
           ee(), S(J);
         }, $ = function(J) {
-          ee(), C(J);
+          ee(), x(J);
         };
         h ? c(Q, $, N) : (d = [function(J) {
           $(J || Error("canceled"));
@@ -298,16 +298,16 @@ var rn = { exports: {} };
           d.push(J);
         }), R = !0), f.timeout > 0 && (g = setTimeout(function() {
           var J = Error("timeout");
-          J.code = "ETIMEDOUT", g = 0, x.cancel(J), C(J);
+          J.code = "ETIMEDOUT", g = 0, C.cancel(J), x(J);
         }, f.timeout));
       });
-      return h || (x.cancel = function(S) {
+      return h || (C.cancel = function(S) {
         if (d) {
-          for (var C = d.length, N = 1; N < C; N++)
+          for (var x = d.length, N = 1; N < x; N++)
             d[N](S);
           d[0](S), d = null;
         }
-      }), x;
+      }), C;
     }
     function I(a) {
       var c = this._observers;
@@ -324,13 +324,13 @@ var rn = { exports: {} };
       if (h === 0) {
         var g = typeof c;
         if (g === "string") {
-          var R, x, S = 0, C = 0, N = this.delimiter, ee = N.length;
-          if ((x = c.indexOf(N)) !== -1) {
+          var R, C, S = 0, x = 0, N = this.delimiter, ee = N.length;
+          if ((C = c.indexOf(N)) !== -1) {
             R = new Array(5);
             do
-              R[S++] = c.slice(C, x), C = x + ee;
-            while ((x = c.indexOf(N, C)) !== -1);
-            R[S++] = c.slice(C), c = R, d = S;
+              R[S++] = c.slice(x, C), x = C + ee;
+            while ((C = c.indexOf(N, x)) !== -1);
+            R[S++] = c.slice(x), c = R, d = S;
           } else
             c = [c], d = 1;
         } else
@@ -340,30 +340,30 @@ var rn = { exports: {} };
       if (h === d)
         f._listeners && (typeof f._listeners == "function" ? (a && a.push(f._listeners), Q = [f]) : (a && a.push.apply(a, f._listeners), Q = [f]));
       else if (nt === "*") {
-        for (Re = p(f), x = Re.length; x-- > 0; )
-          $ = Re[x], $ !== "_listeners" && (oe = U(a, c, f[$], h + 1, d), oe && (Q ? Q.push.apply(Q, oe) : Q = oe));
+        for (Re = p(f), C = Re.length; C-- > 0; )
+          $ = Re[C], $ !== "_listeners" && (oe = U(a, c, f[$], h + 1, d), oe && (Q ? Q.push.apply(Q, oe) : Q = oe));
         return Q;
       } else if (nt === "**") {
-        for (Bt = h + 1 === d || h + 2 === d && zt === "*", Bt && f._listeners && (Q = U(a, c, f, d, d)), Re = p(f), x = Re.length; x-- > 0; )
-          $ = Re[x], $ !== "_listeners" && ($ === "*" || $ === "**" ? (f[$]._listeners && !Bt && (oe = U(a, c, f[$], d, d), oe && (Q ? Q.push.apply(Q, oe) : Q = oe)), oe = U(a, c, f[$], h, d)) : $ === zt ? oe = U(a, c, f[$], h + 2, d) : oe = U(a, c, f[$], h, d), oe && (Q ? Q.push.apply(Q, oe) : Q = oe));
+        for (Bt = h + 1 === d || h + 2 === d && zt === "*", Bt && f._listeners && (Q = U(a, c, f, d, d)), Re = p(f), C = Re.length; C-- > 0; )
+          $ = Re[C], $ !== "_listeners" && ($ === "*" || $ === "**" ? (f[$]._listeners && !Bt && (oe = U(a, c, f[$], d, d), oe && (Q ? Q.push.apply(Q, oe) : Q = oe)), oe = U(a, c, f[$], h, d)) : $ === zt ? oe = U(a, c, f[$], h + 2, d) : oe = U(a, c, f[$], h, d), oe && (Q ? Q.push.apply(Q, oe) : Q = oe));
         return Q;
       } else
         f[nt] && (Q = U(a, c, f[nt], h + 1, d));
       if (J = f["*"], J && U(a, c, J, h + 1, d), se = f["**"], se)
         if (h < d)
-          for (se._listeners && U(a, c, se, d, d), Re = p(se), x = Re.length; x-- > 0; )
-            $ = Re[x], $ !== "_listeners" && ($ === zt ? U(a, c, se[$], h + 2, d) : $ === nt ? U(a, c, se[$], h + 1, d) : (Ut = {}, Ut[$] = se[$], U(a, c, { "**": Ut }, h + 1, d)));
+          for (se._listeners && U(a, c, se, d, d), Re = p(se), C = Re.length; C-- > 0; )
+            $ = Re[C], $ !== "_listeners" && ($ === zt ? U(a, c, se[$], h + 2, d) : $ === nt ? U(a, c, se[$], h + 1, d) : (Ut = {}, Ut[$] = se[$], U(a, c, { "**": Ut }, h + 1, d)));
         else
           se._listeners ? U(a, c, se, d, d) : se["*"] && se["*"]._listeners && U(a, c, se["*"], d, d);
       return Q;
     }
     function le(a, c, f) {
-      var h = 0, d = 0, g, R = this.delimiter, x = R.length, S;
+      var h = 0, d = 0, g, R = this.delimiter, C = R.length, S;
       if (typeof a == "string")
         if ((g = a.indexOf(R)) !== -1) {
           S = new Array(5);
           do
-            S[h++] = a.slice(d, g), d = g + x;
+            S[h++] = a.slice(d, g), d = g + C;
           while ((g = a.indexOf(R, d)) !== -1);
           S[h++] = a.slice(d);
         } else
@@ -375,15 +375,15 @@ var rn = { exports: {} };
           if (S[g] === "**" && S[g + 1] === "**")
             return;
       }
-      var C = this.listenerTree, N;
+      var x = this.listenerTree, N;
       for (g = 0; g < h; g++)
-        if (N = S[g], C = C[N] || (C[N] = {}), g === h - 1)
-          return C._listeners ? (typeof C._listeners == "function" && (C._listeners = [C._listeners]), f ? C._listeners.unshift(c) : C._listeners.push(c), !C._listeners.warned && this._maxListeners > 0 && C._listeners.length > this._maxListeners && (C._listeners.warned = !0, m.call(this, C._listeners.length, N))) : C._listeners = c, !0;
+        if (N = S[g], x = x[N] || (x[N] = {}), g === h - 1)
+          return x._listeners ? (typeof x._listeners == "function" && (x._listeners = [x._listeners]), f ? x._listeners.unshift(c) : x._listeners.push(c), !x._listeners.warned && this._maxListeners > 0 && x._listeners.length > this._maxListeners && (x._listeners.warned = !0, m.call(this, x._listeners.length, N))) : x._listeners = c, !0;
       return !0;
     }
     function ge(a, c, f, h) {
-      for (var d = p(a), g = d.length, R, x, S, C = a._listeners, N; g-- > 0; )
-        x = d[g], R = a[x], x === "_listeners" ? S = f : S = f ? f.concat(x) : [x], N = h || typeof x == "symbol", C && c.push(N ? S : S.join(this.delimiter)), typeof R == "object" && ge.call(this, R, c, S, N);
+      for (var d = p(a), g = d.length, R, C, S, x = a._listeners, N; g-- > 0; )
+        C = d[g], R = a[C], C === "_listeners" ? S = f : S = f ? f.concat(C) : [C], N = h || typeof C == "symbol", x && c.push(N ? S : S.join(this.delimiter)), typeof R == "object" && ge.call(this, R, c, S, N);
       return c;
     }
     function te(a) {
@@ -408,17 +408,17 @@ var rn = { exports: {} };
         var h = f.async, d = f.promisify, g = f.nextTick, R = f.objectify;
       }
       if (h || g || d) {
-        var x = c, S = c._origin || c;
+        var C = c, S = c._origin || c;
         if (g && !o)
           throw Error("process.nextTick is not supported");
         d === r && (d = c.constructor.name === "AsyncFunction"), c = function() {
-          var C = arguments, N = this, ee = this.event;
+          var x = arguments, N = this, ee = this.event;
           return d ? g ? Promise.resolve() : new Promise(function(Q) {
             l(Q);
           }).then(function() {
-            return N.event = ee, x.apply(N, C);
+            return N.event = ee, C.apply(N, x);
           }) : (g ? process.nextTick : l)(function() {
-            N.event = ee, x.apply(N, C);
+            N.event = ee, C.apply(N, x);
           });
         }, c._async = !0, c._origin = S;
       }
@@ -443,10 +443,10 @@ var rn = { exports: {} };
       function d(g) {
         if (typeof g != "object")
           throw TypeError("events must be an object");
-        var R = f.reducers, x = I.call(h, a), S;
-        x === -1 ? S = new O(h, a, f) : S = h._observers[x];
-        for (var C = p(g), N = C.length, ee, Q = typeof R == "function", $ = 0; $ < N; $++)
-          ee = C[$], S.subscribe(
+        var R = f.reducers, C = I.call(h, a), S;
+        C === -1 ? S = new O(h, a, f) : S = h._observers[C];
+        for (var x = p(g), N = x.length, ee, Q = typeof R == "function", $ = 0; $ < N; $++)
+          ee = x[$], S.subscribe(
             ee,
             g[ee] || ee,
             Q ? R : R && R[ee]
@@ -489,73 +489,73 @@ var rn = { exports: {} };
       if (!this._events && !this._all)
         return !1;
       this._events || A.call(this);
-      var a = arguments[0], c, f = this.wildcard, h, d, g, R, x;
+      var a = arguments[0], c, f = this.wildcard, h, d, g, R, C;
       if (a === "newListener" && !this._newListener && !this._events.newListener)
         return !1;
       if (f && (c = a, a !== "newListener" && a !== "removeListener" && typeof a == "object")) {
         if (d = a.length, u) {
           for (g = 0; g < d; g++)
             if (typeof a[g] == "symbol") {
-              x = !0;
+              C = !0;
               break;
             }
         }
-        x || (a = a.join(this.delimiter));
+        C || (a = a.join(this.delimiter));
       }
-      var S = arguments.length, C;
+      var S = arguments.length, x;
       if (this._all && this._all.length)
-        for (C = this._all.slice(), g = 0, d = C.length; g < d; g++)
+        for (x = this._all.slice(), g = 0, d = x.length; g < d; g++)
           switch (this.event = a, S) {
             case 1:
-              C[g].call(this, a);
+              x[g].call(this, a);
               break;
             case 2:
-              C[g].call(this, a, arguments[1]);
+              x[g].call(this, a, arguments[1]);
               break;
             case 3:
-              C[g].call(this, a, arguments[1], arguments[2]);
+              x[g].call(this, a, arguments[1], arguments[2]);
               break;
             default:
-              C[g].apply(this, arguments);
+              x[g].apply(this, arguments);
           }
       if (f)
-        C = [], U.call(this, C, c, this.listenerTree, 0, d);
-      else if (C = this._events[a], typeof C == "function") {
+        x = [], U.call(this, x, c, this.listenerTree, 0, d);
+      else if (x = this._events[a], typeof x == "function") {
         switch (this.event = a, S) {
           case 1:
-            C.call(this);
+            x.call(this);
             break;
           case 2:
-            C.call(this, arguments[1]);
+            x.call(this, arguments[1]);
             break;
           case 3:
-            C.call(this, arguments[1], arguments[2]);
+            x.call(this, arguments[1], arguments[2]);
             break;
           default:
             for (h = new Array(S - 1), R = 1; R < S; R++)
               h[R - 1] = arguments[R];
-            C.apply(this, h);
+            x.apply(this, h);
         }
         return !0;
       } else
-        C && (C = C.slice());
-      if (C && C.length) {
+        x && (x = x.slice());
+      if (x && x.length) {
         if (S > 3)
           for (h = new Array(S - 1), R = 1; R < S; R++)
             h[R - 1] = arguments[R];
-        for (g = 0, d = C.length; g < d; g++)
+        for (g = 0, d = x.length; g < d; g++)
           switch (this.event = a, S) {
             case 1:
-              C[g].call(this);
+              x[g].call(this);
               break;
             case 2:
-              C[g].call(this, arguments[1]);
+              x[g].call(this, arguments[1]);
               break;
             case 3:
-              C[g].call(this, arguments[1], arguments[2]);
+              x[g].call(this, arguments[1], arguments[2]);
               break;
             default:
-              C[g].apply(this, h);
+              x[g].apply(this, h);
           }
         return !0;
       } else if (!this.ignoreErrors && !this._all && a === "error")
@@ -565,7 +565,7 @@ var rn = { exports: {} };
       if (!this._events && !this._all)
         return !1;
       this._events || A.call(this);
-      var a = arguments[0], c = this.wildcard, f, h, d, g, R, x;
+      var a = arguments[0], c = this.wildcard, f, h, d, g, R, C;
       if (a === "newListener" && !this._newListener && !this._events.newListener)
         return Promise.resolve([!1]);
       if (c && (f = a, a !== "newListener" && a !== "removeListener" && typeof a == "object")) {
@@ -578,10 +578,10 @@ var rn = { exports: {} };
         }
         h || (a = a.join(this.delimiter));
       }
-      var S = [], C = arguments.length, N;
+      var S = [], x = arguments.length, N;
       if (this._all)
         for (R = 0, g = this._all.length; R < g; R++)
-          switch (this.event = a, C) {
+          switch (this.event = a, x) {
             case 1:
               S.push(this._all[R].call(this, a));
               break;
@@ -595,7 +595,7 @@ var rn = { exports: {} };
               S.push(this._all[R].apply(this, arguments));
           }
       if (c ? (N = [], U.call(this, N, f, this.listenerTree, 0)) : N = this._events[a], typeof N == "function")
-        switch (this.event = a, C) {
+        switch (this.event = a, x) {
           case 1:
             S.push(N.call(this));
             break;
@@ -606,16 +606,16 @@ var rn = { exports: {} };
             S.push(N.call(this, arguments[1], arguments[2]));
             break;
           default:
-            for (d = new Array(C - 1), x = 1; x < C; x++)
-              d[x - 1] = arguments[x];
+            for (d = new Array(x - 1), C = 1; C < x; C++)
+              d[C - 1] = arguments[C];
             S.push(N.apply(this, d));
         }
       else if (N && N.length) {
-        if (N = N.slice(), C > 3)
-          for (d = new Array(C - 1), x = 1; x < C; x++)
-            d[x - 1] = arguments[x];
+        if (N = N.slice(), x > 3)
+          for (d = new Array(x - 1), C = 1; C < x; C++)
+            d[C - 1] = arguments[C];
         for (R = 0, g = N.length; R < g; R++)
-          switch (this.event = a, C) {
+          switch (this.event = a, x) {
             case 1:
               S.push(N[R].call(this));
               break;
@@ -667,14 +667,14 @@ var rn = { exports: {} };
       for (var g = 0; g < h.length; g++) {
         var R = h[g];
         if (f = R._listeners, s(f)) {
-          for (var x = -1, S = 0, C = f.length; S < C; S++)
+          for (var C = -1, S = 0, x = f.length; S < x; S++)
             if (f[S] === c || f[S].listener && f[S].listener === c || f[S]._origin && f[S]._origin === c) {
-              x = S;
+              C = S;
               break;
             }
-          if (x < 0)
+          if (C < 0)
             continue;
-          return this.wildcard ? R._listeners.splice(x, 1) : this._events[a].splice(x, 1), f.length === 0 && (this.wildcard ? delete R._listeners : delete this._events[a]), this._removeListener && this.emit("removeListener", a, c), this;
+          return this.wildcard ? R._listeners.splice(C, 1) : this._events[a].splice(C, 1), f.length === 0 && (this.wildcard ? delete R._listeners : delete this._events[a]), this._removeListener && this.emit("removeListener", a, c), this;
         } else
           (f === c || f.listener && f.listener === c || f._origin && f._origin === c) && (this.wildcard ? delete R._listeners : delete this._events[a], this._removeListener && this.emit("removeListener", a, c));
       }
@@ -719,8 +719,8 @@ var rn = { exports: {} };
         if (this.wildcard) {
           if (R = this.listenerTree, !R)
             return [];
-          var x = [], S = typeof a == "string" ? a.split(this.delimiter) : a.slice();
-          return U.call(this, x, S, R, 0), x;
+          var C = [], S = typeof a == "string" ? a.split(this.delimiter) : a.slice();
+          return U.call(this, C, S, R, 0), C;
         }
         return c ? (h = c[a], h ? typeof h == "function" ? [h] : h : []) : [];
       }
@@ -750,18 +750,18 @@ var rn = { exports: {} };
         filter: M,
         Promise: F
       }), G(c.Promise, function(d, g, R) {
-        function x() {
+        function C() {
           var S = c.filter;
           if (!(S && !S.apply(f, arguments)))
-            if (f.off(a, x), c.handleError) {
-              var C = arguments[0];
-              C ? g(C) : d(T.apply(null, arguments).slice(1));
+            if (f.off(a, C), c.handleError) {
+              var x = arguments[0];
+              x ? g(x) : d(T.apply(null, arguments).slice(1));
             } else
               d(T.apply(null, arguments));
         }
         R(function() {
-          f.off(a, x);
-        }), f._on(a, x, !1);
+          f.off(a, C);
+        }), f._on(a, C, !1);
       }, {
         timeout: c.timeout,
         overload: c.overload
@@ -777,26 +777,26 @@ var rn = { exports: {} };
       });
       var h = f.Promise;
       return G(h, function(d, g, R) {
-        var x;
+        var C;
         if (typeof a.addEventListener == "function") {
-          x = function() {
+          C = function() {
             d(T.apply(null, arguments));
           }, R(function() {
-            a.removeEventListener(c, x);
+            a.removeEventListener(c, C);
           }), a.addEventListener(
             c,
-            x,
+            C,
             { once: !0 }
           );
           return;
         }
         var S = function() {
-          C && a.removeListener("error", C), d(T.apply(null, arguments));
-        }, C;
-        c !== "error" && (C = function(N) {
+          x && a.removeListener("error", x), d(T.apply(null, arguments));
+        }, x;
+        c !== "error" && (x = function(N) {
           a.removeListener(c, S), g(N);
-        }, a.once("error", C)), R(function() {
-          C && a.removeListener("error", C), a.removeListener(c, S);
+        }, a.once("error", x)), R(function() {
+          x && a.removeListener("error", x), a.removeListener(c, S);
         }), a.once(c, S);
       }, {
         timeout: f.timeout,
@@ -1491,7 +1491,7 @@ function an(e, t) {
   }
   return t;
 }
-function Co(e, t) {
+function xo(e, t) {
   if (e && !t || t && !e)
     return !1;
   for (const r in e)
@@ -1525,7 +1525,7 @@ function Rr(e) {
 function hs(e, t, r) {
   return typeof r.structuralSharing == "function" ? r.structuralSharing(e, t) : r.structuralSharing !== !1 ? an(e, t) : t;
 }
-function xo(e) {
+function Co(e) {
   return e;
 }
 function ds(e, t, r = 0) {
@@ -1610,12 +1610,12 @@ var ke, Pe, Qe, zr, ms = (zr = class extends Nt {
   isOnline() {
     return w(this, $e);
   }
-}, $e = new WeakMap(), Le = new WeakMap(), Ke = new WeakMap(), qr), Ct = new ys();
+}, $e = new WeakMap(), Le = new WeakMap(), Ke = new WeakMap(), qr), xt = new ys();
 function vs(e) {
   return Math.min(1e3 * 2 ** e, 3e4);
 }
 function ur(e) {
-  return (e ?? "online") === "online" ? Ct.isOnline() : !0;
+  return (e ?? "online") === "online" ? xt.isOnline() : !0;
 }
 var un = class {
   constructor(e) {
@@ -1636,7 +1636,7 @@ function ln(e) {
     t = !0;
   }, l = () => {
     t = !1;
-  }, p = () => !tr.isFocused() || e.networkMode !== "always" && !Ct.isOnline(), A = (b) => {
+  }, p = () => !tr.isFocused() || e.networkMode !== "always" && !xt.isOnline(), A = (b) => {
     var O;
     n || (n = !0, (O = e.onSuccess) == null || O.call(e, b), s == null || s(), i(b));
   }, y = (b) => {
@@ -2435,7 +2435,7 @@ function Ss(e, { pages: t, pageParams: r }) {
     r
   );
 }
-var Y, Fe, Me, Xe, Ye, De, Ze, et, Gr, Cs = (Gr = class {
+var Y, Fe, Me, Xe, Ye, De, Ze, et, Gr, xs = (Gr = class {
   constructor(e = {}) {
     z(this, Y, void 0);
     z(this, Fe, void 0);
@@ -2450,8 +2450,8 @@ var Y, Fe, Me, Xe, Ye, De, Ze, et, Gr, Cs = (Gr = class {
   mount() {
     wt(this, De)._++, w(this, De) === 1 && (j(this, Ze, tr.subscribe(() => {
       tr.isFocused() && (this.resumePausedMutations(), w(this, Y).onFocus());
-    })), j(this, et, Ct.subscribe(() => {
-      Ct.isOnline() && (this.resumePausedMutations(), w(this, Y).onOnline());
+    })), j(this, et, xt.subscribe(() => {
+      xt.isOnline() && (this.resumePausedMutations(), w(this, Y).onOnline());
     })));
   }
   unmount() {
@@ -2635,7 +2635,7 @@ var Y, Fe, Me, Xe, Ye, De, Ze, et, Gr, Cs = (Gr = class {
   if (!t)
     throw new Error("No QueryClient set, use QueryClientProvider to set one");
   return t;
-}, xs = ({
+}, Cs = ({
   client: e,
   children: t
 }) => (k.useEffect(() => (e.mount(), () => {
@@ -2655,16 +2655,16 @@ function Po(e, t) {
     };
   }, [e, t]), r;
 }
-const Cr = (e, t) => {
+const xr = (e, t) => {
   const r = JSON.stringify(t);
   window.localStorage.setItem(e, r), dn(e, r);
 }, As = (e) => {
   window.localStorage.removeItem(e), dn(e, null);
-}, xr = (e) => window.localStorage.getItem(e), Ps = (e) => (window.addEventListener("storage", e), () => window.removeEventListener("storage", e)), Ls = () => {
+}, Cr = (e) => window.localStorage.getItem(e), Ps = (e) => (window.addEventListener("storage", e), () => window.removeEventListener("storage", e)), Ls = () => {
   throw Error("useLocalStorage is a client-only hook");
 };
 function Ns(e, t) {
-  const r = () => xr(e), n = k.useSyncExternalStore(
+  const r = () => Cr(e), n = k.useSyncExternalStore(
     Ps,
     r,
     Ls
@@ -2672,7 +2672,7 @@ function Ns(e, t) {
     (i) => {
       try {
         const o = typeof i == "function" ? i(JSON.parse(n)) : i;
-        o == null ? As(e) : Cr(e, o);
+        o == null ? As(e) : xr(e, o);
       } catch (o) {
         console.warn(o);
       }
@@ -2680,7 +2680,7 @@ function Ns(e, t) {
     [e, n]
   );
   return k.useEffect(() => {
-    xr(e) === null && typeof t < "u" && Cr(e, t);
+    Cr(e) === null && typeof t < "u" && xr(e, t);
   }, [e, t]), [n ? JSON.parse(n) : t, s];
 }
 function Lo() {
@@ -3094,7 +3094,7 @@ Sn.toString = function(t) {
 function vi(e) {
   return encodeURIComponent(e).replace(/%3A/gi, ":").replace(/%24/g, "$").replace(/%2C/gi, ",").replace(/%20/g, "+").replace(/%5B/gi, "[").replace(/%5D/gi, "]");
 }
-function Cn(e, t, r) {
+function xn(e, t, r) {
   if (!t)
     return e;
   const n = r && r.encode || vi, s = r && r.serialize;
@@ -3159,7 +3159,7 @@ class wi {
     });
   }
 }
-const Fr = wi, xn = {
+const Fr = wi, Cn = {
   silentJSONParsing: !0,
   forcedJSONParsing: !0,
   clarifyTimeoutError: !1
@@ -3188,10 +3188,10 @@ function Si(e, t) {
     }
   }, t));
 }
-function Ci(e) {
+function xi(e) {
   return E.matchAll(/\w+|\[(\w*)]/g, e).map((t) => t[0] === "[]" ? "" : t[1] || t[0]);
 }
-function xi(e) {
+function Ci(e) {
   const t = {}, r = Object.keys(e);
   let n;
   const s = r.length;
@@ -3204,12 +3204,12 @@ function Pn(e) {
   function t(r, n, s, i) {
     let o = r[i++];
     const u = Number.isFinite(+o), v = i >= r.length;
-    return o = !o && E.isArray(s) ? s.length : o, v ? (E.hasOwnProp(s, o) ? s[o] = [s[o], n] : s[o] = n, !u) : ((!s[o] || !E.isObject(s[o])) && (s[o] = []), t(r, n, s[o], i) && E.isArray(s[o]) && (s[o] = xi(s[o])), !u);
+    return o = !o && E.isArray(s) ? s.length : o, v ? (E.hasOwnProp(s, o) ? s[o] = [s[o], n] : s[o] = n, !u) : ((!s[o] || !E.isObject(s[o])) && (s[o] = []), t(r, n, s[o], i) && E.isArray(s[o]) && (s[o] = Ci(s[o])), !u);
   }
   if (E.isFormData(e) && E.isFunction(e.entries)) {
     const r = {};
     return E.forEachEntry(e, (n, s) => {
-      t(Ci(n), s, r, 0);
+      t(xi(n), s, r, 0);
     }), r;
   }
   return null;
@@ -3225,7 +3225,7 @@ function Ai(e, t, r) {
   return (r || JSON.stringify)(e);
 }
 const hr = {
-  transitional: xn,
+  transitional: Cn,
   adapter: ["xhr", "http"],
   transformRequest: [function(t, r) {
     const n = r.getContentType() || "", s = n.indexOf("application/json") > -1, i = E.isObject(t);
@@ -3475,9 +3475,9 @@ E.reduceDescriptors(kt.prototype, ({ value: e }, t) => {
   };
 });
 E.freezeMethods(kt);
-const Ce = kt;
+const xe = kt;
 function Jt(e, t) {
-  const r = this || dr, n = t || r, s = Ce.from(n.headers);
+  const r = this || dr, n = t || r, s = xe.from(n.headers);
   let i = n.data;
   return E.forEach(e, function(u) {
     i = u.call(r, i, s.normalize(), t ? t.status : void 0);
@@ -3615,7 +3615,7 @@ function Dr(e, t) {
 const Hi = typeof XMLHttpRequest < "u", Qi = Hi && function(e) {
   return new Promise(function(r, n) {
     let s = e.data;
-    const i = Ce.from(e.headers).normalize(), o = e.responseType;
+    const i = xe.from(e.headers).normalize(), o = e.responseType;
     let u;
     function v() {
       e.cancelToken && e.cancelToken.unsubscribe(u), e.signal && e.signal.removeEventListener("abort", u);
@@ -3635,11 +3635,11 @@ const Hi = typeof XMLHttpRequest < "u", Qi = Hi && function(e) {
       i.set("Authorization", "Basic " + btoa(m + ":" + T));
     }
     const p = Nn(e.baseURL, e.url);
-    l.open(e.method.toUpperCase(), Cn(p, e.params, e.paramsSerializer), !0), l.timeout = e.timeout;
+    l.open(e.method.toUpperCase(), xn(p, e.params, e.paramsSerializer), !0), l.timeout = e.timeout;
     function A() {
       if (!l)
         return;
-      const m = Ce.from(
+      const m = xe.from(
         "getAllResponseHeaders" in l && l.getAllResponseHeaders()
       ), b = {
         data: !o || o === "text" || o === "json" ? l.responseText : l.response,
@@ -3663,7 +3663,7 @@ const Hi = typeof XMLHttpRequest < "u", Qi = Hi && function(e) {
       n(new H("Network Error", H.ERR_NETWORK, e, l)), l = null;
     }, l.ontimeout = function() {
       let T = e.timeout ? "timeout of " + e.timeout + "ms exceeded" : "timeout exceeded";
-      const b = e.transitional || xn;
+      const b = e.transitional || Cn;
       e.timeoutErrorMessage && (T = e.timeoutErrorMessage), n(new H(
         T,
         b.clarifyTimeoutError ? H.ETIMEDOUT : H.ECONNABORTED,
@@ -3735,7 +3735,7 @@ function Vt(e) {
     throw new yt(null, e);
 }
 function Ir(e) {
-  return Vt(e), e.headers = Ce.from(e.headers), e.data = Jt.call(
+  return Vt(e), e.headers = xe.from(e.headers), e.data = Jt.call(
     e,
     e.transformRequest
   ), ["post", "put", "patch"].indexOf(e.method) !== -1 && e.headers.setContentType("application/x-www-form-urlencoded", !1), Fn.getAdapter(e.adapter || dr.adapter)(e).then(function(n) {
@@ -3743,16 +3743,16 @@ function Ir(e) {
       e,
       e.transformResponse,
       n
-    ), n.headers = Ce.from(n.headers), n;
+    ), n.headers = xe.from(n.headers), n;
   }, function(n) {
     return Ln(n) || (Vt(e), n && n.response && (n.response.data = Jt.call(
       e,
       e.transformResponse,
       n.response
-    ), n.response.headers = Ce.from(n.response.headers))), Promise.reject(n);
+    ), n.response.headers = xe.from(n.response.headers))), Promise.reject(n);
   });
 }
-const kr = (e) => e instanceof Ce ? e.toJSON() : e;
+const kr = (e) => e instanceof xe ? e.toJSON() : e;
 function tt(e, t) {
   t = t || {};
   const r = {};
@@ -3863,8 +3863,8 @@ function Ki(e, t, r) {
 const ir = {
   assertOptions: Ki,
   validators: pr
-}, xe = ir.validators;
-class xt {
+}, Ce = ir.validators;
+class Ct {
   constructor(t) {
     this.defaults = t, this.interceptors = {
       request: new Fr(),
@@ -3883,14 +3883,14 @@ class xt {
     typeof t == "string" ? (r = r || {}, r.url = t) : r = t || {}, r = tt(this.defaults, r);
     const { transitional: n, paramsSerializer: s, headers: i } = r;
     n !== void 0 && ir.assertOptions(n, {
-      silentJSONParsing: xe.transitional(xe.boolean),
-      forcedJSONParsing: xe.transitional(xe.boolean),
-      clarifyTimeoutError: xe.transitional(xe.boolean)
+      silentJSONParsing: Ce.transitional(Ce.boolean),
+      forcedJSONParsing: Ce.transitional(Ce.boolean),
+      clarifyTimeoutError: Ce.transitional(Ce.boolean)
     }, !1), s != null && (E.isFunction(s) ? r.paramsSerializer = {
       serialize: s
     } : ir.assertOptions(s, {
-      encode: xe.function,
-      serialize: xe.function
+      encode: Ce.function,
+      serialize: Ce.function
     }, !0)), r.method = (r.method || this.defaults.method || "get").toLowerCase();
     let o = i && E.merge(
       i.common,
@@ -3901,7 +3901,7 @@ class xt {
       (m) => {
         delete i[m];
       }
-    ), r.headers = Ce.concat(o, i);
+    ), r.headers = xe.concat(o, i);
     const u = [];
     let v = !0;
     this.interceptors.request.forEach(function(T) {
@@ -3941,11 +3941,11 @@ class xt {
   getUri(t) {
     t = tt(this.defaults, t);
     const r = Nn(t.baseURL, t.url);
-    return Cn(r, t.params, t.paramsSerializer);
+    return xn(r, t.params, t.paramsSerializer);
   }
 }
 E.forEach(["delete", "get", "head", "options"], function(t) {
-  xt.prototype[t] = function(r, n) {
+  Ct.prototype[t] = function(r, n) {
     return this.request(tt(n || {}, {
       method: t,
       url: r,
@@ -3966,9 +3966,9 @@ E.forEach(["post", "put", "patch"], function(t) {
       }));
     };
   }
-  xt.prototype[t] = r(), xt.prototype[t + "Form"] = r(!0);
+  Ct.prototype[t] = r(), Ct.prototype[t + "Form"] = r(!0);
 });
-const Rt = xt;
+const Rt = Ct;
 class mr {
   constructor(t) {
     if (typeof t != "function")
@@ -4136,7 +4136,7 @@ V.all = function(t) {
 V.spread = Gi;
 V.isAxiosError = Ji;
 V.mergeConfig = tt;
-V.AxiosHeaders = Ce;
+V.AxiosHeaders = xe;
 V.formToJSON = (e) => Pn(E.isHTMLForm(e) ? new FormData(e) : e);
 V.getAdapter = Fn.getAdapter;
 V.HttpStatusCode = Vi;
@@ -4239,7 +4239,7 @@ const In = q.createContext(null), Zi = () => {
   routes: t
 }) => /* @__PURE__ */ K(In.Provider, { value: {
   routes: t
-}, children: e }), to = new Cs({
+}, children: e }), to = new xs({
   defaultOptions: {
     queries: {
       retry: !1,
@@ -4267,7 +4267,7 @@ const In = q.createContext(null), Zi = () => {
   }
 }), no = ({
   children: e
-}) => /* @__PURE__ */ K($n, { theme: ro, children: /* @__PURE__ */ K(Xi, { children: /* @__PURE__ */ K(xs, { client: to, children: /* @__PURE__ */ K(eo, { routes: tn, children: e }) }) }) }), so = () => {
+}) => /* @__PURE__ */ K($n, { theme: ro, children: /* @__PURE__ */ K(Xi, { children: /* @__PURE__ */ K(Cs, { client: to, children: /* @__PURE__ */ K(eo, { routes: tn, children: e }) }) }) }), so = () => {
   const {
     routes: e
   } = Zi();
@@ -4701,7 +4701,7 @@ export {
   Fo as h,
   ve as i,
   K as j,
-  xo as k,
+  Co as k,
   Ft as l,
   ls as m,
   ie as n,
@@ -4709,7 +4709,7 @@ export {
   Bn as p,
   ur as q,
   hs as r,
-  Co as s,
+  xo as s,
   fs as t,
   Lo as u,
   No as v
