@@ -46,7 +46,7 @@ var Xt = {};
 const Jn = [{
   id: "users",
   path: "/users",
-  component: () => import("./UsersList-925aa1ee.js"),
+  component: () => import("./UsersList-661dcb73.js"),
   windowOptions: {
     icon: Xt.faUsers,
     title: "Пользователи",
@@ -79,7 +79,7 @@ var en = {};
 const Vn = [{
   id: "program-docs",
   path: "/program-docs",
-  component: () => import("./ProgramDocsList-6c61388a.js"),
+  component: () => import("./ProgramDocsList-21f23e3e.js"),
   windowOptions: {
     title: "Конструктор документов программ",
     width: 700,
@@ -96,7 +96,7 @@ const Vn = [{
 }, {
   id: "program-docs-constructor",
   path: "/program-docs/constructor/:id",
-  component: () => import("./ProgramConstructor-9a500ed5.js"),
+  component: () => import("./ProgramConstructor-c78fb182.js"),
   windowOptions: {
     title: "Конструктор программы",
     width: 700,
@@ -106,7 +106,7 @@ const Vn = [{
 }, {
   id: "program-docs-draft",
   path: "/program-docs/draft",
-  component: () => import("./Draft-c34d9621.js"),
+  component: () => import("./Draft-422c7100.js"),
   windowOptions: {
     title: "Черновик программы",
     width: 700,
@@ -116,7 +116,7 @@ const Vn = [{
 }, {
   id: "program-constructor-copy",
   path: "/program-docs/copy/:id",
-  component: () => import("./CopyProgramForm-b673a93a.js"),
+  component: () => import("./CopyProgramForm-2bc3d79c.js"),
   windowOptions: {
     title: "Копирование программы",
     width: 700,
@@ -4385,6 +4385,9 @@ const io = ({
     /* @__PURE__ */ K(Yr, { styles: ar`
             .MuiPopper-root {
               z-index: 20000;
+            }
+            .inl-modal {
+              z-index: 21000;
             }
           ` }),
     r.map((s) => /* @__PURE__ */ K(co, { ...s }, s.match.route.id))

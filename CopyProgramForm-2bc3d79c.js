@@ -1,11 +1,11 @@
-import { j as r, a as u } from "./library-4e772ba4.js";
-import { k as p, i as g, u as h, B as f, F as s, T as i, P as y, d as b, z as n } from "./RootSection-abf5c78c.js";
+import { j as r, a as u } from "./library-9eea5be1.js";
+import { k as p, i as g, u as h, B as f, F as s, T as i, P as y, d as b, z as n } from "./RootSection-fc580ca0.js";
 import "./react-54946355.js";
-import { u as l } from "./useWindowController-0fb9a840.js";
-import { u as x } from "./useWithTitle-9475ebb6.js";
+import { u as l } from "./useWindowController-f79f7940.js";
+import { u as x } from "./useWithTitle-2ca67328.js";
 import "./icons-6b7f2986.js";
-import { u as _ } from "./useNavigate-1ceabe48.js";
-import { P as F } from "./useDictionary-a8c39cbd.js";
+import { u as _ } from "./useNavigate-abeb9934.js";
+import { P as F } from "./useDictionary-6826448b.js";
 import "./mui-02912ce2.js";
 const P = () => {
   const {
