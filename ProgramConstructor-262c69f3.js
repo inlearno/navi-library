@@ -1,12 +1,12 @@
-import { u as Ht, j as t, a as D, F as Yt, f as Je, S as Vt } from "./library-85462f08.js";
+import { u as Ht, j as t, a as D, F as Yt, f as Je, S as Vt } from "./library-7b8670ef.js";
 import { r as x, c as $t, R as Qe } from "./react-54946355.js";
-import { f as Zt, R as Ut, D as Xt, u as X, a as Gt, B as De, z as o, T as N, F as h, P as Jt, b as re, c as Qt, Y as Pe, d as B, e as ke, g as Y, N as U, L as Kt, h as Ke, i as V, j as ne, k as Me } from "./RootSection-f22b88ac.js";
+import { f as Zt, R as Ut, D as Xt, u as X, a as Gt, B as De, z as o, T as N, F as h, P as Jt, b as re, c as Qt, Y as Pe, d as B, e as ke, g as Y, N as U, L as Kt, h as Ke, i as V, j as ne, k as Me } from "./RootSection-92132961.js";
 import { F as oe } from "./icons-6b7f2986.js";
-import { l as er, P as G, a as tr } from "./useDictionary-8599cc32.js";
+import { l as er, P as G, a as tr } from "./useDictionary-440d6546.js";
 import { u as rr, a as nr, B as J } from "./mui-02912ce2.js";
 import { f as ir, a as et } from "./faPen-2519e1be.js";
-import { N as or, f as ar, u as tt, T as rt, c as nt } from "./index-4d51afaa.js";
-import { u as Fe } from "./useWindowController-7ad76cdc.js";
+import { N as or, f as ar, u as tt, T as rt, c as nt } from "./index-2814e94c.js";
+import { u as Fe } from "./useWindowController-c53ddaaa.js";
 import "./table-e52be9b1.js";
 var I = /* @__PURE__ */ ((e) => (e.DONE = "done", e.ACTIVE = "active", e.WAIT = "wait", e.DISABLED = "disabled", e.LOADING = "loading", e.ERROR = "error", e.EDIT = "edit", e))(I || {});
 const sr = ({
@@ -2123,7 +2123,7 @@ const Fr = o.object({
     onSuccess: () => {
       y();
     }
-  }), d = [he.display("theme", "Тема"), he.display("practice", "Практика"), he.display("practice_volume", "Объем практики"), he.display("theory", "Теория"), he.display("theory_volume", "Объем теории"), he.actions([{
+  }), d = [he.display("theme", "Тема"), he.display("theory", "Теория"), he.display("theory_volume", "Объём теории"), he.display("practice", "Практика"), he.display("practice_volume", "Объём практики"), he.actions([{
     key: "download",
     icon: qe.faTrash,
     tooltip: "Удалить тему",
@@ -2800,7 +2800,7 @@ const Fr = o.object({
   }, form: l, children: [
     /* @__PURE__ */ t(h, { name: "number_year", control: l.control, render: ({
       field: d
-    }) => /* @__PURE__ */ t(U, { label: "Год обучения", helperText: "Год обучения (по счету)", placeholder: "Введите год обучения", ...d }) }),
+    }) => /* @__PURE__ */ t(U, { label: "Год обучения (по порядку)", placeholder: "Введите год обучения", ...d }) }),
     /* @__PURE__ */ t(h, { name: "date_start", control: l.control, render: ({
       field: d
     }) => /* @__PURE__ */ t(ke, { label: "Дата начала обучения", placeholder: "Выберите дату начала обучения", ...d }) }),
@@ -2830,7 +2830,7 @@ const Fr = o.object({
       y();
     }
   }), d = [
-    le.display("number_year", "Номер года обучения"),
+    le.display("number_year", "Год обучения (по порядку)"),
     le.date("date_start", "Дата начала", {
       displayFormat: "DD.MM.YYYY"
     }),
