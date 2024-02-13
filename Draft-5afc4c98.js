@@ -1,12 +1,12 @@
-import { j as e, a as m } from "./library-9c72dfde.js";
-import { z as o, k as _, i as g, u as f, B as h, F as a, T as s, P as y, b as c, c as b, d as v } from "./RootSection-80db9e4a.js";
+import { j as e, a as u } from "./library-b520397f.js";
+import { z as o, l as _, j as g, a as f, B as h, F as a, T as s, P as y, c, d as b, e as v } from "./RootSection-2582b37e.js";
 import "./react-54946355.js";
-import { u as x } from "./useWindowController-6fe1b1a3.js";
+import { u as x } from "./useWindowController-3f6bf528.js";
 import "./icons-6b7f2986.js";
-import { u as q } from "./useNavigate-8de7c5e0.js";
-import { P } from "./useDictionary-d06ba74e.js";
+import { u as q } from "./useNavigate-48ad5ea3.js";
+import { P } from "./useDictionary-d9296957.js";
 import "./mui-02912ce2.js";
-const w = o.object({
+const j = o.object({
   steps_info: o.any(),
   partner_id: o.string({
     required_error: "Выберите организацию"
@@ -48,7 +48,7 @@ const w = o.object({
     }
   }), t = f({
     mutation: l,
-    schema: w,
+    schema: j,
     defaultValues: {
       steps_info: {
         general: "done"
@@ -59,7 +59,7 @@ const w = o.object({
     display: "flex",
     width: "100%",
     justifyContent: "flex-end"
-  }, children: /* @__PURE__ */ e(h, { variant: "contained", color: "success", disabled: l.isPending, onClick: () => t.submit(), children: "Создать черновик" }) }), children: /* @__PURE__ */ m(v, { css: {
+  }, children: /* @__PURE__ */ e(h, { variant: "contained", color: "success", disabled: l.isPending, onClick: () => t.submit(), children: "Создать черновик" }) }), children: /* @__PURE__ */ u(v, { css: {
     display: "grid",
     gap: "1rem",
     padding: "1rem"
@@ -75,8 +75,8 @@ const w = o.object({
     /* @__PURE__ */ e(a, { control: t.control, name: "program_type_id", render: ({
       field: r
     }) => /* @__PURE__ */ e(c, { label: "Тип программы", ...r, dictionary: "navProgramType", filterOptions: (p) => p.filter(({
-      id: u
-    }) => u === 1), placeholder: "Выберите тип программы" }) }),
+      id: m
+    }) => m === 1), placeholder: "Выберите тип программы" }) }),
     /* @__PURE__ */ e(a, { control: t.control, name: "section_id", render: ({
       field: r
     }) => /* @__PURE__ */ e(b, { label: "Направленность", placeholder: "Выберите направленность", ...r }) }),

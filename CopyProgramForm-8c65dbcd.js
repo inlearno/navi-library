@@ -1,18 +1,18 @@
-import { j as r, a as u } from "./library-9c72dfde.js";
-import { k as p, i as g, u as h, B as f, F as s, T as i, P as y, d as b, z as n } from "./RootSection-80db9e4a.js";
+import { j as r, a as p } from "./library-b520397f.js";
+import { l as u, j as g, a as h, B as f, F as s, T as i, P as y, e as b, z as n } from "./RootSection-2582b37e.js";
 import "./react-54946355.js";
-import { u as l } from "./useWindowController-6fe1b1a3.js";
-import { u as x } from "./useWithTitle-673123da.js";
+import { u as l } from "./useWindowController-3f6bf528.js";
+import { u as x } from "./useWithTitle-fa7eacb5.js";
 import "./icons-6b7f2986.js";
-import { u as _ } from "./useNavigate-8de7c5e0.js";
-import { P as F } from "./useDictionary-d06ba74e.js";
+import { u as _ } from "./useNavigate-48ad5ea3.js";
+import { P as F } from "./useDictionary-d9296957.js";
 import "./mui-02912ce2.js";
 const P = () => {
   const {
     params: t
   } = l();
   return t;
-}, w = n.object({
+}, j = n.object({
   partner_id: n.string({
     required_error: "Выберите организацию"
   }),
@@ -28,12 +28,12 @@ const P = () => {
   city_created: n.string({
     required_error: "Выберите город создания"
   })
-}), k = () => {
+}), B = () => {
   const {
     id: t
   } = P(), {
     close: a
-  } = l(), d = _(), m = p(), c = g(`/api/program-docs/${t}/copy`, {
+  } = l(), d = _(), m = u(), c = g(`/api/program-docs/${t}/copy`, {
     onSuccess: ({
       data: {
         newDocId: e
@@ -45,13 +45,13 @@ const P = () => {
   x(`Копирование программы #${t}`);
   const o = h({
     mutation: c,
-    schema: w
+    schema: j
   });
   return /* @__PURE__ */ r(F, { bbar: /* @__PURE__ */ r("div", { css: {
     display: "flex",
     width: "100%",
     justifyContent: "flex-end"
-  }, children: /* @__PURE__ */ r(f, { variant: "contained", color: "success", disabled: c.isPending, onClick: () => o.submit(), children: "Копировать" }, "next") }), children: /* @__PURE__ */ u(b, { css: {
+  }, children: /* @__PURE__ */ r(f, { variant: "contained", color: "success", disabled: c.isPending, onClick: () => o.submit(), children: "Копировать" }, "next") }), children: /* @__PURE__ */ p(b, { css: {
     display: "grid",
     gap: "1rem",
     padding: "1rem"
@@ -73,5 +73,5 @@ const P = () => {
   ] }) });
 };
 export {
-  k as default
+  B as default
 };
