@@ -44,7 +44,7 @@ var Jt = {};
 const Hn = [{
   id: "users",
   path: "/users",
-  component: () => import("./UsersList-0ee67f9c.js"),
+  component: () => import("./UsersList-c56f5b02.js"),
   windowOptions: {
     icon: Jt.faUsers,
     title: "Пользователи",
@@ -77,7 +77,7 @@ var Jr = {};
 const Qn = [{
   id: "program-docs",
   path: "/program-docs",
-  component: () => import("./ProgramDocsList-7e3c4c7c.js"),
+  component: () => import("./ProgramDocsList-c8b67c09.js"),
   windowOptions: {
     title: "Конструктор документов программ",
     width: 700,
@@ -94,7 +94,7 @@ const Qn = [{
 }, {
   id: "program-docs-constructor",
   path: "/program-docs/constructor/:id",
-  component: () => import("./ProgramConstructor-e638444c.js"),
+  component: () => import("./ProgramConstructor-6c9c2058.js"),
   windowOptions: {
     title: "Конструктор программы",
     width: 700,
@@ -104,7 +104,7 @@ const Qn = [{
 }, {
   id: "program-docs-draft",
   path: "/program-docs/draft",
-  component: () => import("./Draft-15c289d7.js"),
+  component: () => import("./Draft-a0bc4419.js"),
   windowOptions: {
     title: "Черновик программы",
     width: 700,
@@ -114,7 +114,7 @@ const Qn = [{
 }, {
   id: "program-constructor-copy",
   path: "/program-docs/copy/:id",
-  component: () => import("./CopyProgramForm-28cb153d.js"),
+  component: () => import("./CopyProgramForm-23271a96.js"),
   windowOptions: {
     title: "Копирование программы",
     width: 700,
@@ -4325,7 +4325,7 @@ const Ji = ({
   onSessionExpired: s
 }) => {
   const [i, o] = B.useState([]), [u, v] = B.useState(r);
-  return B.useEffect(() => (e.on("update-session", (p) => {
+  return console.log("react::session", u), B.useEffect(() => (e.on("update-session", (p) => {
     v(p);
   }), e.on("add", (p, l, m) => {
     o((A) => [...A, {
@@ -4636,7 +4636,7 @@ window.initReact = ({
     n == null || n(u);
   } })), {
     updateSession: (u) => {
-      i.emit("update-session", u);
+      console.log("react::update-session", u), i.emit("update-session", u);
     },
     match(u) {
       const v = ho(o, u);
