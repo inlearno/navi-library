@@ -44,7 +44,7 @@ var Jt = {};
 const Hn = [{
   id: "users",
   path: "/users",
-  component: () => import("./UsersList-ee502aa5.js"),
+  component: () => import("./UsersList-1a419f9e.js"),
   windowOptions: {
     icon: Jt.faUsers,
     title: "Пользователи",
@@ -77,7 +77,7 @@ var Jr = {};
 const Qn = [{
   id: "program-docs",
   path: "/program-docs",
-  component: () => import("./ProgramDocsList-a5c2a1fa.js"),
+  component: () => import("./ProgramDocsList-48e7de76.js"),
   windowOptions: {
     title: "Конструктор документов программ",
     width: 700,
@@ -94,7 +94,7 @@ const Qn = [{
 }, {
   id: "program-docs-constructor",
   path: "/program-docs/constructor/:id",
-  component: () => import("./ProgramConstructor-c83c5ff3.js"),
+  component: () => import("./ProgramConstructor-461e4c3b.js"),
   windowOptions: {
     title: "Конструктор программы",
     width: 700,
@@ -104,7 +104,7 @@ const Qn = [{
 }, {
   id: "program-docs-draft",
   path: "/program-docs/draft",
-  component: () => import("./Draft-d00bd2d9.js"),
+  component: () => import("./Draft-c85daa23.js"),
   windowOptions: {
     title: "Черновик программы",
     width: 700,
@@ -114,7 +114,7 @@ const Qn = [{
 }, {
   id: "program-constructor-copy",
   path: "/program-docs/copy/:id",
-  component: () => import("./CopyProgramForm-056ab1d3.js"),
+  component: () => import("./CopyProgramForm-bb7aa935.js"),
   windowOptions: {
     title: "Копирование программы",
     width: 700,
@@ -4336,7 +4336,7 @@ const Ji = ({
   }), e.on("destroy", (p) => {
     o((l) => l.filter((m) => m.el !== p));
   }), () => {
-    e.removeAllListeners("add"), e.removeAllListeners("destroy");
+    e.removeAllListeners("update-session"), e.removeAllListeners("add"), e.removeAllListeners("destroy");
   }), [e]), /* @__PURE__ */ K(Vi, { session: u, updateSession: (p) => {
     n(p), v(p);
   }, onSessionExpired: s, children: /* @__PURE__ */ St(to, { navigate: t, children: [
