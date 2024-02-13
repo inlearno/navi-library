@@ -44,7 +44,7 @@ var Jt = {};
 const Hn = [{
   id: "users",
   path: "/users",
-  component: () => import("./UsersList-ebda81d5.js"),
+  component: () => import("./UsersList-189e02f1.js"),
   windowOptions: {
     icon: Jt.faUsers,
     title: "Пользователи",
@@ -77,7 +77,7 @@ var Jr = {};
 const Qn = [{
   id: "program-docs",
   path: "/program-docs",
-  component: () => import("./ProgramDocsList-fb720bc8.js"),
+  component: () => import("./ProgramDocsList-ee995c75.js"),
   windowOptions: {
     title: "Конструктор документов программ",
     width: 700,
@@ -94,7 +94,7 @@ const Qn = [{
 }, {
   id: "program-docs-constructor",
   path: "/program-docs/constructor/:id",
-  component: () => import("./ProgramConstructor-780ba762.js"),
+  component: () => import("./ProgramConstructor-0317a712.js"),
   windowOptions: {
     title: "Конструктор программы",
     width: 700,
@@ -104,7 +104,7 @@ const Qn = [{
 }, {
   id: "program-docs-draft",
   path: "/program-docs/draft",
-  component: () => import("./Draft-fefe3faf.js"),
+  component: () => import("./Draft-923eec4d.js"),
   windowOptions: {
     title: "Черновик программы",
     width: 700,
@@ -114,7 +114,7 @@ const Qn = [{
 }, {
   id: "program-constructor-copy",
   path: "/program-docs/copy/:id",
-  component: () => import("./CopyProgramForm-31fdceab.js"),
+  component: () => import("./CopyProgramForm-71675037.js"),
   windowOptions: {
     title: "Копирование программы",
     width: 700,
@@ -4326,7 +4326,7 @@ const Ji = ({
   onReady: i
 }) => {
   const [o, l] = B.useState([]), [m, v] = B.useState(r);
-  return console.log("react::session", m), B.useEffect(() => (e.on("update-session", (u) => {
+  return B.useEffect(() => (e.on("update-session", (u) => {
     v(u);
   }), e.on("add", (u, p, A) => {
     l((b) => [...b, {
@@ -4638,7 +4638,7 @@ window.initReact = ({
     n == null || n(m);
   } })), {
     updateSession: (m) => {
-      console.log("react::update-session", m), o.emit("update-session", m);
+      o.emit("update-session", m);
     },
     match(m) {
       const v = ho(l, m);
