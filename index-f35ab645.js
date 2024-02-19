@@ -1,8 +1,8 @@
-import { j as g, a as z, F as Xe, S as Tn, k as In, f as An } from "./library-8a98056f.js";
+import { j as g, a as z, F as Xe, S as Tn, k as In, f as An } from "./library-64e31f23.js";
 import { j as T, n as Rn, a as Ye, I as Ce, M as On } from "./mui-02912ce2.js";
 import { f as wt, u as zn, g as Ln } from "./table-e52be9b1.js";
 import { R as et, c as Te, r as c } from "./react-54946355.js";
-import { f as xn, b as jn, a as Hn, h as _n, c as Fn } from "./useDictionary-fb45a895.js";
+import { f as xn, b as jn, a as Hn, h as _n, c as Fn } from "./useDictionary-0ecb9681.js";
 import { F } from "./icons-6b7f2986.js";
 const Vn = ({
   ...e
@@ -1770,10 +1770,11 @@ const Ri = ({
 }, qi = ({
   table: e,
   border: t = !1,
-  onRowDoubleClick: n
+  className: n,
+  onRowDoubleClick: i
 }) => e.error ? /* @__PURE__ */ g(Ri, { type: "error", title: e.error.message }) : /* @__PURE__ */ g(Tn, { spinning: e.isLoading ?? !1, children: /* @__PURE__ */ g("div", { css: [{
   minHeight: "200px"
-}], children: /* @__PURE__ */ z("table", { css: [t && {
+}], children: /* @__PURE__ */ z("table", { className: n, css: [t && {
   borderLeftWidth: "1px",
   borderTopWidth: "1px"
 }, {
@@ -1790,12 +1791,12 @@ const Ri = ({
             `], style: {
   width: e.getTotalSize()
 }, children: [
-  e.getHeaderGroups().map((i) => /* @__PURE__ */ g("colgroup", { children: i.headers.map((r) => /* @__PURE__ */ g("col", { span: r.colSpan, style: {
-    width: r.column.getSize()
-  } }, r.id)) }, i.id)),
+  e.getHeaderGroups().map((r) => /* @__PURE__ */ g("colgroup", { children: r.headers.map((o) => /* @__PURE__ */ g("col", { span: o.colSpan, style: {
+    width: o.column.getSize()
+  } }, o.id)) }, r.id)),
   e.isLoading === !0 ? null : /* @__PURE__ */ z(Xe, { children: [
     /* @__PURE__ */ g(Di, { ...e }),
-    /* @__PURE__ */ g("tbody", { children: e.getRowModel().rows.map((i) => /* @__PURE__ */ g($n, { onRowDoubleClick: n, ...i }, i.id)) })
+    /* @__PURE__ */ g("tbody", { children: e.getRowModel().rows.map((r) => /* @__PURE__ */ g($n, { onRowDoubleClick: i, ...r }, r.id)) })
   ] })
 ] }) }) });
 var hn = {};
@@ -2171,6 +2172,7 @@ export {
   Vt as N,
   Ji as P,
   qi as T,
+  zi as a,
   eo as c,
   dn as f,
   Qi as u

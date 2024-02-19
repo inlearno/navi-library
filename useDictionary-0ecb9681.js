@@ -8,7 +8,7 @@ var A = (n, r, s) => (Na(n, r, "read from private field"), s ? s.call(n) : r.get
   r instanceof WeakSet ? r.add(n) : r.set(n, s);
 }, ne = (n, r, s, u) => (Na(n, r, "write to private field"), u ? u.call(n, s) : r.set(n, s), s);
 var ye = (n, r, s) => (Na(n, r, "access private method"), s);
-import { b as fv, s as za, e as ov, i as ul, h as fl, t as lv, l as hv, m as cv, r as ol, n as yl, u as dv, j as qi, a as _v, o as gv } from "./library-8a98056f.js";
+import { b as fv, s as za, e as ov, i as ul, h as fl, t as lv, l as hv, m as cv, o as ol, n as yl, u as dv, j as qi, a as _v, q as gv } from "./library-64e31f23.js";
 import { r as ft, e as kr } from "./react-54946355.js";
 var Be, ie, rr, be, Rn, ir, Rt, Hr, sr, ar, bn, An, ln, Yn, Cn, Er, Gr, $a, Br, Va, zr, Za, $r, qa, Vr, Ka, Zr, Qa, qr, Ja, ss, wl, ml, pv = (ml = class extends fv {
   constructor(r, s) {
@@ -309,7 +309,7 @@ var Mv = (n, r) => {
   query: u
 }) => n.isError && !r.isReset() && !n.isFetching && Ov(s, [n.error, u]), Rv = (n) => {
   n.suspense && typeof n.staleTime != "number" && (n.staleTime = 1e3);
-}, bv = (n, r) => (n == null ? void 0 : n.suspense) && r.isPending, Av = (n, r, s) => r.fetchOptimistic(n).catch(() => {
+}, US = (n, r) => n.isLoading && n.isFetching && !r, bv = (n, r) => (n == null ? void 0 : n.suspense) && r.isPending, Av = (n, r, s) => r.fetchOptimistic(n).catch(() => {
   s.clearReset();
 });
 function Yv(n, r, s) {
@@ -395,7 +395,7 @@ const cl = ({
     overflow: "auto"
   }], children: n }),
   s && /* @__PURE__ */ qi(cl, { children: s })
-] }), US = kv;
+] }), HS = kv;
 var Iv = {};
 (function(n) {
   Object.defineProperty(n, "__esModule", { value: !0 });
@@ -4109,7 +4109,7 @@ function print() { __p += __j.call(arguments, '') }
     pn ? ((pn.exports = Hn)._ = Hn, Ls._ = Hn) : Me._ = Hn;
   }).call(kr);
 })(Xi, Xi.exports);
-var HS = Xi.exports;
+var GS = Xi.exports;
 function Pv(n, r) {
   let s;
   typeof n == "string" ? s = {
@@ -4124,7 +4124,7 @@ function Pv(n, r) {
     ...M
   } = s, C = Ev();
   return Cv({
-    queryKey: o ? [u, JSON.stringify(o), C.defaults.headers.Authorization || ""] : [u, C.defaults.headers.Authorization || ""],
+    queryKey: o ? [u, JSON.stringify(o)] : [u, C.defaults.headers.Authorization || ""],
     select: c ? (N) => c.parse(N) : p,
     queryFn: async ({
       signal: N
@@ -6661,7 +6661,7 @@ T.HTML5_FMT = {
   MONTH: "YYYY-MM"
   // <input type="month" />
 };
-const GS = (n, r) => {
+const BS = (n, r) => {
   const s = Pv(`/api/getDictionary/${n}`, {
     ...r,
     staleTime: 36e5,
@@ -6683,13 +6683,23 @@ const GS = (n, r) => {
   }), [s, u, o]);
 };
 export {
-  US as P,
+  HS as P,
+  pv as Q,
   Pv as a,
   Iv as b,
-  GS as c,
+  BS as c,
+  yv as d,
+  xv as e,
   Lv as f,
+  Rv as g,
   T as h,
-  HS as l,
-  Ov as s,
-  Ev as u
+  Mv as i,
+  Dv as j,
+  Av as k,
+  GS as l,
+  Tv as m,
+  Ov as n,
+  bv as s,
+  Ev as u,
+  US as w
 };

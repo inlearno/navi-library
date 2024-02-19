@@ -1,18 +1,18 @@
-import { j as r, a as p } from "./library-8a98056f.js";
-import { l as u, j as g, a as h, B as f, F as s, T as i, P as y, e as b, z as n } from "./RootSection-b287c7ed.js";
+import { j as r, a as p } from "./library-64e31f23.js";
+import { m as u, k as g, b as h, B as f, F as s, T as i, P as y, g as b, z as n } from "./RootSection-96b6982a.js";
 import "./react-54946355.js";
-import { u as l } from "./useWindowController-fd90d3a1.js";
-import { u as x } from "./useWithTitle-9271b46b.js";
+import { u as l } from "./useWindowController-4345a3b7.js";
+import { u as x } from "./useWithTitle-036d58db.js";
 import "./icons-6b7f2986.js";
-import { u as _ } from "./useNavigate-483a855c.js";
-import { P as F } from "./useDictionary-fb45a895.js";
+import { u as _ } from "./useNavigate-5acc5cd1.js";
+import { P as F } from "./useDictionary-0ecb9681.js";
 import "./mui-02912ce2.js";
 const P = () => {
   const {
     params: t
   } = l();
   return t;
-}, j = n.object({
+}, w = n.object({
   partner_id: n.string({
     required_error: "Выберите организацию"
   }),
@@ -28,7 +28,7 @@ const P = () => {
   city_created: n.string({
     required_error: "Выберите город создания"
   })
-}), B = () => {
+}), k = () => {
   const {
     id: t
   } = P(), {
@@ -45,7 +45,7 @@ const P = () => {
   x(`Копирование программы #${t}`);
   const o = h({
     mutation: c,
-    schema: j
+    schema: w
   });
   return /* @__PURE__ */ r(F, { bbar: /* @__PURE__ */ r("div", { css: {
     display: "flex",
@@ -73,5 +73,5 @@ const P = () => {
   ] }) });
 };
 export {
-  B as default
+  k as default
 };

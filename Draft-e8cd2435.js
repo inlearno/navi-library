@@ -1,12 +1,12 @@
-import { j as e, a as u } from "./library-8a98056f.js";
-import { z as o, l as _, j as g, a as f, B as h, F as a, T as s, P as y, c, d as b, e as v } from "./RootSection-b287c7ed.js";
+import { j as e, a as u } from "./library-64e31f23.js";
+import { z as o, m as _, k as g, b as f, B as h, F as a, T as s, P as y, d as c, e as b, g as v } from "./RootSection-96b6982a.js";
 import "./react-54946355.js";
-import { u as x } from "./useWindowController-fd90d3a1.js";
+import { u as x } from "./useWindowController-4345a3b7.js";
 import "./icons-6b7f2986.js";
-import { u as q } from "./useNavigate-483a855c.js";
-import { P } from "./useDictionary-fb45a895.js";
+import { u as q } from "./useNavigate-5acc5cd1.js";
+import { P } from "./useDictionary-0ecb9681.js";
 import "./mui-02912ce2.js";
-const j = o.object({
+const w = o.object({
   steps_info: o.any(),
   partner_id: o.string({
     required_error: "Выберите организацию"
@@ -48,7 +48,7 @@ const j = o.object({
     }
   }), t = f({
     mutation: l,
-    schema: j,
+    schema: w,
     defaultValues: {
       steps_info: {
         general: "done"
