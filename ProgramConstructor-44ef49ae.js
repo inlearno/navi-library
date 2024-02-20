@@ -1,15 +1,15 @@
-import { j as t, a as D, F as Vt, f as rt, S as $t } from "./library-64e31f23.js";
-import { r as x, c as Zt, R as nt } from "./react-54946355.js";
-import { u as Ut, f as Xt, R as Gt, a as Qt, D as Jt, B as ye, b as X, c as Kt, z as o, T as W, F as h, P as er, d as re, e as tr, Y as Ie, g as k, h as Te, i as Y, N as U, L as rr, j as it, k as V, l as ne, Q as ie, m as Le } from "./RootSection-96b6982a.js";
-import { F as ae } from "./icons-6b7f2986.js";
-import { l as nr, P as G, a as ir } from "./useDictionary-0ecb9681.js";
-import { u as or, a as ar, B as Q } from "./mui-02912ce2.js";
-import { a as qe, f as sr } from "./faPen-2519e1be.js";
-import { N as lr, f as cr, u as ot, T as Ne, c as Be, a as dr } from "./index-f35ab645.js";
-import { u as We } from "./useWindowController-4345a3b7.js";
+import { j as t, a as S, F as rr, f as ht, S as nr } from "./library-844ac20a.js";
+import { r as x, c as ir, R as mt } from "./react-54946355.js";
+import { u as or, f as ar, R as sr, a as lr, D as cr, B as we, b as X, c as dr, z as o, T as W, F as h, P as ur, d as ne, e as pr, Y as Ne, g as k, h as Re, i as $, N as U, L as hr, j as ft, k as Y, l as ie, Q as oe, m as We } from "./RootSection-5abbb8ea.js";
+import { F as se } from "./icons-6b7f2986.js";
+import { l as mr, N as fr, a as G, b as gr } from "./DictionaryCell-4d28d7d4.js";
+import { a as br, T as He, c as Q, f as vr, u as gt, S as yr } from "./index-be4f9076.js";
+import { u as _r, a as Ar, B as J } from "./mui-02912ce2.js";
+import { a as $e, f as wr } from "./faPen-2519e1be.js";
+import { u as Ye } from "./useWindowController-625f6aa7.js";
 import "./table-e52be9b1.js";
 var q = /* @__PURE__ */ ((e) => (e.DONE = "done", e.ACTIVE = "active", e.WAIT = "wait", e.DISABLED = "disabled", e.LOADING = "loading", e.ERROR = "error", e.EDIT = "edit", e))(q || {});
-const ur = ({
+const Cr = ({
   stepsDefinition: e,
   values: r,
   stateKey: a,
@@ -23,9 +23,9 @@ const ur = ({
     ...O,
     status: d[O.id] ?? q.WAIT
   })), [e, d]), [m, y] = x.useState(f[0]), _ = x.useRef(null), g = x.useMemo(() => f.findIndex((O) => O.id === (m == null ? void 0 : m.id)) || 0, [m]), b = x.useCallback((O) => {
-    s((S) => ({
-      ...S,
-      [m.id]: S[m.id] === q.ERROR && O === q.EDIT ? q.ERROR : O
+    s((D) => ({
+      ...D,
+      [m.id]: D[m.id] === q.ERROR && O === q.EDIT ? q.ERROR : O
     }));
   }, [m, s]), A = g === f.length - 1, E = async () => {
     try {
@@ -68,7 +68,7 @@ const ur = ({
     })
   };
 };
-var at = {};
+var bt = {};
 (function(e) {
   Object.defineProperty(e, "__esModule", { value: !0 });
   var r = "fas", a = "up-right-and-down-left-from-center", i = 512, n = 512, l = ["expand-alt"], d = "f424", s = "M344 0H488c13.3 0 24 10.7 24 24V168c0 9.7-5.8 18.5-14.8 22.2s-19.3 1.7-26.2-5.2l-39-39-87 87c-9.4 9.4-24.6 9.4-33.9 0l-32-32c-9.4-9.4-9.4-24.6 0-33.9l87-87L327 41c-6.9-6.9-8.9-17.2-5.2-26.2S334.3 0 344 0zM168 512H24c-13.3 0-24-10.7-24-24V344c0-9.7 5.8-18.5 14.8-22.2s19.3-1.7 26.2 5.2l39 39 87-87c9.4-9.4 24.6-9.4 33.9 0l32 32c9.4 9.4 9.4 24.6 0 33.9l-87 87 39 39c6.9 6.9 8.9 17.2 5.2 26.2s-12.5 14.8-22.2 14.8z";
@@ -83,8 +83,8 @@ var at = {};
       s
     ]
   }, e.faUpRightAndDownLeftFromCenter = e.definition, e.prefix = r, e.iconName = a, e.width = i, e.height = n, e.ligatures = l, e.unicode = d, e.svgPathData = s, e.aliases = l;
-})(at);
-var st = {};
+})(bt);
+var vt = {};
 (function(e) {
   Object.defineProperty(e, "__esModule", { value: !0 });
   var r = "fas", a = "down-left-and-up-right-to-center", i = 512, n = 512, l = ["compress-alt"], d = "f422", s = "M439 7c9.4-9.4 24.6-9.4 33.9 0l32 32c9.4 9.4 9.4 24.6 0 33.9l-87 87 39 39c6.9 6.9 8.9 17.2 5.2 26.2s-12.5 14.8-22.2 14.8H296c-13.3 0-24-10.7-24-24V72c0-9.7 5.8-18.5 14.8-22.2s19.3-1.7 26.2 5.2l39 39L439 7zM72 272H216c13.3 0 24 10.7 24 24V440c0 9.7-5.8 18.5-14.8 22.2s-19.3 1.7-26.2-5.2l-39-39L73 505c-9.4 9.4-24.6 9.4-33.9 0L7 473c-9.4-9.4-9.4-24.6 0-33.9l87-87L55 313c-6.9-6.9-8.9-17.2-5.2-26.2s12.5-14.8 22.2-14.8z";
@@ -99,8 +99,8 @@ var st = {};
       s
     ]
   }, e.faDownLeftAndUpRightToCenter = e.definition, e.prefix = r, e.iconName = a, e.width = i, e.height = n, e.ligatures = l, e.unicode = d, e.svgPathData = s, e.aliases = l;
-})(st);
-var lt = {};
+})(vt);
+var yt = {};
 (function(e) {
   Object.defineProperty(e, "__esModule", { value: !0 });
   var r = "fas", a = "window-minimize", i = 512, n = 512, l = [128469], d = "f2d1", s = "M32 416c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H32z";
@@ -115,14 +115,14 @@ var lt = {};
       s
     ]
   }, e.faWindowMinimize = e.definition, e.prefix = r, e.iconName = a, e.width = i, e.height = n, e.ligatures = l, e.unicode = d, e.svgPathData = s, e.aliases = l;
-})(lt);
-const pr = x.createContext(null), Fe = {
+})(yt);
+const Er = x.createContext(null), qe = {
   didCatch: !1,
   error: null
 };
-class hr extends x.Component {
+class xr extends x.Component {
   constructor(r) {
-    super(r), this.resetErrorBoundary = this.resetErrorBoundary.bind(this), this.state = Fe;
+    super(r), this.resetErrorBoundary = this.resetErrorBoundary.bind(this), this.state = qe;
   }
   static getDerivedStateFromError(r) {
     return {
@@ -140,7 +140,7 @@ class hr extends x.Component {
       (a = (i = this.props).onReset) === null || a === void 0 || a.call(i, {
         args: l,
         reason: "imperative-api"
-      }), this.setState(Fe);
+      }), this.setState(qe);
     }
   }
   componentDidCatch(r, a) {
@@ -153,13 +153,13 @@ class hr extends x.Component {
     } = this.state, {
       resetKeys: n
     } = this.props;
-    if (i && a.error !== null && mr(r.resetKeys, n)) {
+    if (i && a.error !== null && Dr(r.resetKeys, n)) {
       var l, d;
       (l = (d = this.props).onReset) === null || l === void 0 || l.call(d, {
         next: n,
         prev: r.resetKeys,
         reason: "keys"
-      }), this.setState(Fe);
+      }), this.setState(qe);
     }
   }
   render() {
@@ -187,7 +187,7 @@ class hr extends x.Component {
       else
         throw d;
     }
-    return x.createElement(pr.Provider, {
+    return x.createElement(Er.Provider, {
       value: {
         didCatch: l,
         error: d,
@@ -196,11 +196,11 @@ class hr extends x.Component {
     }, s);
   }
 }
-function mr() {
+function Dr() {
   let e = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : [], r = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : [];
   return e.length !== r.length || e.some((a, i) => !Object.is(a, r[i]));
 }
-const ke = ({
+const Oe = ({
   onClick: e,
   ...r
 }) => /* @__PURE__ */ t("div", { role: "button", onClick: e, onMouseDown: (a) => a.stopPropagation(), draggable: "false", css: {
@@ -212,7 +212,7 @@ const ke = ({
   ":hover": {
     opacity: "1"
   }
-}, children: /* @__PURE__ */ t(ae, { ...r }) }), fr = ({
+}, children: /* @__PURE__ */ t(se, { ...r }) }), Sr = ({
   bounds: e,
   height: r = 500,
   width: a = 600,
@@ -232,45 +232,45 @@ const ke = ({
   onMinimize: T,
   updatePosition: B,
   setWidth: O,
-  setHeight: S
+  setHeight: D
 }) => {
   const P = x.useMemo(() => "header-" + Math.random().toString(16).slice(2), []), {
     width: M,
     height: L
-  } = Ut(), j = x.useMemo(() => e && e.clientWidth > 0 && e.clientHeight > 0 ? {
+  } = or(), j = x.useMemo(() => e && e.clientWidth > 0 && e.clientHeight > 0 ? {
     topOffset: e.offsetTop || 0,
     leftOffset: e.offsetLeft || 0,
     width: e.clientWidth,
     height: e.clientHeight
-  } : null, [e, M, L]), J = x.useRef(null);
+  } : null, [e, M, L]), K = x.useRef(null);
   return x.useEffect(() => {
-    J.current && !J.current.state.resizing && (E ? J.current.updateSize(j ? {
+    K.current && !K.current.state.resizing && (E ? K.current.updateSize(j ? {
       width: j.width,
       height: j.height
     } : {
       width: M || 0,
       height: L || 0
-    }) : J.current.updateSize({
+    }) : K.current.updateSize({
       width: a,
       height: r
     }));
   }, [E, M, L, j, a, r, y]), x.useEffect(() => {
-    J.current && (E ? J.current.updatePosition({
+    K.current && (E ? K.current.updatePosition({
       x: (j == null ? void 0 : j.leftOffset) || 0,
       y: (j == null ? void 0 : j.topOffset) || 0
-    }) : g && J.current.updatePosition({
+    }) : g && K.current.updatePosition({
       x: g.x,
       y: g.y
     }));
-  }, [E, J.current, j, g, y]), x.useEffect(() => {
+  }, [E, K.current, j, g, y]), x.useEffect(() => {
     e && !j || L && M && L + M > 0 && !g && !E && (B == null || B({
       x: j ? j.leftOffset + j.width / 2 - a / 2 : (M ?? 0) / 2 - a / 2,
       y: j ? j.topOffset + j.height / 2 - r / 2 : (L ?? 0) / 2 - a / 2
     }));
   }, [g, B, j, E, L, M]), e && !j || !L || !L ? null : /* @__PURE__ */ t(
-    Gt,
+    sr,
     {
-      ref: J,
+      ref: K,
       enableResizing: !E,
       disableDragging: E,
       dragHandleClassName: P,
@@ -284,13 +284,13 @@ const ke = ({
       style: y ? {
         display: "none"
       } : {},
-      onResizeStop: (de, fe, K) => {
-        O == null || O(K.offsetWidth), S == null || S(K.offsetHeight);
+      onResizeStop: (pe, be, ee) => {
+        O == null || O(ee.offsetWidth), D == null || D(ee.offsetHeight);
       },
-      onDragStop: (de, fe) => {
+      onDragStop: (pe, be) => {
         B == null || B({
-          x: fe.lastX,
-          y: fe.lastY
+          x: be.lastX,
+          y: be.lastY
         });
       },
       default: {
@@ -301,7 +301,7 @@ const ke = ({
           y: 0
         }
       },
-      children: /* @__PURE__ */ D("div", { role: "dialog", onMouseDown: () => {
+      children: /* @__PURE__ */ S("div", { role: "dialog", onMouseDown: () => {
         !f && m && m();
       }, css: [{
         display: "flex",
@@ -323,7 +323,7 @@ const ke = ({
         "--tw-border-opacity": "1",
         borderColor: "rgb(90 88 173 / var(--tw-border-opacity))"
       }]], children: [
-        /* @__PURE__ */ D("div", { className: P, onDoubleClick: () => i && (E ? T == null ? void 0 : T() : A == null ? void 0 : A()), css: [{
+        /* @__PURE__ */ S("div", { className: P, onDoubleClick: () => i && (E ? T == null ? void 0 : T() : A == null ? void 0 : A()), css: [{
           zIndex: "10",
           display: "flex",
           userSelect: "none",
@@ -351,14 +351,14 @@ const ke = ({
             textOverflow: "ellipsis",
             whiteSpace: "nowrap"
           }, children: l }),
-          /* @__PURE__ */ D("div", { css: {
+          /* @__PURE__ */ S("div", { css: {
             display: "flex",
             alignItems: "center",
             gap: "0.625rem"
           }, children: [
-            _ && /* @__PURE__ */ t(ke, { icon: lt.faWindowMinimize, onClick: b, transform: "shrink-4" }),
-            i && (E ? /* @__PURE__ */ t(ke, { icon: st.faDownLeftAndUpRightToCenter, transform: "shrink-4", onClick: T }) : /* @__PURE__ */ t(ke, { icon: at.faUpRightAndDownLeftFromCenter, transform: "shrink-4", onClick: A })),
-            d && /* @__PURE__ */ t(ke, { icon: Xt.faXmark, onClick: s })
+            _ && /* @__PURE__ */ t(Oe, { icon: yt.faWindowMinimize, onClick: b, transform: "shrink-4" }),
+            i && (E ? /* @__PURE__ */ t(Oe, { icon: vt.faDownLeftAndUpRightToCenter, transform: "shrink-4", onClick: T }) : /* @__PURE__ */ t(Oe, { icon: bt.faUpRightAndDownLeftFromCenter, transform: "shrink-4", onClick: A })),
+            d && /* @__PURE__ */ t(Oe, { icon: ar.faXmark, onClick: s })
           ] })
         ] }),
         /* @__PURE__ */ t("div", { css: {
@@ -366,19 +366,19 @@ const ke = ({
           overflow: "auto",
           "--tw-bg-opacity": "1",
           backgroundColor: "rgb(255 255 255 / var(--tw-bg-opacity))"
-        }, children: /* @__PURE__ */ t(hr, { fallbackRender: ({
-          error: de
+        }, children: /* @__PURE__ */ t(xr, { fallbackRender: ({
+          error: pe
         }) => /* @__PURE__ */ t("div", { css: {
           display: "flex",
           height: "100%",
           width: "100%",
           alignItems: "center",
           justifyContent: "center"
-        }, children: de }), children: n }) })
+        }, children: pe }), children: n }) })
       ] })
     }
   );
-}, He = ({
+}, Ve = ({
   children: e,
   open: r = !1,
   onClose: a,
@@ -391,42 +391,42 @@ const ke = ({
   const [f, m] = x.useState(void 0), [y, _] = x.useState(r);
   return x.useEffect(() => {
     _(r);
-  }, [r]), y ? Zt.createPortal(/* @__PURE__ */ t("div", { className: "inl-modal", css: {
+  }, [r]), y ? ir.createPortal(/* @__PURE__ */ t("div", { className: "inl-modal", css: {
     position: "fixed",
     left: "0px",
     top: "0px",
     height: "100vh",
     width: "100vw",
     backgroundColor: "rgb(0 0 0 / 0.3)"
-  }, children: /* @__PURE__ */ t(fr, { position: f, updatePosition: (g) => {
+  }, children: /* @__PURE__ */ t(Sr, { position: f, updatePosition: (g) => {
     m(g);
   }, closable: !0, title: i, width: n, height: l, maximized: d, maximizable: s, onClose: () => {
     a ? a() : _(!1);
   }, children: e }) }), document.body) : null;
-}, oe = (e, r, a) => x.forwardRef(({
+}, ae = (e, r, a) => x.forwardRef(({
   multiple: i = !1,
   onChange: n,
   value: l,
   url: d,
-  idField: s = Jt,
+  idField: s = cr,
   ...f
 }, m) => {
-  const y = Qt(d, s), [_, g] = x.useState(), [b, A] = x.useState(!1), [E, T] = x.useState(""), B = () => {
+  const y = lr(d, s), [_, g] = x.useState(), [b, A] = x.useState(!1), [E, T] = x.useState(""), B = () => {
     T(""), A(!1);
-  }, O = or(m, g), S = (P) => {
+  }, O = _r(m, g), D = (P) => {
     y(P), n && n(i ? [...l ?? [], P[s]] : P[s]), B();
   };
-  return /* @__PURE__ */ D(Vt, { children: [
+  return /* @__PURE__ */ S(rr, { children: [
     /* @__PURE__ */ t(e, { ref: O, extraOptionsRenderer: ({
       search: P,
       searchIsLoading: M,
       closePopup: L
-    }) => !M && /* @__PURE__ */ t(gr, { search: P, onClick: () => {
+    }) => !M && /* @__PURE__ */ t(kr, { search: P, onClick: () => {
       T((P || "").trim()), A(!0), L(), _ == null || _.blur();
     } }), ...f, idField: s, value: l, multiple: i, onChange: n, url: d }),
-    /* @__PURE__ */ t(He, { open: b, onClose: () => A(!1), ...a, children: /* @__PURE__ */ t(r, { ...f, search: E, onCreate: S }) })
+    /* @__PURE__ */ t(Ve, { open: b, onClose: () => A(!1), ...a, children: /* @__PURE__ */ t(r, { ...f, search: E, onCreate: D }) })
   ] });
-}), gr = ({
+}), kr = ({
   search: e,
   onClick: r
 }) => /* @__PURE__ */ t("div", { css: {
@@ -434,14 +434,57 @@ const ke = ({
   width: "100%",
   justifyContent: "center",
   padding: "0.5rem"
-}, children: /* @__PURE__ */ D(ye, { variant: "outlined", icon: qe.faPlus, onClick: r, children: [
+}, children: /* @__PURE__ */ S(we, { variant: "outlined", icon: $e.faPlus, onClick: r, children: [
   "Создать",
   e && ` «${e}»`
-] }) }), ct = nt.createContext(null), br = ({
+] }) });
+var je = {};
+(function(e) {
+  Object.defineProperty(e, "__esModule", { value: !0 });
+  var r = "fas", a = "trash", i = 448, n = 512, l = [], d = "f1f8", s = "M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z";
+  e.definition = {
+    prefix: r,
+    iconName: a,
+    icon: [
+      i,
+      n,
+      l,
+      d,
+      s
+    ]
+  }, e.faTrash = e.definition, e.prefix = r, e.iconName = a, e.width = i, e.height = n, e.ligatures = l, e.unicode = d, e.svgPathData = s, e.aliases = l;
+})(je);
+const Tr = ({
+  items: e,
+  onDelete: r,
+  columns: a,
+  isLoading: i
+}) => {
+  const n = Q(), l = br({
+    enableSorting: !1,
+    isLoading: i,
+    columns: [...a, n.actions([{
+      icon: je.faTrash,
+      key: "delete",
+      onClick: (d) => r(d)
+    }])],
+    data: e || []
+  });
+  return /* @__PURE__ */ t(He, { border: !0, css: {
+    marginTop: "0.5rem"
+  }, table: l });
+}, le = (e, r) => x.forwardRef((a, i) => {
+  const n = x.useCallback(({
+    items: l,
+    onDelete: d,
+    valueCount: s
+  }) => /* @__PURE__ */ t(Tr, { items: l, valueCount: s, onDelete: d, columns: r }), [r]);
+  return /* @__PURE__ */ t(e, { ref: i, tagListPosition: a.tagListPosition || "bottom", tagListRenderer: n, ...a });
+}), _t = mt.createContext(null), Br = ({
   children: e,
   value: r
 }) => {
-  const [a, i] = nt.useState({}), {
+  const [a, i] = mt.useState({}), {
     activeStep: {
       id: n
     }
@@ -452,19 +495,19 @@ const ke = ({
       ...s
     }
   })), [n, a, i]);
-  return /* @__PURE__ */ t(ct.Provider, { value: {
+  return /* @__PURE__ */ t(_t.Provider, { value: {
     ...r,
     getStepState: l,
     setStepState: d
   }, children: e });
 };
-function vr() {
-  const e = x.useContext(ct);
+function Or() {
+  const e = x.useContext(_t);
   if (!e)
     throw new Error("useStepsContext must be used within a StepsContextProvider");
   return e;
 }
-const $ = ({
+const V = ({
   ...e
 }) => {
   const {
@@ -476,7 +519,7 @@ const $ = ({
     values: d,
     mutation: s,
     setActiveStepStatus: f
-  } = vr(), m = n(), {
+  } = Or(), m = n(), {
     errors: y,
     fields: _
   } = m, g = X({
@@ -497,7 +540,7 @@ const $ = ({
       errors: g.formState.errors
     });
   }, [g.formState.errors]), x.useEffect(() => {
-    nr.isEqual(g.getValues(), d) || (f(q.EDIT), l({
+    mr.isEqual(g.getValues(), d) || (f(q.EDIT), l({
       fields: g.getValues()
     }));
   }, [a, JSON.stringify(g.formState.dirtyFields)]), x.useImperativeHandle(r, () => ({
@@ -508,7 +551,7 @@ const $ = ({
     }
   })), g;
 };
-var dt = {};
+var At = {};
 (function(e) {
   Object.defineProperty(e, "__esModule", { value: !0 });
   var r = "fas", a = "arrow-left", i = 448, n = 512, l = [8592], d = "f060", s = "M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z";
@@ -523,8 +566,8 @@ var dt = {};
       s
     ]
   }, e.faArrowLeft = e.definition, e.prefix = r, e.iconName = a, e.width = i, e.height = n, e.ligatures = l, e.unicode = d, e.svgPathData = s, e.aliases = l;
-})(dt);
-var ut = { exports: {} };
+})(At);
+var wt = { exports: {} };
 (function(e, r) {
   (function(a, i) {
     e.exports = i(x);
@@ -850,8 +893,8 @@ var ut = { exports: {} };
               B != null && (E[B] = !0);
             }
           for (var O = 0; O < y.length; O++) {
-            var S = [].concat(y[O]);
-            g && E[S[0]] || (A !== void 0 && (S[5] === void 0 || (S[1] = "@layer".concat(S[5].length > 0 ? " ".concat(S[5]) : "", " {").concat(S[1], "}")), S[5] = A), _ && (S[2] && (S[1] = "@media ".concat(S[2], " {").concat(S[1], "}")), S[2] = _), b && (S[4] ? (S[1] = "@supports (".concat(S[4], ") {").concat(S[1], "}"), S[4] = b) : S[4] = "".concat(b)), m.push(S));
+            var D = [].concat(y[O]);
+            g && E[D[0]] || (A !== void 0 && (D[5] === void 0 || (D[1] = "@layer".concat(D[5].length > 0 ? " ".concat(D[5]) : "", " {").concat(D[1], "}")), D[5] = A), _ && (D[2] && (D[1] = "@media ".concat(D[2], " {").concat(D[1], "}")), D[2] = _), b && (D[4] ? (D[1] = "@supports (".concat(D[4], ") {").concat(D[1], "}"), D[4] = b) : D[4] = "".concat(b)), m.push(D));
           }
         }, m;
       };
@@ -875,7 +918,7 @@ var ut = { exports: {} };
       function g() {
       }
       g.resetWarningCache = _, s.exports = function() {
-        function b(T, B, O, S, P, M) {
+        function b(T, B, O, D, P, M) {
           if (M !== y) {
             var L = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
             throw L.name = "Invariant Violation", L;
@@ -904,8 +947,8 @@ var ut = { exports: {} };
       }
       function y(g, b) {
         for (var A = {}, E = [], T = 0; T < g.length; T++) {
-          var B = g[T], O = b.base ? B[0] + b.base : B[0], S = A[O] || 0, P = "".concat(O, " ").concat(S);
-          A[O] = S + 1;
+          var B = g[T], O = b.base ? B[0] + b.base : B[0], D = A[O] || 0, P = "".concat(O, " ").concat(D);
+          A[O] = D + 1;
           var M = m(P), L = { css: B[1], media: B[2], sourceMap: B[3], supports: B[4], layer: B[5] };
           if (M !== -1)
             f[M].references++, f[M].updater(L);
@@ -936,8 +979,8 @@ var ut = { exports: {} };
             var B = m(A[T]);
             f[B].references--;
           }
-          for (var O = y(E, b), S = 0; S < A.length; S++) {
-            var P = m(A[S]);
+          for (var O = y(E, b), D = 0; D < A.length; D++) {
+            var P = m(A[D]);
             f[P].references === 0 && (f[P].updater(), f.splice(P, 1));
           }
           A = O;
@@ -1034,30 +1077,30 @@ var ut = { exports: {} };
     }, l.nc = void 0;
     var d = {};
     return (() => {
-      l.r(d), l.d(d, { DefaultSplitter: () => j, Split: () => Dt });
-      var s = l(359), f = l(701), m = l.n(f), y = l(236), _ = l.n(y), g = l(80), b = l.n(g), A = l(850), E = l.n(A), T = l(182), B = l.n(T), O = l(213), S = l.n(O), P = l(58), M = {};
-      M.styleTagTransform = S(), M.setAttributes = E(), M.insert = b().bind(null, "head"), M.domAPI = _(), M.insertStyleElement = B(), m()(P.Z, M), P.Z && P.Z.locals && P.Z.locals;
+      l.r(d), l.d(d, { DefaultSplitter: () => j, Split: () => It });
+      var s = l(359), f = l(701), m = l.n(f), y = l(236), _ = l.n(y), g = l(80), b = l.n(g), A = l(850), E = l.n(A), T = l(182), B = l.n(T), O = l(213), D = l.n(O), P = l(58), M = {};
+      M.styleTagTransform = D(), M.setAttributes = E(), M.insert = b().bind(null, "head"), M.domAPI = _(), M.insertStyleElement = B(), m()(P.Z, M), P.Z && P.Z.locals && P.Z.locals;
       const L = (u) => (u % 2 == 0 ? 2 : 3) + "px", j = (u) => {
         const { dragging: c, pixelSize: p, color: v = "silver", hoverColor: w = "gray", dragColor: z = "black" } = u, F = { "--default-splitter-line-margin": (H = p, `${Math.max(0, Math.floor(H / 2) - 1)}px`), "--default-splitter-line-size": L(p), "--default-splitter-line-color": c ? z : v, "--default-splitter-line-hover-color": c ? z : w };
         var H;
         return s.createElement("div", { className: "default-splitter", style: F }, s.createElement("div", { className: "line" }));
       };
-      function J() {
-        return J = Object.assign ? Object.assign.bind() : function(u) {
+      function K() {
+        return K = Object.assign ? Object.assign.bind() : function(u) {
           for (var c = 1; c < arguments.length; c++) {
             var p = arguments[c];
             for (var v in p)
               Object.prototype.hasOwnProperty.call(p, v) && (u[v] = p[v]);
           }
           return u;
-        }, J.apply(this, arguments);
+        }, K.apply(this, arguments);
       }
-      function de(u, c) {
-        return de = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(p, v) {
+      function pe(u, c) {
+        return pe = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(p, v) {
           return p.__proto__ = v, p;
-        }, de(u, c);
+        }, pe(u, c);
       }
-      var fe = l(652), K = l.n(fe), Ye = function() {
+      var be = l(652), ee = l.n(be), Ze = function() {
         if (typeof Map < "u")
           return Map;
         function u(c, p) {
@@ -1093,11 +1136,11 @@ var ut = { exports: {} };
             }
           }, c;
         }();
-      }(), ze = typeof window < "u" && typeof document < "u" && window.document === document, _e = l.g !== void 0 && l.g.Math === Math ? l.g : typeof self < "u" && self.Math === Math ? self : typeof window < "u" && window.Math === Math ? window : Function("return this")(), ft = typeof requestAnimationFrame == "function" ? requestAnimationFrame.bind(_e) : function(u) {
+      }(), Pe = typeof window < "u" && typeof document < "u" && window.document === document, Ce = l.g !== void 0 && l.g.Math === Math ? l.g : typeof self < "u" && self.Math === Math ? self : typeof window < "u" && window.Math === Math ? window : Function("return this")(), Dt = typeof requestAnimationFrame == "function" ? requestAnimationFrame.bind(Ce) : function(u) {
         return setTimeout(function() {
           return u(Date.now());
         }, 1e3 / 60);
-      }, gt = ["top", "right", "bottom", "left", "width", "height", "size", "weight"], bt = typeof MutationObserver < "u", vt = function() {
+      }, St = ["top", "right", "bottom", "left", "width", "height", "size", "weight"], kt = typeof MutationObserver < "u", Tt = function() {
         function u() {
           this.connected_ = !1, this.mutationEventsAdded_ = !1, this.mutationsObserver_ = null, this.observers_ = [], this.onTransitionEnd_ = this.onTransitionEnd_.bind(this), this.refresh = function(c, p) {
             var v = !1, w = !1, z = 0;
@@ -1105,7 +1148,7 @@ var ut = { exports: {} };
               v && (v = !1, c()), w && C();
             }
             function H() {
-              ft(F);
+              Dt(F);
             }
             function C() {
               var N = Date.now();
@@ -1135,85 +1178,85 @@ var ut = { exports: {} };
             return p.broadcastActive();
           }), c.length > 0;
         }, u.prototype.connect_ = function() {
-          ze && !this.connected_ && (document.addEventListener("transitionend", this.onTransitionEnd_), window.addEventListener("resize", this.refresh), bt ? (this.mutationsObserver_ = new MutationObserver(this.refresh), this.mutationsObserver_.observe(document, { attributes: !0, childList: !0, characterData: !0, subtree: !0 })) : (document.addEventListener("DOMSubtreeModified", this.refresh), this.mutationEventsAdded_ = !0), this.connected_ = !0);
+          Pe && !this.connected_ && (document.addEventListener("transitionend", this.onTransitionEnd_), window.addEventListener("resize", this.refresh), kt ? (this.mutationsObserver_ = new MutationObserver(this.refresh), this.mutationsObserver_.observe(document, { attributes: !0, childList: !0, characterData: !0, subtree: !0 })) : (document.addEventListener("DOMSubtreeModified", this.refresh), this.mutationEventsAdded_ = !0), this.connected_ = !0);
         }, u.prototype.disconnect_ = function() {
-          ze && this.connected_ && (document.removeEventListener("transitionend", this.onTransitionEnd_), window.removeEventListener("resize", this.refresh), this.mutationsObserver_ && this.mutationsObserver_.disconnect(), this.mutationEventsAdded_ && document.removeEventListener("DOMSubtreeModified", this.refresh), this.mutationsObserver_ = null, this.mutationEventsAdded_ = !1, this.connected_ = !1);
+          Pe && this.connected_ && (document.removeEventListener("transitionend", this.onTransitionEnd_), window.removeEventListener("resize", this.refresh), this.mutationsObserver_ && this.mutationsObserver_.disconnect(), this.mutationEventsAdded_ && document.removeEventListener("DOMSubtreeModified", this.refresh), this.mutationsObserver_ = null, this.mutationEventsAdded_ = !1, this.connected_ = !1);
         }, u.prototype.onTransitionEnd_ = function(c) {
           var p = c.propertyName, v = p === void 0 ? "" : p;
-          gt.some(function(w) {
+          St.some(function(w) {
             return !!~v.indexOf(w);
           }) && this.refresh();
         }, u.getInstance = function() {
           return this.instance_ || (this.instance_ = new u()), this.instance_;
         }, u.instance_ = null, u;
-      }(), Ve = function(u, c) {
+      }(), Ue = function(u, c) {
         for (var p = 0, v = Object.keys(c); p < v.length; p++) {
           var w = v[p];
           Object.defineProperty(u, w, { value: c[w], enumerable: !1, writable: !1, configurable: !0 });
         }
         return u;
-      }, ue = function(u) {
-        return u && u.ownerDocument && u.ownerDocument.defaultView || _e;
-      }, $e = we(0, 0, 0, 0);
-      function Ae(u) {
+      }, he = function(u) {
+        return u && u.ownerDocument && u.ownerDocument.defaultView || Ce;
+      }, Xe = xe(0, 0, 0, 0);
+      function Ee(u) {
         return parseFloat(u) || 0;
       }
-      function Ze(u) {
+      function Ge(u) {
         for (var c = [], p = 1; p < arguments.length; p++)
           c[p - 1] = arguments[p];
         return c.reduce(function(v, w) {
-          return v + Ae(u["border-" + w + "-width"]);
+          return v + Ee(u["border-" + w + "-width"]);
         }, 0);
       }
-      var yt = typeof SVGGraphicsElement < "u" ? function(u) {
-        return u instanceof ue(u).SVGGraphicsElement;
+      var Bt = typeof SVGGraphicsElement < "u" ? function(u) {
+        return u instanceof he(u).SVGGraphicsElement;
       } : function(u) {
-        return u instanceof ue(u).SVGElement && typeof u.getBBox == "function";
+        return u instanceof he(u).SVGElement && typeof u.getBBox == "function";
       };
-      function _t(u) {
-        return ze ? yt(u) ? function(c) {
+      function Ot(u) {
+        return Pe ? Bt(u) ? function(c) {
           var p = c.getBBox();
-          return we(0, 0, p.width, p.height);
+          return xe(0, 0, p.width, p.height);
         }(u) : function(c) {
           var p = c.clientWidth, v = c.clientHeight;
           if (!p && !v)
-            return $e;
-          var w = ue(c).getComputedStyle(c), z = function(Z) {
-            for (var I = {}, le = 0, se = ["top", "right", "bottom", "left"]; le < se.length; le++) {
-              var Ee = se[le], he = Z["padding-" + Ee];
-              I[Ee] = Ae(he);
+            return Xe;
+          var w = he(c).getComputedStyle(c), z = function(Z) {
+            for (var I = {}, de = 0, ce = ["top", "right", "bottom", "left"]; de < ce.length; de++) {
+              var Se = ce[de], fe = Z["padding-" + Se];
+              I[Se] = Ee(fe);
             }
             return I;
-          }(w), F = z.left + z.right, H = z.top + z.bottom, C = Ae(w.width), N = Ae(w.height);
-          if (w.boxSizing === "border-box" && (Math.round(C + F) !== p && (C -= Ze(w, "left", "right") + F), Math.round(N + H) !== v && (N -= Ze(w, "top", "bottom") + H)), !function(Z) {
-            return Z === ue(Z).document.documentElement;
+          }(w), F = z.left + z.right, H = z.top + z.bottom, C = Ee(w.width), N = Ee(w.height);
+          if (w.boxSizing === "border-box" && (Math.round(C + F) !== p && (C -= Ge(w, "left", "right") + F), Math.round(N + H) !== v && (N -= Ge(w, "top", "bottom") + H)), !function(Z) {
+            return Z === he(Z).document.documentElement;
           }(c)) {
-            var te = Math.round(C + F) - p, ee = Math.round(N + H) - v;
-            Math.abs(te) !== 1 && (C -= te), Math.abs(ee) !== 1 && (N -= ee);
+            var re = Math.round(C + F) - p, te = Math.round(N + H) - v;
+            Math.abs(re) !== 1 && (C -= re), Math.abs(te) !== 1 && (N -= te);
           }
-          return we(z.left, z.top, C, N);
-        }(u) : $e;
+          return xe(z.left, z.top, C, N);
+        }(u) : Xe;
       }
-      function we(u, c, p, v) {
+      function xe(u, c, p, v) {
         return { x: u, y: c, width: p, height: v };
       }
-      var At = function() {
+      var zt = function() {
         function u(c) {
-          this.broadcastWidth = 0, this.broadcastHeight = 0, this.contentRect_ = we(0, 0, 0, 0), this.target = c;
+          this.broadcastWidth = 0, this.broadcastHeight = 0, this.contentRect_ = xe(0, 0, 0, 0), this.target = c;
         }
         return u.prototype.isActive = function() {
-          var c = _t(this.target);
+          var c = Ot(this.target);
           return this.contentRect_ = c, c.width !== this.broadcastWidth || c.height !== this.broadcastHeight;
         }, u.prototype.broadcastRect = function() {
           var c = this.contentRect_;
           return this.broadcastWidth = c.width, this.broadcastHeight = c.height, c;
         }, u;
-      }(), wt = function(u, c) {
-        var p, v, w, z, F, H, C, N = (v = (p = c).x, w = p.y, z = p.width, F = p.height, H = typeof DOMRectReadOnly < "u" ? DOMRectReadOnly : Object, C = Object.create(H.prototype), Ve(C, { x: v, y: w, width: z, height: F, top: w, right: v + z, bottom: F + w, left: v }), C);
-        Ve(this, { target: u, contentRect: N });
-      }, Ct = function() {
+      }(), Rt = function(u, c) {
+        var p, v, w, z, F, H, C, N = (v = (p = c).x, w = p.y, z = p.width, F = p.height, H = typeof DOMRectReadOnly < "u" ? DOMRectReadOnly : Object, C = Object.create(H.prototype), Ue(C, { x: v, y: w, width: z, height: F, top: w, right: v + z, bottom: F + w, left: v }), C);
+        Ue(this, { target: u, contentRect: N });
+      }, jt = function() {
         function u(c, p, v) {
-          if (this.activeObservations_ = [], this.observations_ = new Ye(), typeof c != "function")
+          if (this.activeObservations_ = [], this.observations_ = new Ze(), typeof c != "function")
             throw new TypeError("The callback provided as parameter 1 is not a function.");
           this.callback_ = c, this.controller_ = p, this.callbackCtx_ = v;
         }
@@ -1221,16 +1264,16 @@ var ut = { exports: {} };
           if (!arguments.length)
             throw new TypeError("1 argument required, but only 0 present.");
           if (typeof Element < "u" && Element instanceof Object) {
-            if (!(c instanceof ue(c).Element))
+            if (!(c instanceof he(c).Element))
               throw new TypeError('parameter 1 is not of type "Element".');
             var p = this.observations_;
-            p.has(c) || (p.set(c, new At(c)), this.controller_.addObserver(this), this.controller_.refresh());
+            p.has(c) || (p.set(c, new zt(c)), this.controller_.addObserver(this), this.controller_.refresh());
           }
         }, u.prototype.unobserve = function(c) {
           if (!arguments.length)
             throw new TypeError("1 argument required, but only 0 present.");
           if (typeof Element < "u" && Element instanceof Object) {
-            if (!(c instanceof ue(c).Element))
+            if (!(c instanceof he(c).Element))
               throw new TypeError('parameter 1 is not of type "Element".');
             var p = this.observations_;
             p.has(c) && (p.delete(c), p.size || this.controller_.removeObserver(this));
@@ -1245,7 +1288,7 @@ var ut = { exports: {} };
         }, u.prototype.broadcastActive = function() {
           if (this.hasActive()) {
             var c = this.callbackCtx_, p = this.activeObservations_.map(function(v) {
-              return new wt(v.target, v.broadcastRect());
+              return new Rt(v.target, v.broadcastRect());
             });
             this.callback_.call(c, p, c), this.clearActive();
           }
@@ -1254,29 +1297,29 @@ var ut = { exports: {} };
         }, u.prototype.hasActive = function() {
           return this.activeObservations_.length > 0;
         }, u;
-      }(), Ue = typeof WeakMap < "u" ? /* @__PURE__ */ new WeakMap() : new Ye(), Xe = function u(c) {
+      }(), Qe = typeof WeakMap < "u" ? /* @__PURE__ */ new WeakMap() : new Ze(), Je = function u(c) {
         if (!(this instanceof u))
           throw new TypeError("Cannot call a class as a function.");
         if (!arguments.length)
           throw new TypeError("1 argument required, but only 0 present.");
-        var p = vt.getInstance(), v = new Ct(c, p, this);
-        Ue.set(this, v);
+        var p = Tt.getInstance(), v = new jt(c, p, this);
+        Qe.set(this, v);
       };
       ["observe", "unobserve", "disconnect"].forEach(function(u) {
-        Xe.prototype[u] = function() {
+        Je.prototype[u] = function() {
           var c;
-          return (c = Ue.get(this))[u].apply(c, arguments);
+          return (c = Qe.get(this))[u].apply(c, arguments);
         };
       });
-      const Et = _e.ResizeObserver !== void 0 ? _e.ResizeObserver : Xe;
-      var xt = ["client", "offset", "scroll", "bounds", "margin"];
-      function Ge(u) {
+      const Pt = Ce.ResizeObserver !== void 0 ? Ce.ResizeObserver : Je;
+      var Mt = ["client", "offset", "scroll", "bounds", "margin"];
+      function Ke(u) {
         var c = [];
-        return xt.forEach(function(p) {
+        return Mt.forEach(function(p) {
           u[p] && c.push(p);
         }), c;
       }
-      function Qe(u, c) {
+      function et(u, c) {
         var p = {};
         if (c.indexOf("client") > -1 && (p.client = { top: u.clientTop, left: u.clientLeft, width: u.clientWidth, height: u.clientHeight }), c.indexOf("offset") > -1 && (p.offset = { top: u.offsetTop, left: u.offsetLeft, width: u.offsetWidth, height: u.offsetHeight }), c.indexOf("scroll") > -1 && (p.scroll = { top: u.scrollTop, left: u.scrollLeft, width: u.scrollWidth, height: u.scrollHeight }), c.indexOf("bounds") > -1) {
           var v = u.getBoundingClientRect();
@@ -1288,88 +1331,88 @@ var ut = { exports: {} };
         }
         return p;
       }
-      function St(u) {
+      function Ft(u) {
         return u && u.ownerDocument && u.ownerDocument.defaultView || window;
       }
-      var Re = function(u) {
+      var Me = function(u) {
         var c, p;
         return p = c = function(v) {
           var w, z;
           function F() {
-            for (var C, N = arguments.length, te = new Array(N), ee = 0; ee < N; ee++)
-              te[ee] = arguments[ee];
-            return (C = v.call.apply(v, [this].concat(te)) || this).state = { contentRect: { entry: {}, client: {}, offset: {}, scroll: {}, bounds: {}, margin: {} } }, C._animationFrameID = null, C._resizeObserver = null, C._node = null, C._window = null, C.measure = function(Z) {
-              var I = Qe(C._node, Ge(C.props));
+            for (var C, N = arguments.length, re = new Array(N), te = 0; te < N; te++)
+              re[te] = arguments[te];
+            return (C = v.call.apply(v, [this].concat(re)) || this).state = { contentRect: { entry: {}, client: {}, offset: {}, scroll: {}, bounds: {}, margin: {} } }, C._animationFrameID = null, C._resizeObserver = null, C._node = null, C._window = null, C.measure = function(Z) {
+              var I = et(C._node, Ke(C.props));
               Z && (I.entry = Z[0].contentRect), C._animationFrameID = C._window.requestAnimationFrame(function() {
                 C._resizeObserver !== null && (C.setState({ contentRect: I }), typeof C.props.onResize == "function" && C.props.onResize(I));
               });
             }, C._handleRef = function(Z) {
-              C._resizeObserver !== null && C._node !== null && C._resizeObserver.unobserve(C._node), C._node = Z, C._window = St(C._node);
+              C._resizeObserver !== null && C._node !== null && C._resizeObserver.unobserve(C._node), C._node = Z, C._window = Ft(C._node);
               var I = C.props.innerRef;
               I && (typeof I == "function" ? I(C._node) : I.current = C._node), C._resizeObserver !== null && C._node !== null && C._resizeObserver.observe(C._node);
             }, C;
           }
-          z = v, (w = F).prototype = Object.create(z.prototype), w.prototype.constructor = w, de(w, z);
+          z = v, (w = F).prototype = Object.create(z.prototype), w.prototype.constructor = w, pe(w, z);
           var H = F.prototype;
           return H.componentDidMount = function() {
-            this._resizeObserver = this._window !== null && this._window.ResizeObserver ? new this._window.ResizeObserver(this.measure) : new Et(this.measure), this._node !== null && (this._resizeObserver.observe(this._node), typeof this.props.onResize == "function" && this.props.onResize(Qe(this._node, Ge(this.props))));
+            this._resizeObserver = this._window !== null && this._window.ResizeObserver ? new this._window.ResizeObserver(this.measure) : new Pt(this.measure), this._node !== null && (this._resizeObserver.observe(this._node), typeof this.props.onResize == "function" && this.props.onResize(et(this._node, Ke(this.props))));
           }, H.componentWillUnmount = function() {
             this._window !== null && this._window.cancelAnimationFrame(this._animationFrameID), this._resizeObserver !== null && (this._resizeObserver.disconnect(), this._resizeObserver = null);
           }, H.render = function() {
-            var C = this.props, N = (C.innerRef, C.onResize, function(te, ee) {
-              if (te == null)
+            var C = this.props, N = (C.innerRef, C.onResize, function(re, te) {
+              if (re == null)
                 return {};
-              var Z, I, le = {}, se = Object.keys(te);
-              for (I = 0; I < se.length; I++)
-                Z = se[I], ee.indexOf(Z) >= 0 || (le[Z] = te[Z]);
-              return le;
+              var Z, I, de = {}, ce = Object.keys(re);
+              for (I = 0; I < ce.length; I++)
+                Z = ce[I], te.indexOf(Z) >= 0 || (de[Z] = re[Z]);
+              return de;
             }(C, ["innerRef", "onResize"]));
-            return (0, s.createElement)(u, J({}, N, { measureRef: this._handleRef, measure: this.measure, contentRect: this.state.contentRect }));
+            return (0, s.createElement)(u, K({}, N, { measureRef: this._handleRef, measure: this.measure, contentRect: this.state.contentRect }));
           }, F;
-        }(s.Component), c.propTypes = { client: K().bool, offset: K().bool, scroll: K().bool, bounds: K().bool, margin: K().bool, innerRef: K().oneOfType([K().object, K().func]), onResize: K().func }, p;
+        }(s.Component), c.propTypes = { client: ee().bool, offset: ee().bool, scroll: ee().bool, bounds: ee().bool, margin: ee().bool, innerRef: ee().oneOfType([ee().object, ee().func]), onResize: ee().func }, p;
       }(function(u) {
         var c = u.measure, p = u.measureRef, v = u.contentRect;
         return (0, u.children)({ measure: c, measureRef: p, contentRect: v });
       });
-      Re.displayName = "Measure", Re.propTypes.children = K().func;
-      const je = Re;
-      var Ce = l(672), pe = {};
-      pe.styleTagTransform = S(), pe.setAttributes = E(), pe.insert = b().bind(null, "head"), pe.domAPI = _(), pe.insertStyleElement = B(), m()(Ce.Z, pe), Ce.Z && Ce.Z.locals && Ce.Z.locals;
-      const Dt = (u) => {
-        const { horizontal: c = !1, initialPrimarySize: p = "50%", minPrimarySize: v = "0px", minSecondarySize: w = "0px", splitterSize: z = "7px", renderSplitter: F, resetOnDoubleClick: H = !1, defaultSplitterColors: C = { color: "silver", hover: "gray", drag: "black" }, onSplitChanged: N, onMeasuredSizesChanged: te } = u, [ee, Z] = s.useState({ height: 0, width: 0 }), [I, le] = s.useState({ height: 0, width: 0 }), [se, Ee] = s.useState({ height: 0, width: 0 }), he = s.useMemo(() => c ? ee.height : ee.width, [c, ee]), xe = s.useMemo(() => c ? I.height : I.width, [c, I]), Se = s.useMemo(() => c ? se.height : se.width, [c, se]), [ge, Je] = s.useState(void 0), [kt, Tt] = s.useState(0), [Bt, Ot] = s.useState(0), [Pe, Ke] = s.useState(!1);
+      Me.displayName = "Measure", Me.propTypes.children = ee().func;
+      const Fe = Me;
+      var De = l(672), me = {};
+      me.styleTagTransform = D(), me.setAttributes = E(), me.insert = b().bind(null, "head"), me.domAPI = _(), me.insertStyleElement = B(), m()(De.Z, me), De.Z && De.Z.locals && De.Z.locals;
+      const It = (u) => {
+        const { horizontal: c = !1, initialPrimarySize: p = "50%", minPrimarySize: v = "0px", minSecondarySize: w = "0px", splitterSize: z = "7px", renderSplitter: F, resetOnDoubleClick: H = !1, defaultSplitterColors: C = { color: "silver", hover: "gray", drag: "black" }, onSplitChanged: N, onMeasuredSizesChanged: re } = u, [te, Z] = s.useState({ height: 0, width: 0 }), [I, de] = s.useState({ height: 0, width: 0 }), [ce, Se] = s.useState({ height: 0, width: 0 }), fe = s.useMemo(() => c ? te.height : te.width, [c, te]), ke = s.useMemo(() => c ? I.height : I.width, [c, I]), Te = s.useMemo(() => c ? ce.height : ce.width, [c, ce]), [ve, tt] = s.useState(void 0), [Lt, qt] = s.useState(0), [Nt, Wt] = s.useState(0), [Ie, rt] = s.useState(!1);
         s.useEffect(() => {
-          N && N(ge !== void 0 ? `${ge}%` : p);
-        }, [ge, p]), s.useEffect(() => {
-          te && te({ primary: xe, splitter: Se, secondary: he - (xe + Se) });
-        }, [c, he, xe, Se]);
-        const zt = (R) => {
-          R.bounds && le({ height: R.bounds.height, width: R.bounds.width });
-        }, Rt = (R) => {
-          R.bounds && Ee({ height: R.bounds.height, width: R.bounds.width });
-        }, jt = (R) => {
-          R.currentTarget.setPointerCapture(R.pointerId), Tt(c ? R.clientY : R.clientX), Ot(xe), Ke(!0);
-        }, Pt = (R) => {
+          N && N(ve !== void 0 ? `${ve}%` : p);
+        }, [ve, p]), s.useEffect(() => {
+          re && re({ primary: ke, splitter: Te, secondary: fe - (ke + Te) });
+        }, [c, fe, ke, Te]);
+        const Ht = (R) => {
+          R.bounds && de({ height: R.bounds.height, width: R.bounds.width });
+        }, $t = (R) => {
+          R.bounds && Se({ height: R.bounds.height, width: R.bounds.width });
+        }, Yt = (R) => {
+          R.currentTarget.setPointerCapture(R.pointerId), qt(c ? R.clientY : R.clientX), Wt(ke), rt(!0);
+        }, Vt = (R) => {
           if (R.currentTarget.hasPointerCapture(R.pointerId)) {
-            const be = c ? R.clientY : R.clientX, Ht = Bt + (be - kt), Yt = Math.max(0, Math.min(Ht, he));
-            Je(Yt / he * 100);
+            const ye = c ? R.clientY : R.clientX, er = Nt + (ye - Lt), tr = Math.max(0, Math.min(er, fe));
+            tt(tr / fe * 100);
           }
-        }, Mt = (R) => {
-          R.currentTarget.releasePointerCapture(R.pointerId), Ke(!1);
-        }, Ft = () => {
-          H && Je(void 0);
-        }, De = s.Children.toArray(u.children), It = De.length > 0 ? De[0] : s.createElement("div", null), Lt = De.length > 1 ? De[1] : s.createElement("div", null), Me = { primary: ge !== void 0 ? `${ge}%` : p, minPrimary: v ?? "0px", minSecondary: w ?? "0px" }, et = { pixelSize: Se, horizontal: c, dragging: Pe }, qt = F ?? (() => s.createElement(j, Object.assign({}, et, { color: Pe ? C.drag : C.color, hoverColor: Pe ? C.drag : C.hover }))), Nt = c ? "split-container horizontal" : "split-container vertical", Wt = { "--react-split-min-primary": Me.minPrimary, "--react-split-min-secondary": Me.minSecondary, "--react-split-primary": Me.primary, "--react-split-splitter": z };
-        return s.createElement(je, { bounds: !0, onResize: (R) => {
+        }, Zt = (R) => {
+          R.currentTarget.releasePointerCapture(R.pointerId), rt(!1);
+        }, Ut = () => {
+          H && tt(void 0);
+        }, Be = s.Children.toArray(u.children), Xt = Be.length > 0 ? Be[0] : s.createElement("div", null), Gt = Be.length > 1 ? Be[1] : s.createElement("div", null), Le = { primary: ve !== void 0 ? `${ve}%` : p, minPrimary: v ?? "0px", minSecondary: w ?? "0px" }, nt = { pixelSize: Te, horizontal: c, dragging: Ie }, Qt = F ?? (() => s.createElement(j, Object.assign({}, nt, { color: Ie ? C.drag : C.color, hoverColor: Ie ? C.drag : C.hover }))), Jt = c ? "split-container horizontal" : "split-container vertical", Kt = { "--react-split-min-primary": Le.minPrimary, "--react-split-min-secondary": Le.minSecondary, "--react-split-primary": Le.primary, "--react-split-splitter": z };
+        return s.createElement(Fe, { bounds: !0, onResize: (R) => {
           R.bounds && Z({ height: R.bounds.height, width: R.bounds.width });
-        } }, ({ measureRef: R }) => s.createElement("div", { className: "react-split", ref: R }, s.createElement("div", { className: Nt, style: Wt }, s.createElement("div", { className: "primary" }, s.createElement(je, { bounds: !0, onResize: zt }, ({ measureRef: be }) => s.createElement("div", { className: "full-content", ref: be }, It))), s.createElement("div", { className: "splitter", tabIndex: -1, onPointerDown: jt, onPointerUp: Mt, onPointerMove: Pt, onDoubleClick: Ft }, s.createElement(je, { bounds: !0, onResize: Rt }, ({ measureRef: be }) => s.createElement("div", { className: "full-content", ref: be }, qt(et)))), s.createElement("div", { className: "secondary" }, s.createElement("div", { className: "full-content" }, Lt)))));
+        } }, ({ measureRef: R }) => s.createElement("div", { className: "react-split", ref: R }, s.createElement("div", { className: Jt, style: Kt }, s.createElement("div", { className: "primary" }, s.createElement(Fe, { bounds: !0, onResize: Ht }, ({ measureRef: ye }) => s.createElement("div", { className: "full-content", ref: ye }, Xt))), s.createElement("div", { className: "splitter", tabIndex: -1, onPointerDown: Yt, onPointerUp: Zt, onPointerMove: Vt, onDoubleClick: Ut }, s.createElement(Fe, { bounds: !0, onResize: $t }, ({ measureRef: ye }) => s.createElement("div", { className: "full-content", ref: ye }, Qt(nt)))), s.createElement("div", { className: "secondary" }, s.createElement("div", { className: "full-content" }, Gt)))));
       };
     })(), d;
   })());
-})(ut);
-var yr = ut.exports;
-const _r = ({
+})(wt);
+var zr = wt.exports;
+const Rr = ({
   children: e,
   ...r
-}) => /* @__PURE__ */ t(yr.Split, { defaultSplitterColors: {
+}) => /* @__PURE__ */ t(zr.Split, { defaultSplitterColors: {
   color: "#e5e7eb",
   hover: "#d1d5db",
   drag: "#9ca3af"
@@ -1394,7 +1437,7 @@ const _r = ({
   "--tw-bg-opacity": "1",
   backgroundColor: "rgb(114 117 191 / var(--tw-bg-opacity))"
 }] }), ...r, children: e });
-var pt = {};
+var Ct = {};
 (function(e) {
   Object.defineProperty(e, "__esModule", { value: !0 });
   var r = "fas", a = "pencil", i = 512, n = 512, l = [9999, 61504, "pencil-alt"], d = "f303", s = "M410.3 231l11.3-11.3-33.9-33.9-62.1-62.1L291.7 89.8l-11.3 11.3-22.6 22.6L58.6 322.9c-10.4 10.4-18 23.3-22.2 37.4L1 480.7c-2.5 8.4-.2 17.5 6.1 23.7s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L387.7 253.7 410.3 231zM160 399.4l-9.1 22.7c-4 3.1-8.5 5.4-13.3 6.9L59.4 452l23-78.1c1.4-4.9 3.8-9.4 6.9-13.3l22.7-9.1v32c0 8.8 7.2 16 16 16h32zM362.7 18.7L348.3 33.2 325.7 55.8 314.3 67.1l33.9 33.9 62.1 62.1 33.9 33.9 11.3-11.3 22.6-22.6 14.5-14.5c25-25 25-65.5 0-90.5L453.3 18.7c-25-25-65.5-25-90.5 0zm-47.4 168l-144 144c-6.2 6.2-16.4 6.2-22.6 0s-6.2-16.4 0-22.6l144-144c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6z";
@@ -1409,8 +1452,8 @@ var pt = {};
       s
     ]
   }, e.faPencil = e.definition, e.prefix = r, e.iconName = a, e.width = i, e.height = n, e.ligatures = l, e.unicode = d, e.svgPathData = s, e.aliases = l;
-})(pt);
-var ve = {};
+})(Ct);
+var Ae = {};
 (function(e) {
   Object.defineProperty(e, "__esModule", { value: !0 });
   var r = "fas", a = "circle", i = 512, n = 512, l = [128308, 128309, 128992, 128993, 128994, 128995, 128996, 9679, 9898, 9899, 11044, 61708, 61915], d = "f111", s = "M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z";
@@ -1425,8 +1468,8 @@ var ve = {};
       s
     ]
   }, e.faCircle = e.definition, e.prefix = r, e.iconName = a, e.width = i, e.height = n, e.ligatures = l, e.unicode = d, e.svgPathData = s, e.aliases = l;
-})(ve);
-var ht = {};
+})(Ae);
+var Et = {};
 (function(e) {
   Object.defineProperty(e, "__esModule", { value: !0 });
   var r = "fas", a = "lock", i = 448, n = 512, l = [128274], d = "f023", s = "M144 144v48H304V144c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192V144C80 64.5 144.5 0 224 0s144 64.5 144 144v48h16c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V256c0-35.3 28.7-64 64-64H80z";
@@ -1441,8 +1484,8 @@ var ht = {};
       s
     ]
   }, e.faLock = e.definition, e.prefix = r, e.iconName = a, e.width = i, e.height = n, e.ligatures = l, e.unicode = d, e.svgPathData = s, e.aliases = l;
-})(ht);
-var mt = {};
+})(Et);
+var xt = {};
 (function(e) {
   Object.defineProperty(e, "__esModule", { value: !0 });
   var r = "far", a = "clock", i = 512, n = 512, l = [128339, "clock-four"], d = "f017", s = "M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z";
@@ -1457,31 +1500,31 @@ var mt = {};
       s
     ]
   }, e.faClock = e.definition, e.prefix = r, e.iconName = a, e.width = i, e.height = n, e.ligatures = l, e.unicode = d, e.svgPathData = s, e.aliases = l;
-})(mt);
-const Ar = ({
+})(xt);
+const jr = ({
   status: e
-}) => lr(e).with(q.DONE, () => /* @__PURE__ */ t(ae, { icon: cr.faCheckCircle, css: {
+}) => fr(e).with(q.DONE, () => /* @__PURE__ */ t(se, { icon: vr.faCheckCircle, css: {
   "--tw-text-opacity": "1",
   color: "rgb(22 163 74 / var(--tw-text-opacity))"
-}, size: "lg" })).with(q.ACTIVE, () => /* @__PURE__ */ t(ae, { mask: ve.faCircle, icon: sr.faPen, css: {
+}, size: "lg" })).with(q.ACTIVE, () => /* @__PURE__ */ t(se, { mask: Ae.faCircle, icon: wr.faPen, css: {
   "--tw-text-opacity": "1",
   color: "rgb(114 117 191 / var(--tw-text-opacity))"
-}, transform: "shrink-8", size: "lg" })).with(q.WAIT, () => /* @__PURE__ */ t(ae, { mask: ve.faCircle, icon: mt.faClock, css: {
+}, transform: "shrink-8", size: "lg" })).with(q.WAIT, () => /* @__PURE__ */ t(se, { mask: Ae.faCircle, icon: xt.faClock, css: {
   "--tw-text-opacity": "1",
   color: "rgb(234 179 8 / var(--tw-text-opacity))"
-}, transform: "shrink-8", size: "lg" })).with(q.LOADING, () => /* @__PURE__ */ t(ae, { icon: rt.faCircleNotch, css: {
+}, transform: "shrink-8", size: "lg" })).with(q.LOADING, () => /* @__PURE__ */ t(se, { icon: ht.faCircleNotch, css: {
   "--tw-text-opacity": "1",
   color: "rgb(156 163 175 / var(--tw-text-opacity))"
-}, spin: !0, size: "lg" })).with(q.DISABLED, () => /* @__PURE__ */ t(ae, { mask: ve.faCircle, transform: "shrink-8", icon: ht.faLock, size: "lg", css: {
+}, spin: !0, size: "lg" })).with(q.DISABLED, () => /* @__PURE__ */ t(se, { mask: Ae.faCircle, transform: "shrink-8", icon: Et.faLock, size: "lg", css: {
   "--tw-text-opacity": "1",
   color: "rgb(209 213 219 / var(--tw-text-opacity))"
-} })).with(q.ERROR, () => /* @__PURE__ */ t(ae, { icon: Kt.faTriangleExclamation, size: "lg", css: {
+} })).with(q.ERROR, () => /* @__PURE__ */ t(se, { icon: dr.faTriangleExclamation, size: "lg", css: {
   "--tw-text-opacity": "1",
   color: "rgb(239 68 68 / var(--tw-text-opacity))"
-} })).with(q.EDIT, () => /* @__PURE__ */ t(ae, { mask: ve.faCircle, transform: "shrink-8", icon: pt.faPencil, size: "lg", css: {
+} })).with(q.EDIT, () => /* @__PURE__ */ t(se, { mask: Ae.faCircle, transform: "shrink-8", icon: Ct.faPencil, size: "lg", css: {
   "--tw-text-opacity": "1",
   color: "rgb(90 88 173 / var(--tw-text-opacity))"
-} })).exhaustive(), wr = ({
+} })).exhaustive(), Pr = ({
   items: e,
   activeItem: r,
   className: a,
@@ -1512,7 +1555,7 @@ const Ar = ({
       "--tw-bg-opacity": "1",
       backgroundColor: "rgb(243 244 246 / var(--tw-bg-opacity))"
     }
-  }, d && ar`
+  }, d && Ar`
                     &::after {
                       content: "";
                       left: -0.4em;
@@ -1526,7 +1569,7 @@ const Ar = ({
     backgroundColor: "rgb(141 148 205 / var(--tw-bg-opacity))"
   }};
                     }
-                  `], children: /* @__PURE__ */ D("div", { css: {
+                  `], children: /* @__PURE__ */ S("div", { css: {
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",
@@ -1541,14 +1584,14 @@ const Ar = ({
     WebkitFontSmoothing: "antialiased",
     MozOsxFontSmoothing: "grayscale"
   }, children: [
-    /* @__PURE__ */ t("div", { children: /* @__PURE__ */ D("div", { children: [
+    /* @__PURE__ */ t("div", { children: /* @__PURE__ */ S("div", { children: [
       l + 1,
       ". ",
       n.title
     ] }) }),
-    /* @__PURE__ */ t(Ar, { status: n.status })
+    /* @__PURE__ */ t(jr, { status: n.status })
   ] }) }, n.id);
-}) }) }), Cr = ({
+}) }) }), Mr = ({
   steps: e,
   values: r,
   mutation: a,
@@ -1564,7 +1607,7 @@ const Ar = ({
     setActiveStep: y,
     activeStepIndex: _,
     activeStep: g
-  } = ur({
+  } = Cr({
     stepsDefinition: e,
     mutation: a,
     values: r,
@@ -1572,17 +1615,17 @@ const Ar = ({
   }), {
     Component: b
   } = g;
-  return /* @__PURE__ */ t(br, { value: {
+  return /* @__PURE__ */ t(Br, { value: {
     activeStep: g,
     mutation: a,
     stepFormRef: d,
     stateKey: i,
     values: r,
     setActiveStepStatus: s
-  }, children: /* @__PURE__ */ t(G, { bbar: [/* @__PURE__ */ t(ye, { icon: dt.faArrowLeft, ...m(), children: "Назад" }, "previous"), /* @__PURE__ */ D(ye, { ...f(), variant: "contained", color: "success", children: [
-    n && /* @__PURE__ */ t(ae, { icon: rt.faCircleNotch, spin: !0 }),
+  }, children: /* @__PURE__ */ t(G, { bbar: [/* @__PURE__ */ t(we, { icon: At.faArrowLeft, ...m(), children: "Назад" }, "previous"), /* @__PURE__ */ S(we, { ...f(), variant: "contained", color: "success", children: [
+    n && /* @__PURE__ */ t(se, { icon: ht.faCircleNotch, spin: !0 }),
     "Сохранить"
-  ] }, "next")], children: /* @__PURE__ */ D(_r, { initialPrimarySize: "30%", minPrimarySize: "200px", css: {
+  ] }, "next")], children: /* @__PURE__ */ S(Rr, { initialPrimarySize: "30%", minPrimarySize: "200px", css: {
     display: "flex"
   }, children: [
     /* @__PURE__ */ t("div", { css: {
@@ -1590,8 +1633,8 @@ const Ar = ({
       flexBasis: "33.333333%",
       overflowY: "auto",
       padding: "0.5rem"
-    }, children: /* @__PURE__ */ t(wr, { activeItem: g, onChange: y, items: l }) }),
-    /* @__PURE__ */ D("div", { css: {
+    }, children: /* @__PURE__ */ t(Pr, { activeItem: g, onChange: y, items: l }) }),
+    /* @__PURE__ */ S("div", { css: {
       height: "100%",
       flex: "1 1 0%",
       overflowY: "auto",
@@ -1599,7 +1642,7 @@ const Ar = ({
       paddingLeft: "1rem",
       paddingRight: "1rem"
     }, children: [
-      /* @__PURE__ */ D("h1", { css: {
+      /* @__PURE__ */ S("h1", { css: {
         borderBottomWidth: "1px",
         "--tw-border-opacity": "1",
         borderBottomColor: "rgb(229 231 235 / var(--tw-border-opacity))",
@@ -1619,7 +1662,7 @@ const Ar = ({
       }, children: /* @__PURE__ */ t(b, {}) })
     ] })
   ] }) }) });
-}, Er = o.object({
+}, Fr = o.object({
   partner_id: o.string({
     required_error: "Выберите организацию",
     coerce: !0
@@ -1650,11 +1693,11 @@ const Ar = ({
   city_created: o.string({
     required_error: "Выберите город создания"
   })
-}).required(), xr = () => {
-  const e = $({
-    schema: Er
+}).required(), Ir = () => {
+  const e = V({
+    schema: Fr
   });
-  return /* @__PURE__ */ D(k, { css: {
+  return /* @__PURE__ */ S(k, { css: {
     display: "flex",
     flexDirection: "column",
     gap: "1rem"
@@ -1666,39 +1709,39 @@ const Ar = ({
     }, ...r, placeholder: "Введите наименование", label: "Наименование" }) }),
     /* @__PURE__ */ t(h, { control: e.control, name: "partner_id", render: ({
       field: r
-    }) => /* @__PURE__ */ t(er, { ...r, placeholder: "Выберите организацию", label: "Организация" }) }),
+    }) => /* @__PURE__ */ t(ur, { ...r, placeholder: "Выберите организацию", label: "Организация" }) }),
     /* @__PURE__ */ t(h, { control: e.control, name: "program_type_id", render: ({
       field: r
-    }) => /* @__PURE__ */ t(re, { label: "Тип программы", ...r, dictionary: "navProgramType", filterOptions: (a) => a.filter(({
+    }) => /* @__PURE__ */ t(ne, { label: "Тип программы", ...r, dictionary: "navProgramType", filterOptions: (a) => a.filter(({
       id: i
     }) => i === 1), placeholder: "Выберите тип программы" }) }),
     /* @__PURE__ */ t(h, { control: e.control, name: "section_id", render: ({
       field: r
-    }) => /* @__PURE__ */ t(tr, { label: "Направленность", placeholder: "Выберите направленность", ...r }) }),
+    }) => /* @__PURE__ */ t(pr, { label: "Направленность", placeholder: "Выберите направленность", ...r }) }),
     /* @__PURE__ */ t(h, { control: e.control, name: "program_level_id", render: ({
       field: r
-    }) => /* @__PURE__ */ t(re, { label: "Уровень", css: {
+    }) => /* @__PURE__ */ t(ne, { label: "Уровень", css: {
       width: "100%"
     }, ...r, dictionary: "EventLevelsDict", placeholder: "Выберите уровень программы" }) }),
     /* @__PURE__ */ t(h, { control: e.control, name: "year_created", render: ({
       field: r
-    }) => /* @__PURE__ */ t(Ie, { label: "Год создания", placeholder: "Введите год", helperText: `Год создания программы, к примеру ${(/* @__PURE__ */ new Date()).getFullYear()}`, ...r }) }),
+    }) => /* @__PURE__ */ t(Ne, { label: "Год создания", placeholder: "Введите год", helperText: `Год создания программы, к примеру ${(/* @__PURE__ */ new Date()).getFullYear()}`, ...r }) }),
     /* @__PURE__ */ t(h, { control: e.control, name: "city_created", render: ({
       field: r
     }) => /* @__PURE__ */ t(W, { label: "Город", placeholder: "Введите город", helperText: "Город, где программа создана", ...r }) })
   ] });
-}, Sr = o.object({
+}, Lr = o.object({
   protocol_number: o.string().nullish(),
   protocol_date: o.string().nullish(),
   decree_number: o.string().nullish(),
   decree_date: o.string().nullish(),
   authors: o.string().nullish(),
   comment: o.string().nullish()
-}), Dr = () => {
-  const e = $({
-    schema: Sr
+}), qr = () => {
+  const e = V({
+    schema: Lr
   });
-  return /* @__PURE__ */ D(k, { css: {
+  return /* @__PURE__ */ S(k, { css: {
     display: "flex",
     flexDirection: "column",
     gap: "1rem"
@@ -1710,7 +1753,7 @@ const Ar = ({
     }, ...r, placeholder: "Введите номер заседания", label: "Номер протокола заседания", helperText: "Номер протокола заседания методического (педагогического совета)" }) }),
     /* @__PURE__ */ t(h, { control: e.control, name: "protocol_date", render: ({
       field: r
-    }) => /* @__PURE__ */ t(Te, { css: {
+    }) => /* @__PURE__ */ t(Re, { css: {
       width: "100%"
     }, ...r, placeholder: "Выберите дату заседания", label: "Дата заседания", helperText: "Дата заседания методического (педагогического совета)" }) }),
     /* @__PURE__ */ t(h, { control: e.control, name: "decree_number", render: ({
@@ -1720,21 +1763,21 @@ const Ar = ({
     }, ...r, placeholder: "Введите номер приказа", label: "Номер приказа", helperText: "Номер приказа по организации об утверждении программы" }) }),
     /* @__PURE__ */ t(h, { control: e.control, name: "decree_date", render: ({
       field: r
-    }) => /* @__PURE__ */ t(Te, { css: {
+    }) => /* @__PURE__ */ t(Re, { css: {
       width: "100%"
     }, ...r, placeholder: "Выберите дату приказа", label: "Дата приказа", helperText: "Дата приказа по организации об утверждении программы" }) }),
     /* @__PURE__ */ t(h, { control: e.control, name: "authors", render: ({
       field: r
-    }) => /* @__PURE__ */ t(Y, { css: {
+    }) => /* @__PURE__ */ t($, { css: {
       width: "100%"
     }, ...r, label: "Авторы", placeholder: "Введите авторов", helperText: "ФИО авторов и их должности" }) }),
     /* @__PURE__ */ t(h, { control: e.control, name: "comment", render: ({
       field: r
-    }) => /* @__PURE__ */ t(Y, { css: {
+    }) => /* @__PURE__ */ t($, { css: {
       width: "100%"
     }, ...r, label: "Комментарий", placeholder: "Введите комментарии" }) })
   ] });
-}, kr = o.object({
+}, Nr = o.object({
   min_age: o.coerce.number().optional(),
   max_age: o.coerce.number().optional(),
   competence_level_id: o.number().nullish(),
@@ -1748,16 +1791,16 @@ const Ar = ({
   min_group_size: o.coerce.number().optional(),
   max_group_size: o.coerce.number().optional(),
   is_one_age_group: o.boolean().optional()
-}), Tr = () => {
-  const e = $({
-    schema: kr
+}), Wr = () => {
+  const e = V({
+    schema: Nr
   });
-  return /* @__PURE__ */ D(k, { css: {
+  return /* @__PURE__ */ S(k, { css: {
     display: "flex",
     flexDirection: "column",
     gap: "1rem"
   }, form: e, children: [
-    /* @__PURE__ */ t(rr, { label: "Возраст", helperText: "Введите минимальный и максимальный возраст", children: /* @__PURE__ */ D("div", { css: {
+    /* @__PURE__ */ t(hr, { label: "Возраст", helperText: "Введите минимальный и максимальный возраст", children: /* @__PURE__ */ S("div", { css: {
       display: "flex",
       width: "20rem",
       maxWidth: "100%",
@@ -1784,7 +1827,7 @@ const Ar = ({
     ] }) }),
     /* @__PURE__ */ t(h, { control: e.control, name: "competence_level_id", render: ({
       field: r
-    }) => /* @__PURE__ */ t(re, { dictionary: "programDocCompetences", ...r, label: "Требования к уровню подготовки" }) }),
+    }) => /* @__PURE__ */ t(ne, { dictionary: "programDocCompetences", ...r, label: "Требования к уровню подготовки" }) }),
     /* @__PURE__ */ t(h, { control: e.control, name: "program_volume", render: ({
       field: r
     }) => /* @__PURE__ */ t(U, { ...r, css: {
@@ -1831,7 +1874,7 @@ const Ar = ({
     }, label: "Продолжительность перерыва", unit: "мин" }) }),
     /* @__PURE__ */ t(h, { control: e.control, name: "education_form_id", render: ({
       field: r
-    }) => /* @__PURE__ */ t(re, { dictionary: "educationForm", ...r, label: "Форма обучения" }) }),
+    }) => /* @__PURE__ */ t(ne, { dictionary: "educationForm", ...r, label: "Форма обучения" }) }),
     /* @__PURE__ */ t(h, { control: e.control, name: "min_group_size", render: ({
       field: r
     }) => /* @__PURE__ */ t(U, { ...r, allowFloat: !1, css: {
@@ -1846,46 +1889,46 @@ const Ar = ({
     }, label: "Максимальное кол-во обучающихся в группе" }) }),
     /* @__PURE__ */ t(h, { control: e.control, name: "is_one_age_group", render: ({
       field: r
-    }) => /* @__PURE__ */ t(it, { ...r, label: "Группа одного возраста?" }) })
+    }) => /* @__PURE__ */ t(ft, { ...r, label: "Группа одного возраста?" }) })
   ] });
-}, Br = o.object({
+}, Hr = o.object({
   explanatory_note: o.string().nullish(),
   program_relevance: o.string().nullish(),
   pedagogical_expediency: o.string().nullish(),
   distinctive_features: o.string().nullish(),
   actual: o.string().nullish()
-}), Or = () => {
-  const e = $({
-    schema: Br
+}), $r = () => {
+  const e = V({
+    schema: Hr
   });
-  return /* @__PURE__ */ D(k, { css: {
+  return /* @__PURE__ */ S(k, { css: {
     display: "flex",
     flexDirection: "column",
     gap: "1rem"
   }, form: e, children: [
     /* @__PURE__ */ t(h, { control: e.control, name: "explanatory_note", render: ({
       field: r
-    }) => /* @__PURE__ */ t(Y, { label: "Пояснительная записка", placeholder: "Введите пояснительную записку", css: {
+    }) => /* @__PURE__ */ t($, { label: "Пояснительная записка", placeholder: "Введите пояснительную записку", css: {
       width: "100%"
     }, ...r }) }),
     /* @__PURE__ */ t(h, { control: e.control, name: "program_relevance", render: ({
       field: r
-    }) => /* @__PURE__ */ t(Y, { label: "Актуальность программы", placeholder: "Введите актуальность программы", css: {
+    }) => /* @__PURE__ */ t($, { label: "Актуальность программы", placeholder: "Введите актуальность программы", css: {
       width: "100%"
     }, ...r }) }),
     /* @__PURE__ */ t(h, { control: e.control, name: "pedagogical_expediency", render: ({
       field: r
-    }) => /* @__PURE__ */ t(Y, { label: "Педагогическая целесообразность", placeholder: "Введите педагогическую целесообразность", css: {
+    }) => /* @__PURE__ */ t($, { label: "Педагогическая целесообразность", placeholder: "Введите педагогическую целесообразность", css: {
       width: "100%"
     }, ...r }) }),
     /* @__PURE__ */ t(h, { control: e.control, name: "distinctive_features", render: ({
       field: r
-    }) => /* @__PURE__ */ t(Y, { label: "Отличительные особенности", placeholder: "Введите отличительные особенности", css: {
+    }) => /* @__PURE__ */ t($, { label: "Отличительные особенности", placeholder: "Введите отличительные особенности", css: {
       width: "100%"
     }, ...r }) }),
     /* @__PURE__ */ t(h, { control: e.control, name: "actual", render: ({
       field: r
-    }) => /* @__PURE__ */ t(Y, { label: "Новизна", placeholder: "Введите новизну", css: {
+    }) => /* @__PURE__ */ t($, { label: "Новизна", placeholder: "Введите новизну", css: {
       width: "100%"
     }, ...r }) })
   ] });
@@ -1901,11 +1944,11 @@ o.object({
   category_id: !0,
   title: !0
 });
-const zr = ({
+const Yr = ({
   onCreate: e,
   search: r
 }) => {
-  const a = V("/api/rest/program-doc-results", {
+  const a = Y("/api/rest/program-doc-results", {
     onSuccess: ({
       data: n
     }) => {
@@ -1929,7 +1972,7 @@ const zr = ({
     display: "flex",
     width: "100%",
     justifyContent: "flex-end"
-  }, children: /* @__PURE__ */ t(Q, { variant: "contained", color: "success", disabled: a.isPending, onClick: () => i.submit(), children: "Создать" }) }), children: /* @__PURE__ */ D(k, { css: {
+  }, children: /* @__PURE__ */ t(J, { variant: "contained", color: "success", disabled: a.isPending, onClick: () => i.submit(), children: "Создать" }) }), children: /* @__PURE__ */ S(k, { css: {
     display: "flex",
     flexDirection: "column",
     gap: "1rem",
@@ -1937,21 +1980,21 @@ const zr = ({
   }, form: i, children: [
     /* @__PURE__ */ t(h, { name: "category_id", control: i.control, render: ({
       field: n
-    }) => /* @__PURE__ */ t(re, { dictionary: "programDocCategories", label: "Категория", placeholder: "Выберите категорию", ...n }) }),
+    }) => /* @__PURE__ */ t(ne, { dictionary: "programDocCategories", label: "Категория", placeholder: "Выберите категорию", ...n }) }),
     /* @__PURE__ */ t(h, { name: "title", control: i.control, defaultValue: r, render: ({
       field: n
     }) => /* @__PURE__ */ t(W, { label: "Наименование", placeholder: "Введите наименование", ...n }) })
   ] }) });
-}, Rr = ne(oe(ie, zr, {
+}, it = Q(), Vr = le(ie(ae(oe, Yr, {
   title: "Новый планируемый результат"
 }), {
   url: "/api/rest/program-doc-results",
   displayField: "title"
-}), jr = o.object({
+}), [it.dictionary("category_id", "programDocCategories", "Категория"), it.display("title", "Наименование")]), Zr = o.object({
   program_results: o.array(o.string())
-}), Pr = () => {
-  const e = $({
-    schema: jr
+}), Ur = () => {
+  const e = V({
+    schema: Zr
   });
   return /* @__PURE__ */ t(k, { css: {
     display: "flex",
@@ -1959,18 +2002,18 @@ const zr = ({
     gap: "1rem"
   }, form: e, children: /* @__PURE__ */ t(h, { name: "program_results", control: e.control, render: ({
     field: r
-  }) => /* @__PURE__ */ t(Rr, { ...r, multiple: !0, label: "Планируемые результаты", helperText: "Можно выбрать несколько результатов" }) }) });
-}, Mr = o.object({
+  }) => /* @__PURE__ */ t(Vr, { ...r, multiple: !0, label: "Планируемые результаты", helperText: "Можно выбрать несколько результатов" }) }) });
+}, Xr = o.object({
   title: o.string({
     required_error: "Введите наименование"
   }).min(1, "Заполните наименование")
 }).required({
   title: !0
-}), Fr = ({
+}), Gr = ({
   onCreate: e,
   search: r
 }) => {
-  const a = V("/api/rest/program-doc-objectives", {
+  const a = Y("/api/rest/program-doc-objectives", {
     onSuccess: ({
       data: n
     }) => {
@@ -1978,13 +2021,13 @@ const zr = ({
     }
   }), i = X({
     mutation: a,
-    schema: Mr
+    schema: Xr
   });
   return /* @__PURE__ */ t(G, { bbar: /* @__PURE__ */ t("div", { css: {
     display: "flex",
     width: "100%",
     justifyContent: "flex-end"
-  }, children: /* @__PURE__ */ t(Q, { variant: "contained", color: "success", disabled: a.isPending, onClick: () => i.submit(), children: "Создать" }) }), children: /* @__PURE__ */ t(k, { css: {
+  }, children: /* @__PURE__ */ t(J, { variant: "contained", color: "success", disabled: a.isPending, onClick: () => i.submit(), children: "Создать" }) }), children: /* @__PURE__ */ t(k, { css: {
     display: "flex",
     flexDirection: "column",
     gap: "1rem",
@@ -1992,12 +2035,12 @@ const zr = ({
   }, form: i, children: /* @__PURE__ */ t(h, { name: "title", control: i.control, defaultValue: r, render: ({
     field: n
   }) => /* @__PURE__ */ t(W, { label: "Наименование", placeholder: "Введите наименование задачи", ...n }) }) }) });
-}, Ir = ne(oe(ie, Fr, {
+}, Qr = ie(ae(oe, Gr, {
   title: "Новая задача"
 }), {
   url: "/api/rest/program-doc-objectives",
   displayField: "title"
-}), Lr = o.object({
+}), Jr = o.object({
   mission: o.string({
     required_error: "Заполните цель/миссию"
   }).nullable(),
@@ -2007,43 +2050,26 @@ const zr = ({
   program_objectives: o.array(o.string())
 }).required({
   goal: !0
-}), qr = () => {
-  const e = $({
-    schema: Lr
+}), Kr = () => {
+  const e = V({
+    schema: Jr
   });
-  return /* @__PURE__ */ t("div", { children: /* @__PURE__ */ D(k, { css: {
+  return /* @__PURE__ */ t("div", { children: /* @__PURE__ */ S(k, { css: {
     display: "flex",
     flexDirection: "column",
     gap: "1rem"
   }, form: e, children: [
     /* @__PURE__ */ t(h, { name: "mission", control: e.control, render: ({
       field: r
-    }) => /* @__PURE__ */ t(Y, { label: "Стратегическая цель / миссия", placeholder: "Введите стратегическую цель или миссию", ...r }) }),
+    }) => /* @__PURE__ */ t($, { label: "Стратегическая цель / миссия", placeholder: "Введите стратегическую цель или миссию", ...r }) }),
     /* @__PURE__ */ t(h, { name: "goal", control: e.control, render: ({
       field: r
-    }) => /* @__PURE__ */ t(Y, { label: "Цель программы", placeholder: "Введите цель программы", ...r }) }),
+    }) => /* @__PURE__ */ t($, { label: "Цель программы", placeholder: "Введите цель программы", ...r }) }),
     /* @__PURE__ */ t(h, { name: "program_objectives", control: e.control, render: ({
       field: r
-    }) => /* @__PURE__ */ t(Ir, { multiple: !0, label: "Задачи", placeholder: "Выберите задачу", ...r }) })
+    }) => /* @__PURE__ */ t(Qr, { multiple: !0, label: "Задачи", placeholder: "Выберите задачу", ...r }) })
   ] }) });
-};
-var Oe = {};
-(function(e) {
-  Object.defineProperty(e, "__esModule", { value: !0 });
-  var r = "fas", a = "trash", i = 448, n = 512, l = [], d = "f1f8", s = "M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z";
-  e.definition = {
-    prefix: r,
-    iconName: a,
-    icon: [
-      i,
-      n,
-      l,
-      d,
-      s
-    ]
-  }, e.faTrash = e.definition, e.prefix = r, e.iconName = a, e.width = i, e.height = n, e.ligatures = l, e.unicode = d, e.svgPathData = s, e.aliases = l;
-})(Oe);
-const Nr = o.object({
+}, en = o.object({
   theme: o.string({
     required_error: "Заполните тему"
   }).min(1, "Заполните тему"),
@@ -2053,13 +2079,13 @@ const Nr = o.object({
   practice_volume: o.number().optional(),
   sort_index: o.number(),
   doc_id: o.string()
-}), Wr = ({
+}), tn = ({
   doc_id: e,
   onCreate: r,
   onSubmit: a,
   onError: i
 }) => {
-  const n = V("/api/rest/program-doc-plans", {
+  const n = Y("/api/rest/program-doc-plans", {
     onMutate: (d) => {
       a == null || a(d);
     },
@@ -2072,7 +2098,7 @@ const Nr = o.object({
       i == null || i(d);
     }
   }), l = X({
-    schema: Nr,
+    schema: en,
     mutation: n,
     defaultValues: {
       doc_id: e,
@@ -2083,7 +2109,7 @@ const Nr = o.object({
     display: "flex",
     width: "100%",
     justifyContent: "flex-end"
-  }, children: /* @__PURE__ */ t(Q, { variant: "contained", color: "success", disabled: n.isPending, onClick: () => l.submit(), children: "Создать" }) }), children: /* @__PURE__ */ D(k, { css: {
+  }, children: /* @__PURE__ */ t(J, { variant: "contained", color: "success", disabled: n.isPending, onClick: () => l.submit(), children: "Создать" }) }), children: /* @__PURE__ */ S(k, { css: {
     display: "flex",
     flexDirection: "column",
     gap: "1rem",
@@ -2105,25 +2131,25 @@ const Nr = o.object({
       field: d
     }) => /* @__PURE__ */ t(U, { label: "Объем практики", unit: "часов", placeholder: "Введите объем практики", ...d }) })
   ] }) });
-}, me = Be(), Hr = () => {
+}, ge = Q(), rn = () => {
   const {
     params: {
       id: e
     }
-  } = We(), [r, a] = x.useState(!1), [i, n] = x.useState(!1), l = V("DELETE", "/api/rest/program-doc-plans/:id", {
+  } = Ye(), [r, a] = x.useState(!1), [i, n] = x.useState(!1), l = Y("DELETE", "/api/rest/program-doc-plans/:id", {
     onSuccess: () => {
       y();
     }
-  }), d = [me.display("theme", "Тема"), me.display("theory", "Теория"), me.display("theory_volume", "Объём теории"), me.display("practice", "Практика"), me.display("practice_volume", "Объём практики"), me.actions([{
+  }), d = [ge.display("theme", "Тема"), ge.display("theory", "Теория"), ge.display("theory_volume", "Объём теории"), ge.display("practice", "Практика"), ge.display("practice_volume", "Объём практики"), ge.actions([{
     key: "download",
-    icon: Oe.faTrash,
+    icon: je.faTrash,
     tooltip: "Удалить тему",
     onClick: async (_) => {
       l.mutate({
         id: _.id
       });
     }
-  }])], s = ot("/api/rest/program-doc-plans", d, {
+  }])], s = gt("/api/rest/program-doc-plans", d, {
     defaultFilters: [{
       property: "doc_id",
       value: e
@@ -2138,26 +2164,26 @@ const Nr = o.object({
     enableSorting: !1
   }), f = x.useCallback(() => {
     y(), a(!1), n(!1);
-  }, []), m = Le(), y = () => m("/api/rest/program-doc-plans");
+  }, []), m = We(), y = () => m("/api/rest/program-doc-plans");
   return /* @__PURE__ */ t("div", { css: {
     display: "flex",
     flexDirection: "column",
     gap: "1.5rem"
-  }, children: /* @__PURE__ */ D("div", { css: {
+  }, children: /* @__PURE__ */ S("div", { css: {
     display: "flex",
     flexDirection: "column",
     gap: "1rem"
   }, children: [
-    /* @__PURE__ */ D("div", { children: [
-      /* @__PURE__ */ D(ye, { variant: "outlined", onClick: () => a((_) => !_), color: "success", children: [
-        /* @__PURE__ */ t(ae, { icon: qe.faPlus }),
+    /* @__PURE__ */ S("div", { children: [
+      /* @__PURE__ */ S(we, { variant: "outlined", onClick: () => a((_) => !_), color: "success", children: [
+        /* @__PURE__ */ t(se, { icon: $e.faPlus }),
         "Добавить тему"
       ] }),
-      /* @__PURE__ */ t(He, { title: "Новая тема", onClose: () => a(!1), open: r, children: /* @__PURE__ */ t(Wr, { doc_id: e, onCreate: f, onSubmit: () => n(!0), onError: () => n(!1) }) })
+      /* @__PURE__ */ t(Ve, { title: "Новая тема", onClose: () => a(!1), open: r, children: /* @__PURE__ */ t(tn, { doc_id: e, onCreate: f, onSubmit: () => n(!0), onError: () => n(!1) }) })
     ] }),
-    /* @__PURE__ */ t(Ne, { border: !0, table: s })
+    /* @__PURE__ */ t(He, { border: !0, table: s })
   ] }) });
-}, Yr = o.object({
+}, nn = o.object({
   control_type_id: o.number({
     required_error: "Заполните тип формы аттестации"
   }),
@@ -2167,25 +2193,25 @@ const Nr = o.object({
 }).required({
   control_type_id: !0,
   description: !0
-}), Vr = ({
+}), on = ({
   onCreate: e,
   search: r
 }) => {
-  const a = V("/api/rest/program-doc-forms", {
+  const a = Y("/api/rest/program-doc-forms", {
     onSuccess: ({
       data: n
     }) => {
       e(n);
     }
   }), i = X({
-    schema: Yr,
+    schema: nn,
     mutation: a
   });
   return /* @__PURE__ */ t(G, { bbar: /* @__PURE__ */ t("div", { css: {
     display: "flex",
     width: "100%",
     justifyContent: "flex-end"
-  }, children: /* @__PURE__ */ t(Q, { variant: "contained", color: "success", disabled: a.isPending, onClick: () => i.submit(), children: "Создать" }) }), children: /* @__PURE__ */ D(k, { css: {
+  }, children: /* @__PURE__ */ t(J, { variant: "contained", color: "success", disabled: a.isPending, onClick: () => i.submit(), children: "Создать" }) }), children: /* @__PURE__ */ S(k, { css: {
     display: "flex",
     flexDirection: "column",
     gap: "1rem",
@@ -2193,56 +2219,30 @@ const Nr = o.object({
   }, form: i, children: [
     /* @__PURE__ */ t(h, { name: "control_type_id", control: i.control, render: ({
       field: n
-    }) => /* @__PURE__ */ t(re, { label: "Тип формы аттестации", placeholder: "Выберите тип формы аттестации", dictionary: "programDocFormControlTypes", ...n }) }),
+    }) => /* @__PURE__ */ t(ne, { label: "Тип формы аттестации", placeholder: "Выберите тип формы аттестации", dictionary: "programDocFormControlTypes", ...n }) }),
     /* @__PURE__ */ t(h, { name: "description", control: i.control, defaultValue: r, render: ({
       field: n
-    }) => /* @__PURE__ */ t(Y, { label: "Описание", placeholder: "Введите описание", ...n }) })
+    }) => /* @__PURE__ */ t($, { label: "Описание", placeholder: "Введите описание", ...n }) })
   ] }) });
-}, $r = ({
-  items: e,
-  onDelete: r,
-  columns: a,
-  isLoading: i
-}) => {
-  const n = Be(), l = dr({
-    enableSorting: !1,
-    isLoading: i,
-    columns: [...a, n.actions([{
-      icon: Oe.faTrash,
-      key: "delete",
-      onClick: (d) => r(d)
-    }])],
-    data: e || []
-  });
-  return /* @__PURE__ */ t(Ne, { border: !0, css: {
-    marginTop: "0.5rem"
-  }, table: l });
-}, Zr = (e, r) => x.forwardRef((a, i) => {
-  const n = x.useCallback(({
-    items: l,
-    onDelete: d,
-    valueCount: s
-  }) => /* @__PURE__ */ t($r, { items: l, valueCount: s, onDelete: d, columns: r }), [r]);
-  return /* @__PURE__ */ t(e, { ref: i, tagListPosition: a.tagListPosition || "bottom", tagListRenderer: n, ...a });
-}), tt = Be(), Ur = ne(oe(ie, Vr, {
+}, ot = Q(), an = le(ie(ae(oe, on, {
   title: "Новая аттестационная форма"
 }), {
   url: "/api/rest/program-doc-forms",
   displayField: "description"
-}), Xr = Zr(Ur, [tt.dictionary("control_type_id", "programDocFormControlTypes", "Тип", {
+}), [ot.dictionary("control_type_id", "programDocFormControlTypes", "Тип", {
   size: 100
-}), tt.display("description", "Описание", {
+}), ot.display("description", "Описание", {
   size: 200
-})]), Gr = o.object({
+})]), sn = o.object({
   program_att_forms: o.array(o.string())
-}), Qr = () => {
-  const e = $({
-    schema: Gr
+}), ln = () => {
+  const e = V({
+    schema: sn
   });
   return /* @__PURE__ */ t("div", { tw: "flex flex-col gap-6", children: /* @__PURE__ */ t(k, { form: e, children: /* @__PURE__ */ t(h, { name: "program_att_forms", control: e.control, render: ({
     field: r
-  }) => /* @__PURE__ */ t(Xr, { ...r, multiple: !0, label: "Формы аттестации и оценочные материалы" }) }) }) });
-}, Jr = o.object({
+  }) => /* @__PURE__ */ t(an, { ...r, multiple: !0, label: "Формы аттестации и оценочные материалы" }) }) }) });
+}, cn = o.object({
   criterion_type_id: o.number({
     required_error: "Заполните тип критерия"
   }),
@@ -2251,121 +2251,11 @@ const Nr = o.object({
   }).min(1, "Заполните описание")
 }).required({
   criterion_type_id: !0
-}), Kr = ({
-  onCreate: e,
-  search: r
-}) => {
-  const a = V("/api/rest/program-doc-criteria", {
-    onSuccess: ({
-      data: n
-    }) => {
-      e(n);
-    }
-  }), i = X({
-    schema: Jr,
-    mutation: a
-  });
-  return /* @__PURE__ */ t(G, { bbar: /* @__PURE__ */ t("div", { css: {
-    display: "flex",
-    width: "100%",
-    justifyContent: "flex-end"
-  }, children: /* @__PURE__ */ t(Q, { variant: "contained", color: "success", disabled: a.isPending, onClick: () => i.submit(), children: "Создать" }) }), children: /* @__PURE__ */ D(k, { css: {
-    display: "flex",
-    flexDirection: "column",
-    gap: "1rem",
-    padding: "1rem"
-  }, form: i, children: [
-    /* @__PURE__ */ t(h, { name: "criterion_type_id", control: i.control, render: ({
-      field: n
-    }) => /* @__PURE__ */ t(re, { label: "Тип критерия", placeholder: "Выберите тип критерия", dictionary: "programDocCriteriaTypes", ...n }) }),
-    /* @__PURE__ */ t(h, { name: "description", control: i.control, defaultValue: r, render: ({
-      field: n
-    }) => /* @__PURE__ */ t(Y, { label: "Описание", placeholder: "Введите описание", ...n }) })
-  ] }) });
-}, en = ne(oe(ie, Kr, {
-  title: "Новый критерий оценки учебных результатов"
-}), {
-  url: "/api/rest/program-doc-criteria",
-  displayField: "description"
-}), tn = o.object({
-  program_criteria: o.array(o.string())
-}), rn = () => {
-  const e = $({
-    schema: tn
-  });
-  return /* @__PURE__ */ t("div", { tw: "flex flex-col gap-6", children: /* @__PURE__ */ t(k, { form: e, children: /* @__PURE__ */ t(h, { name: "program_criteria", control: e.control, render: ({
-    field: r
-  }) => /* @__PURE__ */ t(en, { ...r, multiple: !0, label: "Критерии оценки учебных результатов" }) }) }) });
-}, nn = o.object({
-  method_id: o.number({
-    required_error: "Заполните метод"
-  }),
-  description: o.string({
-    required_error: "Заполните описание"
-  }).min(1, "Заполните описание")
-}).required({
-  method_id: !0,
-  description: !0
-}), on = ({
-  onCreate: e,
-  search: r
-}) => {
-  const a = V("/api/rest/program-doc-fixations", {
-    onSuccess: ({
-      data: n
-    }) => {
-      e(n);
-    }
-  }), i = X({
-    mutation: a,
-    schema: nn
-  });
-  return /* @__PURE__ */ t(G, { bbar: /* @__PURE__ */ t("div", { css: {
-    display: "flex",
-    width: "100%",
-    justifyContent: "flex-end"
-  }, children: /* @__PURE__ */ t(Q, { variant: "contained", color: "success", disabled: a.isPending, onClick: () => i.submit(), children: "Создать" }) }), children: /* @__PURE__ */ D(k, { css: {
-    display: "flex",
-    flexDirection: "column",
-    gap: "1rem",
-    padding: "1rem"
-  }, form: i, children: [
-    /* @__PURE__ */ t(h, { name: "method_id", control: i.control, render: ({
-      field: n
-    }) => /* @__PURE__ */ t(re, { label: "Метод", placeholder: "Выберите метод", dictionary: "programDocMethodTypes", ...n }) }),
-    /* @__PURE__ */ t(h, { name: "description", defaultValue: r, control: i.control, render: ({
-      field: n
-    }) => /* @__PURE__ */ t(Y, { label: "Описание", placeholder: "Введите описание", ...n }) })
-  ] }) });
-}, an = ne(oe(ie, on, {
-  title: "Новый способ фиксации учебных результатов"
-}), {
-  url: "/api/rest/program-doc-fixations",
-  displayField: "description"
-}), sn = o.object({
-  program_fixations: o.array(o.string())
-}), ln = () => {
-  const e = $({
-    schema: sn
-  });
-  return /* @__PURE__ */ t("div", { tw: "flex flex-col gap-6", children: /* @__PURE__ */ t(k, { form: e, children: /* @__PURE__ */ t(h, { name: "program_fixations", control: e.control, render: ({
-    field: r
-  }) => /* @__PURE__ */ t(an, { ...r, multiple: !0, label: "Способы фиксации учебных результатов" }) }) }) });
-}, cn = o.object({
-  base_knowledge: o.string({
-    required_error: "Заполните базовые знания"
-  }),
-  material: o.string({
-    required_error: "Заполните материалы"
-  }).min(1, "Заполните материалы")
-}).required({
-  base_knowledge: !0,
-  material: !0
 }), dn = ({
   onCreate: e,
   search: r
 }) => {
-  const a = V("/api/rest/program-doc-materials", {
+  const a = Y("/api/rest/program-doc-criteria", {
     onSuccess: ({
       data: n
     }) => {
@@ -2379,101 +2269,103 @@ const Nr = o.object({
     display: "flex",
     width: "100%",
     justifyContent: "flex-end"
-  }, children: /* @__PURE__ */ t(Q, { variant: "contained", color: "success", disabled: a.isPending, onClick: () => i.submit(), children: "Создать" }) }), children: /* @__PURE__ */ D(k, { css: {
+  }, children: /* @__PURE__ */ t(J, { variant: "contained", color: "success", disabled: a.isPending, onClick: () => i.submit(), children: "Создать" }) }), children: /* @__PURE__ */ S(k, { css: {
     display: "flex",
     flexDirection: "column",
     gap: "1rem",
     padding: "1rem"
   }, form: i, children: [
-    /* @__PURE__ */ t(h, { name: "base_knowledge", control: i.control, render: ({
+    /* @__PURE__ */ t(h, { name: "criterion_type_id", control: i.control, render: ({
       field: n
-    }) => /* @__PURE__ */ t(W, { label: "Базовые знания", placeholder: "Введите базовые знания", ...n }) }),
-    /* @__PURE__ */ t(h, { name: "material", defaultValue: r, control: i.control, render: ({
+    }) => /* @__PURE__ */ t(ne, { label: "Тип критерия", placeholder: "Выберите тип критерия", dictionary: "programDocCriteriaTypes", ...n }) }),
+    /* @__PURE__ */ t(h, { name: "description", control: i.control, defaultValue: r, render: ({
       field: n
-    }) => /* @__PURE__ */ t(W, { label: "Материалы", placeholder: "Введите материалы", ...n }) })
+    }) => /* @__PURE__ */ t($, { label: "Описание", placeholder: "Введите описание", ...n }) })
   ] }) });
-}, un = ne(oe(ie, dn, {
-  title: "Новый методический материал"
+}, at = Q(), un = le(ie(ae(oe, dn, {
+  title: "Новый критерий оценки учебных результатов"
 }), {
-  url: "/api/rest/program-doc-materials",
-  displayField: "material"
-}), pn = o.object({
-  program_materials: o.array(o.string())
+  url: "/api/rest/program-doc-criteria",
+  displayField: "description"
+}), [at.dictionary("criterion_type_id", "programDocCriteriaTypes", "Тип критерия"), at.display("description", "Критерий")]), pn = o.object({
+  program_criteria: o.array(o.string())
 }), hn = () => {
-  const e = $({
+  const e = V({
     schema: pn
   });
-  return /* @__PURE__ */ t("div", { tw: "flex flex-col gap-6", children: /* @__PURE__ */ t(k, { form: e, children: /* @__PURE__ */ t(h, { name: "program_materials", control: e.control, render: ({
+  return /* @__PURE__ */ t("div", { tw: "flex flex-col gap-6", children: /* @__PURE__ */ t(k, { form: e, children: /* @__PURE__ */ t(h, { name: "program_criteria", control: e.control, render: ({
     field: r
-  }) => /* @__PURE__ */ t(un, { ...r, multiple: !0, label: "Методические материалы" }) }) }) });
+  }) => /* @__PURE__ */ t(un, { ...r, multiple: !0, label: "Критерии оценки учебных результатов" }) }) }) });
 }, mn = o.object({
-  management_type_id: o.number({
-    required_error: "Введите тип организации образовательной деятельности"
+  method_id: o.number({
+    required_error: "Заполните метод"
   }),
   description: o.string({
-    required_error: "Введите описание"
+    required_error: "Заполните описание"
   }).min(1, "Заполните описание")
 }).required({
-  management_type_id: !0
+  method_id: !0,
+  description: !0
 }), fn = ({
   onCreate: e,
   search: r
 }) => {
-  const a = V("/api/rest/program-doc-managements", {
+  const a = Y("/api/rest/program-doc-fixations", {
     onSuccess: ({
       data: n
     }) => {
       e(n);
     }
   }), i = X({
-    schema: mn,
-    mutation: a
+    mutation: a,
+    schema: mn
   });
   return /* @__PURE__ */ t(G, { bbar: /* @__PURE__ */ t("div", { css: {
     display: "flex",
     width: "100%",
     justifyContent: "flex-end"
-  }, children: /* @__PURE__ */ t(Q, { variant: "contained", color: "success", disabled: a.isPending, onClick: () => i.submit(), children: "Создать" }) }), children: /* @__PURE__ */ D(k, { css: {
+  }, children: /* @__PURE__ */ t(J, { variant: "contained", color: "success", disabled: a.isPending, onClick: () => i.submit(), children: "Создать" }) }), children: /* @__PURE__ */ S(k, { css: {
     display: "flex",
     flexDirection: "column",
     gap: "1rem",
     padding: "1rem"
   }, form: i, children: [
-    /* @__PURE__ */ t(h, { name: "management_type_id", control: i.control, render: ({
+    /* @__PURE__ */ t(h, { name: "method_id", control: i.control, render: ({
       field: n
-    }) => /* @__PURE__ */ t(re, { label: "Тип организации образовательной деятельности", placeholder: "Выберите тип организации образовательной деятельности", dictionary: "programDocManagementTypes", ...n }) }),
+    }) => /* @__PURE__ */ t(ne, { label: "Метод", placeholder: "Выберите метод", dictionary: "programDocMethodTypes", ...n }) }),
     /* @__PURE__ */ t(h, { name: "description", defaultValue: r, control: i.control, render: ({
       field: n
-    }) => /* @__PURE__ */ t(Y, { label: "Описание", placeholder: "Введите описание", ...n }) })
+    }) => /* @__PURE__ */ t($, { label: "Описание", placeholder: "Введите описание", ...n }) })
   ] }) });
-}, gn = ne(oe(ie, fn, {
-  title: "Новая особенность организации образовательной деятельности"
+}, st = Q(), gn = le(ie(ae(oe, fn, {
+  title: "Новый способ фиксации учебных результатов"
 }), {
-  url: "/api/rest/program-doc-managements",
+  url: "/api/rest/program-doc-fixations",
   displayField: "description"
-}), bn = o.object({
-  program_managements: o.array(o.string())
+}), [st.dictionary("method_id", "programDocMethodTypes", "Метод"), st.display("description", "Описание способа фиксации")]), bn = o.object({
+  program_fixations: o.array(o.string())
 }), vn = () => {
-  const e = $({
+  const e = V({
     schema: bn
   });
-  return /* @__PURE__ */ t("div", { tw: "flex flex-col gap-6", children: /* @__PURE__ */ t(k, { form: e, children: /* @__PURE__ */ t(h, { name: "program_managements", control: e.control, render: ({
+  return /* @__PURE__ */ t("div", { tw: "flex flex-col gap-6", children: /* @__PURE__ */ t(k, { form: e, children: /* @__PURE__ */ t(h, { name: "program_fixations", control: e.control, render: ({
     field: r
-  }) => /* @__PURE__ */ t(gn, { ...r, multiple: !0, label: "Особенности организации образовательной деятельности" }) }) }) });
+  }) => /* @__PURE__ */ t(gn, { ...r, multiple: !0, label: "Способы фиксации учебных результатов" }) }) }) });
 }, yn = o.object({
-  indoctrination_type_id: o.number({
-    required_error: "Заполните тип воспитательной деятельности"
+  base_knowledge: o.string({
+    required_error: "Заполните базовые знания"
   }),
-  description: o.string({
-    required_error: "Введите описание"
-  }).min(1, "Заполните описание")
+  material: o.string({
+    required_error: "Заполните материалы"
+  }).min(1, "Заполните материалы")
 }).required({
-  indoctrination_type_id: !0
+  base_knowledge: !0,
+  material: !0
 }), _n = ({
   onCreate: e,
   search: r
 }) => {
-  const a = V("/api/rest/program-doc-indoctrinations", {
+  const a = Y("/api/rest/program-doc-materials", {
     onSuccess: ({
       data: n
     }) => {
@@ -2487,47 +2379,47 @@ const Nr = o.object({
     display: "flex",
     width: "100%",
     justifyContent: "flex-end"
-  }, children: /* @__PURE__ */ t(Q, { variant: "contained", color: "success", disabled: a.isPending, onClick: () => i.submit(), children: "Создать" }) }), children: /* @__PURE__ */ D(k, { css: {
+  }, children: /* @__PURE__ */ t(J, { variant: "contained", color: "success", disabled: a.isPending, onClick: () => i.submit(), children: "Создать" }) }), children: /* @__PURE__ */ S(k, { css: {
     display: "flex",
     flexDirection: "column",
     gap: "1rem",
     padding: "1rem"
   }, form: i, children: [
-    /* @__PURE__ */ t(h, { name: "indoctrination_type_id", control: i.control, render: ({
+    /* @__PURE__ */ t(h, { name: "base_knowledge", control: i.control, render: ({
       field: n
-    }) => /* @__PURE__ */ t(re, { label: "Тип воспитательной деятельности", placeholder: "Выберите тип воспитательной деятельности", dictionary: "programDocIndoctrinationTypes", ...n }) }),
-    /* @__PURE__ */ t(h, { name: "description", defaultValue: r, control: i.control, render: ({
+    }) => /* @__PURE__ */ t(W, { label: "Базовые знания", placeholder: "Введите базовые знания", ...n }) }),
+    /* @__PURE__ */ t(h, { name: "material", defaultValue: r, control: i.control, render: ({
       field: n
-    }) => /* @__PURE__ */ t(Y, { label: "Наименование воспитательной деятельности", placeholder: "Введите наименование воспитательной деятельности", ...n }) })
+    }) => /* @__PURE__ */ t(W, { label: "Материалы", placeholder: "Введите материалы", ...n }) })
   ] }) });
-}, An = ne(oe(ie, _n, {
-  title: "Новая Воспитательная деятельность"
+}, lt = Q(), An = le(ie(ae(oe, _n, {
+  title: "Новый методический материал"
 }), {
-  url: "/api/rest/program-doc-indoctrinations",
-  displayField: "description"
-}), wn = o.object({
-  program_indoctrinations: o.array(o.string())
+  url: "/api/rest/program-doc-materials",
+  displayField: "material"
+}), [lt.display("base_knowledge", "Базовые знания"), lt.display("material", "Материалы")]), wn = o.object({
+  program_materials: o.array(o.string())
 }), Cn = () => {
-  const e = $({
+  const e = V({
     schema: wn
   });
-  return /* @__PURE__ */ t("div", { tw: "flex flex-col gap-6", children: /* @__PURE__ */ t(k, { form: e, children: /* @__PURE__ */ t(h, { name: "program_indoctrinations", control: e.control, render: ({
+  return /* @__PURE__ */ t("div", { tw: "flex flex-col gap-6", children: /* @__PURE__ */ t(k, { form: e, children: /* @__PURE__ */ t(h, { name: "program_materials", control: e.control, render: ({
     field: r
-  }) => /* @__PURE__ */ t(An, { ...r, multiple: !0, label: "Воспитательная деятельность" }) }) }) });
+  }) => /* @__PURE__ */ t(An, { ...r, multiple: !0, label: "Методические материалы" }) }) }) });
 }, En = o.object({
-  development_type_id: o.number({
-    required_error: "Выберите тип развивающей деятельности"
+  management_type_id: o.number({
+    required_error: "Введите тип организации образовательной деятельности"
   }),
   description: o.string({
     required_error: "Введите описание"
   }).min(1, "Заполните описание")
 }).required({
-  development_type_id: !0
+  management_type_id: !0
 }), xn = ({
   onCreate: e,
   search: r
 }) => {
-  const a = V("/api/rest/program-doc-developments", {
+  const a = Y("/api/rest/program-doc-managements", {
     onSuccess: ({
       data: n
     }) => {
@@ -2541,7 +2433,115 @@ const Nr = o.object({
     display: "flex",
     width: "100%",
     justifyContent: "flex-end"
-  }, children: /* @__PURE__ */ t(Q, { variant: "contained", color: "success", disabled: a.isPending, onClick: () => i.submit(), children: "Создать" }) }), children: /* @__PURE__ */ D(k, { css: {
+  }, children: /* @__PURE__ */ t(J, { variant: "contained", color: "success", disabled: a.isPending, onClick: () => i.submit(), children: "Создать" }) }), children: /* @__PURE__ */ S(k, { css: {
+    display: "flex",
+    flexDirection: "column",
+    gap: "1rem",
+    padding: "1rem"
+  }, form: i, children: [
+    /* @__PURE__ */ t(h, { name: "management_type_id", control: i.control, render: ({
+      field: n
+    }) => /* @__PURE__ */ t(ne, { label: "Тип организации образовательной деятельности", placeholder: "Выберите тип организации образовательной деятельности", dictionary: "programDocManagementTypes", ...n }) }),
+    /* @__PURE__ */ t(h, { name: "description", defaultValue: r, control: i.control, render: ({
+      field: n
+    }) => /* @__PURE__ */ t($, { label: "Описание", placeholder: "Введите описание", ...n }) })
+  ] }) });
+}, ct = Q(), Dn = le(ie(ae(oe, xn, {
+  title: "Новая особенность организации образовательной деятельности"
+}), {
+  url: "/api/rest/program-doc-managements",
+  displayField: "description"
+}), [ct.dictionary("management_type_id", "programDocManagementTypes", "Тип"), ct.display("description", "Описание")]), Sn = o.object({
+  program_managements: o.array(o.string())
+}), kn = () => {
+  const e = V({
+    schema: Sn
+  });
+  return /* @__PURE__ */ t("div", { tw: "flex flex-col gap-6", children: /* @__PURE__ */ t(k, { form: e, children: /* @__PURE__ */ t(h, { name: "program_managements", control: e.control, render: ({
+    field: r
+  }) => /* @__PURE__ */ t(Dn, { ...r, multiple: !0, label: "Особенности организации образовательной деятельности" }) }) }) });
+}, Tn = o.object({
+  indoctrination_type_id: o.number({
+    required_error: "Заполните тип воспитательной деятельности"
+  }),
+  description: o.string({
+    required_error: "Введите описание"
+  }).min(1, "Заполните описание")
+}).required({
+  indoctrination_type_id: !0
+}), Bn = ({
+  onCreate: e,
+  search: r
+}) => {
+  const a = Y("/api/rest/program-doc-indoctrinations", {
+    onSuccess: ({
+      data: n
+    }) => {
+      e(n);
+    }
+  }), i = X({
+    schema: Tn,
+    mutation: a
+  });
+  return /* @__PURE__ */ t(G, { bbar: /* @__PURE__ */ t("div", { css: {
+    display: "flex",
+    width: "100%",
+    justifyContent: "flex-end"
+  }, children: /* @__PURE__ */ t(J, { variant: "contained", color: "success", disabled: a.isPending, onClick: () => i.submit(), children: "Создать" }) }), children: /* @__PURE__ */ S(k, { css: {
+    display: "flex",
+    flexDirection: "column",
+    gap: "1rem",
+    padding: "1rem"
+  }, form: i, children: [
+    /* @__PURE__ */ t(h, { name: "indoctrination_type_id", control: i.control, render: ({
+      field: n
+    }) => /* @__PURE__ */ t(ne, { label: "Тип воспитательной деятельности", placeholder: "Выберите тип воспитательной деятельности", dictionary: "programDocIndoctrinationTypes", ...n }) }),
+    /* @__PURE__ */ t(h, { name: "description", defaultValue: r, control: i.control, render: ({
+      field: n
+    }) => /* @__PURE__ */ t($, { label: "Наименование воспитательной деятельности", placeholder: "Введите наименование воспитательной деятельности", ...n }) })
+  ] }) });
+}, dt = Q(), On = le(ie(ae(oe, Bn, {
+  title: "Новая Воспитательная деятельность"
+}), {
+  url: "/api/rest/program-doc-indoctrinations",
+  displayField: "description"
+}), [dt.dictionary("indoctrination_type_id", "programDocIndoctrinationTypes", "Тип воспитательной деятельности"), dt.display("description", "Описание")]), zn = o.object({
+  program_indoctrinations: o.array(o.string())
+}), Rn = () => {
+  const e = V({
+    schema: zn
+  });
+  return /* @__PURE__ */ t("div", { tw: "flex flex-col gap-6", children: /* @__PURE__ */ t(k, { form: e, children: /* @__PURE__ */ t(h, { name: "program_indoctrinations", control: e.control, render: ({
+    field: r
+  }) => /* @__PURE__ */ t(On, { ...r, multiple: !0, label: "Воспитательная деятельность" }) }) }) });
+}, jn = o.object({
+  development_type_id: o.number({
+    required_error: "Выберите тип развивающей деятельности"
+  }),
+  description: o.string({
+    required_error: "Введите описание"
+  }).min(1, "Заполните описание")
+}).required({
+  development_type_id: !0
+}), Pn = ({
+  onCreate: e,
+  search: r
+}) => {
+  const a = Y("/api/rest/program-doc-developments", {
+    onSuccess: ({
+      data: n
+    }) => {
+      e(n);
+    }
+  }), i = X({
+    schema: jn,
+    mutation: a
+  });
+  return /* @__PURE__ */ t(G, { bbar: /* @__PURE__ */ t("div", { css: {
+    display: "flex",
+    width: "100%",
+    justifyContent: "flex-end"
+  }, children: /* @__PURE__ */ t(J, { variant: "contained", color: "success", disabled: a.isPending, onClick: () => i.submit(), children: "Создать" }) }), children: /* @__PURE__ */ S(k, { css: {
     display: "flex",
     flexDirection: "column",
     gap: "1rem",
@@ -2549,27 +2549,27 @@ const Nr = o.object({
   }, form: i, children: [
     /* @__PURE__ */ t(h, { name: "development_type_id", control: i.control, render: ({
       field: n
-    }) => /* @__PURE__ */ t(re, { label: "Тип развивающей деятельности", placeholder: "Выберите тип развивающей деятельности", dictionary: "programDocDevelopmentTypes", ...n }) }),
+    }) => /* @__PURE__ */ t(ne, { label: "Тип развивающей деятельности", placeholder: "Выберите тип развивающей деятельности", dictionary: "programDocDevelopmentTypes", ...n }) }),
     /* @__PURE__ */ t(h, { name: "description", defaultValue: r, control: i.control, render: ({
       field: n
-    }) => /* @__PURE__ */ t(Y, { label: "Наименование развивающей деятельности", placeholder: "Введите наименование развивающей деятельности", ...n }) })
+    }) => /* @__PURE__ */ t($, { label: "Наименование развивающей деятельности", placeholder: "Введите наименование развивающей деятельности", ...n }) })
   ] }) });
-}, Sn = ne(oe(ie, xn, {
+}, ut = Q(), Mn = le(ie(ae(oe, Pn, {
   title: "Новая развивающая деятельность"
 }), {
   url: "/api/rest/program-doc-developments",
   displayField: "description"
-}), Dn = o.object({
+}), [ut.dictionary("development_type_id", "programDocIndoctrinationTypes", "Тип"), ut.display("description", "Развивающая деятельность")]), Fn = o.object({
   program_developments: o.array(o.string())
-}), kn = () => {
-  const e = $({
-    schema: Dn
+}), In = () => {
+  const e = V({
+    schema: Fn
   });
   return /* @__PURE__ */ t("div", { tw: "flex flex-col gap-6", children: /* @__PURE__ */ t(k, { form: e, children: /* @__PURE__ */ t(h, { name: "program_developments", control: e.control, render: ({
     field: r
-  }) => /* @__PURE__ */ t(Sn, { ...r, multiple: !0, label: "Развивающая деятельность" }) }) }) });
-}, Tn = () => {
-  const e = $({
+  }) => /* @__PURE__ */ t(Mn, { ...r, multiple: !0, label: "Развивающая деятельность" }) }) }) });
+}, Ln = () => {
+  const e = V({
     schema: o.object({
       staff_description: o.string()
     }).required({
@@ -2578,8 +2578,8 @@ const Nr = o.object({
   });
   return /* @__PURE__ */ t(k, { tw: "flex flex-col gap-4", form: e, children: /* @__PURE__ */ t(h, { control: e.control, name: "staff_description", render: ({
     field: r
-  }) => /* @__PURE__ */ t(Y, { tw: "w-full", ...r, placeholder: "Введите кадровое обеспечение", label: "Кадровое обеспечение" }) }) });
-}, Bn = o.object({
+  }) => /* @__PURE__ */ t($, { tw: "w-full", ...r, placeholder: "Введите кадровое обеспечение", label: "Кадровое обеспечение" }) }) });
+}, qn = o.object({
   inventory_type_id: o.number({
     required_error: "Заполните тип материально-технического обеспечения"
   }),
@@ -2589,25 +2589,25 @@ const Nr = o.object({
 }).required({
   inventory_type_id: !0,
   description: !0
-}), On = ({
+}), Nn = ({
   onCreate: e,
   search: r
 }) => {
-  const a = V("/api/rest/program-doc-inventories", {
+  const a = Y("/api/rest/program-doc-inventories", {
     onSuccess: ({
       data: n
     }) => {
       e(n);
     }
   }), i = X({
-    schema: Bn,
+    schema: qn,
     mutation: a
   });
   return /* @__PURE__ */ t(G, { bbar: /* @__PURE__ */ t("div", { css: {
     display: "flex",
     width: "100%",
     justifyContent: "flex-end"
-  }, children: /* @__PURE__ */ t(Q, { variant: "contained", color: "success", disabled: a.isPending, onClick: () => i.submit(), children: "Создать" }) }), children: /* @__PURE__ */ D(k, { css: {
+  }, children: /* @__PURE__ */ t(J, { variant: "contained", color: "success", disabled: a.isPending, onClick: () => i.submit(), children: "Создать" }) }), children: /* @__PURE__ */ S(k, { css: {
     display: "flex",
     flexDirection: "column",
     gap: "1rem",
@@ -2615,26 +2615,26 @@ const Nr = o.object({
   }, form: i, children: [
     /* @__PURE__ */ t(h, { name: "inventory_type_id", control: i.control, render: ({
       field: n
-    }) => /* @__PURE__ */ t(re, { label: "Тип материально-технического обеспечения", placeholder: "Выберите тип материально-технического обеспечения", dictionary: "programDocInventoryTypes", ...n }) }),
+    }) => /* @__PURE__ */ t(ne, { label: "Тип материально-технического обеспечения", placeholder: "Выберите тип материально-технического обеспечения", dictionary: "programDocInventoryTypes", ...n }) }),
     /* @__PURE__ */ t(h, { name: "description", defaultValue: r, control: i.control, render: ({
       field: n
-    }) => /* @__PURE__ */ t(Y, { label: "Описание", placeholder: "Введите описание", ...n }) })
+    }) => /* @__PURE__ */ t($, { label: "Описание", placeholder: "Введите описание", ...n }) })
   ] }) });
-}, zn = ne(oe(ie, On, {
+}, pt = Q(), Wn = le(ie(ae(oe, Nn, {
   title: "Новое материально-техническое обеспечение"
 }), {
   url: "/api/rest/program-doc-inventories",
   displayField: "description"
-}), Rn = o.object({
+}), [pt.dictionary("inventory_type_id", "programDocInventoryTypes", "Тип"), pt.display("description", "Описание")]), Hn = o.object({
   program_inventories: o.array(o.string())
-}), jn = () => {
-  const e = $({
-    schema: Rn
+}), $n = () => {
+  const e = V({
+    schema: Hn
   });
   return /* @__PURE__ */ t("div", { tw: "flex flex-col gap-6", children: /* @__PURE__ */ t(k, { form: e, children: /* @__PURE__ */ t(h, { name: "program_inventories", control: e.control, render: ({
     field: r
-  }) => /* @__PURE__ */ t(zn, { ...r, multiple: !0, label: "Материально-техническое обеспечение" }) }) }) });
-}, Pn = o.object({
+  }) => /* @__PURE__ */ t(Wn, { ...r, multiple: !0, label: "Материально-техническое обеспечение" }) }) }) });
+}, Yn = o.object({
   authors: o.string().optional(),
   title: o.string({
     required_error: "Заполните наименования"
@@ -2644,25 +2644,25 @@ const Nr = o.object({
   isbn: o.string().optional()
 }).required({
   title: !0
-}), Mn = ({
+}), Vn = ({
   onCreate: e,
   search: r
 }) => {
-  const a = V("/api/rest/program-doc-information", {
+  const a = Y("/api/rest/program-doc-information", {
     onSuccess: ({
       data: n
     }) => {
       e(n);
     }
   }), i = X({
-    schema: Pn,
+    schema: Yn,
     mutation: a
   });
   return /* @__PURE__ */ t(G, { bbar: /* @__PURE__ */ t("div", { css: {
     display: "flex",
     width: "100%",
     justifyContent: "flex-end"
-  }, children: /* @__PURE__ */ t(Q, { variant: "contained", color: "success", disabled: a.isPending, onClick: () => i.submit(), children: "Создать" }) }), children: /* @__PURE__ */ D(k, { css: {
+  }, children: /* @__PURE__ */ t(J, { variant: "contained", color: "success", disabled: a.isPending, onClick: () => i.submit(), children: "Создать" }) }), children: /* @__PURE__ */ S(k, { css: {
     display: "flex",
     flexDirection: "column",
     gap: "1rem",
@@ -2679,26 +2679,26 @@ const Nr = o.object({
     }) => /* @__PURE__ */ t(W, { label: "Издательство", placeholder: "Введите издательство", ...n }) }),
     /* @__PURE__ */ t(h, { name: "publish_year", control: i.control, render: ({
       field: n
-    }) => /* @__PURE__ */ t(Ie, { label: "Год издательства", placeholder: "Выберите год издательства", ...n }) }),
+    }) => /* @__PURE__ */ t(Ne, { label: "Год издательства", placeholder: "Выберите год издательства", ...n }) }),
     /* @__PURE__ */ t(h, { name: "isbn", control: i.control, render: ({
       field: n
     }) => /* @__PURE__ */ t(W, { label: "ISBN", placeholder: "Выберите ISBN", helperText: "Международный стандартный книжный номер (ISBN)", ...n }) })
   ] }) });
-}, Fn = ne(oe(ie, Mn, {
+}, _e = Q(), Zn = le(ie(ae(oe, Vn, {
   title: "Новое информационное обеспечение"
 }), {
   url: "/api/rest/program-doc-information",
   displayField: "title"
-}), In = o.object({
+}), [_e.display("title", "Наименование"), _e.display("authors", "Авторы"), _e.display("publisher", "Издательство"), _e.display("publish_year", "Год издательства"), _e.display("isbn", "ISBN")]), Un = o.object({
   program_information: o.array(o.string())
-}), Ln = () => {
-  const e = $({
-    schema: In
+}), Xn = () => {
+  const e = V({
+    schema: Un
   });
   return /* @__PURE__ */ t("div", { tw: "flex flex-col gap-6", children: /* @__PURE__ */ t(k, { form: e, children: /* @__PURE__ */ t(h, { name: "program_information", control: e.control, render: ({
     field: r
-  }) => /* @__PURE__ */ t(Fn, { ...r, multiple: !0, label: "Информационное обеспечение" }) }) }) });
-}, qn = o.object({
+  }) => /* @__PURE__ */ t(Zn, { ...r, multiple: !0, label: "Информационное обеспечение" }) }) }) });
+}, Gn = o.object({
   authors: o.string().optional(),
   title: o.string({
     required_error: "Заполните наименования"
@@ -2707,25 +2707,25 @@ const Nr = o.object({
   publish_year: o.string().optional()
 }).required({
   title: !0
-}), Nn = ({
+}), Qn = ({
   onCreate: e,
   search: r
 }) => {
-  const a = V("/api/rest/program-doc-books", {
+  const a = Y("/api/rest/program-doc-books", {
     onSuccess: ({
       data: n
     }) => {
       e(n);
     }
   }), i = X({
-    schema: qn,
+    schema: Gn,
     mutation: a
   });
   return /* @__PURE__ */ t(G, { bbar: /* @__PURE__ */ t("div", { css: {
     display: "flex",
     width: "100%",
     justifyContent: "flex-end"
-  }, children: /* @__PURE__ */ t(Q, { variant: "contained", color: "success", disabled: a.isPending, onClick: () => i.submit(), children: "Создать" }) }), children: /* @__PURE__ */ D(k, { css: {
+  }, children: /* @__PURE__ */ t(J, { variant: "contained", color: "success", disabled: a.isPending, onClick: () => i.submit(), children: "Создать" }) }), children: /* @__PURE__ */ S(k, { css: {
     display: "flex",
     flexDirection: "column",
     gap: "1rem",
@@ -2742,23 +2742,23 @@ const Nr = o.object({
     }) => /* @__PURE__ */ t(W, { label: "Издательство", placeholder: "Введите издательство", ...n }) }),
     /* @__PURE__ */ t(h, { name: "publish_year", control: i.control, render: ({
       field: n
-    }) => /* @__PURE__ */ t(Ie, { label: "Год издательства", placeholder: "Выберите год издательства", ...n }) })
+    }) => /* @__PURE__ */ t(Ne, { label: "Год издательства", placeholder: "Выберите год издательства", ...n }) })
   ] }) });
-}, Wn = ne(oe(ie, Nn, {
+}, ze = Q(), Jn = le(ie(ae(oe, Qn, {
   title: "Новая литература"
 }), {
   url: "/api/rest/program-doc-books",
   displayField: "title"
-}), Hn = o.object({
+}), [ze.display("title", "Наименование"), ze.display("authors", "Авторы"), ze.display("publisher", "Издательство"), ze.display("publish_year", "Год издательства")]), Kn = o.object({
   program_books: o.array(o.string())
-}), Yn = () => {
-  const e = $({
-    schema: Hn
+}), ei = () => {
+  const e = V({
+    schema: Kn
   });
   return /* @__PURE__ */ t("div", { tw: "flex flex-col gap-6", children: /* @__PURE__ */ t(k, { form: e, children: /* @__PURE__ */ t(h, { name: "program_books", control: e.control, render: ({
     field: r
-  }) => /* @__PURE__ */ t(Wn, { ...r, multiple: !0, label: "Список литературы" }) }) }) });
-}, Vn = o.object({
+  }) => /* @__PURE__ */ t(Jn, { ...r, multiple: !0, label: "Список литературы" }) }) }) });
+}, ti = o.object({
   number_year: o.coerce.number({
     required_error: "Заполните год"
   }),
@@ -2784,13 +2784,13 @@ const Nr = o.object({
   date_end: !0,
   edu_week_count: !0,
   is_vacations: !0
-}), $n = ({
+}), ri = ({
   doc_id: e,
   onCreate: r,
   onSubmit: a,
   onError: i
 }) => {
-  const n = V("/api/rest/program-doc-schedules", {
+  const n = Y("/api/rest/program-doc-schedules", {
     onMutate: (d) => {
       a == null || a(d);
     },
@@ -2803,7 +2803,7 @@ const Nr = o.object({
       i == null || i(d);
     }
   }), l = X({
-    schema: Vn,
+    schema: ti,
     mutation: n,
     defaultValues: {
       doc_id: e
@@ -2813,7 +2813,7 @@ const Nr = o.object({
     display: "flex",
     width: "100%",
     justifyContent: "flex-end"
-  }, children: /* @__PURE__ */ t(Q, { variant: "contained", color: "success", disabled: n.isPending, onClick: () => l.submit(), children: "Создать" }) }), children: /* @__PURE__ */ D(k, { css: {
+  }, children: /* @__PURE__ */ t(J, { variant: "contained", color: "success", disabled: n.isPending, onClick: () => l.submit(), children: "Создать" }) }), children: /* @__PURE__ */ S(k, { css: {
     display: "flex",
     flexDirection: "column",
     gap: "1rem",
@@ -2824,16 +2824,16 @@ const Nr = o.object({
     }) => /* @__PURE__ */ t(U, { label: "Год обучения (по порядку)", placeholder: "Введите год обучения", ...d }) }),
     /* @__PURE__ */ t(h, { name: "date_start", control: l.control, render: ({
       field: d
-    }) => /* @__PURE__ */ t(Te, { label: "Дата начала обучения", placeholder: "Выберите дату начала обучения", ...d }) }),
+    }) => /* @__PURE__ */ t(Re, { label: "Дата начала обучения", placeholder: "Выберите дату начала обучения", ...d }) }),
     /* @__PURE__ */ t(h, { name: "date_end", control: l.control, render: ({
       field: d
-    }) => /* @__PURE__ */ t(Te, { label: "Дата окончания обучения", placeholder: "Выберите дату окончания обучения", ...d }) }),
+    }) => /* @__PURE__ */ t(Re, { label: "Дата окончания обучения", placeholder: "Выберите дату окончания обучения", ...d }) }),
     /* @__PURE__ */ t(h, { name: "edu_week_count", control: l.control, render: ({
       field: d
     }) => /* @__PURE__ */ t(U, { label: "Количество учебных недель", placeholder: "Введите количество учебных недель", ...d }) }),
     /* @__PURE__ */ t(h, { name: "is_vacations", control: l.control, render: ({
       field: d
-    }) => /* @__PURE__ */ t(it, { label: "Есть каникулы?", ...d }) }),
+    }) => /* @__PURE__ */ t(ft, { label: "Есть каникулы?", ...d }) }),
     /* @__PURE__ */ t(h, { name: "edu_sessions_per_week", control: l.control, render: ({
       field: d
     }) => /* @__PURE__ */ t(U, { label: "Количество занятий в неделю", placeholder: "Введите количество занятий в неделю", ...d }) }),
@@ -2841,34 +2841,34 @@ const Nr = o.object({
       field: d
     }) => /* @__PURE__ */ t(U, { label: "Продолжительность занятия", unit: "ак. часов", placeholder: "Введите продолжительность занятия", ...d }) })
   ] }) });
-}, ce = Be(), Zn = () => {
+}, ue = Q(), ni = () => {
   const {
     params: {
       id: e
     }
-  } = We(), [r, a] = x.useState(!1), [i, n] = x.useState(!1), l = V("DELETE", "/api/rest/program-doc-schedules/:id", {
+  } = Ye(), [r, a] = x.useState(!1), [i, n] = x.useState(!1), l = Y("DELETE", "/api/rest/program-doc-schedules/:id", {
     onSuccess: () => {
       y();
     }
   }), d = [
-    ce.display("number_year", "Год обучения (по порядку)"),
-    ce.date("date_start", "Дата начала", {
+    ue.display("number_year", "Год обучения (по порядку)"),
+    ue.date("date_start", "Дата начала", {
       displayFormat: "DD.MM.YYYY"
     }),
-    ce.date("date_end", "Дата окончания", {
+    ue.date("date_end", "Дата окончания", {
       displayFormat: "DD.MM.YYYY"
     }),
-    ce.display("edu_week_count", "Учебных недель"),
-    ce.boolean("is_vacations", "Есть каникулы"),
-    ce.display("edu_sessions_per_week", "Количество занятий в неделю"),
-    ce.display("edu_sessions_per_day", "Продолжительность занятия"),
+    ue.display("edu_week_count", "Учебных недель"),
+    ue.boolean("is_vacations", "Есть каникулы"),
+    ue.display("edu_sessions_per_week", "Количество занятий в неделю"),
+    ue.display("edu_sessions_per_day", "Продолжительность занятия"),
     // columnHelper.display("practice", "Практика"),
     // columnHelper.display("practice_volume", "Объем практики"),
     // columnHelper.display("theory", "Теория"),
     // columnHelper.display("theory_volume", "Объем теории"),
-    ce.actions([{
+    ue.actions([{
       key: "download",
-      icon: Oe.faTrash,
+      icon: je.faTrash,
       tooltip: "Удалить расписание",
       onClick: async (_) => {
         l.mutate({
@@ -2876,7 +2876,7 @@ const Nr = o.object({
         });
       }
     }])
-  ], s = ot("/api/rest/program-doc-schedules", d, {
+  ], s = gt("/api/rest/program-doc-schedules", d, {
     defaultFilters: [{
       property: "doc_id",
       value: e
@@ -2891,102 +2891,102 @@ const Nr = o.object({
     enableSorting: !1
   }), f = x.useCallback(() => {
     y(), a(!1), n(!1);
-  }, []), m = Le(), y = () => m("/api/rest/program-doc-schedules");
+  }, []), m = We(), y = () => m("/api/rest/program-doc-schedules");
   return /* @__PURE__ */ t("div", { css: {
     display: "flex",
     flexDirection: "column",
     gap: "1.5rem"
-  }, children: /* @__PURE__ */ D("div", { css: {
+  }, children: /* @__PURE__ */ S("div", { css: {
     display: "flex",
     flexDirection: "column",
     gap: "1rem"
   }, children: [
-    /* @__PURE__ */ D("div", { children: [
-      /* @__PURE__ */ D(ye, { variant: "outlined", onClick: () => a((_) => !_), color: "success", children: [
-        /* @__PURE__ */ t(ae, { icon: qe.faPlus }),
+    /* @__PURE__ */ S("div", { children: [
+      /* @__PURE__ */ S(we, { variant: "outlined", onClick: () => a((_) => !_), color: "success", children: [
+        /* @__PURE__ */ t(se, { icon: $e.faPlus }),
         "Добавить"
       ] }),
-      /* @__PURE__ */ t(He, { title: "Новый учебный график", onClose: () => a(!1), open: r, children: /* @__PURE__ */ t($n, { doc_id: e, onCreate: f, onSubmit: () => n(!0), onError: () => n(!1) }) })
+      /* @__PURE__ */ t(Ve, { title: "Новый учебный график", onClose: () => a(!1), open: r, children: /* @__PURE__ */ t(ri, { doc_id: e, onCreate: f, onSubmit: () => n(!0), onError: () => n(!1) }) })
     ] }),
-    /* @__PURE__ */ t(Ne, { border: !0, table: s })
+    /* @__PURE__ */ t(He, { border: !0, table: s })
   ] }) });
-}, Un = [{
+}, ii = [{
   id: "general",
   title: "Основное",
-  Component: xr
+  Component: Ir
 }, {
   id: "params",
   title: "Параметры",
-  Component: Tr
+  Component: Wr
 }, {
   id: "explanation",
   title: "Пояснительная записка",
-  Component: Or
+  Component: $r
 }, {
   id: "results",
   title: "Планируемые результаты (знать, уметь, способности, качества)",
-  Component: Pr
+  Component: Ur
 }, {
   id: "goals",
   title: "Цели и задачи",
-  Component: qr
+  Component: Kr
 }, {
   id: "edu-plan",
   title: "Учебный план",
-  Component: Hr
+  Component: rn
 }, {
   id: "attestation-forms",
   title: "Формы аттестации и оценочные материалы",
-  Component: Qr
+  Component: ln
 }, {
   id: "criteries",
   title: "Критерии оценки учебных результатов",
-  Component: rn
+  Component: hn
 }, {
   id: "fixations",
   title: "Способ фиксации учебных результатов",
-  Component: ln
+  Component: vn
 }, {
   id: "materials",
   title: "Методические материалы",
-  Component: hn
+  Component: Cn
 }, {
   title: "Особенности организации образовательной деятельности",
   id: "managements",
-  Component: vn
+  Component: kn
 }, {
   title: "Воспитательная деятельность",
   id: "indoctrinations",
-  Component: Cn
+  Component: Rn
 }, {
   title: "Развивающая деятельность",
   id: "developments",
-  Component: kn
+  Component: In
 }, {
   title: "Кадровое обеспечение",
   id: "staff",
-  Component: Tn
+  Component: Ln
 }, {
   title: "Материально-техническое обеспечение",
   id: "inventories",
-  Component: jn
+  Component: $n
 }, {
   title: "Информационное обеспечение",
   id: "information",
-  Component: Ln
+  Component: Xn
 }, {
   title: "Список литературы",
   id: "books",
-  Component: Yn
+  Component: ei
 }, {
   title: "Календарный учебный график",
   id: "schedules",
-  Component: Zn
+  Component: ni
 }, {
   id: "description",
   title: "Утверждение",
-  Component: Dr
-}], Xn = o.object({
+  Component: qr
+}], oi = o.object({
   min_age: o.coerce.number().nullable(),
   max_age: o.coerce.number().nullable(),
   program_volume: o.coerce.number().nullable(),
@@ -2998,18 +2998,17 @@ const Nr = o.object({
   min_group_size: o.coerce.number().nullable(),
   max_group_size: o.coerce.number().nullable(),
   competence_level_id: o.coerce.number().nullable()
-}).passthrough(), Gn = o.object({
-  data: o.array(Xn).transform((e) => e[0])
-}).transform((e) => e.data), si = () => {
+}).passthrough(), ai = o.object({
+  data: o.array(oi).transform((e) => e[0])
+}).transform((e) => e.data), bi = () => {
   const {
     params: {
       id: e
     },
     setTitle: r
-  } = We(), a = Le(), i = ir(`/api/rest/program-docs/${e}`, {
-    schema: Gn,
-    refetchOnWindowFocus: !1
-  }), n = V("PUT", `/api/rest/program-docs/${e}`, {
+  } = Ye(), a = We(), i = gr(`/api/rest/program-docs/${e}`, {
+    schema: ai
+  }), n = Y("PUT", `/api/rest/program-docs/${e}`, {
     syncQueryCache: !0,
     onSuccess: () => {
       a("/api/rest/program-docs");
@@ -3017,8 +3016,8 @@ const Nr = o.object({
   });
   return x.useEffect(() => {
     r(`Конструктор программы #${e}`);
-  }, [e, r]), i.isLoading ? /* @__PURE__ */ t($t, { spinning: !0 }) : i.isError ? /* @__PURE__ */ t("div", { children: i.error.message }) : /* @__PURE__ */ t(Cr, { steps: Un, stateKey: "steps_info", mutation: n, values: i.data });
+  }, [e, r]), i.isLoading ? /* @__PURE__ */ t(nr, { spinning: !0 }) : i.isError ? /* @__PURE__ */ t(yr, { type: "error", title: i.error.message }) : /* @__PURE__ */ t(Mr, { steps: ii, stateKey: "steps_info", mutation: n, values: i.data });
 };
 export {
-  si as default
+  bi as default
 };

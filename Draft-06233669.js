@@ -1,12 +1,13 @@
-import { j as e, a as u } from "./library-64e31f23.js";
-import { z as o, m as _, k as g, b as f, B as h, F as a, T as s, P as y, d as c, e as b, g as v } from "./RootSection-96b6982a.js";
+import { j as e, a as u } from "./library-844ac20a.js";
+import { z as o, m as _, k as g, b as f, B as h, F as a, T as s, P as y, d as c, e as b, g as v } from "./RootSection-5abbb8ea.js";
 import "./react-54946355.js";
-import { u as x } from "./useWindowController-4345a3b7.js";
+import { u as x } from "./useWindowController-625f6aa7.js";
 import "./icons-6b7f2986.js";
-import { u as q } from "./useNavigate-5acc5cd1.js";
-import { P } from "./useDictionary-0ecb9681.js";
+import { a as q } from "./DictionaryCell-4d28d7d4.js";
+import { u as w } from "./useNavigate-c0da8503.js";
 import "./mui-02912ce2.js";
-const w = o.object({
+import "./table-e52be9b1.js";
+const F = o.object({
   steps_info: o.any(),
   partner_id: o.string({
     required_error: "Выберите организацию"
@@ -39,23 +40,23 @@ const w = o.object({
   section_id: !0,
   year_created: !0,
   city_created: !0
-}), S = () => {
+}), k = () => {
   const {
     close: i
-  } = x(), n = q(), d = _(), l = g("POST", "/api/rest/program-docs", {
+  } = x(), n = w(), d = _(), l = g("POST", "/api/rest/program-docs", {
     onSuccess: (r) => {
       n(`/program-docs/constructor/${r.data.id}`), d("/api/rest/program-docs"), i();
     }
   }), t = f({
     mutation: l,
-    schema: w,
+    schema: F,
     defaultValues: {
       steps_info: {
         general: "done"
       }
     }
   });
-  return /* @__PURE__ */ e(P, { bbar: /* @__PURE__ */ e("div", { css: {
+  return /* @__PURE__ */ e(q, { bbar: /* @__PURE__ */ e("div", { css: {
     display: "flex",
     width: "100%",
     justifyContent: "flex-end"
@@ -94,5 +95,5 @@ const w = o.object({
   ] }) });
 };
 export {
-  S as default
+  k as default
 };

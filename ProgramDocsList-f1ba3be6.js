@@ -1,9 +1,9 @@
-import { Q as f, j as l, F as y } from "./library-64e31f23.js";
+import { Q as f, j as l, F as y } from "./library-844ac20a.js";
 import { f as h, a as b } from "./faPen-2519e1be.js";
-import { u as C, P, T as D, c as z } from "./index-f35ab645.js";
-import { u as S, P as _ } from "./useDictionary-0ecb9681.js";
+import { u as C, T as D, c as P } from "./index-be4f9076.js";
+import { u as z, P as S, a as _ } from "./DictionaryCell-4d28d7d4.js";
 import { g as u, r as p } from "./react-54946355.js";
-import { u as H } from "./useNavigate-5acc5cd1.js";
+import { u as H } from "./useNavigate-c0da8503.js";
 import { F as L } from "./icons-6b7f2986.js";
 import { I as j } from "./mui-02912ce2.js";
 import "./table-e52be9b1.js";
@@ -44,7 +44,7 @@ const U = /* @__PURE__ */ u(R), V = /\s*;\s*/, M = /\s*:\s*/, $ = /\s*=\s*(.+)/,
 };
 var O = N;
 const T = /* @__PURE__ */ u(O), B = () => {
-  const [e, r] = p.useState(!1), [i, t] = p.useState(), a = S();
+  const [e, r] = p.useState(!1), [i, t] = p.useState(), a = z();
   return {
     loading: e,
     error: i,
@@ -100,7 +100,7 @@ var w = {};
     ]
   }, e.faDownload = e.definition, e.prefix = r, e.iconName = i, e.width = t, e.height = a, e.ligatures = o, e.unicode = s, e.svgPathData = n, e.aliases = o;
 })(w);
-const c = z(), X = () => {
+const c = P(), X = () => {
   const e = H(), {
     download: r
   } = B(), i = p.useMemo(() => [c.id(), c.actions([{
@@ -187,7 +187,7 @@ const c = z(), X = () => {
       is_deleted: !1
     }
   });
-  return /* @__PURE__ */ l(_, { tbar: /* @__PURE__ */ l(y, { children: /* @__PURE__ */ l(j, { size: "small", onClick: () => e("/program-docs/draft"), children: /* @__PURE__ */ l(L, { icon: b.faPlus }) }) }), bbar: /* @__PURE__ */ l(P, { table: t }), children: /* @__PURE__ */ l(D, { table: t, onRowDoubleClick: (a) => {
+  return /* @__PURE__ */ l(_, { tbar: /* @__PURE__ */ l(y, { children: /* @__PURE__ */ l(j, { size: "small", onClick: () => e("/program-docs/draft"), children: /* @__PURE__ */ l(L, { icon: b.faPlus }) }) }), bbar: /* @__PURE__ */ l(S, { table: t }), children: /* @__PURE__ */ l(D, { table: t, onRowDoubleClick: (a) => {
     e(`/program-docs/constructor/${a.id}`);
   } }) });
 };
