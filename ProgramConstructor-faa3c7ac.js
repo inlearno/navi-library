@@ -1,12 +1,12 @@
-import { j as t, a as S, F as rr, f as ht, S as nr } from "./library-844ac20a.js";
+import { j as t, a as S, F as rr, f as ht, S as nr } from "./library-349d48a8.js";
 import { r as x, c as ir, R as mt } from "./react-54946355.js";
-import { u as or, f as ar, R as sr, a as lr, D as cr, B as we, b as X, c as dr, z as o, T as W, F as h, P as ur, d as ne, e as pr, Y as Ne, g as k, h as Re, i as $, N as U, L as hr, j as ft, k as Y, l as ie, Q as oe, m as We } from "./RootSection-5abbb8ea.js";
+import { u as or, f as ar, R as sr, a as lr, D as cr, B as we, b as X, c as dr, z as o, T as W, F as h, P as ur, d as ne, e as pr, Y as Ne, g as k, h as Re, i as $, N as U, L as hr, j as ft, k as Y, l as ie, Q as oe, m as We } from "./RootSection-89604b10.js";
 import { F as se } from "./icons-6b7f2986.js";
-import { l as mr, N as fr, a as G, b as gr } from "./DictionaryCell-4d28d7d4.js";
-import { a as br, T as He, c as Q, f as vr, u as gt, S as yr } from "./index-be4f9076.js";
+import { l as mr, N as fr, a as G, b as gr } from "./DictionaryCell-7ffb8cbc.js";
+import { a as br, T as He, c as Q, f as vr, u as gt, S as yr } from "./index-4b986912.js";
 import { u as _r, a as Ar, B as J } from "./mui-02912ce2.js";
 import { a as $e, f as wr } from "./faPen-2519e1be.js";
-import { u as Ye } from "./useWindowController-625f6aa7.js";
+import { u as Ye } from "./useWindowController-b8b5284b.js";
 import "./table-e52be9b1.js";
 var q = /* @__PURE__ */ ((e) => (e.DONE = "done", e.ACTIVE = "active", e.WAIT = "wait", e.DISABLED = "disabled", e.LOADING = "loading", e.ERROR = "error", e.EDIT = "edit", e))(q || {});
 const Cr = ({
@@ -434,7 +434,7 @@ const Oe = ({
   width: "100%",
   justifyContent: "center",
   padding: "0.5rem"
-}, children: /* @__PURE__ */ S(we, { variant: "outlined", icon: $e.faPlus, onClick: r, children: [
+}, children: /* @__PURE__ */ S(we, { variant: "outlined", color: "success", icon: $e.faPlus, onClick: r, children: [
   "Создать",
   e && ` «${e}»`
 ] }) });

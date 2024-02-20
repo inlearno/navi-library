@@ -44,7 +44,7 @@ var Jt = {};
 const Hn = [{
   id: "users",
   path: "/users",
-  component: () => import("./UsersList-1bbd8e22.js"),
+  component: () => import("./UsersList-54859872.js"),
   windowOptions: {
     icon: Jt.faUsers,
     title: "Пользователи",
@@ -77,7 +77,7 @@ var Jr = {};
 const Qn = [{
   id: "program-docs",
   path: "/program-docs",
-  component: () => import("./ProgramDocsList-f1ba3be6.js"),
+  component: () => import("./ProgramDocsList-9f8e7a21.js"),
   windowOptions: {
     title: "Конструктор документов программ",
     width: 700,
@@ -94,7 +94,7 @@ const Qn = [{
 }, {
   id: "program-docs-constructor",
   path: "/program-docs/constructor/:id",
-  component: () => import("./ProgramConstructor-44ef49ae.js"),
+  component: () => import("./ProgramConstructor-faa3c7ac.js"),
   windowOptions: {
     title: "Конструктор программы",
     width: 700,
@@ -104,7 +104,7 @@ const Qn = [{
 }, {
   id: "program-docs-draft",
   path: "/program-docs/draft",
-  component: () => import("./Draft-06233669.js"),
+  component: () => import("./Draft-4fdce344.js"),
   windowOptions: {
     title: "Черновик программы",
     width: 700,
@@ -114,7 +114,7 @@ const Qn = [{
 }, {
   id: "program-constructor-copy",
   path: "/program-docs/copy/:id",
-  component: () => import("./CopyProgramForm-4c46cba8.js"),
+  component: () => import("./CopyProgramForm-9837d55e.js"),
   windowOptions: {
     title: "Копирование программы",
     width: 700,
