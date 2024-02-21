@@ -1,12 +1,12 @@
-import { j as e, a as u } from "./library-349d48a8.js";
-import { z as o, m as _, k as g, b as f, B as h, F as a, T as s, P as y, d as c, e as b, g as v } from "./RootSection-89604b10.js";
-import "./react-54946355.js";
-import { u as x } from "./useWindowController-b8b5284b.js";
-import "./icons-6b7f2986.js";
-import { a as q } from "./DictionaryCell-7ffb8cbc.js";
-import { u as w } from "./useNavigate-4bae25bf.js";
-import "./mui-02912ce2.js";
-import "./table-e52be9b1.js";
+import { j as e, a as u } from "./library-0cf44c66.js";
+import { z as o, m as _, k as g, b as f, B as h, F as a, T as s, P as y, d as c, e as b, g as v } from "./RootSection-50947b49.js";
+import { a as x } from "./DictionaryCell-aea7ff60.js";
+import "./icons-ad9f8a73.js";
+import "./react-6f5a8403.js";
+import { u as q } from "./useWindowController-aed1c1e2.js";
+import { u as w } from "./useNavigate-e27597b3.js";
+import "./mui-4f485058.js";
+import "./table-f5369550.js";
 const F = o.object({
   steps_info: o.any(),
   partner_id: o.string({
@@ -43,7 +43,7 @@ const F = o.object({
 }), k = () => {
   const {
     close: i
-  } = x(), n = w(), d = _(), l = g("POST", "/api/rest/program-docs", {
+  } = q(), n = w(), d = _(), l = g("POST", "/api/rest/program-docs", {
     onSuccess: (r) => {
       n(`/program-docs/constructor/${r.data.id}`), d("/api/rest/program-docs"), i();
     }
@@ -56,7 +56,7 @@ const F = o.object({
       }
     }
   });
-  return /* @__PURE__ */ e(q, { bbar: /* @__PURE__ */ e("div", { css: {
+  return /* @__PURE__ */ e(x, { bbar: /* @__PURE__ */ e("div", { css: {
     display: "flex",
     width: "100%",
     justifyContent: "flex-end"

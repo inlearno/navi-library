@@ -1,5 +1,5 @@
-import { d as u } from "./library-349d48a8.js";
-const c = () => {
+import { W as u } from "./library-0cf44c66.js";
+const W = () => {
   const {
     params: t,
     state: e,
@@ -28,5 +28,5 @@ const c = () => {
   };
 };
 export {
-  c as u
+  W as u
 };

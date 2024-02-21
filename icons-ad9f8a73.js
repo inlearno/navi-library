@@ -1,4 +1,4 @@
-import { g as ye, R as zn } from "./react-54946355.js";
+import { g as ye, R as zn } from "./react-6f5a8403.js";
 var Dn = { exports: {} }, ke = "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED", we = ke, xe = we;
 function Yn() {
 }
@@ -201,7 +201,9 @@ var at = lt((mt = {}, O(mt, g, {
   fab: "brands",
   "fa-brands": "brands",
   fak: "kit",
-  "fa-kit": "kit"
+  fakd: "kit",
+  "fa-kit": "kit",
+  "fa-kit-duotone": "kit"
 }), O(mt, y, {
   fa: "solid",
   fass: "solid",
@@ -209,7 +211,9 @@ var at = lt((mt = {}, O(mt, g, {
   fasr: "regular",
   "fa-regular": "regular",
   fasl: "light",
-  "fa-light": "light"
+  "fa-light": "light",
+  fast: "thin",
+  "fa-thin": "thin"
 }), mt)), rt = lt((dt = {}, O(dt, g, {
   solid: "fas",
   regular: "far",
@@ -221,7 +225,8 @@ var at = lt((mt = {}, O(mt, g, {
 }), O(dt, y, {
   solid: "fass",
   regular: "fasr",
-  light: "fasl"
+  light: "fasl",
+  thin: "fast"
 }), dt)), it = lt((vt = {}, O(vt, g, {
   fab: "fa-brands",
   fad: "fa-duotone",
@@ -233,7 +238,8 @@ var at = lt((mt = {}, O(mt, g, {
 }), O(vt, y, {
   fass: "fa-solid",
   fasr: "fa-regular",
-  fasl: "fa-light"
+  fasl: "fa-light",
+  fast: "fa-thin"
 }), vt)), je = lt((pt = {}, O(pt, g, {
   "fa-brands": "fab",
   "fa-duotone": "fad",
@@ -245,8 +251,9 @@ var at = lt((mt = {}, O(mt, g, {
 }), O(pt, y, {
   "fa-solid": "fass",
   "fa-regular": "fasr",
-  "fa-light": "fasl"
-}), pt)), ze = /fa(s|r|l|t|d|b|k|ss|sr|sl)?[\-\ ]/, Kn = "fa-layers-text", De = /Font ?Awesome ?([56 ]*)(Solid|Regular|Light|Thin|Duotone|Brands|Free|Pro|Sharp|Kit)?.*/i, Ye = lt((bt = {}, O(bt, g, {
+  "fa-light": "fasl",
+  "fa-thin": "fast"
+}), pt)), ze = /fa(s|r|l|t|d|b|k|ss|sr|sl|st)?[\-\ ]/, Kn = "fa-layers-text", De = /Font ?Awesome ?([56 ]*)(Solid|Regular|Light|Thin|Duotone|Brands|Free|Pro|Sharp|Kit)?.*/i, Ye = lt((bt = {}, O(bt, g, {
   900: "fas",
   400: "far",
   normal: "far",
@@ -255,7 +262,8 @@ var at = lt((mt = {}, O(mt, g, {
 }), O(bt, y, {
   900: "fass",
   400: "fasr",
-  300: "fasl"
+  300: "fasl",
+  100: "fast"
 }), bt)), Qn = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], $e = Qn.concat([11, 12, 13, 14, 15, 16, 17, 18, 19, 20]), Ue = ["class", "data-prefix", "data-icon", "data-fa-transform", "data-fa-mask"], H = {
   GROUP: "duotone-group",
   SWAP_OPACITY: "swap-opacity",
@@ -412,6 +420,7 @@ var Ze = `:root, :host {
   --fa-font-sharp-solid: normal 900 1em/1 "Font Awesome 6 Sharp";
   --fa-font-sharp-regular: normal 400 1em/1 "Font Awesome 6 Sharp";
   --fa-font-sharp-light: normal 300 1em/1 "Font Awesome 6 Sharp";
+  --fa-font-sharp-thin: normal 100 1em/1 "Font Awesome 6 Sharp";
   --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
 }
 
@@ -1728,7 +1737,7 @@ var On = function() {
 }, Gt = d.measurePerformance && ut && ut.mark && ut.measure ? ut : {
   mark: On,
   measure: On
-}, tt = 'FA "6.4.2"', Sa = function(n) {
+}, tt = 'FA "6.5.1"', Sa = function(n) {
   return Gt.mark("".concat(tt, " ").concat(n, " begins")), function() {
     return ce(n);
   };

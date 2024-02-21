@@ -1,13 +1,13 @@
-import { j as r, a as p } from "./library-349d48a8.js";
-import { m as u, k as g, b as h, B as f, F as s, T as i, P as y, g as b, z as n } from "./RootSection-89604b10.js";
-import "./react-54946355.js";
-import { u as l } from "./useWindowController-b8b5284b.js";
-import { u as x } from "./useWithTitle-e1b4a082.js";
-import "./icons-6b7f2986.js";
-import { a as _ } from "./DictionaryCell-7ffb8cbc.js";
-import { u as F } from "./useNavigate-4bae25bf.js";
-import "./mui-02912ce2.js";
-import "./table-e52be9b1.js";
+import { j as r, a as p } from "./library-0cf44c66.js";
+import { m as u, k as g, b as h, B as f, F as s, T as i, P as y, g as b, z as n } from "./RootSection-50947b49.js";
+import { a as x } from "./DictionaryCell-aea7ff60.js";
+import "./icons-ad9f8a73.js";
+import "./react-6f5a8403.js";
+import { u as l } from "./useWindowController-aed1c1e2.js";
+import { u as _ } from "./useWithTitle-cf314fa6.js";
+import { u as F } from "./useNavigate-e27597b3.js";
+import "./mui-4f485058.js";
+import "./table-f5369550.js";
 const w = () => {
   const {
     params: t
@@ -43,12 +43,12 @@ const w = () => {
       m("/api/rest/program-docs"), d(`/program-docs/constructor/${e}`), a();
     }
   });
-  x(`Копирование программы #${t}`);
+  _(`Копирование программы #${t}`);
   const o = h({
     mutation: c,
     schema: C
   });
-  return /* @__PURE__ */ r(_, { bbar: /* @__PURE__ */ r("div", { css: {
+  return /* @__PURE__ */ r(x, { bbar: /* @__PURE__ */ r("div", { css: {
     display: "flex",
     width: "100%",
     justifyContent: "flex-end"
