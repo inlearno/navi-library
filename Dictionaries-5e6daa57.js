@@ -1,11 +1,11 @@
-import { a as p, j as e, F } from "./library-ce9feb41.js";
+import { a as p, j as e, F } from "./library-4abb055a.js";
 import { f as x } from "./faPlus-da331287.js";
-import { S as _, h as T, R as w, T as k, i as C, A as D, j as S, C as M, k as B, F as f, c as P, l as R, d as z, m as j, I as A, n as H, D as E, o as L, e as V, p as W, g as $, q as Y, B as q, r as N, f as Q, M as v } from "./BookInput-e7533281.js";
-import { e as G, B as J } from "./Boolean-6991984d.js";
-import { P as K, a as b } from "./DictionaryCell-1271e557.js";
+import { S as _, h as T, R as w, T as k, i as C, A as D, j as S, C as M, k as B, F as f, c as P, l as R, d as z, m as j, I as A, n as H, D as E, o as L, e as V, p as W, g as $, q as Y, B as q, r as N, f as Q, M as b } from "./BookInput-aaef8eb4.js";
+import { e as G, B as J } from "./Boolean-a214af4e.js";
+import { P as K, a as v } from "./DictionaryCell-860b563e.js";
 import { F as O } from "./icons-ad9f8a73.js";
 import { r as s } from "./react-6f5a8403.js";
-import { u as U, T as X, c as Z } from "./index-cf733dba.js";
+import { u as U, T as X, c as Z } from "./index-def21c5c.js";
 import { I as ii } from "./mui-4f485058.js";
 import "./table-f5369550.js";
 const i = Z(), h = [{
@@ -186,9 +186,10 @@ const i = Z(), h = [{
     defaultColumnVisibility: {
       is_deleted: !1
     },
-    keepPrevious: !1
+    keepPrevious: !1,
+    enableSorting: !1
   });
-  return /* @__PURE__ */ p(b, { tbar: r && /* @__PURE__ */ e(F, { children: /* @__PURE__ */ e(ii, { size: "small", onClick: () => m(!0), children: /* @__PURE__ */ e(O, { icon: x.faPlus }) }) }), bbar: /* @__PURE__ */ e(K, { table: g }), children: [
+  return /* @__PURE__ */ p(v, { tbar: r && /* @__PURE__ */ e(F, { children: /* @__PURE__ */ e(ii, { size: "small", onClick: () => m(!0), children: /* @__PURE__ */ e(O, { icon: x.faPlus }) }) }), bbar: /* @__PURE__ */ e(K, { table: g }), children: [
     u && r && /* @__PURE__ */ e(oi, { form: r, record: d, onClose: () => {
       y(null), m(!1);
     } }),
@@ -201,7 +202,7 @@ const i = Z(), h = [{
   onClose: t,
   record: r,
   form: o
-}) => /* @__PURE__ */ e(v, { width: 450, height: 300, open: !0, onClose: t, children: /* @__PURE__ */ e(o, { initialValues: r, onSave: () => t() }) }), ai = ({
+}) => /* @__PURE__ */ e(b, { width: 450, height: 300, open: !0, onClose: t, children: /* @__PURE__ */ e(o, { initialValues: r, onSave: () => t() }) }), ai = ({
   open: t,
   onClose: r,
   record: o,
@@ -213,7 +214,7 @@ const i = Z(), h = [{
     method: "DELETE",
     url: l
   });
-  return /* @__PURE__ */ e(v, { title: "Удаление", width: 450, height: 300, open: t, onClose: r, children: /* @__PURE__ */ e(b, { bbar: /* @__PURE__ */ e("div", { css: {
+  return /* @__PURE__ */ e(b, { title: "Удаление", width: 450, height: 300, open: t, onClose: r, children: /* @__PURE__ */ e(v, { bbar: /* @__PURE__ */ e("div", { css: {
     display: "flex",
     width: "100%",
     justifyContent: "flex-end"

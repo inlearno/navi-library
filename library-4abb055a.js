@@ -44,7 +44,7 @@ var Ci = {};
 const bc = [{
   id: "users",
   path: "/users",
-  component: () => import("./UsersList-d6c2c7f3.js"),
+  component: () => import("./UsersList-01e645d8.js"),
   windowOptions: {
     icon: Ci.faUsers,
     title: "Пользователи",
@@ -93,7 +93,7 @@ var Lo = {};
 const wc = [{
   id: "program-docs",
   path: "/program-docs",
-  component: () => import("./ProgramDocsList-c207d943.js"),
+  component: () => import("./ProgramDocsList-d52b0fda.js"),
   windowOptions: {
     title: "Конструктор документов программ",
     width: 700,
@@ -110,7 +110,7 @@ const wc = [{
 }, {
   id: "program-docs-constructor",
   path: "/program-docs/constructor/:id",
-  component: () => import("./ProgramConstructor-cf4c7b1e.js"),
+  component: () => import("./ProgramConstructor-be3ff161.js"),
   windowOptions: {
     title: "Конструктор программы",
     width: 700,
@@ -120,7 +120,7 @@ const wc = [{
 }, {
   id: "program-docs-draft",
   path: "/program-docs/draft",
-  component: () => import("./Draft-b120b792.js"),
+  component: () => import("./Draft-5f2693aa.js"),
   windowOptions: {
     title: "Черновик программы",
     width: 700,
@@ -130,7 +130,7 @@ const wc = [{
 }, {
   id: "program-constructor-copy",
   path: "/program-docs/copy/:id",
-  component: () => import("./CopyProgramForm-6ecea79d.js"),
+  component: () => import("./CopyProgramForm-81d8c260.js"),
   windowOptions: {
     title: "Копирование программы",
     width: 700,
@@ -139,7 +139,7 @@ const wc = [{
 }, {
   id: "program-constructor-dicts",
   path: "/program-docs/dicts",
-  component: () => import("./Dictionaries-31f2e44c.js"),
+  component: () => import("./Dictionaries-5e6daa57.js"),
   windowOptions: {
     title: "Справочники",
     width: 700,

@@ -1,10 +1,10 @@
-import { Q as f, j as l, F as y } from "./library-ce9feb41.js";
+import { Q as f, j as l, F as y } from "./library-4abb055a.js";
 import { f as h } from "./faPlus-da331287.js";
 import { f as b } from "./faPen-6d05924c.js";
-import { u as C, T as D, c as P } from "./index-cf733dba.js";
-import { u as z, P as S, a as _ } from "./DictionaryCell-1271e557.js";
+import { u as C, T as D, c as P } from "./index-def21c5c.js";
+import { u as z, P as S, a as _ } from "./DictionaryCell-860b563e.js";
 import { g as m, r as p } from "./react-6f5a8403.js";
-import { u as H } from "./useNavigate-174c2b1e.js";
+import { u as H } from "./useNavigate-24a96c84.js";
 import { F as L } from "./icons-ad9f8a73.js";
 import { I as j } from "./mui-4f485058.js";
 import "./table-f5369550.js";
