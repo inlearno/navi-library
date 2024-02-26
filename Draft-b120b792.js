@@ -1,13 +1,14 @@
-import { j as e, a as u } from "./library-0cf44c66.js";
-import { z as o, m as _, k as g, b as f, B as h, F as a, T as s, P as y, d as c, e as b, g as v } from "./RootSection-50947b49.js";
-import { a as x } from "./DictionaryCell-aea7ff60.js";
+import { j as e, a as u } from "./library-ce9feb41.js";
+import { z as o, e as _, u as g, B as f, F as a, T as s, D as c, a as h } from "./Boolean-6991984d.js";
+import { a as y } from "./DictionaryCell-1271e557.js";
 import "./icons-ad9f8a73.js";
 import "./react-6f5a8403.js";
-import { u as q } from "./useWindowController-aed1c1e2.js";
-import { u as w } from "./useNavigate-e27597b3.js";
+import { u as b } from "./useWindowController-106e017b.js";
+import { u as v, P as x, R as q } from "./RootSection-7388304d.js";
+import { u as w } from "./useNavigate-174c2b1e.js";
 import "./mui-4f485058.js";
 import "./table-f5369550.js";
-const F = o.object({
+const D = o.object({
   steps_info: o.any(),
   partner_id: o.string({
     required_error: "Выберите организацию"
@@ -40,27 +41,27 @@ const F = o.object({
   section_id: !0,
   year_created: !0,
   city_created: !0
-}), k = () => {
+}), B = () => {
   const {
     close: i
-  } = q(), n = w(), d = _(), l = g("POST", "/api/rest/program-docs", {
+  } = b(), n = w(), d = v(), l = _("POST", "/api/rest/program-docs", {
     onSuccess: (r) => {
       n(`/program-docs/constructor/${r.data.id}`), d("/api/rest/program-docs"), i();
     }
-  }), t = f({
+  }), t = g({
     mutation: l,
-    schema: F,
+    schema: D,
     defaultValues: {
       steps_info: {
         general: "done"
       }
     }
   });
-  return /* @__PURE__ */ e(x, { bbar: /* @__PURE__ */ e("div", { css: {
+  return /* @__PURE__ */ e(y, { bbar: /* @__PURE__ */ e("div", { css: {
     display: "flex",
     width: "100%",
     justifyContent: "flex-end"
-  }, children: /* @__PURE__ */ e(h, { variant: "contained", color: "success", disabled: l.isPending, onClick: () => t.submit(), children: "Создать черновик" }) }), children: /* @__PURE__ */ u(v, { css: {
+  }, children: /* @__PURE__ */ e(f, { variant: "contained", color: "success", disabled: l.isPending, onClick: () => t.submit(), children: "Создать черновик" }) }), children: /* @__PURE__ */ u(h, { css: {
     display: "grid",
     gap: "1rem",
     padding: "1rem"
@@ -72,7 +73,7 @@ const F = o.object({
     }, ...r, placeholder: "Введите наименование", label: "Наименование" }) }),
     /* @__PURE__ */ e(a, { control: t.control, name: "partner_id", render: ({
       field: r
-    }) => /* @__PURE__ */ e(y, { ...r, placeholder: "Выберите организацию", label: "Организация" }) }),
+    }) => /* @__PURE__ */ e(x, { ...r, placeholder: "Выберите организацию", label: "Организация" }) }),
     /* @__PURE__ */ e(a, { control: t.control, name: "program_type_id", render: ({
       field: r
     }) => /* @__PURE__ */ e(c, { label: "Тип программы", ...r, dictionary: "navProgramType", filterOptions: (p) => p.filter(({
@@ -80,7 +81,7 @@ const F = o.object({
     }) => m === 1), placeholder: "Выберите тип программы" }) }),
     /* @__PURE__ */ e(a, { control: t.control, name: "section_id", render: ({
       field: r
-    }) => /* @__PURE__ */ e(b, { label: "Направленность", placeholder: "Выберите направленность", ...r }) }),
+    }) => /* @__PURE__ */ e(q, { label: "Направленность", placeholder: "Выберите направленность", ...r }) }),
     /* @__PURE__ */ e(a, { control: t.control, name: "program_level_id", render: ({
       field: r
     }) => /* @__PURE__ */ e(c, { label: "Уровень", css: {
@@ -95,5 +96,5 @@ const F = o.object({
   ] }) });
 };
 export {
-  k as default
+  B as default
 };
