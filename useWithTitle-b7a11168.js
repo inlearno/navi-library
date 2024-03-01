@@ -1,5 +1,5 @@
 import { r } from "./react-6f5a8403.js";
-import { u as s } from "./useWindowController-b762de66.js";
+import { u as s } from "./useWindowController-0ec8bb8c.js";
 const u = (o) => {
   const {
     setTitle: t
