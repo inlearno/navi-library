@@ -1,10 +1,10 @@
-import { Q as f, j as l, F as y } from "./library-67a87d27.js";
+import { Q as f, j as l, F as y } from "./library-316bee61.js";
 import { f as h } from "./faPlus-da331287.js";
 import { f as b } from "./faPen-6d05924c.js";
-import { u as C, T as D, c as P } from "./index-17626fdf.js";
-import { u as z, P as S, a as _ } from "./DictionaryCell-3569b25d.js";
+import { u as C, T as D, c as P } from "./index-f3d8bb97.js";
+import { u as z, P as S, a as _ } from "./DictionaryCell-62ce1ff0.js";
 import { g as m, r as p } from "./react-6f5a8403.js";
-import { u as H } from "./useNavigate-ef146643.js";
+import { u as H } from "./useNavigate-3af03771.js";
 import { F as L } from "./icons-ad9f8a73.js";
 import { I as j } from "./mui-4f485058.js";
 import "./table-f5369550.js";
@@ -188,7 +188,7 @@ const c = P(), Y = () => {
       is_deleted: !1
     }
   });
-  return /* @__PURE__ */ l(_, { tbar: /* @__PURE__ */ l(y, { children: /* @__PURE__ */ l(j, { size: "small", onClick: () => e("/program-docs/draft"), children: /* @__PURE__ */ l(L, { icon: h.faPlus }) }) }), bbar: /* @__PURE__ */ l(S, { table: o }), children: /* @__PURE__ */ l(D, { table: o, onRowDoubleClick: (a) => {
+  return /* @__PURE__ */ l(_, { header: /* @__PURE__ */ l(y, { children: /* @__PURE__ */ l(j, { size: "small", onClick: () => e("/program-docs/draft"), children: /* @__PURE__ */ l(L, { icon: h.faPlus }) }) }), footer: /* @__PURE__ */ l(S, { table: o }), children: /* @__PURE__ */ l(D, { table: o, onRowDoubleClick: (a) => {
     e(`/program-docs/constructor/${a.id}`);
   } }) });
 };

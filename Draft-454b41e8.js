@@ -1,11 +1,11 @@
-import { j as e, a as u } from "./library-67a87d27.js";
-import { z as o, e as _, u as g, B as f, F as a, T as s, D as c, a as h } from "./Boolean-4a3532b8.js";
-import { a as y } from "./DictionaryCell-3569b25d.js";
+import { j as e, a as u } from "./library-316bee61.js";
+import { z as o, e as _, u as g, B as f, F as a, T as s, D as c, a as h } from "./Boolean-ac7964aa.js";
+import { a as y } from "./DictionaryCell-62ce1ff0.js";
 import "./icons-ad9f8a73.js";
 import "./react-6f5a8403.js";
-import { u as b } from "./useWindowController-8df3db5f.js";
-import { u as v, P as x, R as q } from "./RootSection-4dca6ec2.js";
-import { u as w } from "./useNavigate-ef146643.js";
+import { u as b } from "./useWindowController-80251d19.js";
+import { u as v, P as x, R as q } from "./RootSection-26ee6477.js";
+import { u as w } from "./useNavigate-3af03771.js";
 import "./mui-4f485058.js";
 import "./table-f5369550.js";
 const D = o.object({
@@ -57,7 +57,7 @@ const D = o.object({
       }
     }
   });
-  return /* @__PURE__ */ e(y, { bbar: /* @__PURE__ */ e("div", { css: {
+  return /* @__PURE__ */ e(y, { footer: /* @__PURE__ */ e("div", { css: {
     display: "flex",
     width: "100%",
     justifyContent: "flex-end"

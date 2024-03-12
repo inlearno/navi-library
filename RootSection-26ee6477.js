@@ -1,8 +1,8 @@
-import { u as s } from "./library-67a87d27.js";
-import { g as e, Q as t } from "./Boolean-4a3532b8.js";
+import { u as s } from "./library-316bee61.js";
+import { g as e, Q as t } from "./Boolean-ac7964aa.js";
 import "./react-6f5a8403.js";
 import "./icons-ad9f8a73.js";
-import "./DictionaryCell-3569b25d.js";
+import "./DictionaryCell-62ce1ff0.js";
 const n = () => {
   const r = s();
   return (i) => r.invalidateQueries({
