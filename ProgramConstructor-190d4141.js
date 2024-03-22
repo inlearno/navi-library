@@ -1,16 +1,16 @@
-import { j as r, l as ae, N as ie, f as B, a as p, S as le } from "./library-9ca30589.js";
+import { j as r, l as ae, N as ie, f as B, a as p, S as le } from "./library-e032c533.js";
 import { r as m, R as q } from "./react-6f5a8403.js";
-import { u as R, f as ce, B as T, z as o, T as I, F as c, D as j, Y as se, a as f, b as F, c as D, N as v, L as de, d as W, e as N } from "./Boolean-60b5b70d.js";
+import { u as R, f as ce, B as T, z as o, T as I, F as c, D as j, Y as se, a as f, b as F, c as D, N as v, L as de, d as W, e as N } from "./Boolean-68f0cccd.js";
 import { F as k } from "./icons-ad9f8a73.js";
-import { a as z, b as me } from "./DictionaryCell-228ca37f.js";
-import { P as ue, R as pe, u as A } from "./RootSection-d8996963.js";
-import { f as he, u as H, T as Y, c as V, S as fe } from "./index-c1235920.js";
-import { S as ge, R as _e, T as be, f as G, M as Q, A as ve, C as ye, F as we, a as xe, b as Ce, I as ke, D as De, c as Se, d as Pe, B as Ie } from "./BookInput-e8999fd2.js";
+import { a as z, b as me } from "./DictionaryCell-0b2e5a0e.js";
+import { P as ue, R as pe, u as A } from "./RootSection-396a5da0.js";
+import { f as he, u as H, T as Y, c as V, S as fe } from "./index-a072538c.js";
+import { S as ge, R as _e, T as be, f as G, M as Q, A as ve, C as ye, F as we, a as xe, b as Ce, I as ke, D as De, c as Se, d as Pe, B as Ie } from "./BookInput-dcb55493.js";
 import { a as Me, B as Te } from "./mui-4f485058.js";
 import { f as Le } from "./faPen-6d05924c.js";
-import { u as Ne, R as Ee } from "./Role-8d801f13.js";
+import { u as Ne, R as Ee } from "./Role-8a4bf2d2.js";
 import { f as U } from "./faPlus-da331287.js";
-import { u as O } from "./useWindowController-ec3a6f90.js";
+import { u as O } from "./useWindowController-d229bf55.js";
 import "./table-f5369550.js";
 var J = {};
 (function(e) {
@@ -439,7 +439,7 @@ const ze = ({
     city_created: o.string({
       required_error: "Выберите город создания"
     })
-  }).required(), l = b({
+  }), l = b({
     schema: s
   });
   return /* @__PURE__ */ p(f, { css: {
