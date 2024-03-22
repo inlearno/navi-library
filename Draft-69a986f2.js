@@ -1,12 +1,12 @@
-import { j as e, a as f } from "./library-72067697.js";
-import { z as t, e as h, u as y, B as b, F as a, T as s, D as c, a as q } from "./Boolean-300dcf46.js";
-import { a as v } from "./DictionaryCell-916b8d6b.js";
+import { j as e, a as f } from "./library-d3ab1de2.js";
+import { z as t, e as h, u as y, B as b, F as a, T as s, D as c, a as q } from "./Boolean-ba03f157.js";
+import { a as v } from "./DictionaryCell-f9be5d5e.js";
 import "./icons-ad9f8a73.js";
 import "./react-6f5a8403.js";
-import { u as x } from "./useWindowController-4afe859b.js";
-import { u as w, P as D, R as F } from "./RootSection-505fe81d.js";
-import { u as P } from "./useNavigate-be96eefd.js";
-import { u as T, R as j } from "./Role-37f7c51d.js";
+import { u as x } from "./useWindowController-fcb1d26b.js";
+import { u as w, P as D, R as F } from "./RootSection-9418a2b1.js";
+import { u as P } from "./useNavigate-36129d4e.js";
+import { u as T, R as j } from "./Role-c4157954.js";
 import "./mui-4f485058.js";
 import "./table-f5369550.js";
 const $ = () => {
@@ -18,8 +18,8 @@ const $ = () => {
   }).optional() : i = t.string({
     required_error: "Выберите организацию",
     coerce: !0
-  });
-  const p = t.object({
+  }).nullish();
+  const u = t.object({
     steps_info: t.any(),
     partner_id: i,
     name: t.string({
@@ -51,14 +51,14 @@ const $ = () => {
     year_created: !0,
     city_created: !0
   }), {
-    close: u
+    close: p
   } = x(), m = P(), _ = w(), l = h("POST", "/api/rest/program-docs", {
     onSuccess: (r) => {
-      m(`/program-docs/constructor/${r.data.id}`), _("/api/rest/program-docs"), u();
+      m(`/program-docs/constructor/${r.data.id}`), _("/api/rest/program-docs"), p();
     }
   }), o = y({
     mutation: l,
-    schema: p,
+    schema: u,
     defaultValues: {
       steps_info: {
         general: "done"

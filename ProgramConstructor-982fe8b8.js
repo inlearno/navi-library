@@ -1,16 +1,16 @@
-import { j as r, l as ae, N as ie, f as q, a as p, S as le } from "./library-72067697.js";
+import { j as r, l as ae, N as ie, f as q, a as p, S as le } from "./library-d3ab1de2.js";
 import { r as m, R as B } from "./react-6f5a8403.js";
-import { u as R, f as ce, B as T, z as o, T as I, F as c, D as j, Y as se, a as f, b as F, c as D, N as v, L as de, d as W, e as N } from "./Boolean-300dcf46.js";
+import { u as R, f as ce, B as T, z as o, T as I, F as c, D as j, Y as se, a as f, b as F, c as D, N as v, L as de, d as W, e as N } from "./Boolean-ba03f157.js";
 import { F as k } from "./icons-ad9f8a73.js";
-import { a as z, b as me } from "./DictionaryCell-916b8d6b.js";
-import { P as ue, R as pe, u as A } from "./RootSection-505fe81d.js";
-import { f as he, u as H, T as Y, c as V, S as fe } from "./index-f84e6dd8.js";
-import { S as ge, R as _e, T as be, f as G, M as Q, A as ve, C as ye, F as we, a as xe, b as Ce, I as ke, D as De, c as Se, d as Pe, B as Ie } from "./BookInput-fe790ce7.js";
+import { a as z, b as me } from "./DictionaryCell-f9be5d5e.js";
+import { P as ue, R as pe, u as A } from "./RootSection-9418a2b1.js";
+import { f as he, u as H, T as Y, c as V, S as fe } from "./index-f96d2d88.js";
+import { S as ge, R as _e, T as be, f as G, M as Q, A as ve, C as ye, F as we, a as xe, b as Ce, I as ke, D as De, c as Se, d as Pe, B as Ie } from "./BookInput-6ff70939.js";
 import { a as Me, B as Te } from "./mui-4f485058.js";
 import { f as Le } from "./faPen-6d05924c.js";
-import { u as Ne, R as Ee } from "./Role-37f7c51d.js";
+import { u as Ne, R as Ee } from "./Role-c4157954.js";
 import { f as U } from "./faPlus-da331287.js";
-import { u as O } from "./useWindowController-4afe859b.js";
+import { u as O } from "./useWindowController-fcb1d26b.js";
 import "./table-f5369550.js";
 var J = {};
 (function(e) {
@@ -413,7 +413,7 @@ const ze = ({
   }).optional() : t = o.string({
     required_error: "Выберите организацию",
     coerce: !0
-  });
+  }).nullish();
   const s = o.object({
     partner_id: t,
     name: o.string({
