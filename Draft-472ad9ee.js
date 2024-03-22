@@ -1,14 +1,15 @@
-import { j as e, a as u } from "./library-b004d938.js";
-import { z as o, e as _, u as g, B as f, F as a, T as s, D as c, a as h } from "./Boolean-b5416c43.js";
-import { a as y } from "./DictionaryCell-7558e26f.js";
+import { j as e, a as u } from "./library-a00c55f9.js";
+import { z as o, e as _, u as g, B as f, F as a, T as s, D as c, a as h } from "./Boolean-93748163.js";
+import { a as y } from "./DictionaryCell-6b9b4da0.js";
 import "./icons-ad9f8a73.js";
 import "./react-6f5a8403.js";
-import { u as b } from "./useWindowController-902ed730.js";
-import { u as v, P as x, R as q } from "./RootSection-36611a8d.js";
-import { u as w } from "./useNavigate-5679855d.js";
+import { u as b } from "./useWindowController-bf9b2b78.js";
+import { u as v, P as x, R as q } from "./RootSection-03cdc3c1.js";
+import { u as w } from "./useNavigate-bb4cc01d.js";
+import { R as D } from "./Role-3436dcd6.js";
 import "./mui-4f485058.js";
 import "./table-f5369550.js";
-const D = o.object({
+const F = o.object({
   steps_info: o.any(),
   partner_id: o.string({
     required_error: "Выберите организацию"
@@ -41,7 +42,7 @@ const D = o.object({
   section_id: !0,
   year_created: !0,
   city_created: !0
-}), B = () => {
+}), O = () => {
   const {
     close: i
   } = b(), n = w(), d = v(), l = _("POST", "/api/rest/program-docs", {
@@ -50,7 +51,7 @@ const D = o.object({
     }
   }), t = g({
     mutation: l,
-    schema: D,
+    schema: F,
     defaultValues: {
       steps_info: {
         general: "done"
@@ -71,14 +72,14 @@ const D = o.object({
     }) => /* @__PURE__ */ e(s, { css: {
       width: "100%"
     }, ...r, placeholder: "Введите наименование", label: "Наименование" }) }),
-    /* @__PURE__ */ e(a, { control: t.control, name: "partner_id", render: ({
+    /* @__PURE__ */ e(D, { is: "admin", children: /* @__PURE__ */ e(a, { control: t.control, name: "partner_id", render: ({
       field: r
-    }) => /* @__PURE__ */ e(x, { ...r, placeholder: "Выберите организацию", label: "Организация" }) }),
+    }) => /* @__PURE__ */ e(x, { ...r, placeholder: "Выберите организацию", label: "Организация" }) }) }),
     /* @__PURE__ */ e(a, { control: t.control, name: "program_type_id", render: ({
       field: r
-    }) => /* @__PURE__ */ e(c, { label: "Тип программы", ...r, dictionary: "navProgramType", filterOptions: (p) => p.filter(({
-      id: m
-    }) => m === 1), placeholder: "Выберите тип программы" }) }),
+    }) => /* @__PURE__ */ e(c, { label: "Тип программы", ...r, dictionary: "navProgramType", filterOptions: (m) => m.filter(({
+      id: p
+    }) => p === 1), placeholder: "Выберите тип программы" }) }),
     /* @__PURE__ */ e(a, { control: t.control, name: "section_id", render: ({
       field: r
     }) => /* @__PURE__ */ e(q, { label: "Направленность", placeholder: "Выберите направленность", ...r }) }),
@@ -96,5 +97,5 @@ const D = o.object({
   ] }) });
 };
 export {
-  B as default
+  O as default
 };

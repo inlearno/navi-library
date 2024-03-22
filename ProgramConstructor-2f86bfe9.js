@@ -1,15 +1,16 @@
-import { j as r, N as ae, f as B, a as p, S as ie } from "./library-b004d938.js";
+import { j as r, l as ae, N as ie, f as B, a as p, S as le } from "./library-a00c55f9.js";
 import { r as m, R as q } from "./react-6f5a8403.js";
-import { u as z, f as le, B as T, z as o, T as I, F as i, D as j, Y as ce, a as f, b as F, c as D, N as v, L as se, d as W, e as N } from "./Boolean-b5416c43.js";
+import { u as R, f as ce, B as T, z as o, T as I, F as i, D as j, Y as se, a as f, b as F, c as D, N as v, L as de, d as W, e as N } from "./Boolean-93748163.js";
 import { F as k } from "./icons-ad9f8a73.js";
-import { l as de, a as R, b as me } from "./DictionaryCell-7558e26f.js";
-import { P as ue, R as pe, u as A } from "./RootSection-36611a8d.js";
-import { f as he, u as H, T as Y, c as V, S as fe } from "./index-d5d4799a.js";
-import { S as ge, R as _e, T as be, f as G, M as Q, A as ve, C as ye, F as we, a as xe, b as Ce, I as ke, D as De, c as Se, d as Pe, B as Ie } from "./BookInput-c7a9360e.js";
+import { a as z, b as me } from "./DictionaryCell-6b9b4da0.js";
+import { P as ue, R as pe, u as A } from "./RootSection-03cdc3c1.js";
+import { f as he, u as H, T as Y, c as V, S as fe } from "./index-51db83f5.js";
+import { S as ge, R as _e, T as be, f as G, M as Q, A as ve, C as ye, F as we, a as xe, b as Ce, I as ke, D as De, c as Se, d as Pe, B as Ie } from "./BookInput-3899ee97.js";
 import { a as Me, B as Te } from "./mui-4f485058.js";
 import { f as Le } from "./faPen-6d05924c.js";
+import { R as Ne } from "./Role-3436dcd6.js";
 import { f as J } from "./faPlus-da331287.js";
-import { u as $ } from "./useWindowController-902ed730.js";
+import { u as $ } from "./useWindowController-bf9b2b78.js";
 import "./table-f5369550.js";
 var U = {};
 (function(e) {
@@ -28,7 +29,7 @@ var U = {};
   }, e.faCheck = e.definition, e.prefix = t, e.iconName = c, e.width = s, e.height = l, e.ligatures = a, e.unicode = n, e.svgPathData = d, e.aliases = a;
 })(U);
 var u = /* @__PURE__ */ ((e) => (e.DONE = "done", e.ACTIVE = "active", e.WAIT = "wait", e.DISABLED = "disabled", e.LOADING = "loading", e.ERROR = "error", e.EDIT = "edit", e))(u || {});
-const Ne = ({
+const Ee = ({
   stepsDefinition: e,
   values: t,
   stateKey: c,
@@ -89,7 +90,7 @@ const Ne = ({
       disabled: g === 0
     })
   };
-}, X = q.createContext(null), Ee = ({
+}, X = q.createContext(null), je = ({
   children: e,
   value: t
 }) => {
@@ -110,7 +111,7 @@ const Ne = ({
     setStepState: n
   }, children: e });
 };
-function je() {
+function Fe() {
   const e = m.useContext(X);
   if (!e)
     throw new Error("useStepsContext must be used within a StepsContextProvider");
@@ -128,10 +129,10 @@ const b = ({
     values: n,
     mutation: d,
     setActiveStepStatus: h
-  } = je(), _ = l(), {
+  } = Fe(), _ = l(), {
     errors: w,
     fields: y
-  } = _, g = z({
+  } = _, g = R({
     mutation: d,
     errors: w,
     defaultValues: y ?? n,
@@ -149,7 +150,7 @@ const b = ({
       errors: g.formState.errors
     });
   }, [g.formState.errors]), m.useEffect(() => {
-    de.isEqual(g.getValues(), n) || (h(u.EDIT), a({
+    ae.isEqual(g.getValues(), n) || (h(u.EDIT), a({
       fields: g.getValues()
     }));
   }, [c, JSON.stringify(g.formState.dirtyFields)]), m.useImperativeHandle(t, () => ({
@@ -240,9 +241,9 @@ var re = {};
     ]
   }, e.faClock = e.definition, e.prefix = t, e.iconName = c, e.width = s, e.height = l, e.ligatures = a, e.unicode = n, e.svgPathData = d, e.aliases = a;
 })(re);
-const Fe = ({
+const Re = ({
   status: e
-}) => ae(e).with(u.DONE, () => /* @__PURE__ */ r(k, { icon: he.faCheckCircle, css: {
+}) => ie(e).with(u.DONE, () => /* @__PURE__ */ r(k, { icon: he.faCheckCircle, css: {
   "--tw-text-opacity": "1",
   color: "rgb(22 163 74 / var(--tw-text-opacity))"
 }, size: "lg" })).with(u.ACTIVE, () => /* @__PURE__ */ r(k, { mask: L.faCircle, icon: Le.faPen, css: {
@@ -257,7 +258,7 @@ const Fe = ({
 }, spin: !0, size: "lg" })).with(u.DISABLED, () => /* @__PURE__ */ r(k, { mask: L.faCircle, transform: "shrink-8", icon: ee.faLock, size: "lg", css: {
   "--tw-text-opacity": "1",
   color: "rgb(209 213 219 / var(--tw-text-opacity))"
-} })).with(u.ERROR, () => /* @__PURE__ */ r(k, { icon: le.faTriangleExclamation, size: "lg", css: {
+} })).with(u.ERROR, () => /* @__PURE__ */ r(k, { icon: ce.faTriangleExclamation, size: "lg", css: {
   "--tw-text-opacity": "1",
   color: "rgb(239 68 68 / var(--tw-text-opacity))"
 } })).with(u.EDIT, () => /* @__PURE__ */ r(k, { mask: L.faCircle, transform: "shrink-8", icon: K.faPencil, size: "lg", css: {
@@ -328,9 +329,9 @@ const Fe = ({
       ". ",
       l.title
     ] }) }),
-    /* @__PURE__ */ r(Fe, { status: l.status })
+    /* @__PURE__ */ r(Re, { status: l.status })
   ] }) }, l.id);
-}) }) }), Re = ({
+}) }) }), Ae = ({
   steps: e,
   values: t,
   mutation: c,
@@ -348,7 +349,7 @@ const Fe = ({
     setActiveStep: g,
     activeStepIndex: P,
     activeStep: C
-  } = Ne({
+  } = Ee({
     stepsDefinition: e,
     mutation: c,
     values: t,
@@ -356,14 +357,14 @@ const Fe = ({
   }), {
     Component: E
   } = C;
-  return /* @__PURE__ */ r(Ee, { value: {
+  return /* @__PURE__ */ r(je, { value: {
     activeStep: C,
     mutation: c,
     stepFormRef: h,
     stateKey: s,
     values: t,
     setActiveStepStatus: _
-  }, children: /* @__PURE__ */ r(R, { footer: [/* @__PURE__ */ r(T, { icon: Z.faArrowLeft, ...y(), children: "Назад" }, "previous"), /* @__PURE__ */ r("div", { children: n ? l : /* @__PURE__ */ p(T, { ...w(), variant: "contained", color: "success", children: [
+  }, children: /* @__PURE__ */ r(z, { footer: [/* @__PURE__ */ r(T, { icon: Z.faArrowLeft, ...y(), children: "Назад" }, "previous"), /* @__PURE__ */ r("div", { children: n ? l : /* @__PURE__ */ p(T, { ...w(), variant: "contained", color: "success", children: [
     a && /* @__PURE__ */ r(k, { icon: B.faCircleNotch, spin: !0 }),
     "Сохранить"
   ] }, "next") }, "left")], children: /* @__PURE__ */ p(ge, { initialPrimarySize: "30%", minPrimarySize: "200px", css: {
@@ -403,7 +404,7 @@ const Fe = ({
       }, children: /* @__PURE__ */ r(E, {}) })
     ] })
   ] }) }) });
-}, Ae = o.object({
+}, $e = o.object({
   partner_id: o.string({
     required_error: "Выберите организацию",
     coerce: !0
@@ -434,9 +435,9 @@ const Fe = ({
   city_created: o.string({
     required_error: "Выберите город создания"
   })
-}).required(), $e = () => {
+}).required(), Oe = () => {
   const e = b({
-    schema: Ae
+    schema: $e
   });
   return /* @__PURE__ */ p(f, { css: {
     display: "flex",
@@ -448,9 +449,9 @@ const Fe = ({
     }) => /* @__PURE__ */ r(I, { css: {
       width: "100%"
     }, ...t, placeholder: "Введите наименование", label: "Наименование" }) }),
-    /* @__PURE__ */ r(i, { control: e.control, name: "partner_id", render: ({
+    /* @__PURE__ */ r(Ne, { is: "admin", children: /* @__PURE__ */ r(i, { control: e.control, name: "partner_id", render: ({
       field: t
-    }) => /* @__PURE__ */ r(ue, { ...t, placeholder: "Выберите организацию", label: "Организация" }) }),
+    }) => /* @__PURE__ */ r(ue, { ...t, placeholder: "Выберите организацию", label: "Организация" }) }) }),
     /* @__PURE__ */ r(i, { control: e.control, name: "program_type_id", render: ({
       field: t
     }) => /* @__PURE__ */ r(j, { label: "Тип программы", ...t, dictionary: "navProgramType", filterOptions: (c) => c.filter(({
@@ -466,21 +467,21 @@ const Fe = ({
     }, ...t, dictionary: "EventLevelsDict", placeholder: "Выберите уровень программы" }) }),
     /* @__PURE__ */ r(i, { control: e.control, name: "year_created", render: ({
       field: t
-    }) => /* @__PURE__ */ r(ce, { label: "Год создания", placeholder: "Введите год", helperText: `Год создания программы, к примеру ${(/* @__PURE__ */ new Date()).getFullYear()}`, ...t }) }),
+    }) => /* @__PURE__ */ r(se, { label: "Год создания", placeholder: "Введите год", helperText: `Год создания программы, к примеру ${(/* @__PURE__ */ new Date()).getFullYear()}`, ...t }) }),
     /* @__PURE__ */ r(i, { control: e.control, name: "city_created", render: ({
       field: t
     }) => /* @__PURE__ */ r(I, { label: "Город", placeholder: "Введите город", helperText: "Город, где программа создана", ...t }) })
   ] });
-}, Oe = o.object({
+}, Be = o.object({
   protocol_number: o.string().nullish(),
   protocol_date: o.string().nullish(),
   decree_number: o.string().nullish(),
   decree_date: o.string().nullish(),
   authors: o.string().nullish(),
   comment: o.string().nullish()
-}), Be = () => {
+}), qe = () => {
   const e = b({
-    schema: Oe
+    schema: Be
   });
   return /* @__PURE__ */ p(f, { css: {
     display: "flex",
@@ -518,7 +519,7 @@ const Fe = ({
       width: "100%"
     }, ...t, label: "Комментарий", placeholder: "Введите комментарии" }) })
   ] });
-}, qe = o.object({
+}, We = o.object({
   min_age: o.coerce.number().optional(),
   max_age: o.coerce.number().optional(),
   competence_level_id: o.number().nullish(),
@@ -532,16 +533,16 @@ const Fe = ({
   min_group_size: o.coerce.number().optional(),
   max_group_size: o.coerce.number().optional(),
   is_one_age_group: o.boolean().optional()
-}), We = () => {
+}), He = () => {
   const e = b({
-    schema: qe
+    schema: We
   });
   return /* @__PURE__ */ p(f, { css: {
     display: "flex",
     flexDirection: "column",
     gap: "1rem"
   }, form: e, children: [
-    /* @__PURE__ */ r(se, { label: "Возраст", helperText: "Введите минимальный и максимальный возраст", children: /* @__PURE__ */ p("div", { css: {
+    /* @__PURE__ */ r(de, { label: "Возраст", helperText: "Введите минимальный и максимальный возраст", children: /* @__PURE__ */ p("div", { css: {
       display: "flex",
       width: "20rem",
       maxWidth: "100%",
@@ -632,15 +633,15 @@ const Fe = ({
       field: t
     }) => /* @__PURE__ */ r(W, { ...t, label: "Группа одного возраста?" }) })
   ] });
-}, He = o.object({
+}, Ye = o.object({
   explanatory_note: o.string().nullish(),
   program_relevance: o.string().nullish(),
   pedagogical_expediency: o.string().nullish(),
   distinctive_features: o.string().nullish(),
   actual: o.string().nullish()
-}), Ye = () => {
+}), Ve = () => {
   const e = b({
-    schema: He
+    schema: Ye
   });
   return /* @__PURE__ */ p(f, { css: {
     display: "flex",
@@ -673,11 +674,11 @@ const Fe = ({
       width: "100%"
     }, ...t }) })
   ] });
-}, Ve = o.object({
+}, Ge = o.object({
   program_results: o.array(o.string())
-}), Ge = () => {
+}), Qe = () => {
   const e = b({
-    schema: Ve
+    schema: Ge
   });
   return /* @__PURE__ */ r(f, { css: {
     display: "flex",
@@ -686,7 +687,7 @@ const Fe = ({
   }, form: e, children: /* @__PURE__ */ r(i, { name: "program_results", control: e.control, render: ({
     field: t
   }) => /* @__PURE__ */ r(_e, { ...t, multiple: !0, label: "Планируемые результаты", helperText: "Можно выбрать несколько результатов" }) }) });
-}, Qe = o.object({
+}, Je = o.object({
   mission: o.string({
     required_error: "Заполните цель/миссию"
   }).nullable(),
@@ -696,9 +697,9 @@ const Fe = ({
   program_objectives: o.array(o.string())
 }).required({
   goal: !0
-}), Je = () => {
+}), Ue = () => {
   const e = b({
-    schema: Qe
+    schema: Je
   });
   return /* @__PURE__ */ r("div", { children: /* @__PURE__ */ p(f, { css: {
     display: "flex",
@@ -715,7 +716,7 @@ const Fe = ({
       field: t
     }) => /* @__PURE__ */ r(be, { multiple: !0, label: "Задачи", placeholder: "Выберите задачу", ...t }) })
   ] }) });
-}, Ue = o.object({
+}, Xe = o.object({
   theme: o.string({
     required_error: "Заполните тему"
   }).min(1, "Заполните тему"),
@@ -725,7 +726,7 @@ const Fe = ({
   practice_volume: o.number().optional(),
   sort_index: o.number(),
   doc_id: o.string()
-}), Xe = ({
+}), Ze = ({
   doc_id: e,
   onCreate: t,
   onSubmit: c,
@@ -743,15 +744,15 @@ const Fe = ({
     onError: (n) => {
       s == null || s(n);
     }
-  }), a = z({
-    schema: Ue,
+  }), a = R({
+    schema: Xe,
     mutation: l,
     defaultValues: {
       doc_id: e,
       sort_index: 0
     }
   });
-  return /* @__PURE__ */ r(R, { footer: /* @__PURE__ */ r("div", { css: {
+  return /* @__PURE__ */ r(z, { footer: /* @__PURE__ */ r("div", { css: {
     display: "flex",
     width: "100%",
     justifyContent: "flex-end"
@@ -777,7 +778,7 @@ const Fe = ({
       field: n
     }) => /* @__PURE__ */ r(v, { label: "Объем практики", unit: "часов", placeholder: "Введите объем практики", ...n }) })
   ] }) });
-}, M = V(), Ze = () => {
+}, M = V(), Ke = () => {
   const {
     params: {
       id: e
@@ -825,74 +826,74 @@ const Fe = ({
         /* @__PURE__ */ r(k, { icon: J.faPlus }),
         "Добавить тему"
       ] }),
-      /* @__PURE__ */ r(Q, { title: "Новая тема", onClose: () => c(!1), open: t, children: /* @__PURE__ */ r(Xe, { doc_id: e, onCreate: h, onSubmit: () => l(!0), onError: () => l(!1) }) })
+      /* @__PURE__ */ r(Q, { title: "Новая тема", onClose: () => c(!1), open: t, children: /* @__PURE__ */ r(Ze, { doc_id: e, onCreate: h, onSubmit: () => l(!0), onError: () => l(!1) }) })
     ] }),
     /* @__PURE__ */ r(Y, { border: !0, table: d })
   ] }) });
-}, Ke = o.object({
+}, er = o.object({
   program_att_forms: o.array(o.string())
-}), er = () => {
+}), rr = () => {
   const e = b({
-    schema: Ke
+    schema: er
   });
   return /* @__PURE__ */ r("div", { tw: "flex flex-col gap-6", children: /* @__PURE__ */ r(f, { form: e, children: /* @__PURE__ */ r(i, { name: "program_att_forms", control: e.control, render: ({
     field: t
   }) => /* @__PURE__ */ r(ve, { ...t, multiple: !0, label: "Формы аттестации и оценочные материалы" }) }) }) });
-}, rr = o.object({
+}, tr = o.object({
   program_criteria: o.array(o.string())
-}), tr = () => {
+}), or = () => {
   const e = b({
-    schema: rr
+    schema: tr
   });
   return /* @__PURE__ */ r("div", { tw: "flex flex-col gap-6", children: /* @__PURE__ */ r(f, { form: e, children: /* @__PURE__ */ r(i, { name: "program_criteria", control: e.control, render: ({
     field: t
   }) => /* @__PURE__ */ r(ye, { ...t, multiple: !0, label: "Критерии оценки учебных результатов" }) }) }) });
-}, or = o.object({
+}, nr = o.object({
   program_fixations: o.array(o.string())
-}), nr = () => {
+}), ar = () => {
   const e = b({
-    schema: or
+    schema: nr
   });
   return /* @__PURE__ */ r("div", { tw: "flex flex-col gap-6", children: /* @__PURE__ */ r(f, { form: e, children: /* @__PURE__ */ r(i, { name: "program_fixations", control: e.control, render: ({
     field: t
   }) => /* @__PURE__ */ r(we, { ...t, multiple: !0, label: "Способы фиксации учебных результатов" }) }) }) });
-}, ar = o.object({
+}, ir = o.object({
   program_materials: o.array(o.string())
-}), ir = () => {
+}), lr = () => {
   const e = b({
-    schema: ar
+    schema: ir
   });
   return /* @__PURE__ */ r("div", { tw: "flex flex-col gap-6", children: /* @__PURE__ */ r(f, { form: e, children: /* @__PURE__ */ r(i, { name: "program_materials", control: e.control, render: ({
     field: t
   }) => /* @__PURE__ */ r(xe, { ...t, multiple: !0, label: "Методические материалы" }) }) }) });
-}, lr = o.object({
+}, cr = o.object({
   program_managements: o.array(o.string())
-}), cr = () => {
+}), sr = () => {
   const e = b({
-    schema: lr
+    schema: cr
   });
   return /* @__PURE__ */ r("div", { tw: "flex flex-col gap-6", children: /* @__PURE__ */ r(f, { form: e, children: /* @__PURE__ */ r(i, { name: "program_managements", control: e.control, render: ({
     field: t
   }) => /* @__PURE__ */ r(Ce, { ...t, multiple: !0, label: "Особенности организации образовательной деятельности" }) }) }) });
-}, sr = o.object({
+}, dr = o.object({
   program_indoctrinations: o.array(o.string())
-}), dr = () => {
+}), mr = () => {
   const e = b({
-    schema: sr
+    schema: dr
   });
   return /* @__PURE__ */ r("div", { tw: "flex flex-col gap-6", children: /* @__PURE__ */ r(f, { form: e, children: /* @__PURE__ */ r(i, { name: "program_indoctrinations", control: e.control, render: ({
     field: t
   }) => /* @__PURE__ */ r(ke, { ...t, multiple: !0, label: "Воспитательная деятельность" }) }) }) });
-}, mr = o.object({
+}, ur = o.object({
   program_developments: o.array(o.string())
-}), ur = () => {
+}), pr = () => {
   const e = b({
-    schema: mr
+    schema: ur
   });
   return /* @__PURE__ */ r("div", { tw: "flex flex-col gap-6", children: /* @__PURE__ */ r(f, { form: e, children: /* @__PURE__ */ r(i, { name: "program_developments", control: e.control, render: ({
     field: t
   }) => /* @__PURE__ */ r(De, { ...t, multiple: !0, label: "Развивающая деятельность" }) }) }) });
-}, pr = () => {
+}, hr = () => {
   const e = b({
     schema: o.object({
       staff_description: o.string()
@@ -903,34 +904,34 @@ const Fe = ({
   return /* @__PURE__ */ r(f, { tw: "flex flex-col gap-4", form: e, children: /* @__PURE__ */ r(i, { control: e.control, name: "staff_description", render: ({
     field: t
   }) => /* @__PURE__ */ r(D, { tw: "w-full", ...t, placeholder: "Введите кадровое обеспечение", label: "Кадровое обеспечение" }) }) });
-}, hr = o.object({
+}, fr = o.object({
   program_inventories: o.array(o.string())
-}), fr = () => {
+}), gr = () => {
   const e = b({
-    schema: hr
+    schema: fr
   });
   return /* @__PURE__ */ r("div", { tw: "flex flex-col gap-6", children: /* @__PURE__ */ r(f, { form: e, children: /* @__PURE__ */ r(i, { name: "program_inventories", control: e.control, render: ({
     field: t
   }) => /* @__PURE__ */ r(Se, { ...t, multiple: !0, label: "Материально-техническое обеспечение" }) }) }) });
-}, gr = o.object({
+}, _r = o.object({
   program_information: o.array(o.string())
-}), _r = () => {
+}), br = () => {
   const e = b({
-    schema: gr
+    schema: _r
   });
   return /* @__PURE__ */ r("div", { tw: "flex flex-col gap-6", children: /* @__PURE__ */ r(f, { form: e, children: /* @__PURE__ */ r(i, { name: "program_information", control: e.control, render: ({
     field: t
   }) => /* @__PURE__ */ r(Pe, { ...t, multiple: !0, label: "Информационное обеспечение" }) }) }) });
-}, br = o.object({
+}, vr = o.object({
   program_books: o.array(o.string())
-}), vr = () => {
+}), yr = () => {
   const e = b({
-    schema: br
+    schema: vr
   });
   return /* @__PURE__ */ r("div", { tw: "flex flex-col gap-6", children: /* @__PURE__ */ r(f, { form: e, children: /* @__PURE__ */ r(i, { name: "program_books", control: e.control, render: ({
     field: t
   }) => /* @__PURE__ */ r(Ie, { ...t, multiple: !0, label: "Список литературы" }) }) }) });
-}, yr = o.object({
+}, wr = o.object({
   number_year: o.coerce.number({
     required_error: "Заполните год"
   }),
@@ -956,7 +957,7 @@ const Fe = ({
   date_end: !0,
   edu_week_count: !0,
   is_vacations: !0
-}), wr = ({
+}), xr = ({
   doc_id: e,
   onCreate: t,
   onSubmit: c,
@@ -974,14 +975,14 @@ const Fe = ({
     onError: (n) => {
       s == null || s(n);
     }
-  }), a = z({
-    schema: yr,
+  }), a = R({
+    schema: wr,
     mutation: l,
     defaultValues: {
       doc_id: e
     }
   });
-  return /* @__PURE__ */ r(R, { footer: /* @__PURE__ */ r("div", { css: {
+  return /* @__PURE__ */ r(z, { footer: /* @__PURE__ */ r("div", { css: {
     display: "flex",
     width: "100%",
     justifyContent: "flex-end"
@@ -1013,7 +1014,7 @@ const Fe = ({
       field: n
     }) => /* @__PURE__ */ r(v, { label: "Продолжительность занятия", unit: "ак. часов", placeholder: "Введите продолжительность занятия", ...n }) })
   ] }) });
-}, S = V(), xr = () => {
+}, S = V(), Cr = () => {
   const {
     params: {
       id: e
@@ -1078,87 +1079,87 @@ const Fe = ({
         /* @__PURE__ */ r(k, { icon: J.faPlus }),
         "Добавить"
       ] }),
-      /* @__PURE__ */ r(Q, { title: "Новый учебный график", onClose: () => c(!1), open: t, children: /* @__PURE__ */ r(wr, { doc_id: e, onCreate: h, onSubmit: () => l(!0), onError: () => l(!1) }) })
+      /* @__PURE__ */ r(Q, { title: "Новый учебный график", onClose: () => c(!1), open: t, children: /* @__PURE__ */ r(xr, { doc_id: e, onCreate: h, onSubmit: () => l(!0), onError: () => l(!1) }) })
     ] }),
     /* @__PURE__ */ r(Y, { border: !0, table: d })
   ] }) });
-}, Cr = [{
+}, kr = [{
   id: "general",
   title: "Основное",
-  Component: $e
+  Component: Oe
 }, {
   id: "params",
   title: "Параметры",
-  Component: We
+  Component: He
 }, {
   id: "explanation",
   title: "Пояснительная записка",
-  Component: Ye
+  Component: Ve
 }, {
   id: "results",
   title: "Планируемые результаты (знать, уметь, способности, качества)",
-  Component: Ge
+  Component: Qe
 }, {
   id: "goals",
   title: "Цели и задачи",
-  Component: Je
+  Component: Ue
 }, {
   id: "edu-plan",
   title: "Учебный план",
-  Component: Ze
+  Component: Ke
 }, {
   id: "attestation-forms",
   title: "Формы аттестации и оценочные материалы",
-  Component: er
+  Component: rr
 }, {
   id: "criteries",
   title: "Критерии оценки учебных результатов",
-  Component: tr
+  Component: or
 }, {
   id: "fixations",
   title: "Способ фиксации учебных результатов",
-  Component: nr
+  Component: ar
 }, {
   id: "materials",
   title: "Методические материалы",
-  Component: ir
+  Component: lr
 }, {
   title: "Особенности организации образовательной деятельности",
   id: "managements",
-  Component: cr
+  Component: sr
 }, {
   title: "Воспитательная деятельность",
   id: "indoctrinations",
-  Component: dr
+  Component: mr
 }, {
   title: "Развивающая деятельность",
   id: "developments",
-  Component: ur
+  Component: pr
 }, {
   title: "Кадровое обеспечение",
   id: "staff",
-  Component: pr
+  Component: hr
 }, {
   title: "Материально-техническое обеспечение",
   id: "inventories",
-  Component: fr
+  Component: gr
 }, {
   title: "Информационное обеспечение",
   id: "information",
-  Component: _r
+  Component: br
 }, {
   title: "Список литературы",
   id: "books",
-  Component: vr
+  Component: yr
 }, {
   title: "Календарный учебный график",
   id: "schedules",
-  Component: xr
+  Component: Cr
 }, {
   id: "description",
   title: "Утверждение",
-  Component: Be
-}], kr = o.object({
+  Component: qe
+}], Dr = o.object({
   min_age: o.coerce.number().nullable(),
   max_age: o.coerce.number().nullable(),
   program_volume: o.coerce.number().nullable(),
@@ -1170,16 +1171,16 @@ const Fe = ({
   min_group_size: o.coerce.number().nullable(),
   max_group_size: o.coerce.number().nullable(),
   competence_level_id: o.coerce.number().nullable()
-}).passthrough(), Dr = o.object({
-  data: o.array(kr).transform((e) => e[0])
-}).transform((e) => e.data), $r = () => {
+}).passthrough(), Sr = o.object({
+  data: o.array(Dr).transform((e) => e[0])
+}).transform((e) => e.data), Br = () => {
   const {
     params: {
       id: e
     },
     setTitle: t
   } = $(), c = A(), s = me(`/api/rest/program-docs/${e}`, {
-    schema: Dr
+    schema: Sr
   }), l = N("PUT", `/api/rest/program-docs/${e}`, {
     syncQueryCache: !0,
     onSuccess: () => {
@@ -1195,12 +1196,12 @@ const Fe = ({
     });
   }, [e]);
   if (s.isLoading)
-    return /* @__PURE__ */ r(ie, { spinning: !0 });
+    return /* @__PURE__ */ r(le, { spinning: !0 });
   if (s.isError)
     return /* @__PURE__ */ r(fe, { type: "error", title: s.error.message });
   const n = s.data;
-  return /* @__PURE__ */ r(Re, { steps: Cr, stateKey: "steps_info", mutation: l, doneButton: (n.state_id == 1 || n.state_id == 2) && /* @__PURE__ */ r(T, { variant: "contained", icon: U.faCheck, color: "success", isLoading: l.isPending, disabled: l.isPending, onClick: a, children: "Завершить" }), values: n });
+  return /* @__PURE__ */ r(Ae, { steps: kr, stateKey: "steps_info", mutation: l, doneButton: (n.state_id == 1 || n.state_id == 2) && /* @__PURE__ */ r(T, { variant: "contained", icon: U.faCheck, color: "success", isLoading: l.isPending, disabled: l.isPending, onClick: a, children: "Завершить" }), values: n });
 };
 export {
-  $r as default
+  Br as default
 };
