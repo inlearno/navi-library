@@ -1,16 +1,16 @@
-import { j as r, l as ae, N as ie, f as q, a as p, S as le } from "./library-d3ab1de2.js";
-import { r as m, R as B } from "./react-6f5a8403.js";
-import { u as R, f as ce, B as T, z as o, T as I, F as c, D as j, Y as se, a as f, b as F, c as D, N as v, L as de, d as W, e as N } from "./Boolean-ba03f157.js";
+import { j as r, l as ae, N as ie, f as B, a as p, S as le } from "./library-f80fb3e3.js";
+import { r as m, R as q } from "./react-6f5a8403.js";
+import { u as R, f as ce, B as T, z as o, T as I, F as c, D as j, Y as se, a as f, b as F, c as D, N as v, L as de, d as W, e as N } from "./Boolean-5ee39c3f.js";
 import { F as k } from "./icons-ad9f8a73.js";
-import { a as z, b as me } from "./DictionaryCell-f9be5d5e.js";
-import { P as ue, R as pe, u as A } from "./RootSection-9418a2b1.js";
-import { f as he, u as H, T as Y, c as V, S as fe } from "./index-f96d2d88.js";
-import { S as ge, R as _e, T as be, f as G, M as Q, A as ve, C as ye, F as we, a as xe, b as Ce, I as ke, D as De, c as Se, d as Pe, B as Ie } from "./BookInput-6ff70939.js";
+import { a as z, b as me } from "./DictionaryCell-a80ddbbc.js";
+import { P as ue, R as pe, u as A } from "./RootSection-03177f85.js";
+import { f as he, u as H, T as Y, c as V, S as fe } from "./index-018ffa62.js";
+import { S as ge, R as _e, T as be, f as G, M as Q, A as ve, C as ye, F as we, a as xe, b as Ce, I as ke, D as De, c as Se, d as Pe, B as Ie } from "./BookInput-e6b843f5.js";
 import { a as Me, B as Te } from "./mui-4f485058.js";
 import { f as Le } from "./faPen-6d05924c.js";
-import { u as Ne, R as Ee } from "./Role-c4157954.js";
+import { u as Ne, R as Ee } from "./Role-9e814d38.js";
 import { f as U } from "./faPlus-da331287.js";
-import { u as O } from "./useWindowController-fcb1d26b.js";
+import { u as O } from "./useWindowController-a822a97f.js";
 import "./table-f5369550.js";
 var J = {};
 (function(e) {
@@ -90,11 +90,11 @@ const je = ({
       disabled: g === 0
     })
   };
-}, X = B.createContext(null), Fe = ({
+}, X = q.createContext(null), Fe = ({
   children: e,
   value: t
 }) => {
-  const [s, l] = B.useState({}), {
+  const [s, l] = q.useState({}), {
     activeStep: {
       id: a
     }
@@ -252,7 +252,7 @@ const ze = ({
 }, transform: "shrink-8", size: "lg" })).with(u.WAIT, () => /* @__PURE__ */ r(k, { mask: L.faCircle, icon: re.faClock, css: {
   "--tw-text-opacity": "1",
   color: "rgb(234 179 8 / var(--tw-text-opacity))"
-}, transform: "shrink-8", size: "lg" })).with(u.LOADING, () => /* @__PURE__ */ r(k, { icon: q.faCircleNotch, css: {
+}, transform: "shrink-8", size: "lg" })).with(u.LOADING, () => /* @__PURE__ */ r(k, { icon: B.faCircleNotch, css: {
   "--tw-text-opacity": "1",
   color: "rgb(156 163 175 / var(--tw-text-opacity))"
 }, spin: !0, size: "lg" })).with(u.DISABLED, () => /* @__PURE__ */ r(k, { mask: L.faCircle, transform: "shrink-8", icon: ee.faLock, size: "lg", css: {
@@ -365,7 +365,7 @@ const ze = ({
     values: t,
     setActiveStepStatus: _
   }, children: /* @__PURE__ */ r(z, { footer: [/* @__PURE__ */ r(T, { icon: Z.faArrowLeft, ...y(), children: "Назад" }, "previous"), /* @__PURE__ */ r("div", { children: n ? a : /* @__PURE__ */ p(T, { ...w(), variant: "contained", color: "success", children: [
-    i && /* @__PURE__ */ r(k, { icon: q.faCircleNotch, spin: !0 }),
+    i && /* @__PURE__ */ r(k, { icon: B.faCircleNotch, spin: !0 }),
     "Сохранить"
   ] }, "next") }, "left")], children: /* @__PURE__ */ p(ge, { initialPrimarySize: "30%", minPrimarySize: "200px", css: {
     display: "flex"
@@ -410,10 +410,7 @@ const ze = ({
   e.getGroup() !== "admin" ? t = o.string({
     required_error: "Выберите организацию",
     coerce: !0
-  }).optional() : t = o.string({
-    required_error: "Выберите организацию",
-    coerce: !0
-  }).nullish();
+  }).optional() : t = o.never();
   const s = o.object({
     partner_id: t,
     name: o.string({
@@ -478,16 +475,16 @@ const ze = ({
       field: a
     }) => /* @__PURE__ */ r(I, { label: "Город", placeholder: "Введите город", helperText: "Город, где программа создана", ...a }) })
   ] });
-}, qe = o.object({
+}, Be = o.object({
   protocol_number: o.string().nullish(),
   protocol_date: o.string().nullish(),
   decree_number: o.string().nullish(),
   decree_date: o.string().nullish(),
   authors: o.string().nullish(),
   comment: o.string().nullish()
-}), Be = () => {
+}), qe = () => {
   const e = b({
-    schema: qe
+    schema: Be
   });
   return /* @__PURE__ */ p(f, { css: {
     display: "flex",
@@ -1164,7 +1161,7 @@ const ze = ({
 }, {
   id: "description",
   title: "Утверждение",
-  Component: Be
+  Component: qe
 }], Dr = o.object({
   min_age: o.coerce.number().nullable(),
   max_age: o.coerce.number().nullable(),
@@ -1179,7 +1176,7 @@ const ze = ({
   competence_level_id: o.coerce.number().nullable()
 }).passthrough(), Sr = o.object({
   data: o.array(Dr).transform((e) => e[0])
-}).transform((e) => e.data), qr = () => {
+}).transform((e) => e.data), Br = () => {
   const {
     params: {
       id: e
@@ -1209,5 +1206,5 @@ const ze = ({
   return /* @__PURE__ */ r(Oe, { steps: kr, stateKey: "steps_info", mutation: a, doneButton: (n.state_id == 1 || n.state_id == 2) && /* @__PURE__ */ r(T, { variant: "contained", icon: J.faCheck, color: "success", isLoading: a.isPending, disabled: a.isPending, onClick: i, children: "Завершить" }), values: n });
 };
 export {
-  qr as default
+  Br as default
 };

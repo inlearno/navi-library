@@ -1,12 +1,12 @@
-import { j as e, a as f } from "./library-d3ab1de2.js";
-import { z as t, e as h, u as y, B as b, F as a, T as s, D as c, a as q } from "./Boolean-ba03f157.js";
-import { a as v } from "./DictionaryCell-f9be5d5e.js";
+import { j as e, a as f } from "./library-f80fb3e3.js";
+import { z as t, e as h, u as y, B as b, F as a, T as s, D as c, a as v } from "./Boolean-5ee39c3f.js";
+import { a as x } from "./DictionaryCell-a80ddbbc.js";
 import "./icons-ad9f8a73.js";
 import "./react-6f5a8403.js";
-import { u as x } from "./useWindowController-fcb1d26b.js";
-import { u as w, P as D, R as F } from "./RootSection-9418a2b1.js";
-import { u as P } from "./useNavigate-36129d4e.js";
-import { u as T, R as j } from "./Role-c4157954.js";
+import { u as q } from "./useWindowController-a822a97f.js";
+import { u as w, P as D, R as F } from "./RootSection-03177f85.js";
+import { u as P } from "./useNavigate-0d48d646.js";
+import { u as T, R as j } from "./Role-9e814d38.js";
 import "./mui-4f485058.js";
 import "./table-f5369550.js";
 const $ = () => {
@@ -15,11 +15,8 @@ const $ = () => {
   d.getGroup() !== "admin" ? i = t.string({
     required_error: "Выберите организацию",
     coerce: !0
-  }).optional() : i = t.string({
-    required_error: "Выберите организацию",
-    coerce: !0
-  }).nullish();
-  const u = t.object({
+  }).optional() : i = t.never();
+  const p = t.object({
     steps_info: t.any(),
     partner_id: i,
     name: t.string({
@@ -51,25 +48,25 @@ const $ = () => {
     year_created: !0,
     city_created: !0
   }), {
-    close: p
-  } = x(), m = P(), _ = w(), l = h("POST", "/api/rest/program-docs", {
+    close: m
+  } = q(), u = P(), _ = w(), l = h("POST", "/api/rest/program-docs", {
     onSuccess: (r) => {
-      m(`/program-docs/constructor/${r.data.id}`), _("/api/rest/program-docs"), p();
+      u(`/program-docs/constructor/${r.data.id}`), _("/api/rest/program-docs"), m();
     }
   }), o = y({
     mutation: l,
-    schema: u,
+    schema: p,
     defaultValues: {
       steps_info: {
         general: "done"
       }
     }
   });
-  return /* @__PURE__ */ e(v, { footer: /* @__PURE__ */ e("div", { css: {
+  return /* @__PURE__ */ e(x, { footer: /* @__PURE__ */ e("div", { css: {
     display: "flex",
     width: "100%",
     justifyContent: "flex-end"
-  }, children: /* @__PURE__ */ e(b, { variant: "contained", color: "success", disabled: l.isPending, onClick: () => o.submit(), children: "Создать черновик" }) }), children: /* @__PURE__ */ f(q, { css: {
+  }, children: /* @__PURE__ */ e(b, { variant: "contained", color: "success", disabled: l.isPending, onClick: () => o.submit(), children: "Создать черновик" }) }), children: /* @__PURE__ */ f(v, { css: {
     display: "grid",
     gap: "1rem",
     padding: "1rem"
