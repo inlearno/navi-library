@@ -1,4 +1,4 @@
-import { d as u } from "./library-a00c55f9.js";
+import { d as u } from "./library-72067697.js";
 const c = () => {
   const {
     params: t,

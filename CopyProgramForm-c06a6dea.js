@@ -1,12 +1,12 @@
-import { j as r, a as p } from "./library-a00c55f9.js";
-import { e as u, u as f, B as g, F as s, T as i, a as h, z as n } from "./Boolean-93748163.js";
-import { a as y } from "./DictionaryCell-6b9b4da0.js";
+import { j as r, a as p } from "./library-72067697.js";
+import { e as u, u as f, B as g, F as s, T as i, a as h, z as n } from "./Boolean-300dcf46.js";
+import { a as y } from "./DictionaryCell-916b8d6b.js";
 import "./icons-ad9f8a73.js";
 import "./react-6f5a8403.js";
-import { u as l } from "./useWindowController-bf9b2b78.js";
-import { u as x } from "./useWithTitle-5dc305a1.js";
-import { u as _, P as b } from "./RootSection-03cdc3c1.js";
-import { u as F } from "./useNavigate-bb4cc01d.js";
+import { u as l } from "./useWindowController-4afe859b.js";
+import { u as x } from "./useWithTitle-0bf82033.js";
+import { u as _, P as b } from "./RootSection-505fe81d.js";
+import { u as F } from "./useNavigate-be96eefd.js";
 import "./mui-4f485058.js";
 import "./table-f5369550.js";
 const w = () => {
