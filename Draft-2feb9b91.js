@@ -1,22 +1,22 @@
-import { j as e, a as f } from "./library-f80fb3e3.js";
-import { z as t, e as h, u as y, B as b, F as a, T as s, D as c, a as v } from "./Boolean-5ee39c3f.js";
-import { a as x } from "./DictionaryCell-a80ddbbc.js";
+import { j as e, a as f } from "./library-6311d705.js";
+import { z as t, e as h, u as y, B as b, F as a, T as s, D as c, a as v } from "./Boolean-f311d470.js";
+import { a as x } from "./DictionaryCell-7bd7e0b1.js";
 import "./icons-ad9f8a73.js";
 import "./react-6f5a8403.js";
-import { u as q } from "./useWindowController-a822a97f.js";
-import { u as w, P as D, R as F } from "./RootSection-03177f85.js";
-import { u as P } from "./useNavigate-0d48d646.js";
-import { u as T, R as j } from "./Role-9e814d38.js";
+import { u as q } from "./useWindowController-e8b86f7a.js";
+import { u as w, P as D, R as F } from "./RootSection-d88a7f65.js";
+import { u as P } from "./useNavigate-170b7131.js";
+import { u as T, R as j } from "./Role-b04c081d.js";
 import "./mui-4f485058.js";
 import "./table-f5369550.js";
 const $ = () => {
   const d = T();
   let i;
-  d.getGroup() !== "admin" ? i = t.string({
+  d.getGroup() == "admin" ? i = t.string({
     required_error: "Выберите организацию",
     coerce: !0
-  }).optional() : i = t.never();
-  const p = t.object({
+  }) : i = t.never();
+  const m = t.object({
     steps_info: t.any(),
     partner_id: i,
     name: t.string({
@@ -48,14 +48,14 @@ const $ = () => {
     year_created: !0,
     city_created: !0
   }), {
-    close: m
+    close: p
   } = q(), u = P(), _ = w(), l = h("POST", "/api/rest/program-docs", {
     onSuccess: (r) => {
-      u(`/program-docs/constructor/${r.data.id}`), _("/api/rest/program-docs"), m();
+      u(`/program-docs/constructor/${r.data.id}`), _("/api/rest/program-docs"), p();
     }
   }), o = y({
     mutation: l,
-    schema: p,
+    schema: m,
     defaultValues: {
       steps_info: {
         general: "done"
