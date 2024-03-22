@@ -1,16 +1,16 @@
-import { j as r, l as ae, N as ie, f as B, a as p, S as le } from "./library-6311d705.js";
+import { j as r, l as ae, N as ie, f as B, a as p, S as le } from "./library-36386184.js";
 import { r as m, R as q } from "./react-6f5a8403.js";
-import { u as R, f as ce, B as T, z as o, T as I, F as c, D as j, Y as se, a as f, b as F, c as D, N as v, L as de, d as W, e as N } from "./Boolean-f311d470.js";
+import { u as R, f as ce, B as T, z as o, T as I, F as c, D as j, Y as se, a as f, b as F, c as D, N as v, L as de, d as W, e as N } from "./Boolean-aa8aeedc.js";
 import { F as k } from "./icons-ad9f8a73.js";
-import { a as z, b as me } from "./DictionaryCell-7bd7e0b1.js";
-import { P as ue, R as pe, u as A } from "./RootSection-d88a7f65.js";
-import { f as he, u as H, T as Y, c as V, S as fe } from "./index-a3fbe8b9.js";
-import { S as ge, R as _e, T as be, f as G, M as Q, A as ve, C as ye, F as we, a as xe, b as Ce, I as ke, D as De, c as Se, d as Pe, B as Ie } from "./BookInput-67721f45.js";
+import { a as z, b as me } from "./DictionaryCell-b5ae11be.js";
+import { P as ue, R as pe, u as A } from "./RootSection-6c55a6db.js";
+import { f as he, u as H, T as Y, c as V, S as fe } from "./index-03776025.js";
+import { S as ge, R as _e, T as be, f as G, M as Q, A as ve, C as ye, F as we, a as xe, b as Ce, I as ke, D as De, c as Se, d as Pe, B as Ie } from "./BookInput-bf8e3c33.js";
 import { a as Me, B as Te } from "./mui-4f485058.js";
 import { f as Le } from "./faPen-6d05924c.js";
-import { u as Ne, R as Ee } from "./Role-b04c081d.js";
+import { u as Ne, R as Ee } from "./Role-d7e83e5f.js";
 import { f as U } from "./faPlus-da331287.js";
-import { u as O } from "./useWindowController-e8b86f7a.js";
+import { u as O } from "./useWindowController-fbf224d7.js";
 import "./table-f5369550.js";
 var J = {};
 (function(e) {
@@ -410,7 +410,7 @@ const ze = ({
   e.getGroup() == "admin" ? t = o.string({
     required_error: "Выберите организацию",
     coerce: !0
-  }) : t = o.never();
+  }) : t = o.never().optional();
   const s = o.object({
     partner_id: t,
     name: o.string({
