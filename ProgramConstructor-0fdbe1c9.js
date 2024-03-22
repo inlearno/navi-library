@@ -1,16 +1,16 @@
-import { j as r, l as ae, N as ie, f as B, a as p, S as le } from "./library-731656e2.js";
-import { r as m, R as W } from "./react-6f5a8403.js";
-import { u as R, f as ce, B as M, T as I, F as l, D as j, Y as se, a as f, z as o, b as F, c as D, N as v, L as de, d as q, e as N } from "./Boolean-7d7b0567.js";
+import { j as r, l as ae, N as ie, f as B, a as p, S as le } from "./library-3f58680c.js";
+import { r as m, R as q } from "./react-6f5a8403.js";
+import { u as R, f as ce, B as M, T as I, F as l, D as j, Y as se, a as f, z as o, b as F, c as D, N as v, L as de, d as W, e as N } from "./Boolean-27f9eee7.js";
 import { F as k } from "./icons-ad9f8a73.js";
-import { a as z, b as me } from "./DictionaryCell-1acc0f0b.js";
-import { P as ue, R as pe, u as A } from "./RootSection-3391867e.js";
-import { f as he, u as H, T as Y, c as V, S as fe } from "./index-59e79013.js";
-import { S as ge, R as be, T as _e, f as G, M as Q, A as ve, C as ye, F as we, a as xe, b as Ce, I as ke, D as De, c as Se, d as Pe, B as Ie } from "./BookInput-468f2372.js";
+import { a as z, b as me } from "./DictionaryCell-8fb4fd99.js";
+import { P as ue, R as pe, u as A } from "./RootSection-e64d750e.js";
+import { f as he, u as H, T as Y, c as V, S as fe } from "./index-0ac43405.js";
+import { S as ge, R as be, T as _e, f as G, M as Q, A as ve, C as ye, F as we, a as xe, b as Ce, I as ke, D as De, c as Se, d as Pe, B as Ie } from "./BookInput-eb53adcc.js";
 import { a as Le, B as Me } from "./mui-4f485058.js";
 import { f as Te } from "./faPen-6d05924c.js";
-import { R as Ne } from "./Role-3a8d37da.js";
+import { R as Ne } from "./Role-8f7c07ea.js";
 import { f as J } from "./faPlus-da331287.js";
-import { u as O } from "./useWindowController-dcaea5f4.js";
+import { u as O } from "./useWindowController-f611f75a.js";
 import "./table-f5369550.js";
 var U = {};
 (function(e) {
@@ -90,11 +90,11 @@ const Ee = ({
       disabled: g === 0
     })
   };
-}, X = W.createContext(null), je = ({
+}, X = q.createContext(null), je = ({
   children: e,
   value: t
 }) => {
-  const [i, s] = W.useState({}), {
+  const [i, s] = q.useState({}), {
     activeStep: {
       id: c
     }
@@ -412,19 +412,19 @@ const Re = ({
     gap: "1rem"
   }, form: e, children: [
     /* @__PURE__ */ r(l, { control: e.control, name: "name", rules: {
-      required: !0
+      required: "Введите наименование"
     }, render: ({
       field: t
     }) => /* @__PURE__ */ r(I, { css: {
       width: "100%"
     }, ...t, placeholder: "Введите наименование", label: "Наименование" }) }),
     /* @__PURE__ */ r(Ne, { is: "admin", children: /* @__PURE__ */ r(l, { control: e.control, name: "partner_id", rules: {
-      required: !0
+      required: "Выберите организацию"
     }, render: ({
       field: t
     }) => /* @__PURE__ */ r(ue, { ...t, placeholder: "Выберите организацию", label: "Организация" }) }) }),
     /* @__PURE__ */ r(l, { control: e.control, name: "program_type_id", rules: {
-      required: !0
+      required: "Выберите тип программы"
     }, render: ({
       field: t
     }) => /* @__PURE__ */ r(j, { label: "Тип программы", ...t, dictionary: "navProgramType", filterOptions: (i) => i.filter(({
@@ -434,16 +434,22 @@ const Re = ({
       field: t
     }) => /* @__PURE__ */ r(pe, { label: "Направленность", placeholder: "Выберите направленность", ...t }) }),
     /* @__PURE__ */ r(l, { control: e.control, name: "program_level_id", rules: {
-      required: !0
+      required: "Выберите уровень программы"
     }, render: ({
       field: t
     }) => /* @__PURE__ */ r(j, { label: "Уровень", css: {
       width: "100%"
     }, ...t, dictionary: "EventLevelsDict", placeholder: "Выберите уровень программы" }) }),
     /* @__PURE__ */ r(l, { control: e.control, name: "year_created", rules: {
-      required: !0,
-      maxLength: 4,
-      minLength: 4,
+      required: "Заполните год создания",
+      maxLength: {
+        value: 4,
+        message: "Максимум 4 цифры"
+      },
+      minLength: {
+        value: 4,
+        message: "Минимум 4 цифры"
+      },
       validate: (t) => {
         const i = Number(t);
         return isNaN(i) ? !1 : i >= 1900 && i <= (/* @__PURE__ */ new Date()).getFullYear();
@@ -451,7 +457,9 @@ const Re = ({
     }, render: ({
       field: t
     }) => /* @__PURE__ */ r(se, { label: "Год создания", placeholder: "Введите год", helperText: `Год создания программы, к примеру ${(/* @__PURE__ */ new Date()).getFullYear()}`, ...t }) }),
-    /* @__PURE__ */ r(l, { control: e.control, name: "city_created", render: ({
+    /* @__PURE__ */ r(l, { control: e.control, name: "city_created", rules: {
+      required: "Введите город"
+    }, render: ({
       field: t
     }) => /* @__PURE__ */ r(I, { label: "Город", placeholder: "Введите город", helperText: "Город, где программа создана", ...t }) })
   ] });
@@ -502,7 +510,7 @@ const Re = ({
       width: "100%"
     }, ...t, label: "Комментарий", placeholder: "Введите комментарии" }) })
   ] });
-}, We = o.object({
+}, qe = o.object({
   min_age: o.coerce.number().optional(),
   max_age: o.coerce.number().optional(),
   competence_level_id: o.number().nullish(),
@@ -516,9 +524,9 @@ const Re = ({
   min_group_size: o.coerce.number().optional(),
   max_group_size: o.coerce.number().optional(),
   is_one_age_group: o.boolean().optional()
-}), qe = () => {
+}), We = () => {
   const e = _({
-    schema: We
+    schema: qe
   });
   return /* @__PURE__ */ p(f, { css: {
     display: "flex",
@@ -614,7 +622,7 @@ const Re = ({
     }, label: "Максимальное кол-во обучающихся в группе" }) }),
     /* @__PURE__ */ r(l, { control: e.control, name: "is_one_age_group", render: ({
       field: t
-    }) => /* @__PURE__ */ r(q, { ...t, label: "Группа одного возраста?" }) })
+    }) => /* @__PURE__ */ r(W, { ...t, label: "Группа одного возраста?" }) })
   ] });
 }, He = o.object({
   explanatory_note: o.string().nullish(),
@@ -989,7 +997,7 @@ const Re = ({
     }) => /* @__PURE__ */ r(v, { label: "Количество учебных недель", placeholder: "Введите количество учебных недель", ...n }) }),
     /* @__PURE__ */ r(l, { name: "is_vacations", control: a.control, render: ({
       field: n
-    }) => /* @__PURE__ */ r(q, { label: "Есть каникулы?", ...n }) }),
+    }) => /* @__PURE__ */ r(W, { label: "Есть каникулы?", ...n }) }),
     /* @__PURE__ */ r(l, { name: "edu_sessions_per_week", control: a.control, render: ({
       field: n
     }) => /* @__PURE__ */ r(v, { label: "Количество занятий в неделю", placeholder: "Введите количество занятий в неделю", ...n }) }),
@@ -1073,7 +1081,7 @@ const Re = ({
 }, {
   id: "params",
   title: "Параметры",
-  Component: qe
+  Component: We
 }, {
   id: "explanation",
   title: "Пояснительная записка",
