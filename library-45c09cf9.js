@@ -44,7 +44,7 @@ var Qu = {};
 const _1 = [{
   id: "users",
   path: "/users",
-  component: () => import("./UsersList-7e75cbe6.js"),
+  component: () => import("./UsersList-66f13b8e.js"),
   windowOptions: {
     icon: Qu.faUsers,
     title: "Пользователи",
@@ -93,7 +93,7 @@ var Rd = {};
 const A1 = [{
   id: "program-docs",
   path: "/program-docs",
-  component: () => import("./ProgramDocsList-4adf0984.js"),
+  component: () => import("./ProgramDocsList-9f6e7778.js"),
   windowOptions: {
     title: "Конструктор документов программ",
     width: 700,
@@ -110,7 +110,7 @@ const A1 = [{
 }, {
   id: "program-docs-constructor",
   path: "/program-docs/constructor/:id",
-  component: () => import("./ProgramConstructor-0fdbe1c9.js"),
+  component: () => import("./ProgramConstructor-f3df97be.js"),
   windowOptions: {
     title: "Конструктор программы",
     width: 700,
@@ -120,7 +120,7 @@ const A1 = [{
 }, {
   id: "program-docs-draft",
   path: "/program-docs/draft",
-  component: () => import("./Draft-6d3ebc2f.js"),
+  component: () => import("./Draft-73854d61.js"),
   windowOptions: {
     title: "Черновик программы",
     width: 700,
@@ -130,7 +130,7 @@ const A1 = [{
 }, {
   id: "program-constructor-copy",
   path: "/program-docs/copy/:id",
-  component: () => import("./CopyProgramForm-679d6d51.js"),
+  component: () => import("./CopyProgramForm-de7655c0.js"),
   windowOptions: {
     title: "Копирование программы",
     width: 700,
@@ -139,7 +139,7 @@ const A1 = [{
 }, {
   id: "program-constructor-dicts",
   path: "/program-docs/dicts",
-  component: () => import("./Dictionaries-6cde6f05.js"),
+  component: () => import("./Dictionaries-46e09a74.js"),
   windowOptions: {
     title: "Справочники",
     width: 700,

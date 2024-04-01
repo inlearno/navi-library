@@ -1,12 +1,12 @@
-import { j as t } from "./library-3f58680c.js";
-import { u as o, T as r, c as s } from "./index-0ac43405.js";
-import { P as a, a as l } from "./DictionaryCell-8fb4fd99.js";
+import { j as t } from "./library-45c09cf9.js";
+import { u as o, T as r, c as s } from "./index-0e3105d1.js";
+import { P as a, a as l } from "./DictionaryCell-610952bd.js";
 import "./react-6f5a8403.js";
-import { u as m } from "./useWithTitle-8bec7cbd.js";
+import { u as m } from "./useWithTitle-92744a8b.js";
 import "./icons-ad9f8a73.js";
 import "./mui-4f485058.js";
 import "./table-f5369550.js";
-import "./useWindowController-f611f75a.js";
+import "./useWindowController-3ce4de13.js";
 const n = "/api/rest/user", e = s(), p = [e.id(), e.display("email", "Email"), e.display("name", "Имя", {
   size: 300
 }), e.boolean("is_deleted", "Удален", {

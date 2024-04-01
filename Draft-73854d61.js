@@ -1,12 +1,12 @@
-import { j as e, a as f } from "./library-3f58680c.js";
-import { z as t, e as h, u as y, B as b, F as a, T as s, D as c, a as v } from "./Boolean-27f9eee7.js";
-import { a as x } from "./DictionaryCell-8fb4fd99.js";
+import { j as e, a as f } from "./library-45c09cf9.js";
+import { z as t, e as h, u as y, B as b, F as a, T as s, D as c, a as v } from "./Boolean-cb060221.js";
+import { a as x } from "./DictionaryCell-610952bd.js";
 import "./icons-ad9f8a73.js";
 import "./react-6f5a8403.js";
-import { u as q } from "./useWindowController-f611f75a.js";
-import { u as w, P as D, R as F } from "./RootSection-e64d750e.js";
-import { u as P } from "./useNavigate-e7300e75.js";
-import { u as T, R as j } from "./Role-8f7c07ea.js";
+import { u as q } from "./useWindowController-3ce4de13.js";
+import { u as w, P as D, R as F } from "./RootSection-771e4cca.js";
+import { u as P } from "./useNavigate-1f5f0564.js";
+import { u as T, R as j } from "./Role-4e13e287.js";
 import "./mui-4f485058.js";
 import "./table-f5369550.js";
 const $ = () => {
@@ -64,7 +64,9 @@ const $ = () => {
     gap: "1rem",
     padding: "1rem"
   }, form: o, children: [
-    /* @__PURE__ */ e(a, { control: o.control, name: "name", render: ({
+    /* @__PURE__ */ e(a, { control: o.control, name: "name", rules: {
+      required: "Заполните наименование"
+    }, render: ({
       field: r
     }) => /* @__PURE__ */ e(s, { css: {
       width: "100%"
