@@ -1,4 +1,4 @@
-import { d as u } from "./library-3f58680c.js";
+import { a as u } from "./library-d5a831b9.js";
 const c = () => {
   const {
     params: t,
@@ -6,8 +6,8 @@ const c = () => {
     setState: o,
     close: s,
     setTitle: i,
-    maximize: n,
-    minimize: a,
+    maximize: a,
+    minimize: n,
     fold: r,
     setWidth: m,
     setHeight: d,
@@ -19,8 +19,8 @@ const c = () => {
     setState: o,
     close: s,
     setTitle: i,
-    maximize: n,
-    minimize: a,
+    maximize: a,
+    minimize: n,
     fold: r,
     setWidth: m,
     setHeight: d,
