@@ -1,18 +1,21 @@
-import { j as r, a as p } from "./library-3f58680c.js";
-import { e as u, u as f, B as g, F as s, T as i, a as h, z as n } from "./Boolean-27f9eee7.js";
-import { a as y } from "./DictionaryCell-8fb4fd99.js";
+import { j as r, b as p } from "./library-89924fb6.js";
+import { u, B as f } from "./faEye-4bb4da1d.js";
+import { a as g } from "./DictionaryCell-ab51e979.js";
 import "./icons-ad9f8a73.js";
 import "./react-6f5a8403.js";
-import { u as l } from "./useWindowController-f611f75a.js";
-import { u as x } from "./useWithTitle-8bec7cbd.js";
-import { u as _, P as b } from "./RootSection-e64d750e.js";
-import { u as F } from "./useNavigate-e7300e75.js";
-import "./mui-4f485058.js";
-import "./table-f5369550.js";
+import { u as m } from "./useWindowController-e96b5028.js";
+import { u as h } from "./useWithTitle-4e769139.js";
+import { z as n } from "./index-d0beacff.js";
+import { u as y, b as s, T as i, F as b } from "./Boolean-bd97810c.js";
+import { u as x } from "./useResetHttpQueryCache-417cfbdb.js";
+import { u as _ } from "./useNavigate-a3a5aec0.js";
+import { P as F } from "./RootSection-b37b4de9.js";
+import "./mui-2ff488a7.js";
+import "./configureQueriedCombo-d47d051b.js";
 const w = () => {
   const {
     params: t
-  } = l();
+  } = m();
   return t;
 }, C = n.object({
   partner_id: n.string({
@@ -30,30 +33,30 @@ const w = () => {
   city_created: n.string({
     required_error: "Выберите город создания"
   })
-}), I = () => {
+}), Y = () => {
   const {
     id: t
   } = w(), {
     close: a
-  } = l(), d = F(), m = _(), c = u(`/api/program-docs/${t}/copy`, {
+  } = m(), l = _(), d = x(), c = u(`/api/program-docs/${t}/copy`, {
     onSuccess: ({
       data: {
         newDocId: e
       }
     }) => {
-      m("/api/rest/program-docs"), d(`/program-docs/constructor/${e}`), a();
+      d("/api/rest/program-docs"), l(`/program-docs/constructor/${e}`), a();
     }
   });
-  x(`Копирование программы #${t}`);
-  const o = f({
+  h(`Копирование программы #${t}`);
+  const o = y({
     mutation: c,
     schema: C
   });
-  return /* @__PURE__ */ r(y, { footer: /* @__PURE__ */ r("div", { css: {
+  return /* @__PURE__ */ r(g, { fit: !0, footer: /* @__PURE__ */ r("div", { css: {
     display: "flex",
     width: "100%",
     justifyContent: "flex-end"
-  }, children: /* @__PURE__ */ r(g, { variant: "contained", color: "success", disabled: c.isPending, onClick: () => o.submit(), children: "Копировать" }, "next") }), children: /* @__PURE__ */ p(h, { css: {
+  }, children: /* @__PURE__ */ r(f, { variant: "contained", color: "success", disabled: c.isPending, onClick: () => o.submit(), children: "Копировать" }, "next") }), children: /* @__PURE__ */ p(b, { css: {
     display: "grid",
     gap: "1rem",
     padding: "1rem"
@@ -65,7 +68,7 @@ const w = () => {
     }, ...e, placeholder: "Введите наименование", label: "Наименование" }) }),
     /* @__PURE__ */ r(s, { control: o.control, name: "partner_id", render: ({
       field: e
-    }) => /* @__PURE__ */ r(b, { ...e, placeholder: "Выберите организацию", label: "Организация" }) }),
+    }) => /* @__PURE__ */ r(F, { ...e, placeholder: "Выберите организацию", label: "Организация" }) }),
     /* @__PURE__ */ r(s, { control: o.control, name: "year_created", render: ({
       field: e
     }) => /* @__PURE__ */ r(i, { label: "Год создания", placeholder: "Введите год", helperText: `Год создания программы, к примеру ${(/* @__PURE__ */ new Date()).getFullYear()}`, ...e }) }),
@@ -75,5 +78,5 @@ const w = () => {
   ] }) });
 };
 export {
-  I as default
+  Y as default
 };
