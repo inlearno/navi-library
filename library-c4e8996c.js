@@ -60,7 +60,7 @@ var Qu = {};
 const ww = [{
   id: "users",
   path: "/users",
-  component: () => import("./UsersList-55080d0c.js"),
+  component: () => import("./UsersList-7ffd3e30.js"),
   windowOptions: {
     icon: Qu.faUsers,
     title: "Пользователи",
@@ -77,7 +77,7 @@ const ww = [{
 }, {
   id: "user-profile",
   path: "/user-profile",
-  component: () => import("./UserProfile-d34b0687.js"),
+  component: () => import("./UserProfile-78e249f8.js"),
   windowOptions: {
     icon: Dd.faUserGear,
     title: "Профиль",
@@ -121,7 +121,7 @@ var Ld = {};
 const _w = [{
   id: "program-docs",
   path: "/program-docs",
-  component: () => import("./ProgramDocsList-3b357f8a.js"),
+  component: () => import("./ProgramDocsList-9fa29d4d.js"),
   windowOptions: {
     title: "Конструктор документов программ",
     width: 700,
@@ -139,7 +139,7 @@ const _w = [{
 }, {
   id: "program-docs-constructor",
   path: "/program-docs/constructor/:id",
-  component: () => import("./ProgramConstructor-e74ffec4.js"),
+  component: () => import("./ProgramConstructor-36520d3b.js"),
   privilege: "ProgramDocsView",
   windowOptions: {
     title: "Конструктор программы",
@@ -150,7 +150,7 @@ const _w = [{
 }, {
   id: "program-docs-draft",
   path: "/program-docs/draft",
-  component: () => import("./Draft-36bb6e4e.js"),
+  component: () => import("./Draft-5371b10a.js"),
   privilege: "ProgramDocsEdit",
   windowOptions: {
     title: "Черновик программы",
@@ -162,7 +162,7 @@ const _w = [{
   id: "program-constructor-copy",
   path: "/program-docs/copy/:id",
   privilege: "ProgramDocsEdit",
-  component: () => import("./CopyProgramForm-82dd3ba6.js"),
+  component: () => import("./CopyProgramForm-ee3f793d.js"),
   windowOptions: {
     title: "Копирование программы",
     width: 700,
@@ -172,7 +172,7 @@ const _w = [{
   id: "program-constructor-dicts",
   path: "/program-docs/dicts",
   privilege: "ProgramDocsView",
-  component: () => import("./Dictionaries-99c838b5.js"),
+  component: () => import("./Dictionaries-75990b5f.js"),
   windowOptions: {
     title: "Справочники",
     width: 700,

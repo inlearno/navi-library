@@ -1,17 +1,17 @@
-import { j as e, b as u, F as T } from "./library-89924fb6.js";
+import { j as e, b as u, F as T } from "./library-c4e8996c.js";
 import { F as w } from "./icons-ad9f8a73.js";
-import { a as k, P as B } from "./DictionaryCell-ab51e979.js";
-import { M, S as j, g as H, R as L, T as R, h as $, A as Q, i as V, b as q, j as N, F as O, k as W, c as X, l as Y, d as G, m as U, I as J, n as K, D as Z, o as tt, e as et, p as it, f as rt, q as ot, B as at, r as nt, C as st } from "./BookInput-9338e1d7.js";
+import { a as k, P as B } from "./DictionaryCell-1b43aa43.js";
+import { M as z, S as j, g as H, R as L, T as R, h as $, A as Q, i as V, b as q, j as N, F as O, k as W, c as X, l as Y, d as G, m as U, I as J, n as K, D as Z, o as tt, e as et, p as it, f as rt, q as ot, B as at, r as nt, C as st } from "./BookInput-d08f6437.js";
 import { r as f, d as _, g as lt } from "./react-6f5a8403.js";
-import { u as dt, T as ct, c as mt } from "./index-45768fcf.js";
+import { u as dt, T as ct, c as mt } from "./index-04b2fc76.js";
 import { f as pt, b as ut, a as ft } from "./faPenAlt-dc5d3562.js";
-import { B as E, u as gt } from "./faEye-4bb4da1d.js";
-import { u as z } from "./useResetHttpQueryCache-417cfbdb.js";
-import { e as yt, b as Ft, F as ht } from "./Boolean-bd97810c.js";
+import { B as E, u as gt } from "./faEye-967beef5.js";
+import { u as M } from "./useResetHttpQueryCache-e4f10079.js";
+import { e as yt, b as Ft, F as ht } from "./Boolean-26e56221.js";
 import { A as vt, I as x } from "./mui-2ff488a7.js";
-import { P as Tt } from "./PopoverConfirm-95a99ed8.js";
-import "./useUser-268e1bce.js";
-import "./configureQueriedCombo-d47d051b.js";
+import { P as Tt } from "./PopoverConfirm-80ee5885.js";
+import "./useUser-970728d5.js";
+import "./configureQueriedCombo-933ede9c.js";
 import "./table-f5369550.js";
 const bt = ({
   id: r,
@@ -37,7 +37,7 @@ const bt = ({
       });
     }
   });
-  return /* @__PURE__ */ e(M, { title: "Удаление", width: 450, autoHeight: !0, open: a, resizable: !1, onClose: i, children: /* @__PURE__ */ e(k, { footer: /* @__PURE__ */ u("div", { css: {
+  return /* @__PURE__ */ e(z, { title: "Удаление", width: 450, autoHeight: !0, open: a, resizable: !1, onClose: i, children: /* @__PURE__ */ e(k, { footer: /* @__PURE__ */ u("div", { css: {
     display: "flex",
     width: "100%",
     justifyContent: "flex-end",
@@ -89,7 +89,7 @@ const bt = ({
   titleField: o,
   inputField: n
 }) => {
-  const s = z(), [l, p] = f.useState(!1), d = gt({
+  const s = M(), [l, p] = f.useState(!1), d = gt({
     method: "DELETE",
     url: `${a}/${i.id}`,
     onSuccess: () => {
@@ -124,7 +124,7 @@ const bt = ({
   record: i,
   form: o,
   onSave: n
-}) => /* @__PURE__ */ e(M, { title: r, resizable: !1, width: 450, autoHeight: !0, open: !0, onClose: a, children: /* @__PURE__ */ e(o, { fit: !1, initialValues: i, onSave: (s) => {
+}) => /* @__PURE__ */ e(z, { title: r, resizable: !1, width: 450, autoHeight: !0, open: !0, onClose: a, children: /* @__PURE__ */ e(o, { fit: !1, initialValues: i, onSave: (s) => {
   n == null || n(s), a();
 } }) }), wt = ({
   form: r,
@@ -395,7 +395,9 @@ const Ct = /* @__PURE__ */ lt(Dt), t = mt(), P = [{
     inputField: p
   }
 }) => {
-  const d = z(), c = dt(r, [...n, t.actions([{
+  const d = M(), c = dt(r, [...n, t.display("count_docs", "Количество документов", {
+    size: 100
+  }), t.actions([{
     key: "edit",
     privilege: "ProgramDocsDictionariesEdit",
     render: (m) => /* @__PURE__ */ e(xt, { title: Ct(o, m), form: a, onSave: () => d(r), record: m })
