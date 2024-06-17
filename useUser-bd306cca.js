@@ -1,5 +1,5 @@
 import { r as s } from "./react-6f5a8403.js";
-import { u as e, U as t } from "./library-89924fb6.js";
+import { u as e, U as t } from "./library-fa9914d3.js";
 const o = () => {
   const [r] = e();
   return s.useMemo(() => r ? new t(r) : null, [r]);
