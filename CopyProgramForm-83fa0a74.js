@@ -1,17 +1,17 @@
-import { j as r, b as p } from "./library-89924fb6.js";
-import { u, B as f } from "./faEye-4bb4da1d.js";
-import { a as g } from "./DictionaryCell-ab51e979.js";
-import "./icons-ad9f8a73.js";
-import "./react-6f5a8403.js";
-import { u as m } from "./useWindowController-e96b5028.js";
-import { u as h } from "./useWithTitle-4e769139.js";
+import { j as r, b as p } from "./library-5ad54f6e.js";
+import { u, B as f } from "./faEye-6d8181c7.js";
+import { a as g } from "./DictionaryCell-a7ae3894.js";
+import "./icons-56df5d3c.js";
+import "./react-bd6781bd.js";
+import { u as m } from "./useWindowController-8d24671d.js";
+import { u as h } from "./useWithTitle-1b151075.js";
 import { z as n } from "./index-d0beacff.js";
-import { u as y, b as s, T as i, F as b } from "./Boolean-bd97810c.js";
-import { u as x } from "./useResetHttpQueryCache-417cfbdb.js";
-import { u as _ } from "./useNavigate-a3a5aec0.js";
-import { P as F } from "./RootSection-b37b4de9.js";
-import "./mui-2ff488a7.js";
-import "./configureQueriedCombo-d47d051b.js";
+import { u as y, a as s, T as i, F as x } from "./Phone-0baa4629.js";
+import { u as _ } from "./useResetHttpQueryCache-a6006409.js";
+import { u as b } from "./useNavigate-626e143e.js";
+import { P as F } from "./RootSection-f2ddf1dd.js";
+import "./mui-51f6b52b.js";
+import "./configureQueriedCombo-96839a0c.js";
 const w = () => {
   const {
     params: t
@@ -38,7 +38,7 @@ const w = () => {
     id: t
   } = w(), {
     close: a
-  } = m(), l = _(), d = x(), c = u(`/api/program-docs/${t}/copy`, {
+  } = m(), l = b(), d = _(), c = u(`/api/program-docs/${t}/copy`, {
     onSuccess: ({
       data: {
         newDocId: e
@@ -56,7 +56,7 @@ const w = () => {
     display: "flex",
     width: "100%",
     justifyContent: "flex-end"
-  }, children: /* @__PURE__ */ r(f, { variant: "contained", color: "success", disabled: c.isPending, onClick: () => o.submit(), children: "Копировать" }, "next") }), children: /* @__PURE__ */ p(b, { css: {
+  }, children: /* @__PURE__ */ r(f, { variant: "contained", color: "success", disabled: c.isPending, onClick: () => o.submit(), children: "Копировать" }, "next") }), children: /* @__PURE__ */ p(x, { css: {
     display: "grid",
     gap: "1rem",
     padding: "1rem"

@@ -1,16 +1,17 @@
-import { j as l, Q as f } from "./library-89924fb6.js";
-import { f as b, a as P, b as C } from "./faPenAlt-dc5d3562.js";
-import { u as D, f as S } from "./faEye-4bb4da1d.js";
-import { u as z, T as E, c as H } from "./index-45768fcf.js";
-import { u as _, P as L, a as R } from "./DictionaryCell-ab51e979.js";
-import { g as u, r as p } from "./react-6f5a8403.js";
-import { u as j } from "./useNavigate-a3a5aec0.js";
-import { F as m } from "./icons-ad9f8a73.js";
-import { u as U } from "./useUser-268e1bce.js";
-import { P as T } from "./PopoverConfirm-95a99ed8.js";
-import { u as V } from "./useResetHttpQueryCache-417cfbdb.js";
-import { I as g } from "./mui-2ff488a7.js";
-import "./table-f5369550.js";
+import { j as l, Q as f } from "./library-5ad54f6e.js";
+import { f as b, a as P } from "./faTrash-33be5127.js";
+import { u as C, f as D } from "./faEye-6d8181c7.js";
+import { f as S } from "./faPenAlt-38421783.js";
+import { u as z, T as E, c as H } from "./index-c2c3b33f.js";
+import { u as _, P as L, a as R } from "./DictionaryCell-a7ae3894.js";
+import { g as m, r as p } from "./react-bd6781bd.js";
+import { u as j } from "./useNavigate-626e143e.js";
+import { F as u } from "./icons-56df5d3c.js";
+import { u as U } from "./useUser-8c01750e.js";
+import { P as T } from "./PopoverConfirm-93cd6afe.js";
+import { u as V } from "./useResetHttpQueryCache-a6006409.js";
+import { I as g } from "./mui-51f6b52b.js";
+import "./table-bbae3ab0.js";
 var $ = function(e, n, a, o) {
   var i = typeof o < "u" ? [o, e] : [e], t = new Blob(i, { type: a || "application/octet-stream" });
   if (typeof window.navigator.msSaveBlob < "u")
@@ -22,7 +23,7 @@ var $ = function(e, n, a, o) {
     }, 200);
   }
 };
-const M = /* @__PURE__ */ u($), N = /\s*;\s*/, O = /\s*:\s*/, A = /\s*=\s*(.+)/, B = /\s*'[^']*'\s*(.*)/, Q = /(?:^["'\s]*)|(?:["'\s]*$)/g, k = (e) => {
+const M = /* @__PURE__ */ m($), N = /\s*;\s*/, O = /\s*:\s*/, A = /\s*=\s*(.+)/, B = /\s*'[^']*'\s*(.*)/, Q = /(?:^["'\s]*)|(?:["'\s]*$)/g, k = (e) => {
   if (!(e && typeof e == "string"))
     return;
   const n = e.split(N).map((o) => o.trim()).filter((o) => !!o);
@@ -47,7 +48,7 @@ const M = /* @__PURE__ */ u($), N = /\s*;\s*/, O = /\s*:\s*/, A = /\s*=\s*(.+)/,
     }, { type: a });
 };
 var F = k;
-const I = /* @__PURE__ */ u(F), x = () => {
+const I = /* @__PURE__ */ m(F), x = () => {
   const [e, n] = p.useState(!1), [a, o] = p.useState(), i = _();
   return {
     loading: e,
@@ -105,7 +106,7 @@ var y = {};
   }, e.faDownload = e.definition, e.prefix = n, e.iconName = a, e.width = o, e.height = i, e.ligatures = t, e.unicode = s, e.svgPathData = r, e.aliases = t;
 })(y);
 const q = (e) => {
-  const n = V(), a = "/api/rest/program-docs", o = D({
+  const n = V(), a = "/api/rest/program-docs", o = C({
     method: "DELETE",
     url: `${a}/${e.id}`,
     onSuccess: () => {
@@ -124,8 +125,8 @@ const q = (e) => {
       "--tw-text-opacity": "1",
       color: "rgb(220 38 38 / var(--tw-text-opacity))"
     }
-  }], ...i, children: /* @__PURE__ */ l(m, { icon: b.faTrash }) }, "delete-button") });
-}, c = H(), ne = () => {
+  }], ...i, children: /* @__PURE__ */ l(u, { icon: b.faTrash }) }, "delete-button") });
+}, c = H(), se = () => {
   const e = j(), {
     download: n
   } = x(), a = U(), o = p.useMemo(() => [c.id(), c.actions([{
@@ -168,7 +169,7 @@ const q = (e) => {
     }
   }, {
     key: "edit",
-    icon: a.can("ProgramDocsEdit") ? P.faPenAlt : S.faEye,
+    icon: a.can("ProgramDocsEdit") ? S.faPenAlt : D.faEye,
     tooltip: a.can("ProgramDocsEdit") ? "Редактировать документ" : "Просмотр документа",
     css: {
       ":hover": {
@@ -226,10 +227,10 @@ const q = (e) => {
       is_deleted: !1
     }
   });
-  return /* @__PURE__ */ l(R, { fit: !0, header: a.can("ProgramDocsEdit") ? /* @__PURE__ */ l(g, { size: "small", onClick: () => e("/program-docs/draft"), children: /* @__PURE__ */ l(m, { icon: C.faPlus }) }) : null, footer: /* @__PURE__ */ l(L, { table: i }), children: /* @__PURE__ */ l(E, { table: i, onRowDoubleClick: (t) => {
+  return /* @__PURE__ */ l(R, { fit: !0, header: a.can("ProgramDocsEdit") ? /* @__PURE__ */ l(g, { size: "small", onClick: () => e("/program-docs/draft"), children: /* @__PURE__ */ l(u, { icon: P.faPlus }) }) : null, footer: /* @__PURE__ */ l(L, { table: i }), children: /* @__PURE__ */ l(E, { table: i, onRowDoubleClick: (t) => {
     e(`/program-docs/constructor/${t.id}`);
   } }) });
 };
 export {
-  ne as default
+  se as default
 };
