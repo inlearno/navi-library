@@ -1,4 +1,4 @@
-import { O as r } from "./library-89924fb6.js";
+import { P as r } from "./library-75cbf1f9.js";
 const s = () => {
   const e = r();
   return (t) => e.invalidateQueries({

@@ -1,12 +1,12 @@
-import { u, a as f, Q as c, b as p, j as e } from "./library-89924fb6.js";
-import { u as w, B as h } from "./faEye-4bb4da1d.js";
-import { a as g } from "./DictionaryCell-ab51e979.js";
-import "./icons-ad9f8a73.js";
-import "./react-6f5a8403.js";
+import { u, a as f, Q as c, b as p, j as e } from "./library-75cbf1f9.js";
+import { u as w, B as h } from "./faEye-a5fee5cd.js";
+import { a as g } from "./DictionaryCell-7121ea48.js";
+import "./icons-56df5d3c.js";
+import "./react-bd6781bd.js";
 import { z as i } from "./index-d0beacff.js";
-import { u as x, C as r, F as b } from "./Boolean-bd97810c.js";
-import { u as S } from "./useUser-268e1bce.js";
-import { f as d } from "./mui-2ff488a7.js";
+import { u as x, C as r, F as b } from "./Phone-727e8dce.js";
+import { u as S } from "./useUser-1af39c8e.js";
+import { f as d } from "./mui-51f6b52b.js";
 const _ = () => {
   const [m, l] = u(), {
     close: n
@@ -47,7 +47,7 @@ const _ = () => {
     defaultValues: l,
     mutation: n
   }), t = a.watch("new_password");
-  return /* @__PURE__ */ e(g, { footer: /* @__PURE__ */ e(h, { type: "submit", css: {
+  return /* @__PURE__ */ e(g, { fit: !0, footer: /* @__PURE__ */ e(h, { type: "submit", css: {
     marginLeft: "auto"
   }, variant: "contained", color: "success", disabled: n == null ? void 0 : n.isPending, children: "Сохранить" }), children: /* @__PURE__ */ p(b, { form: a, css: {
     display: "flex",
