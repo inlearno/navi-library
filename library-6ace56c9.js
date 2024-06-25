@@ -60,7 +60,7 @@ var Qu = {};
 const ww = [{
   id: "users",
   path: "/users",
-  component: () => import("./UsersList-55080d0c.js"),
+  component: () => import("./UsersList-f6cf3eed.js"),
   windowOptions: {
     icon: Qu.faUsers,
     title: "Пользователи",
@@ -77,7 +77,7 @@ const ww = [{
 }, {
   id: "user-profile",
   path: "/user-profile",
-  component: () => import("./UserProfile-d34b0687.js"),
+  component: () => import("./UserProfile-8b926981.js"),
   windowOptions: {
     icon: Dd.faUserGear,
     title: "Профиль",
@@ -121,7 +121,7 @@ var Ld = {};
 const _w = [{
   id: "program-docs",
   path: "/program-docs",
-  component: () => import("./ProgramDocsList-3b357f8a.js"),
+  component: () => import("./ProgramDocsList-4baeb2b3.js"),
   windowOptions: {
     title: "Конструктор документов программ",
     width: 700,
@@ -139,7 +139,7 @@ const _w = [{
 }, {
   id: "program-docs-constructor",
   path: "/program-docs/constructor/:id",
-  component: () => import("./ProgramConstructor-e74ffec4.js"),
+  component: () => import("./ProgramConstructor-82cd9f27.js"),
   privilege: "ProgramDocsView",
   windowOptions: {
     title: "Конструктор программы",
@@ -150,7 +150,7 @@ const _w = [{
 }, {
   id: "program-docs-draft",
   path: "/program-docs/draft",
-  component: () => import("./Draft-36bb6e4e.js"),
+  component: () => import("./Draft-70c7740b.js"),
   privilege: "ProgramDocsEdit",
   windowOptions: {
     title: "Черновик программы",
@@ -162,7 +162,7 @@ const _w = [{
   id: "program-constructor-copy",
   path: "/program-docs/copy/:id",
   privilege: "ProgramDocsEdit",
-  component: () => import("./CopyProgramForm-82dd3ba6.js"),
+  component: () => import("./CopyProgramForm-2c0ad3fa.js"),
   windowOptions: {
     title: "Копирование программы",
     width: 700,
@@ -172,7 +172,7 @@ const _w = [{
   id: "program-constructor-dicts",
   path: "/program-docs/dicts",
   privilege: "ProgramDocsView",
-  component: () => import("./Dictionaries-99c838b5.js"),
+  component: () => import("./Dictionaries-92784d81.js"),
   windowOptions: {
     title: "Справочники",
     width: 700,
@@ -12095,7 +12095,7 @@ window.initReact = ({
   };
 };
 export {
-  is as $,
+  kw as $,
   yx as A,
   ud as B,
   oC as C,
@@ -12104,31 +12104,31 @@ export {
   bw as F,
   Zx as G,
   ix as H,
-  rs as I,
-  Kt as J,
+  eC as I,
+  iC as J,
   dr as K,
-  kd as L,
+  rs as L,
   ld as M,
   hC as N,
-  eC as O,
-  iC as P,
+  Jx as O,
+  ba as P,
   ht as Q,
   uC as R,
   Mx as S,
-  Jx as T,
+  Qw as T,
   a_ as U,
-  ba as V,
-  Qw as W,
-  tC as X,
-  Hd as Y,
-  rC as Z,
-  Bn as _,
+  Kt as V,
+  tC as W,
+  Hd as X,
+  rC as Y,
+  Bn as Z,
+  is as _,
   dC as a,
-  kw as a0,
-  Fw as a1,
-  ec as a2,
-  Tc as a3,
-  Ww as a4,
+  Fw as a0,
+  ec as a1,
+  Tc as a2,
+  Ww as a3,
+  kd as a4,
   nC as a5,
   es as b,
   jx as c,
