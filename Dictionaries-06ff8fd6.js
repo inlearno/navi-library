@@ -1,18 +1,20 @@
-import { j as e, b as u, F as T } from "./library-89924fb6.js";
+import { j as e, b as u, F as T } from "./library-c328e858.js";
 import { F as w } from "./icons-ad9f8a73.js";
-import { a as k, P as B } from "./DictionaryCell-ab51e979.js";
-import { M, S as j, g as H, R as L, T as R, h as $, A as Q, i as V, b as q, j as N, F as O, k as W, c as X, l as Y, d as G, m as U, I as J, n as K, D as Z, o as tt, e as et, p as it, f as rt, q as ot, B as at, r as nt, C as st } from "./BookInput-9338e1d7.js";
-import { r as f, d as _, g as lt } from "./react-6f5a8403.js";
-import { u as dt, T as ct, c as mt } from "./index-45768fcf.js";
-import { f as pt, b as ut, a as ft } from "./faPenAlt-dc5d3562.js";
-import { B as E, u as gt } from "./faEye-4bb4da1d.js";
-import { u as z } from "./useResetHttpQueryCache-417cfbdb.js";
-import { e as yt, b as Ft, F as ht } from "./Boolean-bd97810c.js";
-import { A as vt, I as x } from "./mui-2ff488a7.js";
-import { P as Tt } from "./PopoverConfirm-95a99ed8.js";
-import "./useUser-268e1bce.js";
-import "./configureQueriedCombo-d47d051b.js";
-import "./table-f5369550.js";
+import { a as k, P as B } from "./DictionaryCell-9be52052.js";
+import { M, S as j, f as H, R as L, T as R, g as $, A as Q, h as V, a as q, i as N, F as O, j as W, b as X, k as Y, c as G, l as U, I as J, m as K, D as Z, n as tt, d as et, o as it, e as rt, p as ot, B as at, q as nt } from "./BookInput-eaf5865c.js";
+import { r as f, d as _, g as st } from "./react-6f5a8403.js";
+import { u as lt, T as dt, c as ct } from "./useQueriedTable-552e23b2.js";
+import { f as mt, a as pt } from "./faPenAlt-b6fc506d.js";
+import { B as E, u as ut } from "./faEye-c7d9d039.js";
+import { u as z } from "./useResetHttpQueryCache-6e8893c0.js";
+import { e as ft, b as gt, F as yt } from "./Boolean-90bc6f90.js";
+import { A as Ft, I as x } from "./mui-2ff488a7.js";
+import { P as ht } from "./PopoverConfirm-5ea1f6fc.js";
+import { f as vt } from "./faPlus-da331287.js";
+import { C as Tt } from "./Can-4a40a579.js";
+import "./configureQueriedCombo-0f7db575.js";
+import "./table-7e833027.js";
+import "./useUser-a967c6ae.js";
 const bt = ({
   id: r,
   open: a,
@@ -22,7 +24,7 @@ const bt = ({
   mutation: s,
   inputField: l
 }) => {
-  const [p, d] = f.useState(), c = yt({
+  const [p, d] = f.useState(), c = ft({
     onValid: ({
       replace: m
     }) => {
@@ -53,12 +55,12 @@ const bt = ({
     padding: "1rem",
     fontSize: "0.875rem",
     lineHeight: "1.25rem"
-  }, children: /* @__PURE__ */ u(ht, { form: c, css: {
+  }, children: /* @__PURE__ */ u(yt, { form: c, css: {
     display: "flex",
     flexDirection: "column",
     gap: "1rem"
   }, children: [
-    p && /* @__PURE__ */ e(vt, { severity: "error", children: p }),
+    p && /* @__PURE__ */ e(Ft, { severity: "error", children: p }),
     /* @__PURE__ */ u("p", { children: [
       "Значение",
       " ",
@@ -71,7 +73,7 @@ const bt = ({
       "используется в существующих документах."
     ] }),
     /* @__PURE__ */ e("p", { children: "Выберите значение для замены:" }),
-    /* @__PURE__ */ e(Ft, { control: c.control, name: "replace", rules: {
+    /* @__PURE__ */ e(gt, { control: c.control, name: "replace", rules: {
       required: "Выберите замену"
     }, render: ({
       field: m
@@ -89,7 +91,7 @@ const bt = ({
   titleField: o,
   inputField: n
 }) => {
-  const s = z(), [l, p] = f.useState(!1), d = gt({
+  const s = z(), [l, p] = f.useState(!1), d = ut({
     method: "DELETE",
     url: `${a}/${i.id}`,
     onSuccess: () => {
@@ -103,7 +105,7 @@ const bt = ({
     }
   }, [i]);
   return /* @__PURE__ */ u(T, { children: [
-    /* @__PURE__ */ e(Tt, { onConfirm: () => {
+    /* @__PURE__ */ e(ht, { onConfirm: () => {
       c();
     }, children: (m) => /* @__PURE__ */ e(x, { size: "small", css: [{
       padding: "4px",
@@ -115,7 +117,7 @@ const bt = ({
         "--tw-text-opacity": "1",
         color: "rgb(75 85 99 / var(--tw-text-opacity))"
       }
-    }], ...m, children: /* @__PURE__ */ e(w, { icon: pt.faTrash }) }) }),
+    }], ...m, children: /* @__PURE__ */ e(w, { icon: mt.faTrash }) }) }),
     l && /* @__PURE__ */ e(bt, { id: r, open: l, record: i, titleField: o, inputField: n, mutation: d, onClose: () => p(!1) })
   ] });
 }, S = ({
@@ -133,7 +135,7 @@ const bt = ({
 }) => {
   const [o, n] = f.useState(!1);
   return /* @__PURE__ */ u(T, { children: [
-    /* @__PURE__ */ e(x, { size: "small", onClick: () => n(!0), children: /* @__PURE__ */ e(w, { icon: ut.faPlus }) }),
+    /* @__PURE__ */ e(x, { size: "small", onClick: () => n(!0), children: /* @__PURE__ */ e(w, { icon: vt.faPlus }) }),
     o && /* @__PURE__ */ e(S, { form: r, title: a, onClose: () => {
       n(!1);
     }, onSave: (s) => {
@@ -158,7 +160,7 @@ const bt = ({
         "--tw-text-opacity": "1",
         color: "rgb(202 138 4 / var(--tw-text-opacity))"
       }
-    }], onClick: () => s(!0), children: /* @__PURE__ */ e(w, { icon: ft.faPenAlt }) }),
+    }], onClick: () => s(!0), children: /* @__PURE__ */ e(w, { icon: pt.faPenAlt }) }),
     n && /* @__PURE__ */ e(S, { form: i, record: r, title: a, onSave: (l) => {
       o == null || o(l);
     }, onClose: () => {
@@ -218,7 +220,7 @@ var A = { exports: {} };
   }).call(_, _);
 })(A);
 var Dt = A.exports;
-const Ct = /* @__PURE__ */ lt(Dt), t = mt(), P = [{
+const Ct = /* @__PURE__ */ st(Dt), t = ct(), P = [{
   id: "results",
   title: "Планируемые результаты",
   url: "/api/rest/program-doc-results",
@@ -395,7 +397,7 @@ const Ct = /* @__PURE__ */ lt(Dt), t = mt(), P = [{
     inputField: p
   }
 }) => {
-  const d = z(), c = dt(r, [...n, t.actions([{
+  const d = z(), c = lt(r, [...n, t.actions([{
     key: "edit",
     privilege: "ProgramDocsDictionariesEdit",
     render: (m) => /* @__PURE__ */ e(xt, { title: Ct(o, m), form: a, onSave: () => d(r), record: m })
@@ -410,8 +412,8 @@ const Ct = /* @__PURE__ */ lt(Dt), t = mt(), P = [{
     }],
     defaultFilters: l
   });
-  return /* @__PURE__ */ e(k, { fit: !0, header: /* @__PURE__ */ e(st, { to: "ProgramDocsDictionariesEdit", children: /* @__PURE__ */ e(wt, { title: i, onSave: () => d(r), form: a }) }), footer: /* @__PURE__ */ e(B, { table: c }), children: /* @__PURE__ */ e(ct, { table: c }) });
-}, Wt = () => {
+  return /* @__PURE__ */ e(k, { fit: !0, header: /* @__PURE__ */ e(Tt, { to: "ProgramDocsDictionariesEdit", children: /* @__PURE__ */ e(wt, { title: i, onSave: () => d(r), form: a }) }), footer: /* @__PURE__ */ e(B, { table: c }), children: /* @__PURE__ */ e(dt, { table: c }) });
+}, Yt = () => {
   const [r, a] = f.useState("results"), i = f.useMemo(() => P.find(({
     id: o
   }) => o === r), [r]);
@@ -433,5 +435,5 @@ const Ct = /* @__PURE__ */ lt(Dt), t = mt(), P = [{
   ] });
 };
 export {
-  Wt as default
+  Yt as default
 };

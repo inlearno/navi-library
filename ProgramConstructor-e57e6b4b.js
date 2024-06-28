@@ -1,21 +1,23 @@
-import { j as t, l as Bi, N as ji, f as gr, b as A, F as wr, S as Ri } from "./library-89924fb6.js";
+import { j as t, l as Bi, N as ji, f as gr, b as A, F as wr, S as Ri } from "./library-c328e858.js";
 import { r as O, R as yr, d as Ui } from "./react-6f5a8403.js";
-import { u as zi, f as qi, a as Hi, T as ne, b as f, D as Oe, Y as Yi, F as D, c as ke, d as Q, N as F, L as Gi, B as _r } from "./Boolean-bd97810c.js";
+import { u as zi, f as qi, a as Hi, T as ne, b as f, D as Oe, Y as Yi, F as D, c as ke, d as Q, N as F, L as Gi, B as _r } from "./Boolean-90bc6f90.js";
 import { F as R } from "./icons-ad9f8a73.js";
-import { B as he, u as $e } from "./faEye-4bb4da1d.js";
-import { a as $i, b as Qi } from "./DictionaryCell-ab51e979.js";
-import { u as Qe } from "./useResetHttpQueryCache-417cfbdb.js";
-import { f as Zi, u as Sr, T as xr, c as Er, S as Xi } from "./index-45768fcf.js";
-import { S as Ji, C as Tr, R as Ki, T as en, a as Cr, M as Pe, A as rn, b as nn, F as tn, c as an, d as on, I as sn, D as ln, e as cn, f as dn, B as un } from "./BookInput-9338e1d7.js";
+import { B as he, u as $e } from "./faEye-c7d9d039.js";
+import { a as $i, b as Qi } from "./DictionaryCell-9be52052.js";
+import { u as Qe } from "./useResetHttpQueryCache-6e8893c0.js";
+import { f as Zi, u as Sr, T as xr, c as Er, S as Xi } from "./useQueriedTable-552e23b2.js";
+import { C as Tr } from "./Can-4a40a579.js";
+import { S as Ji, R as Ki, T as en, C as Cr, M as Pe, A as rn, a as nn, F as tn, b as an, c as on, I as sn, D as ln, d as cn, e as dn, B as un } from "./BookInput-eaf5865c.js";
 import { a as mn, I as Me } from "./mui-2ff488a7.js";
-import { R as pn, i as hn } from "./year-d4adad5d.js";
-import { P as fn, R as bn } from "./RootSection-b37b4de9.js";
+import { R as pn, i as hn } from "./year-0d89c292.js";
+import { P as fn, R as bn } from "./RootSection-62fae99c.js";
 import { z as u } from "./index-d0beacff.js";
-import { a as Or, f as kr, b as Pr } from "./faPenAlt-dc5d3562.js";
-import { u as Ze } from "./useWindowController-e96b5028.js";
-import "./table-f5369550.js";
-import "./useUser-268e1bce.js";
-import "./configureQueriedCombo-d47d051b.js";
+import { f as Or } from "./faPlus-da331287.js";
+import { a as kr, f as Pr } from "./faPenAlt-b6fc506d.js";
+import { u as Ze } from "./useWindowController-f5858084.js";
+import "./table-7e833027.js";
+import "./useUser-a967c6ae.js";
+import "./configureQueriedCombo-0f7db575.js";
 var Mr = {};
 (function(r) {
   Object.defineProperty(r, "__esModule", { value: !0 });
@@ -1608,7 +1610,7 @@ const Rt = () => Hi("only screen and (max-width : 640px)") || jt, Ut = ({
             "--tw-text-opacity": "1",
             color: "rgb(202 138 4 / var(--tw-text-opacity))"
           }
-        }], onClick: () => d(!0), children: /* @__PURE__ */ t(R, { icon: Or.faPenAlt }) }),
+        }], onClick: () => d(!0), children: /* @__PURE__ */ t(R, { icon: kr.faPenAlt }) }),
         o && /* @__PURE__ */ t(Pe, { autoHeight: !0, title: `Тема: ${C.theme}`, onClose: () => d(!1), open: !0, children: /* @__PURE__ */ t(br, { initialValues: C, doc_id: r, onSave: () => {
           d(!1), I();
         } }) })
@@ -1616,7 +1618,7 @@ const Rt = () => Hi("only screen and (max-width : 640px)") || jt, Ut = ({
     }
   }, {
     key: "delete",
-    icon: kr.faTrash,
+    icon: Pr.faTrash,
     tooltip: "Удалить тему",
     onClick: async (C) => {
       c.mutate({
@@ -1646,7 +1648,7 @@ const Rt = () => Hi("only screen and (max-width : 640px)") || jt, Ut = ({
   }, children: [
     /* @__PURE__ */ A("div", { children: [
       /* @__PURE__ */ A(he, { variant: "outlined", onClick: () => i((C) => !C), color: "success", children: [
-        /* @__PURE__ */ t(R, { icon: Pr.faPlus }),
+        /* @__PURE__ */ t(R, { icon: Or.faPlus }),
         "Добавить тему"
       ] }),
       e && /* @__PURE__ */ t(Pe, { open: !0, title: "Новая тема", onClose: () => i(!1), autoHeight: !0, children: /* @__PURE__ */ t(br, { doc_id: r, onSave: E, onSubmit: () => a(!0), onError: () => a(!1) }) })
@@ -1825,7 +1827,7 @@ const Rt = () => Hi("only screen and (max-width : 640px)") || jt, Ut = ({
               "--tw-text-opacity": "1",
               color: "rgb(202 138 4 / var(--tw-text-opacity))"
             }
-          }], onClick: () => d(!0), children: /* @__PURE__ */ t(R, { icon: Or.faPenAlt }) }),
+          }], onClick: () => d(!0), children: /* @__PURE__ */ t(R, { icon: kr.faPenAlt }) }),
           o && /* @__PURE__ */ t(Pe, { autoHeight: !0, title: `Год обучения №${C.number_year}`, onClose: () => d(!1), open: !0, children: /* @__PURE__ */ t(vr, { initialValues: C, doc_id: r, onSave: () => {
             d(!1), I();
           } }) })
@@ -1833,7 +1835,7 @@ const Rt = () => Hi("only screen and (max-width : 640px)") || jt, Ut = ({
       }
     }, {
       key: "delete",
-      icon: kr.faTrash,
+      icon: Pr.faTrash,
       tooltip: "Удалить расписание",
       onClick: async (C) => {
         c.mutate({
@@ -1864,7 +1866,7 @@ const Rt = () => Hi("only screen and (max-width : 640px)") || jt, Ut = ({
   }, children: [
     /* @__PURE__ */ A("div", { children: [
       /* @__PURE__ */ A(he, { variant: "outlined", onClick: () => i((C) => !C), color: "success", children: [
-        /* @__PURE__ */ t(R, { icon: Pr.faPlus }),
+        /* @__PURE__ */ t(R, { icon: Or.faPlus }),
         "Добавить"
       ] }),
       e && /* @__PURE__ */ t(Pe, { autoHeight: !0, title: "Новый учебный график", onClose: () => i(!1), open: !0, children: /* @__PURE__ */ t(vr, { doc_id: r, onSave: E, onSubmit: () => a(!0), onError: () => a(!1) }) })
@@ -1961,7 +1963,7 @@ const Rt = () => Hi("only screen and (max-width : 640px)") || jt, Ut = ({
   competence_level_id: u.coerce.number().nullable()
 }).passthrough(), Ta = u.object({
   data: u.array(Ea).transform((r) => r[0])
-}).transform((r) => r.data), qa = () => {
+}).transform((r) => r.data), Ya = () => {
   const {
     params: {
       id: r
@@ -1991,5 +1993,5 @@ const Rt = () => Hi("only screen and (max-width : 640px)") || jt, Ut = ({
   return /* @__PURE__ */ t(Ut, { steps: xa, stateKey: "steps_info", mutation: a, updatePrivilege: "ProgramDocsEdit", doneButton: (p.state_id == 1 || p.state_id == 2) && /* @__PURE__ */ t(Tr, { to: "ProgramDocsEdit", children: /* @__PURE__ */ t(he, { variant: "contained", icon: Mr.faCheck, color: "success", isLoading: a.isPending, disabled: a.isPending, onClick: c, children: "Завершить" }) }), values: p });
 };
 export {
-  qa as default
+  Ya as default
 };

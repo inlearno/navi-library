@@ -1,22 +1,18 @@
-import { r as d, c as de } from "./react-6f5a8403.js";
-import { j as t, d as pe, b as O, F as ue } from "./library-89924fb6.js";
-import { u as he } from "./useUser-268e1bce.js";
-import { g as me, h as fe, R as ge, i as ye, j as be, u as ve, F as we, b as c, D as E, T, Q as v, d as N, Y as ae } from "./Boolean-bd97810c.js";
-import { c as w } from "./configureQueriedCombo-d47d051b.js";
-import { F as Ce } from "./icons-ad9f8a73.js";
-import { a as _e } from "./DictionaryCell-ab51e979.js";
-import { a as De, T as Fe, c as C } from "./index-45768fcf.js";
-import { b as Te, f as Ie } from "./faPenAlt-dc5d3562.js";
-import { B as ke, u as Se } from "./faEye-4bb4da1d.js";
-import { u as Re, B as Be } from "./mui-2ff488a7.js";
-const lr = ({
-  to: e,
-  fallback: n = null,
-  children: o
-}) => he().can(e) ? o : n, cr = ({
+import { j as t, c as de, b as O, F as pe } from "./library-c328e858.js";
+import { g as ue, h as he, R as me, i as fe, j as ge, u as ye, F as be, b as c, D as E, T, Q as v, d as N, Y as ae } from "./Boolean-90bc6f90.js";
+import { c as w } from "./configureQueriedCombo-0f7db575.js";
+import { r as d, c as ve } from "./react-6f5a8403.js";
+import { F as we } from "./icons-ad9f8a73.js";
+import { a as Ce } from "./DictionaryCell-9be52052.js";
+import { a as _e, T as De, c as C } from "./useQueriedTable-552e23b2.js";
+import { f as Fe } from "./faPlus-da331287.js";
+import { B as Te, u as Ie } from "./faEye-c7d9d039.js";
+import { u as ke, B as Se } from "./mui-2ff488a7.js";
+import { f as Re } from "./faPenAlt-b6fc506d.js";
+const ir = ({
   children: e,
   ...n
-}) => /* @__PURE__ */ t(pe.Split, { defaultSplitterColors: {
+}) => /* @__PURE__ */ t(de.Split, { defaultSplitterColors: {
   color: "#e5e7eb",
   hover: "#d1d5db",
   drag: "#9ca3af"
@@ -89,11 +85,11 @@ var ce = {};
     ]
   }, e.faWindowMinimize = e.definition, e.prefix = n, e.iconName = o, e.width = r, e.height = a, e.ligatures = i, e.unicode = l, e.svgPathData = s, e.aliases = i;
 })(ce);
-const Ee = d.createContext(null), X = {
+const Be = d.createContext(null), X = {
   didCatch: !1,
   error: null
 };
-class He extends d.Component {
+class Ee extends d.Component {
   constructor(n) {
     super(n), this.resetErrorBoundary = this.resetErrorBoundary.bind(this), this.state = X;
   }
@@ -126,7 +122,7 @@ class He extends d.Component {
     } = this.state, {
       resetKeys: a
     } = this.props;
-    if (r && o.error !== null && qe(n.resetKeys, a)) {
+    if (r && o.error !== null && He(n.resetKeys, a)) {
       var i, l;
       (i = (l = this.props).onReset) === null || i === void 0 || i.call(l, {
         next: a,
@@ -160,7 +156,7 @@ class He extends d.Component {
       else
         throw l;
     }
-    return d.createElement(Ee.Provider, {
+    return d.createElement(Be.Provider, {
       value: {
         didCatch: i,
         error: l,
@@ -169,7 +165,7 @@ class He extends d.Component {
     }, s);
   }
 }
-function qe() {
+function He() {
   let e = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : [], n = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : [];
   return e.length !== n.length || e.some((o, r) => !Object.is(o, n[r]));
 }
@@ -185,7 +181,7 @@ const z = ({
   ":hover": {
     opacity: "1"
   }
-}, children: /* @__PURE__ */ t(Ce, { ...n }) }), Le = ({
+}, children: /* @__PURE__ */ t(we, { ...n }) }), qe = ({
   bounds: e,
   height: n = 500,
   width: o = 600,
@@ -212,7 +208,7 @@ const z = ({
   const U = d.useMemo(() => "header-" + Math.random().toString(16).slice(2), []), {
     width: M,
     height: b
-  } = me(), p = d.useMemo(() => e && e.clientWidth > 0 && e.clientHeight > 0 ? {
+  } = ue(), p = d.useMemo(() => e && e.clientWidth > 0 && e.clientHeight > 0 ? {
     topOffset: e.offsetTop || 0,
     leftOffset: e.offsetLeft || 0,
     width: e.clientWidth,
@@ -265,7 +261,7 @@ const z = ({
       y: p ? p.topOffset + p.height / 2 - n / 2 : (b ?? 0) / 2 - o / 2
     }));
   }, [g, y, p, u, b, M]), e && !p || !b || !b ? null : /* @__PURE__ */ t(
-    ge,
+    me,
     {
       ref: F,
       enableResizing: !u && A,
@@ -355,7 +351,7 @@ const z = ({
           }, children: [
             S && /* @__PURE__ */ t(z, { icon: ce.faWindowMinimize, onClick: q, transform: "shrink-4" }),
             r && (u ? /* @__PURE__ */ t(z, { icon: le.faDownLeftAndUpRightToCenter, transform: "shrink-4", onClick: B }) : /* @__PURE__ */ t(z, { icon: ie.faUpRightAndDownLeftFromCenter, transform: "shrink-4", onClick: R })),
-            l && /* @__PURE__ */ t(z, { icon: fe.faXmark, onClick: s })
+            l && /* @__PURE__ */ t(z, { icon: he.faXmark, onClick: s })
           ] })
         ] }),
         /* @__PURE__ */ t("div", { ref: j, css: {
@@ -363,7 +359,7 @@ const z = ({
           overflow: "auto",
           "--tw-bg-opacity": "1",
           backgroundColor: "rgb(255 255 255 / var(--tw-bg-opacity))"
-        }, children: /* @__PURE__ */ t(He, { fallbackRender: ({
+        }, children: /* @__PURE__ */ t(Ee, { fallbackRender: ({
           error: k
         }) => /* @__PURE__ */ t("div", { css: {
           display: "flex",
@@ -375,7 +371,7 @@ const z = ({
       ] })
     }
   );
-}, Me = ({
+}, Le = ({
   children: e,
   open: n = !1,
   onClose: o,
@@ -391,7 +387,7 @@ const z = ({
   const [S, g] = d.useState(void 0), [A, q] = d.useState(a), [R, u] = d.useState(i), [B, y] = d.useState(n);
   return d.useEffect(() => {
     y(n);
-  }, [n]), B ? de.createPortal(/* @__PURE__ */ t("div", { className: "inl-modal", css: {
+  }, [n]), B ? ve.createPortal(/* @__PURE__ */ t("div", { className: "inl-modal", css: {
     position: "fixed",
     left: "0px",
     top: "0px",
@@ -399,7 +395,7 @@ const z = ({
     height: "100vh",
     width: "100vw",
     backgroundColor: "rgb(0 0 0 / 0.3)"
-  }, children: /* @__PURE__ */ t(Le, { position: S, updatePosition: (L) => {
+  }, children: /* @__PURE__ */ t(qe, { position: S, updatePosition: (L) => {
     g(L);
   }, autoHeight: l, closable: f, resizable: H, title: r, width: A, setWidth: q, height: S ? R : 0, setHeight: u, maximized: s, maximizable: h, onClose: () => {
     o ? o() : y(!1);
@@ -409,25 +405,25 @@ const z = ({
   onChange: a,
   value: i,
   url: l,
-  idField: s = be,
+  idField: s = ge,
   ...h
 }, f) => {
-  const H = ye(l, s), [S, g] = d.useState(), [A, q] = d.useState(!1), [R, u] = d.useState(""), B = () => {
+  const H = fe(l, s), [S, g] = d.useState(), [A, q] = d.useState(!1), [R, u] = d.useState(""), B = () => {
     u(""), q(!1);
-  }, y = Re(f, g), L = (m) => {
+  }, y = ke(f, g), L = (m) => {
     H(m), a && a(r ? [...i ?? [], m[s]] : m[s]), B();
   };
-  return /* @__PURE__ */ O(ue, { children: [
+  return /* @__PURE__ */ O(pe, { children: [
     /* @__PURE__ */ t(e, { ref: y, extraOptionsRenderer: ({
       search: m,
       searchIsLoading: W,
       closePopup: U
-    }) => !W && /* @__PURE__ */ t(Ne, { search: m, onClick: () => {
+    }) => !W && /* @__PURE__ */ t(Me, { search: m, onClick: () => {
       u((m || "").trim()), q(!0), U(), S == null || S.blur();
     } }), ...h, idField: s, value: i, multiple: r, onChange: a, url: l }),
-    /* @__PURE__ */ t(Me, { open: A, autoHeight: !0, onClose: () => q(!1), ...o, children: /* @__PURE__ */ t(n, { ...h, search: R, onSave: L }) })
+    /* @__PURE__ */ t(Le, { open: A, autoHeight: !0, onClose: () => q(!1), ...o, children: /* @__PURE__ */ t(n, { ...h, search: R, onSave: L }) })
   ] });
-}), Ne = ({
+}), Me = ({
   search: e,
   onClick: n
 }) => /* @__PURE__ */ t("div", { css: {
@@ -435,26 +431,26 @@ const z = ({
   width: "100%",
   justifyContent: "center",
   padding: "0.5rem"
-}, children: /* @__PURE__ */ O(ke, { variant: "outlined", color: "success", icon: Te.faPlus, onClick: n, children: [
+}, children: /* @__PURE__ */ O(Te, { variant: "outlined", color: "success", icon: Fe.faPlus, onClick: n, children: [
   "Создать",
   e && ` «${e}»`
-] }) }), je = ({
+] }) }), Ne = ({
   items: e,
   onDelete: n,
   columns: o,
   isLoading: r
 }) => {
-  const a = C(), i = De({
+  const a = C(), i = _e({
     enableSorting: !1,
     isLoading: r,
     columns: [...o, a.actions([{
-      icon: Ie.faTrash,
+      icon: Re.faTrash,
       key: "delete",
       onClick: (l) => n(l)
     }])],
     data: e || []
   });
-  return /* @__PURE__ */ t(Fe, { border: !0, css: {
+  return /* @__PURE__ */ t(De, { border: !0, css: {
     marginTop: "0.5rem"
   }, table: i });
 }, I = (e, n) => d.forwardRef((o, r) => {
@@ -462,7 +458,7 @@ const z = ({
     items: i,
     onDelete: l,
     valueCount: s
-  }) => /* @__PURE__ */ t(je, { items: i, valueCount: s, onDelete: l, columns: n }), [n]);
+  }) => /* @__PURE__ */ t(Ne, { items: i, valueCount: s, onDelete: l, columns: n }), [n]);
   return /* @__PURE__ */ t(e, { ref: r, tagListPosition: o.tagListPosition || "bottom", tagListRenderer: a, ...o });
 }), D = ({
   fit: e = !1,
@@ -473,7 +469,7 @@ const z = ({
   url: i,
   children: l
 }) => {
-  const s = Se({
+  const s = Ie({
     method: a != null && a.id ? "PUT" : "POST",
     url: `${i}${a != null && a.id ? `/${a.id}` : ""}`,
     onMutate: (f) => {
@@ -487,21 +483,21 @@ const z = ({
     onError: (f) => {
       r == null || r(f);
     }
-  }), h = ve({
+  }), h = ye({
     defaultValues: a,
     mutation: s
   });
-  return /* @__PURE__ */ t(_e, { fit: e, footer: /* @__PURE__ */ t("div", { css: {
+  return /* @__PURE__ */ t(Ce, { fit: e, footer: /* @__PURE__ */ t("div", { css: {
     display: "flex",
     width: "100%",
     justifyContent: "flex-end"
-  }, children: /* @__PURE__ */ t(Be, { variant: "contained", color: "success", disabled: s.isPending, onClick: () => h.submit(), children: a != null && a.id ? "Обновить" : "Создать" }) }), children: /* @__PURE__ */ t(we, { css: {
+  }, children: /* @__PURE__ */ t(Se, { variant: "contained", color: "success", disabled: s.isPending, onClick: () => h.submit(), children: a != null && a.id ? "Обновить" : "Создать" }) }), children: /* @__PURE__ */ t(be, { css: {
     display: "flex",
     flexDirection: "column",
     gap: "1rem",
     padding: "1rem"
   }, form: h, children: l(h) }) });
-}, xe = ({
+}, je = ({
   search: e,
   ...n
 }) => /* @__PURE__ */ t(D, { url: "/api/rest/program-doc-results", ...n, children: (o) => [/* @__PURE__ */ t(c, { name: "category_id", control: o.control, rules: {
@@ -512,25 +508,25 @@ const z = ({
   required: "Введите наименование"
 }, render: ({
   field: r
-}) => /* @__PURE__ */ t(T, { label: "Наименование", placeholder: "Введите наименование", ...r }) }, "title")] }), V = C(), sr = I(w(_(v, xe, {
+}) => /* @__PURE__ */ t(T, { label: "Наименование", placeholder: "Введите наименование", ...r }) }, "title")] }), V = C(), lr = I(w(_(v, je, {
   title: "Новый планируемый результат",
   width: 500
 }), {
   url: "/api/rest/program-doc-results",
   displayField: "title"
-}), [V.dictionary("category_id", "programDocCategories", "Категория"), V.display("title", "Наименование")]), Ae = ({
+}), [V.dictionary("category_id", "programDocCategories", "Категория"), V.display("title", "Наименование")]), xe = ({
   search: e,
   ...n
 }) => /* @__PURE__ */ t(D, { url: "/api/rest/program-doc-objectives", ...n, children: (o) => [/* @__PURE__ */ t(c, { name: "title", rules: {
   required: "Введите наименование"
 }, control: o.control, defaultValue: e, render: ({
   field: r
-}) => /* @__PURE__ */ t(T, { label: "Наименование", placeholder: "Введите наименование задачи", ...r }) }, "title")] }), dr = w(_(v, Ae, {
+}) => /* @__PURE__ */ t(T, { label: "Наименование", placeholder: "Введите наименование задачи", ...r }) }, "title")] }), cr = w(_(v, xe, {
   title: "Новая задача"
 }), {
   url: "/api/rest/program-doc-objectives",
   displayField: "title"
-}), Pe = ({
+}), Ae = ({
   search: e,
   ...n
 }) => /* @__PURE__ */ t(D, { url: "/api/rest/program-doc-forms", ...n, children: (o) => [/* @__PURE__ */ t(c, { name: "control_type_id", rules: {
@@ -541,7 +537,7 @@ const z = ({
   required: "Введите описание"
 }, render: ({
   field: r
-}) => /* @__PURE__ */ t(N, { label: "Описание", placeholder: "Введите описание", ...r }) }, "description")] }), G = C(), pr = I(w(_(v, Pe, {
+}) => /* @__PURE__ */ t(N, { label: "Описание", placeholder: "Введите описание", ...r }) }, "description")] }), G = C(), sr = I(w(_(v, Ae, {
   title: "Новая аттестационная форма"
 }), {
   url: "/api/rest/program-doc-forms",
@@ -550,7 +546,7 @@ const z = ({
   size: 100
 }), G.display("description", "Описание", {
   size: 200
-})]), Oe = ({
+})]), Pe = ({
   search: e,
   ...n
 }) => /* @__PURE__ */ t(D, { url: "/api/rest/program-doc-criteria", ...n, children: (o) => [/* @__PURE__ */ t(c, { name: "criterion_type_id", control: o.control, rules: {
@@ -561,12 +557,12 @@ const z = ({
   required: "Введите описание критерия"
 }, control: o.control, defaultValue: e, render: ({
   field: r
-}) => /* @__PURE__ */ t(N, { label: "Описание", placeholder: "Введите описание", ...r }) }, "description")] }), J = C(), ur = I(w(_(v, Oe, {
+}) => /* @__PURE__ */ t(N, { label: "Описание", placeholder: "Введите описание", ...r }) }, "description")] }), J = C(), dr = I(w(_(v, Pe, {
   title: "Новый критерий оценки учебных результатов"
 }), {
   url: "/api/rest/program-doc-criteria",
   displayField: "description"
-}), [J.dictionary("criterion_type_id", "programDocCriteriaTypes", "Тип критерия"), J.display("description", "Критерий")]), We = ({
+}), [J.dictionary("criterion_type_id", "programDocCriteriaTypes", "Тип критерия"), J.display("description", "Критерий")]), Oe = ({
   search: e,
   ...n
 }) => /* @__PURE__ */ t(D, { url: "/api/rest/program-doc-fixations", ...n, children: (o) => [/* @__PURE__ */ t(c, { name: "method_id", rules: {
@@ -577,12 +573,12 @@ const z = ({
   required: "Введите описание"
 }, control: o.control, render: ({
   field: r
-}) => /* @__PURE__ */ t(N, { label: "Описание", placeholder: "Введите описание", ...r }) }, "description")] }), Z = C(), hr = I(w(_(v, We, {
+}) => /* @__PURE__ */ t(N, { label: "Описание", placeholder: "Введите описание", ...r }) }, "description")] }), Z = C(), pr = I(w(_(v, Oe, {
   title: "Новый способ фиксации учебных результатов"
 }), {
   url: "/api/rest/program-doc-fixations",
   displayField: "description"
-}), [Z.dictionary("method_id", "programDocMethodTypes", "Метод"), Z.display("description", "Описание способа фиксации")]), Ue = ({
+}), [Z.dictionary("method_id", "programDocMethodTypes", "Метод"), Z.display("description", "Описание способа фиксации")]), We = ({
   search: e,
   ...n
 }) => /* @__PURE__ */ t(D, { url: "/api/rest/program-doc-materials", ...n, children: (o) => [/* @__PURE__ */ t(c, { name: "base_knowledge", control: o.control, rules: {
@@ -593,12 +589,12 @@ const z = ({
   required: "Введите материалы"
 }, defaultValue: e, control: o.control, render: ({
   field: r
-}) => /* @__PURE__ */ t(T, { label: "Материалы", placeholder: "Введите материалы", ...r }) }, "material")] }), ee = C(), mr = I(w(_(v, Ue, {
+}) => /* @__PURE__ */ t(T, { label: "Материалы", placeholder: "Введите материалы", ...r }) }, "material")] }), ee = C(), ur = I(w(_(v, We, {
   title: "Новый методический материал"
 }), {
   url: "/api/rest/program-doc-materials",
   displayField: "material"
-}), [ee.display("base_knowledge", "Базовые знания"), ee.display("material", "Материалы")]), $e = ({
+}), [ee.display("base_knowledge", "Базовые знания"), ee.display("material", "Материалы")]), Ue = ({
   search: e,
   ...n
 }) => /* @__PURE__ */ t(D, { url: "/api/rest/program-doc-managements", ...n, children: (o) => [/* @__PURE__ */ t(c, { name: "management_type_id", control: o.control, rules: {
@@ -609,12 +605,12 @@ const z = ({
   required: "Введите описание"
 }, defaultValue: e, control: o.control, render: ({
   field: r
-}) => /* @__PURE__ */ t(N, { label: "Описание", placeholder: "Введите описание", ...r }) }, "description")] }), re = C(), fr = I(w(_(v, $e, {
+}) => /* @__PURE__ */ t(N, { label: "Описание", placeholder: "Введите описание", ...r }) }, "description")] }), re = C(), hr = I(w(_(v, Ue, {
   title: "Новая особенность организации образовательной деятельности"
 }), {
   url: "/api/rest/program-doc-managements",
   displayField: "description"
-}), [re.dictionary("management_type_id", "programDocManagementTypes", "Тип"), re.display("description", "Описание")]), ze = ({
+}), [re.dictionary("management_type_id", "programDocManagementTypes", "Тип"), re.display("description", "Описание")]), $e = ({
   search: e,
   ...n
 }) => /* @__PURE__ */ t(D, { url: "/api/rest/program-doc-indoctrinations", ...n, children: (o) => [/* @__PURE__ */ t(c, { name: "indoctrination_type_id", control: o.control, rules: {
@@ -625,12 +621,12 @@ const z = ({
   required: "Введите наименование воспитательной деятельности"
 }, render: ({
   field: r
-}) => /* @__PURE__ */ t(N, { label: "Наименование воспитательной деятельности", placeholder: "Введите наименование воспитательной деятельности", ...r }) }, "description")] }), te = C(), gr = I(w(_(v, ze, {
+}) => /* @__PURE__ */ t(N, { label: "Наименование воспитательной деятельности", placeholder: "Введите наименование воспитательной деятельности", ...r }) }, "description")] }), te = C(), mr = I(w(_(v, $e, {
   title: "Новая Воспитательная деятельность"
 }), {
   url: "/api/rest/program-doc-indoctrinations",
   displayField: "description"
-}), [te.dictionary("indoctrination_type_id", "programDocIndoctrinationTypes", "Тип воспитательной деятельности"), te.display("description", "Описание")]), Ke = ({
+}), [te.dictionary("indoctrination_type_id", "programDocIndoctrinationTypes", "Тип воспитательной деятельности"), te.display("description", "Описание")]), ze = ({
   search: e,
   ...n
 }) => /* @__PURE__ */ t(D, { url: "/api/rest/program-doc-developments", ...n, children: (o) => [/* @__PURE__ */ t(c, { name: "development_type_id", control: o.control, rules: {
@@ -641,12 +637,12 @@ const z = ({
   required: "Введите описание"
 }, render: ({
   field: r
-}) => /* @__PURE__ */ t(N, { label: "Наименование развивающей деятельности", placeholder: "Введите наименование развивающей деятельности", ...r }) }, "description")] }), oe = C(), yr = I(w(_(v, Ke, {
+}) => /* @__PURE__ */ t(N, { label: "Наименование развивающей деятельности", placeholder: "Введите наименование развивающей деятельности", ...r }) }, "description")] }), oe = C(), fr = I(w(_(v, ze, {
   title: "Новая развивающая деятельность"
 }), {
   url: "/api/rest/program-doc-developments",
   displayField: "description"
-}), [oe.dictionary("development_type_id", "programDocIndoctrinationTypes", "Тип"), oe.display("description", "Развивающая деятельность")]), Qe = ({
+}), [oe.dictionary("development_type_id", "programDocIndoctrinationTypes", "Тип"), oe.display("description", "Развивающая деятельность")]), Ke = ({
   search: e,
   ...n
 }) => /* @__PURE__ */ t(D, { url: "/api/rest/program-doc-inventories", ...n, children: (o) => [/* @__PURE__ */ t(c, { name: "inventory_type_id", rules: {
@@ -657,12 +653,12 @@ const z = ({
   required: "Введите описание"
 }, defaultValue: e, control: o.control, render: ({
   field: r
-}) => /* @__PURE__ */ t(N, { label: "Описание", placeholder: "Введите описание", ...r }) }, "description")] }), ne = C(), br = I(w(_(v, Qe, {
+}) => /* @__PURE__ */ t(N, { label: "Описание", placeholder: "Введите описание", ...r }) }, "description")] }), ne = C(), gr = I(w(_(v, Ke, {
   title: "Новое материально-техническое обеспечение"
 }), {
   url: "/api/rest/program-doc-inventories",
   displayField: "description"
-}), [ne.dictionary("inventory_type_id", "programDocInventoryTypes", "Тип"), ne.display("description", "Описание")]), Xe = ({
+}), [ne.dictionary("inventory_type_id", "programDocInventoryTypes", "Тип"), ne.display("description", "Описание")]), Qe = ({
   search: e,
   ...n
 }) => /* @__PURE__ */ t(D, { url: "/api/rest/program-doc-information", ...n, children: (o) => [/* @__PURE__ */ t(c, { name: "authors", control: o.control, render: ({
@@ -677,12 +673,12 @@ const z = ({
   field: r
 }) => /* @__PURE__ */ t(ae, { label: "Год издательства", placeholder: "Выберите год издательства", ...r }) }, "publish_year"), /* @__PURE__ */ t(c, { name: "isbn", control: o.control, render: ({
   field: r
-}) => /* @__PURE__ */ t(T, { label: "ISBN", placeholder: "Выберите ISBN", helperText: "Международный стандартный книжный номер (ISBN)", ...r }) }, "isbn")] }), P = C(), vr = I(w(_(v, Xe, {
+}) => /* @__PURE__ */ t(T, { label: "ISBN", placeholder: "Выберите ISBN", helperText: "Международный стандартный книжный номер (ISBN)", ...r }) }, "isbn")] }), P = C(), yr = I(w(_(v, Qe, {
   title: "Новое информационное обеспечение"
 }), {
   url: "/api/rest/program-doc-information",
   displayField: "title"
-}), [P.display("title", "Наименование"), P.display("authors", "Авторы"), P.display("publisher", "Издательство"), P.display("publish_year", "Год издательства"), P.display("isbn", "ISBN")]), Ye = ({
+}), [P.display("title", "Наименование"), P.display("authors", "Авторы"), P.display("publisher", "Издательство"), P.display("publish_year", "Год издательства"), P.display("isbn", "ISBN")]), Xe = ({
   search: e,
   ...n
 }) => /* @__PURE__ */ t(D, { url: "/api/rest/program-doc-books", ...n, children: (o) => [/* @__PURE__ */ t(c, { name: "authors", control: o.control, render: ({
@@ -695,29 +691,29 @@ const z = ({
   field: r
 }) => /* @__PURE__ */ t(T, { label: "Издательство", placeholder: "Введите издательство", ...r }) }, "publisher"), /* @__PURE__ */ t(c, { name: "publish_year", control: o.control, render: ({
   field: r
-}) => /* @__PURE__ */ t(ae, { label: "Год издательства", placeholder: "Выберите год издательства", ...r }) }, "publish_year")] }), K = C(), wr = I(w(_(v, Ye, {
+}) => /* @__PURE__ */ t(ae, { label: "Год издательства", placeholder: "Выберите год издательства", ...r }) }, "publish_year")] }), K = C(), br = I(w(_(v, Xe, {
   title: "Новая литература"
 }), {
   url: "/api/rest/program-doc-books",
   displayField: "title"
 }), [K.display("title", "Наименование"), K.display("authors", "Авторы"), K.display("publisher", "Издательство"), K.display("publish_year", "Год издательства")]);
 export {
-  pr as A,
-  wr as B,
-  lr as C,
-  yr as D,
-  hr as F,
-  gr as I,
-  Me as M,
-  sr as R,
-  cr as S,
-  dr as T,
-  D as a,
+  sr as A,
+  br as B,
+  D as C,
+  fr as D,
+  pr as F,
+  mr as I,
+  Le as M,
+  lr as R,
+  ir as S,
+  cr as T,
+  dr as a,
   ur as b,
-  mr as c,
-  fr as d,
-  br as e,
-  vr as f,
+  hr as c,
+  gr as d,
+  yr as e,
+  je as f,
   xe as g,
   Ae as h,
   Pe as i,
@@ -728,6 +724,5 @@ export {
   ze as n,
   Ke as o,
   Qe as p,
-  Xe as q,
-  Ye as r
+  Xe as q
 };
